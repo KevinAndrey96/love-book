@@ -118,7 +118,7 @@
                     <div class="feat-img">
                         <img src="/Images/box.png">
                     </div>
-                    <div class="feature-title">Dimenciones</div>
+                    <div class="feature-title">Tamaño</div>
                     <div class="feature-desc">15.2cm x 20.8cm - Aproximadamente</div>
                 </div>
 
@@ -126,7 +126,7 @@
                     <div class="feat-img">
                         <img src="/Images/printer.png">
                     </div>
-                    <div class="feature-title">Impresiones</div>
+                    <div class="feature-title">Impresion</div>
                     <div class="feature-desc">Impresion digital profesional</div>
                 </div>
 

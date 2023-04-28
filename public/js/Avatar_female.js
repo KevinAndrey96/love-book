@@ -7,13 +7,15 @@ var hair5 = document.getElementById("hair-5");
 var hair6 = document.getElementById("hair-6");
 var hair7 = document.getElementById("hair-7");
 var hair8 = document.getElementById("hair-8");
-var hairchange = document.getElementById("hairchange");
+var hairchangefemale = document.getElementById("hairchangefemale");
 
 // Obtener elementos HTML de las imágenes de los ojos de la mujer
 var eyes1 = document.getElementById("eyes-1");
 var eyes2 = document.getElementById("eyes-2");
 var eyes3 = document.getElementById("eyes-3");
 var eyes4 = document.getElementById("eyes-4");
+var eyeschangefemale = document.getElementById("eyeschangefemale");
+
 
 // Definir rutas a las imágenes de los ojos de diferentes colores
 var brownEyes = "/Images/Woman/Eyes/brown.png";
@@ -24,7 +26,7 @@ var blackEyes = "/Images/Woman/Eyes/black.png";
 // Obtener elementos HTML de las imágenes de los lentes de la mujer
 var notGlasses = document.getElementById("glasses-0");
 var glasses    = document.getElementById("glasses-1");
-var glasseschange = document.getElementById("glasseschange");
+var glasseschangefemale = document.getElementById("glasseschange");
 
 // Definir ruta a la imagen de los lentes
 var glassess = "/Images/Woman/Glasses/glasses.png";
@@ -47,64 +49,67 @@ const sectionHair = document.getElementById('hair-section');
 const sectionGlasses = document.getElementById('glasses-section');
 const sectionEyes = document.getElementById('eyes-section');
 
+// Obtener boton continuar
+const btnContinue = document.getElementById('btn-continue');
+
 
 // Asignar funciones de clic a los elementos HTML de las imágenes del cabello
 hair1.onclick = function(){
-    hairchange.src = brown1;
+    hairchangefemale.src = brown1;
 }
 
 hair2.onclick = function(){
-    hairchange.src = brown2;
+    hairchangefemale.src = brown2;
 }
 
 hair3.onclick = function(){
-    hairchange.src = brown3;
+    hairchangefemale.src = brown3;
 }
 
 hair4.onclick = function(){
-    hairchange.src = brown4;
+    hairchangefemale.src = brown4;
 }
 
 hair5.onclick = function(){
-    hairchange.src = brown5;
+    hairchangefemale.src = brown5;
 }
 
 hair6.onclick = function(){
-    hairchange.src = brown6;
+    hairchangefemale.src = brown6;
 }
 
 hair7.onclick = function(){
-    hairchange.src = brown7;
+    hairchangefemale.src = brown7;
 }
 
 hair8.onclick = function(){
-    hairchange.src = brown8;
+    hairchangefemale.src = brown8;
 }
 
 // Asignar funciones de clic a los elementos HTML de las imágenes de los ojos
 eyes1.onclick = function(){
-    eyeschange.src = blackEyes;
+    eyeschangefemale.src = blackEyes;
 }
 
 eyes2.onclick = function(){
-    eyeschange.src = brownEyes;
+    eyeschangefemale.src = brownEyes;
 }
 
 eyes3.onclick = function(){
-    eyeschange.src = greenEyes;
+    eyeschangefemale.src = greenEyes;
 }
 
 eyes4.onclick = function(){
-    eyeschange.src = blueEyes;
+    eyeschangefemale.src = blueEyes;
 }
 
 // Asignar funciones de clic a los elementos HTML de las imágenes de las gafas quitar-poner
 glasses.onclick = function(){
-    glasseschange.style.display = "block";
+    glasseschangefemale.style.display = "block";
 }
 
 notGlasses.onclick = function(){
-    glasseschange.style.display = "none";
+    glasseschangefemale.style.display = "none";
 }
 
 /**
@@ -113,7 +118,7 @@ notGlasses.onclick = function(){
  * */
 function changeHairColor(color) {
 
-    let hairImage = document.getElementById("hairchange");
+    let hairImage = document.getElementById("hairchangefemale");
     let currentHair = hairImage.src.split("/").pop();
 
     let newHair = currentHair.replace(color);
@@ -145,4 +150,27 @@ btnEyes.addEventListener('click', () => {
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'block';
 });
+
+document.getElementById("btn-continue").addEventListener("click", function() {
+
+    var name = document.getElementById("nameFemale").value;
+
+    // Guardar cambios en el Local Storage
+    localStorage.setItem("haircolorfemale", hairchangefemale.src);
+    localStorage.setItem("eyescolorfemale", eyeschangefemale.src);
+    localStorage.setItem("glassesfemale", glasseschangefemale.style.display);
+    localStorage.setItem("nameFemale", name);
+
+
+    if (localStorage.getItem("haircolor") && localStorage.getItem("haircolorfemale") && localStorage.getItem("eyescolorfemale")) {
+      // Redirigir a la siguiente página
+      window.location.href = "/FrontPage";
+    } else {
+      window.location.href = "/Avatar/Male";
+    }
+  });
+
+
+
+
 

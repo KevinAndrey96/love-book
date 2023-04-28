@@ -1,17 +1,43 @@
 *{
-    background-color:#d1f9f5;
-    padding: 0%;
-    margin: 0;
+    background-color: #f1e4f5;
 }
 
-#navbarNav{
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+  }
+
+.nav-item {
+    margin-bottom: 10px;
+  }
+
+.nav-link {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover {
+    color: #fff;
+    background-color: #ff00b7;
+  }
+
+
+
+#btn1:hover{
+    background-color: rgb(226, 89, 194);
 }
 
-body{
-    color: #d1f9f5;
-
+#btn2:hover{
+    color:rgb(0, 47, 255);
+    background-color: rgb(77, 119, 255);
 }
+
 
 body.block-scroll{
     overflow-y:hidden;
@@ -33,7 +59,7 @@ body .subtitle{
 h1{
     text-align: center;
     padding-top: 3rem;
-    color: #5000b3;
+    color: #000000;
 }
 
 div #Avatar{
@@ -59,20 +85,6 @@ div #Avatar .male {
     height: 300px;
 }
 
-#btn1 {
-
-    border-color: rgb(255, 21, 232);
-
-}
-
-#btn1:hover{
-    background-color: rgb(226, 89, 194);
-}
-
-#btn2:hover{
-    color:rgb(0, 47, 255);
-    background-color: rgb(77, 119, 255);
-}
 
 h2{
     text-align: center;
@@ -106,20 +118,4 @@ div .input{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.nombre-input {
-    margin-right: 1rem;
-    flex: 1;
-}
-
-@media screen and (max-width: 768px) {
-    .formulario {
-        flex-direction: column;
-    }
-
-    .nombre-input {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
 }

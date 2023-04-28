@@ -12,3 +12,9 @@ Route::get('/Avatar', [AvatarController::class, 'avatar']);
 Route::get('/Avatar/Male', [AvatarController::class, 'avatarMale']);
 
 Route::get('/Avatar/Female', [AvatarController::class, 'avatarFemale']);
+
+Route::get('/FrontPage', [BookController::class, 'bookFrontPage']);
+
+Route::get('/BookPages', [BookController::class, 'bookPages']);
+
+

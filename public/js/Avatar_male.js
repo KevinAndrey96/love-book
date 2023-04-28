@@ -70,6 +70,10 @@ const sectionGlasses = document.getElementById('glasses-section');
 const sectionEyes = document.getElementById('eyes-section');
 const sectionBeard = document.getElementById('beard-section');
 
+// Obtener boton continuar
+const btnContinue = document.getElementById('btn-continue');
+
+
 
 // Asignar funciones de clic a los elementos HTML de las imágenes del cabello
 hair1.onclick = function(){
@@ -197,6 +201,7 @@ document.getElementById("eyes-section").style.display = "none";
 document.getElementById("glasses-section").style.display = "none";
 document.getElementById("beard-section").style.display = "none";
 
+
 // Mostrar la sección de cabello y ocultar las demás al hacer clic en el botón de cabello
 btnHair.addEventListener('click', () => {
     sectionHair.style.display = 'block';
@@ -228,4 +233,32 @@ btnBeard.addEventListener('click', () => {
     sectionBeard.style.display = 'block';
     sectionEyes.style.display = 'none';
 });
+
+document.getElementById("btn-continue").addEventListener("click", function() {
+
+    var name = document.getElementById("nameMale").value;
+
+    // Guardar cambios en el Local Storage
+    localStorage.setItem("haircolor", hairchange.src);
+    localStorage.setItem("eyescolor", eyeschange.src);
+    localStorage.setItem("beardcolor", beardchange.src);
+    localStorage.setItem("glasses", glasseschange.style.display);
+    localStorage.setItem("nameMale", name);
+
+
+    if (localStorage.getItem("haircolor") && localStorage.getItem("haircolorfemale") && localStorage.getItem("eyescolorfemale")) {
+      // Redirigir a la siguiente página
+      window.location.href = "/FrontPage";
+    } else {
+      window.location.href = "/Avatar/Female";
+    }
+  });
+
+
+
+
+
+
+
+
 

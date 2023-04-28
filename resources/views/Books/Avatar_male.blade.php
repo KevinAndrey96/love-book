@@ -30,10 +30,12 @@
         </div>
         </nav>
 
-        <button id="btn-hair">Cabello</button>
-        <button id="btn-beard">Barba</button>
-        <button id="btn-eyes">Ojos</button>
-        <button id="btn-glasses">Gafas</button>
+
+        <button id="btn-hair" type="button" class="btn btn-custom">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn btn-custom">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn btn-custom">Ojos</button>
+        <button id="btn-beard" type="button" class="btn btn-custom">Barba</button>
+
 
     <div class="container">
         <div class="section" id="hair-section">
@@ -94,10 +96,10 @@
         <div class="section" id="eyes-section">
         <h3 class="text">Elige tu color de ojos</h3>
            <div class="eyes-select">
-                <div> <input id="eyes-1"  type="image" src="/Images/Man/Eyes/brown.png">  </div>
-                <div> <input id="eyes-2"  type="image" src="/Images/Man/Eyes/grey.png"> </div>
-                <div> <input id="eyes-3"  type="image" src="/Images/Man/Eyes/blue.png"> </div>
-                <div> <input id="eyes-4"  type="image" src="/Images/Man/Eyes/green.png"> </div>
+            <div id="eyes-1" onclick="changeEyesColor('brown')"></div>
+            <div id="eyes-2" onclick="changeEyesColor('grey')"></div>
+            <div id="eyes-3" onclick="changeEyesColor('blue')"> </div>
+            <div id="eyes-4" onclick="changeEyesColor('green')"></div>
            </div>
          </div>
         </div>
@@ -105,7 +107,7 @@
         <div class="container">
             <div class="section" id="glasses-section">
                 <h3 class="text">Elige si usas gafas</h3>
-                  <div class="eyes-select">
+                  <div class="glasses-select">
                         <div> <input id="glasses-0"  type="image" src="/Images/Man/Glasses/no-img.png"></div>
                         <div> <input id="glasses-1"  type="image" src="/Images/Man/Glasses/glasses.jpg"></div>
                    </div>
@@ -124,8 +126,12 @@
 
         </div>
 
+        <label for="nombre"></label>
+        <input type="text" id="nameMale" name="nombre" placeholder="Name" >
+
+
         <div class="btn-container">
-            <button class="btn-continuar">Continuar</button>
+            <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>
         </div>
         <script src="{{ asset('js/Avatar_male.js')}}"></script>
         </body>

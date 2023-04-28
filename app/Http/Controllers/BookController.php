@@ -11,4 +11,11 @@ class BookController extends Controller
         return view('Books.index');
     }
 
+    public function bookFrontPage(){
+        return view('Books.Book_front_page');
+    }
+
+    public function BookPages(){
+        return view('Books.Book_pages');
+    }
 }

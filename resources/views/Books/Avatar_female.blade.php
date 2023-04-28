@@ -30,9 +30,9 @@
         </div>
         </nav>
 
-        <button id="btn-hair">Cabello</button>
-        <button id="btn-glasses">Gafas</button>
-        <button id="btn-eyes">Ojos</button>
+        <button id="btn-hair" type="button" class="btn btn-custom">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn btn-custom">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn btn-custom">Ojos</button>
 
 
     <div class="container">
@@ -69,7 +69,7 @@
         <div class="container">
             <div class="section" id="glasses-section">
                 <h3 class="text">Elige si usas gafas</h3>
-                  <div class="eyes-select">
+                  <div class="glasses-select">
                         <div> <input id="glasses-0"  type="image" src="/Images/Woman/Glasses/no-img.png"></div>
                         <div> <input id="glasses-1"  type="image" src="/Images/Woman/Glasses/glasses1.jpg"></div>
                    </div>
@@ -79,25 +79,27 @@
             <div class="section" id="eyes-section">
             <h3 class="text">Elige tu color de ojos</h3>
                <div class="eyes-select">
-                   <div> <input id="eyes-1"  type="image" src="/Images/Woman/Eyes/black.png"></div>
-                   <div> <input id="eyes-2"  type="image" src="/Images/Woman/Eyes/brown.png"></div>
-                   <div> <input id="eyes-3"  type="image" src="/Images/Woman/Eyes/green.png"></div>
-                   <div> <input id="eyes-4"  type="image" src="/Images/Woman/Eyes/blue.png"></div>
+                <div id="eyes-1" onclick="changeEyesColor('black')"></div>
+                <div id="eyes-2" onclick="changeEyesColor('brown')"></div>
+                <div id="eyes-3" onclick="changeEyesColor('green')"> </div>
+                <div id="eyes-4" onclick="changeEyesColor('blue')"></div>
                </div>
              </div>
-
       </div>
   </div>
    <div class="images" id="main-image">
         <img src="/Images/Woman/base1.jpg">
-        <img src="/Images/Woman/Hair/Brown/long1.png" id="hairchange" class="on" >
-        <img src="/Images/Woman/Eyes/brown.png" id="eyeschange" class="on">
+        <img src="/Images/Woman/Hair/Brown/long1.png" id="hairchangefemale" class="on" >
+        <img src="/Images/Woman/Eyes/brown.png" id="eyeschangefemale" class="on">
         <img src="/Images/Woman/Glasses/glasses.png" id="glasseschange" class="on">
     </div>
  </div>
 
+ <label for="nombre"></label>
+ <input type="text" id="nameFemale" name="nombre" placeholder="Name" >
+
  <div class="btn-container">
-    <button class="btn-continuar">Continuar</button>
+    <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>
 </div>
     <script src="{{ asset('js/Avatar_female.js')}}"></script>
 </body>

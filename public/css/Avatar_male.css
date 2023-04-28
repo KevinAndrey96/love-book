@@ -1,3 +1,7 @@
+body{
+    background-color:  #f1e4f5 !important;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +33,8 @@
 
   .hair-select,
   .color-select,
-  .beard-select {
+  .beard-select,
+  .eyes-select {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
@@ -43,6 +48,12 @@
   }
 
   .color-select div {
+    position: relative;
+    width: 50%;
+    padding-bottom: 100%;
+  }
+
+  .eyes-select div {
     position: relative;
     width: 50%;
     padding-bottom: 100%;
@@ -100,20 +111,26 @@
     background-color: #000000;
   }
 
-  .eyes-select {
+  .eyes-select div {
+    border-radius: 50%;
+    padding-bottom: 50%;
+    cursor: pointer;
+  }
+
+  .glasses-select {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     width: 100%;
   }
 
-  .eyes-select div {
+  .glasses-select div {
     position: relative;
     width: 100%;
     padding-bottom: 100%;
   }
 
-  .eyes-select input {
+  .glasses-select input {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,26 +160,7 @@
 
   .nav-link:hover {
     color: #fff;
-    background-color: #afc4f6;
-  }
-
-  button {
-    background-color: rgb(19, 0, 113);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  button:hover {
-    background-color: rgb(65, 170, 255);
+    background-color: #ff00b7;
   }
 
 .images{
@@ -213,12 +211,33 @@
     cursor: pointer;
 }
 
-  @media only screen and (max-width: 600px) {
+.btn-custom {
+    background-color: #ee0000 !important;
+    color: white !important;
+  }
+
+
+  .btn-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+#btn-continue {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
     .btn-container {
         padding: 5px;
     }
 
-    .btn-continue {
+    #btn-continue {
         padding: 8px 16px;
         font-size: 14px;
     }
@@ -240,3 +259,53 @@
       margin: 10px 0;
     }
   }
+
+  #eyes-1 {
+    background-color: brown;
+  }
+
+  #eyes-2 {
+    background-color: grey;
+  }
+
+  #eyes-3 {
+    background-color: blue;
+  }
+
+  #eyes-4 {
+    background-color: green;
+  }
+
+  #nameMale {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    background-color: #ffefef;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 20%;
+    left: 80%;
+    top: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #nameMale:focus {
+        border-color: #1900fa;
+        box-shadow: 1px 1px 5px rgba(0, 242, 186, 0.5);
+    }
+
+
+
+
+
+
+
+
