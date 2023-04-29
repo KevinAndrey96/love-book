@@ -38,7 +38,7 @@ var eyes4 = document.getElementById("eyes-4");
 
 // Definir rutas a las imágenes de los ojos de diferentes colores
 var brownEyes = "/Images/Man/Eyes/brown.png";
-var greyEyes = "/Images/Man/Eyes/grey.png";
+var blackEyes = "/Images/Man/Eyes/black.png";
 var blueEyes  = "/Images/Man/Eyes/blue.png";
 var greenEyes = "/Images/Man/Eyes/green.png";
 var eyeschange = document.getElementById("eyeschange");
@@ -148,7 +148,7 @@ eyes1.onclick = function(){
 }
 
 eyes2.onclick = function(){
-    eyeschange.src = greyEyes;
+    eyeschange.src = blackEyes;
 }
 
 eyes3.onclick = function(){
@@ -238,15 +238,21 @@ document.getElementById("btn-continue").addEventListener("click", function() {
 
     var name = document.getElementById("nameMale").value;
 
+    // Validar que el campo del nombre ha sido llenado
+    if (name === "") {
+        alert("Por favor ingrese el nombre");
+        return; // Detener la ejecución de la función si el campo del nombre está vacío
+      }
+
     // Guardar cambios en el Local Storage
-    localStorage.setItem("haircolor", hairchange.src);
-    localStorage.setItem("eyescolor", eyeschange.src);
-    localStorage.setItem("beardcolor", beardchange.src);
-    localStorage.setItem("glasses", glasseschange.style.display);
+    localStorage.setItem("hairColorMale", hairchange.src);
+    localStorage.setItem("eyesColorMale", eyeschange.src);
+    localStorage.setItem("beardColorMale", beardchange.src);
+    localStorage.setItem("beardDisplay", beardchange.style.display);
+    localStorage.setItem("glassesMale", glasseschange.style.display);
     localStorage.setItem("nameMale", name);
 
-
-    if (localStorage.getItem("haircolor") && localStorage.getItem("haircolorfemale") && localStorage.getItem("eyescolorfemale")) {
+    if (localStorage.getItem("hairColorMale") && localStorage.getItem("hairColorFemale")) {
       // Redirigir a la siguiente página
       window.location.href = "/FrontPage";
     } else {

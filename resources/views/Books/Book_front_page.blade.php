@@ -37,9 +37,9 @@
         <img src="/Images/FrontPage/Extra/two-avatars.jpg" class="page-img">
         <div class="giver-images">
             <img src="/Images/FrontPage/Woman/giver-woman-base.png" class="extra" style="z-index: 1;">
-            <img id="eyeschangefemale" src="/Images/FrontPage/Woman/Eyes/brown.png" class="extra" style="z-index: 1;">
-            <img id="hairchangefemale" src="/Images/FrontPage/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 1;">
-            <img id="glasseschangefemale" src="/Images/FrontPage/Woman/Glasses/glasses.png" class="extra" style="z-index: 2;">
+            <img id="eyesfemale" src="/Images/FrontPage/Woman/Eyes/brown.png" class="extra" style="z-index: 1;">
+            <img id="hairfemale" src="/Images/FrontPage/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 1;">
+            <img id="glassesfemale" src="/Images/FrontPage/Woman/Glasses/glasses.png" class="extra" style="z-index: 2;">
 
         </div>
         <div class="receiver-images">
@@ -53,11 +53,12 @@
             <img src="/Images/FrontPage/Extra/extra-1.png" class="extra" style="z-index: 3;">
         </div>
         <div class="title-wrapper">
-            <h1>Esta será tu portada</h1>
+            <h1 id="names" title="Esta será tu portada">Esta será tu portada</h1>
         </div>
         </div>
     </div>
 </div>
 <button class="continue-btn">Continuar</button>
+<script src="{{ asset('js/Book_front_page.js')}}"></script>
 </body>
 </html>

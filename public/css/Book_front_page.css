@@ -3,15 +3,16 @@
     flex-direction: column;
     text-decoration: none;
   }
-body{
-    background-color: #f1e4f5 !important;
-}
 
-.nav-item {
+  body {
+    background-color: #f1e4f5 !important;
+  }
+
+  .nav-item {
     margin-bottom: 10px;
   }
 
-.nav-link {
+  .nav-link {
     color: #000;
     font-weight: bold;
     text-align: center;
@@ -25,39 +26,38 @@ body{
     background-color: #ff00b7;
   }
 
-
-.page-wrapper{
+  .page-wrapper {
     width: 370px;
     position: relative;
     margin-bottom: 25px;
     cursor: pointer;
     margin-top: 70px;
     margin-left: 580px;
-}
+  }
 
-.pages .page-wrapper .extra, .pages .page-wrapper  {
+  .pages .page-wrapper .extra,
+  .pages .page-wrapper {
     position: absolute;
     left: 0;
     top: 0;
-}
+  }
 
-.pages .page-wrapper img {
+  .pages .page-wrapper img {
     width: 100%;
     border-radius: 0.3rem;
-}
+  }
 
-.title-wrapper {
+  .title-wrapper {
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
-    background-color:  rgb(250, 79, 252);
     padding: 1rem;
   }
 
-  .title-wrapper h1 {
+  #names {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: right;
     color: #333;
@@ -65,16 +65,15 @@ body{
 
   .continue-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 60px; /* Ajusta este valor según tus necesidades */
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 30px;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #000000;
-    background-color:  rgb(250, 79, 252);
+    background-color: rgb(250, 79, 252);
     border: none;
     border-radius: 0.3rem;
     cursor: pointer;
@@ -85,7 +84,88 @@ body{
     background-color: #00f8cb;
   }
 
+  /* Estilos para pantallas pequeñas (hasta 600px) */
+  @media screen and (max-width: 600px) {
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
 
+    .nav-item {
+      margin-bottom: 0;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .continue-btn {
+      font-size: 0.8rem;
+      width: 50%;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+    }
+
+    #names{
+        font-size: 2rem;
+    }
+  }
+
+  /* Estilos para pantallas medianas (entre 600px y 1200px) */
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .nav-item {
+      margin-bottom: 0;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .continue-btn {
+      font-size: 0.8rem;
+      width: 50%;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+    }
+
+    #names{
+        font-size: 2rem;
+    }
+  }
+
+  /* Estilos para pantallas grandes (mayores a 1200px) */
+  @media screen and (min-width: 1201px) {
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      }
+
+      .nav-item {
+      margin-bottom: 0;
+      margin-left: 10px;
+      }
+
+      .page-wrapper {
+      width: 370px;
+      margin-left: 580px;
+      }
+
+      .continue-btn {
+      width: 390px;
+      }
+      }
 
 
 

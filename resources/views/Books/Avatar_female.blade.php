@@ -96,7 +96,7 @@
  </div>
 
  <label for="nombre"></label>
- <input type="text" id="nameFemale" name="nombre" placeholder="Name" >
+ <input type="text" id="nameFemale" name="nombre" placeholder="Name" required>
 
  <div class="btn-container">
     <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>

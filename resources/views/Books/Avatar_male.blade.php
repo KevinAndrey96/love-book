@@ -30,7 +30,6 @@
         </div>
         </nav>
 
-
         <button id="btn-hair" type="button" class="btn btn-custom">Cabello</button>
         <button id="btn-glasses" type="button" class="btn btn-custom">Gafas</button>
         <button id="btn-eyes"  type="button" class="btn btn-custom">Ojos</button>
@@ -97,7 +96,7 @@
         <h3 class="text">Elige tu color de ojos</h3>
            <div class="eyes-select">
             <div id="eyes-1" onclick="changeEyesColor('brown')"></div>
-            <div id="eyes-2" onclick="changeEyesColor('grey')"></div>
+            <div id="eyes-2" onclick="changeEyesColor('black')"></div>
             <div id="eyes-3" onclick="changeEyesColor('blue')"> </div>
             <div id="eyes-4" onclick="changeEyesColor('green')"></div>
            </div>
@@ -115,7 +114,6 @@
              </div>
     </div>
 
-
         <div class="images">
 
         <img src="/Images/Man/base.jpg" >
@@ -126,9 +124,8 @@
 
         </div>
 
-        <label for="nombre"></label>
-        <input type="text" id="nameMale" name="nombre" placeholder="Name" >
-
+            <label for="nameMale"></label>
+            <input type="text" id="nameMale" name="nombre" placeholder="Name">
 
         <div class="btn-container">
             <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>

@@ -152,23 +152,28 @@ btnEyes.addEventListener('click', () => {
 });
 
 document.getElementById("btn-continue").addEventListener("click", function() {
-
     var name = document.getElementById("nameFemale").value;
 
+    // Validar que el campo del nombre ha sido llenado
+    if (name === "") {
+      alert("Por favor ingrese el nombre");
+      return; // Detener la ejecución de la función si el campo del nombre está vacío
+    }
+
     // Guardar cambios en el Local Storage
-    localStorage.setItem("haircolorfemale", hairchangefemale.src);
-    localStorage.setItem("eyescolorfemale", eyeschangefemale.src);
-    localStorage.setItem("glassesfemale", glasseschangefemale.style.display);
+    localStorage.setItem("hairColorFemale", hairchangefemale.src);
+    localStorage.setItem("eyesColorFemale", eyeschangefemale.src);
+    localStorage.setItem("glassesFemale", glasseschangefemale.style.display);
     localStorage.setItem("nameFemale", name);
 
-
-    if (localStorage.getItem("haircolor") && localStorage.getItem("haircolorfemale") && localStorage.getItem("eyescolorfemale")) {
+    if (localStorage.getItem("hairColorMale") && localStorage.getItem("hairColorFemale")) {
       // Redirigir a la siguiente página
       window.location.href = "/FrontPage";
     } else {
       window.location.href = "/Avatar/Male";
     }
   });
+
 
 
 
