@@ -15,31 +15,34 @@
       <body>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="{{ url ('Books')}}">Inicio</a>
-                <a class="nav-item nav-link" href="#footer">Contacto</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
+                </div>
             </div>
-        </div>
         </nav>
 
-            <div id="home">
+        <hr class="line-main">
+
+
+          <div id="home">
             <div class="row">
                 <div class="col-12 home-baner">
                     <div class="title d-md-none"></div>
                     <div class="title d-none d-md-block">
-                        <h1>Todo tu Amor</h1>
-                        <h1>En Nuestros</h1>
-                        <h1>Libros</h1>
+                        <h1>Todo tu amor</h1>
+                        <h1>en nuestros</h1>
+                        <h1>libros</h1>
                     </div>
-                    <div class="line"></div>
+                    <hr class="line-title">
                     <h2 class="text">Un regalo que te encantara</h2>
-                    <a href="#products" class="btn btn-primary btn-lg btn-action">Elige un libro</a>
+                    <a href="#products" class="btn btn-primary btn-lg">Elige un libro</a>
                 </div>
             </div>
             <div id="products">
@@ -52,7 +55,7 @@
                       <div class="product-title">Un libro para un aniversario o un cumpleaños</div>
                       <div class="product-description">Elige un libro para celebrar una fecha especial y hacer felices a tus seres queridos</div>
                       <div class="product-price">$20.000 COP</div>
-                      <a href="{{ url ('Avatar')}}" class="product-btn">Personaliza tu libro</a>
+                      <a href="{{ url ('Avatar')}}" class="btn-primary">Personaliza tu libro</a>
                     </div>
                   </div>
                 </div>

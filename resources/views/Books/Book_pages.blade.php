@@ -16,42 +16,50 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="{{ url ('Books')}}">Inicio</a>
-                <a class="nav-item nav-link" href="#footer">Contacto</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
+                </div>
             </div>
-        </div>
         </nav>
+
+        <hr class="line-main">
 
     <title>Paginas de tu libro</title>
   <body>
     <div id="product-step">
-        <div class="row">
+        <div class="">
             <div class="col-12 text-center">
                 <h3>Las paginas de tu libro</h3>
             <h6>Puedes editarlas a tu gusto al hacer clic en ellas</h6>
             </div>
          <div class="col-12 pages">
             <div class="page-wrapper">
-                <img src="/Images/FrontPage/Extra/two-avatars.jpg" class="page-img">
+                <img src="/Images/Books/Page-1/Extra/two-avatars.jpg" class="page-img clickable">
             <div class="giver-images">
-                <img src="/Images/FrontPage/Woman/giver-woman-base.png" class="extra" style="z-index: 1;">
-                <img src="/Images/FrontPage/Woman/Eyes/brown.png" class="extra" style="z-index: 1;">
-                <img src="/Images/FrontPage/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 1;">
+                <img src="/Images/Books/Page-1/Woman/giver-woman-base.png" class="extra" style="z-index: 1;">
+                <img id="eyesfemale" src="/Images/Books/Page-1/Woman/Eyes/brown.png" class="extra" style="z-index: 1;">
+                <img id="hairfemale" src="/Images/Books/Page-1/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 1;">
+                <img id="glassesfemale" src="/Images/Books/page-1/Woman/Glasses/glasses.png" class="extra" style="z-index: 1;">
         </div>
         <div class="receiver-images">
-            <img src="/Images/FrontPage/Man/receiver-man-base.png" class="extra" style="z-index: 2;">
-            <img src="/Images/FrontPage/Man/Eyes/brown.png" class="extra" style="z-index: 2;">
-            <img src="/Images/FrontPage/Man/Hair/Brown/half1.png" class="extra" style="z-index: 2;">
+            <img src="/Images/Books/Page-1/Man/receiver-man-base.png" class="extra" style="z-index: 2;">
+            <img id="eyesmale"src="/Images/Books/Page-1/Man/Eyes/brown.png" class="extra" style="z-index: 2;">
+            <img id="hairmale"src="/Images/Books/Page-1/Man/Hair/Brown/half1.png" class="extra" style="z-index: 2;">
+            <img id="beard" src="/Images/Books/Page-1/Man/Beard/Brown/brown1.png" class="extra" style="z-index: 2;">
+            <img id="glassesmale" src="/Images/Books/Page-1/Man/Glasses/glasses.png" class="extra" style="z-index: 2;">
         </div>
         <div class="extras">
-            <img src="/Images/FrontPage/Extra/extra-1.png" class="extra" style="z-index: 3;">
+            <img src="/Images/Books/Page-1/Extra/extra-1.png" class="extra" style="z-index: 3;">
+        </div>
+        <div class="title-wrapper">
+            <h1 id="names" title="Esta será tu portada">Esta será tu portada</h1>
         </div>
 
 
@@ -70,6 +78,7 @@
                 <div class="extras">
                     <img src="/Images/Books/Page-2/Extra/extra-1.png" class="extra" style="z-index: 3;">
                 </div>
+
             </div>
 
 
@@ -458,6 +467,7 @@
 
              </div>
      </div>
+     <script src="{{ asset('js/Books_pages_page1.js')}}"></script>
 </body>
 </html>
 
