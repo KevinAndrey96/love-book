@@ -1,5 +1,5 @@
 body{
-    background-color:  #f1e4f5 !important;
+    background-color: #f3c3b7 !important;
 }
 
 
@@ -31,7 +31,9 @@ body{
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    color: #028b94;
+    color: #620000;
+    font-family: Cormorant Garamond, serif;
+    text-transform: uppercase;
   }
 
   .hair-select,
@@ -147,7 +149,35 @@ body{
     padding-bottom: 50%;
   }
 
-  .navbar-nav {
+  .nav-btn {
+    width:150px;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.nav-btn:hover {
+    background: #dd7596;
+}
+
+.line-title {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.line-main {
+    margin: 0rem 0;
+}
+
+.navbar-nav {
     display: flex;
     flex-direction: column;
   }
@@ -161,18 +191,20 @@ body{
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
     transition: all 0.2s;
   }
 
-  .nav-link:hover {
-    color: #fff;
-    background-color: #ff00b7;
+  .btn-custom {
+    background-color: #eb08eb !important;
+    margin-top: 10px;
+    color: white !important;
+    font-family: Cormorant Garamond, serif;
+    text-transform: uppercase;
+
   }
 
-  .btn-custom {
-    background-color: #eb08dc !important;
-    color: white !important;
+  .btn-custom:hover{
+    background-color: rgb(130, 6, 202) !important;
   }
 
 
@@ -258,7 +290,7 @@ body{
 
   #nameFemale {
     position: absolute;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Cormorant Garamond, serif;
     font-size: 18px;
     font-weight: 700;
     color: #000000;

@@ -108,6 +108,4 @@ if (glassesFemale === "block") {
 
 
 
-  function chargeFrontPage(){
-
-  }
+ 

@@ -1,39 +1,60 @@
+
+
 *{
     background-color: #b7c3f3;
 }
 
+.nav-btn {
+    width:150px;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.nav-btn:hover {
+    background: #dd7596;
+}
+
+.line-title {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.line-main {
+    margin: 0rem 0;
+}
 
 .navbar-nav {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-  }
+}
 
 .nav-item {
     margin-bottom: 10px;
-  }
+}
 
 .nav-link {
     color: #000;
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
     transition: all 0.2s;
-  }
-
-.nav-link:hover {
-    color: #fff;
-    background-color: #ff00b7;
 }
 
-#btn1:hover{
-    background-color: rgb(226, 89, 194);
+.btn1:hover {
+    background-color: #e87a90;
 }
 
-#btn2:hover{
-    color:rgb(0, 47, 255);
-    background-color: rgb(77, 119, 255);
+.btn2:hover{
+    background-color: #b7f3c3;
 }
 
 
@@ -46,18 +67,36 @@ body .title{
 }
 
 body .subtitle{
-    font-size:1.500rem
+    font-size:1.500rem;
 }
 
-.navbar{
-    padding-top:10px;
-    border-bottom:2px solid #c4c4ff;
+.btn1{
+    background-color: #f3c3b7;
+    border-radius: 50%;
+    font-family: Cormorant Garamond, serif;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+
+
+.btn2{
+    background-color: #09f5e9;
+    border-radius: 50%;
+    font-family: Cormorant Garamond, serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
 
 h1{
     text-align: center;
     padding-top: 3rem;
     color: #000000;
+    font-family: Cormorant Garamond, serif;
 }
 
 div #Avatar{
@@ -70,7 +109,7 @@ div #Avatar{
 div #Avatar .female {
     border-style: solid;
     border-radius: 75%;
-    color:  rgb(255, 21, 232);
+    color: rgb(255, 21, 232);
     width: 200px;
     height: 300px;
 }
@@ -83,7 +122,6 @@ div #Avatar .male {
     height: 300px;
 }
 
-
 h2{
     text-align: center;
     padding-top: 3rem;
@@ -95,7 +133,6 @@ div .input{
     justify-content: center;
     align-items: center;
     padding-bottom: 3rem;
-
 }
 
 @media (max-width: 576px) {
@@ -110,10 +147,4 @@ div .input{
         width: 100%;
         max-width: 300px;
     }
-}
-
-.formulario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }

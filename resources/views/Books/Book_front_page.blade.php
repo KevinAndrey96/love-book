@@ -17,18 +17,20 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="{{ url ('Books')}}">Inicio</a>
-                <a class="nav-item nav-link" href="#footer">Contacto</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
+                </div>
             </div>
-        </div>
         </nav>
+
+        <hr class="line-main">
 
     <title>Portada de tu libro</title>
   <body>
@@ -58,7 +60,7 @@
         </div>
     </div>
 </div>
-<button class="continue-btn">Continuar</button>
+<a href="{{ url('BookPages') }}" class="btn1" id="btn1">Personaliza las paginas de tu libro</a>
 <script src="{{ asset('js/Book_front_page.js')}}"></script>
 </body>
 </html>
