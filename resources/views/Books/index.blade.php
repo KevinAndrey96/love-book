@@ -61,11 +61,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-5 section-attention">
-                  <h3 class="subtitle">Existen muchas formas de demostrarle lo que sientes a tus seres queridos</h3>
-                  <div class="title">¿Alguna vez<br>pensaste en un libro?</div>
-                </div>
-
+            <div class="col-12 section-attention">
+                <h3 style="color: #4f6272" class="subtitle">EXISTEN MUCHAS FORMAS DE DEMOSTRARLE LO QUE SIENTES A TUS SERES QUERIDOS</h3>
+                <div class="title">¿Alguna vez<br>pensaste en un libro?</div>
+            </div>
             <div class="row">
               <div class="col-12 d-md-none">
                 <div class="row step-wrap">
@@ -79,22 +78,22 @@
             </div>
 
             <div class="col-12 section-steps  d-none d-md-block">
-                <div class="title text-center">En pocos clicks da un regalo unico e inolvidable</div>
+                <div style="color:#4f6272;" class="title text-center">En pocos clicks da un regalo unico e inolvidable</div>
                    <div class="row">
                      <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-1.jpg">
+                            <img class="img-fluid" src="./Images/step-1-removebg-preview.png">
                             <div class="title step-title">1. Crea tu personaje</div>
                             <div class="text">Observa, se parece a nosotros!!!</div>
                     </div>
 
             <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-2-sr.jpg">
+                            <img class="img-fluid" src="./Images/step-2-sr-removebg-preview.png">
                             <div class="title step-title">2. Elige una portada</div>
                             <div class="text">Escribe un titulo y haz que sea unico!</div>
             </div>
 
              <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-3-sr (1).jpg">
+                            <img class="img-fluid" src="./Images/step-3-sr-removebg-preview.png">
                             <div class="title step-title">3. Seleccionar paginas</div>
                             <div class="text">Edita las paginas a tu gusto :D</div>
                             </div>
@@ -155,13 +154,13 @@
     <div id="footer" class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-4 text-center contact">
-                <div class="title">Contacto</div>
-                <a id="btn-email" class="text" href="">
+                <div class="title">CONTACTO</div>
+                <a style="color:white" id="btn-email" class="text" href="">
                     <i class="far fa-envelope"></i>correoejemplo@gmail.com</a>
                 </div>
 
             <div class="col-12 col-md-4 text-center follow-us">
-            <div class="title mt-4">Siganos</div>
+            <div class="title mt-4">SIGANOS</div>
                 <div class="social-icons">
                     <a class="icon fb" href="" target="_blank">
                         <img src="/Images/fb.png">

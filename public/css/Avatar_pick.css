@@ -1,7 +1,5 @@
-
-
 *{
-    background-color: #b7c3f3;
+    background-color: #c6d1ff;
 }
 
 .nav-btn {
@@ -10,7 +8,7 @@
     padding: 30px;
     border-radius: 30px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
     font-weight: bold;
     transition: all 0.9s;
@@ -20,7 +18,12 @@
 }
 
 .nav-btn:hover {
-    background: #dd7596;
+    background: #F71069;
+    color: #ffffff !important;
+}
+
+.create-avatar-text {
+    color: #4f6272;
 }
 
 .line-title {
@@ -57,7 +60,6 @@
     background-color: #b7f3c3;
 }
 
-
 body.block-scroll{
     overflow-y:hidden;
 }
@@ -78,8 +80,6 @@ body .subtitle{
     text-transform: uppercase;
 }
 
-
-
 .btn2{
     background-color: #09f5e9;
     border-radius: 50%;
@@ -88,9 +88,6 @@ body .subtitle{
     text-transform: uppercase;
     text-decoration: none;
 }
-
-
-
 
 h1{
     text-align: center;
@@ -109,7 +106,7 @@ div #Avatar{
 div #Avatar .female {
     border-style: solid;
     border-radius: 75%;
-    color: rgb(255, 21, 232);
+    color: #F71069;
     width: 200px;
     height: 300px;
 }
@@ -117,7 +114,7 @@ div #Avatar .female {
 div #Avatar .male {
     border-radius: 75%;
     border-style: solid;
-    color: rgb(0, 47, 255);
+    color: #5977ff;
     width: 200px;
     height: 300px;
 }
