@@ -33,23 +33,24 @@
 
     <div><h1>Crea tu avatar</h1> </div>
 
-    <div id="Avatar" class="btn">
+    <div id="Avatar" class="d-flex flex-column justify-content-center align-items-center">
         <div id="template-container"></div>
-        <div class="section" id="female-section">
+        <div class="d-flex">
+          <div class="section" id="female-section">
+            <input class="female" type="image" src="./images/female.jpg">
+            <div>
+              <a href="{{ url('Avatar/Female') }}" class="btn1" id="btn1">Mujer</a>
+            </div>
+          </div>
+          <div class="section" id="male-section">
+            <input class="male" type="image" src="./images/male.jpg">
+            <div>
+              <a href="{{ url('Avatar/Male') }}" class="btn2" id="btn2">Hombre</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="section" id="female-section">
-                <input class="female" type="image" src="./images/female.jpg">
-                <div>
-                  <a href="{{ url('Avatar/Female') }}" class="btn1" id="btn1">Mujer</a>
-                </div>
-              </div>
-
-              <div class="section" id="male-section">
-                <input class="male" type="image" src="./images/male.jpg">
-                <div>
-                  <a href="{{ url('Avatar/Male') }}" class="btn2" id="btn2">Hombre</a>
-                </div>
-              </div>
 
     </div>
         <script src="{{ asset('js/Avatar_pick.js')}}"></script>

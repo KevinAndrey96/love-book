@@ -1,9 +1,9 @@
-*{
+* {
     background-color: #b7c3f3;
-}
+  }
 
-.nav-btn {
-    width:150px;
+  .nav-btn {
+    width: 150px;
     display: inline-block;
     padding: 30px;
     border-radius: 30px;
@@ -15,22 +15,22 @@
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
-}
+  }
 
-.nav-btn:hover {
+  .nav-btn:hover {
     background: #dd7596;
-}
+  }
 
-.line-title {
+  .line-title {
     margin-left: 30%;
     margin-right: 30%;
-}
+  }
 
-.line-main {
+  .line-main {
     margin: 0rem 0;
-}
+  }
 
-.navbar-nav {
+  .navbar-nav {
     display: flex;
     flex-direction: column;
   }
@@ -51,82 +51,80 @@
     background-color: #e87a90;
   }
 
-.btn2:hover{
+  .btn2:hover {
     background-color: #b7f3c3;
-}
+  }
 
+  body.block-scroll {
+    overflow-y: hidden;
+  }
 
-body.block-scroll{
-    overflow-y:hidden;
-}
-
-body .title{
+  body .title {
     font-size: 3.0rem;
-}
+  }
 
-body .subtitle{
-    font-size:1.500rem;
-}
+  body .subtitle {
+    font-size: 1.500rem;
+  }
 
-.btn1{
+  .btn1 {
     background-color: #f3c3b7;
     border-radius: 50%;
     font-family: Cormorant Garamond, serif;
     text-decoration: none;
     text-transform: uppercase;
-}
+    margin-left: 80px;
+    color: #000;
+  }
 
-
-
-.btn2{
+  .btn2 {
     background-color: #09f5e9;
     border-radius: 50%;
     font-family: Cormorant Garamond, serif;
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-}
+    margin-left: 170px;
+  }
 
-
-
-
-h1{
+  h1 {
     text-align: center;
     padding-top: 3rem;
     color: #000000;
     font-family: Cormorant Garamond, serif;
-}
+  }
 
-div #Avatar{
+  div#Avatar {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3rem;
-}
+  }
 
-div #Avatar .female {
+  div#Avatar .female {
     border-style: solid;
     border-radius: 75%;
     color: rgb(255, 21, 232);
     width: 200px;
     height: 300px;
-}
+  }
 
-div #Avatar .male {
+  div#Avatar .male {
     border-radius: 75%;
     border-style: solid;
     color: rgb(0, 47, 255);
     width: 200px;
     height: 300px;
-}
+    margin-left: 100px !important;
+  }
 
-h2{
+  h2 {
     text-align: center;
     padding-top: 3rem;
     color: #5000b3;
-}
+  }
 
-div .input{
+  div.input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,14 +133,15 @@ div .input{
 
 @media (max-width: 576px) {
     #Avatar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
+
     .female, .male {
-        width: 100%;
-        max-width: 300px;
+      width: 100%;
+      max-width: 300px;
     }
-}
+  }

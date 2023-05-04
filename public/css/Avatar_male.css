@@ -1,5 +1,5 @@
 body{
-    background-color: #a6c5e7 !important;
+    background-color: #b7c3f3!important;
 }
 
 .container {
@@ -207,7 +207,7 @@ body{
     margin-top: -40px;
   }
 
-  .btn-custom:hover{
+  .btn-primary:hover{
     background-color: rgb(2, 13, 82) !important;
   }
 
@@ -230,20 +230,18 @@ body{
     padding: 10px;
 }
 
-.btn-continue {
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-custom {
-    background-color: #3e05dd !important;
-    color: white !important;
+.btn-primary {
+    background-color: #051df4 !important;
     margin-top: 10px;
+    color: white !important;
     font-family: Cormorant Garamond, serif;
     text-transform: uppercase;
+    border-color: rgb(0, 239, 143) !important;
+    border-radius: 50% !important;
+  }
+
+  .btn-primary:hover{
+    background-color: rgb(132, 247, 195) !important;
   }
 
 

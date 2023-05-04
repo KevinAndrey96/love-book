@@ -1,5 +1,5 @@
 body{
-    background-color: #f3c3b7 !important;
+    background-color:  #b7c3f3!important;
 }
 
 
@@ -194,16 +194,18 @@ body{
     transition: all 0.2s;
   }
 
-  .btn-custom {
+  .btn-primary {
     background-color: #eb08eb !important;
     margin-top: 10px;
     color: white !important;
     font-family: Cormorant Garamond, serif;
     text-transform: uppercase;
+    border-color: rgb(255, 2, 154) !important;
+    border-radius: 50% !important;
 
   }
 
-  .btn-custom:hover{
+  .btn-primary:hover{
     background-color: rgb(130, 6, 202) !important;
   }
 

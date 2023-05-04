@@ -32,10 +32,10 @@
 
         <hr class="line-main">
 
-        <button id="btn-hair" type="button" class="btn btn-custom">Cabello</button>
-        <button id="btn-glasses" type="button" class="btn btn-custom">Gafas</button>
-        <button id="btn-eyes"  type="button" class="btn btn-custom">Ojos</button>
-        <button id="btn-beard" type="button" class="btn btn-custom">Barba</button>
+        <button id="btn-hair" type="button" class="btn btn-primary">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn btn-primary">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn btn-primary">Ojos</button>
+        <button id="btn-beard" type="button" class="btn btn-primary">Barba</button>
 
 
     <div class="container">
@@ -125,12 +125,10 @@
         <img src="/Images/Man/Glasses/glasses.png" id="glasseschange" class="on">
 
         </div>
-
             <label for="nameMale"></label>
             <input type="text" id="nameMale" name="nombre" placeholder="Name">
-
         <div class="btn-container">
-            <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>
+            <button id="btn-continue" type="button" class="btn btn-primary">Continuar</button>
         </div>
         <script src="{{ asset('js/Avatar_male.js')}}"></script>
         </body>

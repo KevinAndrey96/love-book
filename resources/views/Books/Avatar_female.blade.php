@@ -33,9 +33,9 @@
         <hr class="line-main">
 
 
-        <button id="btn-hair" type="button" class="btn btn-custom">Cabello</button>
-        <button id="btn-glasses" type="button" class="btn btn-custom">Gafas</button>
-        <button id="btn-eyes"  type="button" class="btn btn-custom">Ojos</button>
+        <button id="btn-hair" type="button" class="btn btn-primary">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn btn-primary">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn btn-primary">Ojos</button>
 
 
     <div class="container">
@@ -102,7 +102,7 @@
  <input type="text" id="nameFemale" name="nombre" placeholder="Name" required>
 
  <div class="btn-container">
-    <button id="btn-continue" type="button" class="btn btn-custom">Continuar</button>
+    <button id="btn-continue" type="button" class="btn btn-primary">Continuar</button>
 </div>
     <script src="{{ asset('js/Avatar_female.js')}}"></script>
 </body>
