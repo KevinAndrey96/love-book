@@ -8,7 +8,7 @@
     padding: 30px;
     border-radius: 30px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
     font-weight: bold;
     transition: all 0.9s;
@@ -33,23 +33,23 @@
   .navbar-nav {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .nav-item {
+.nav-item {
     margin-bottom: 10px;
-  }
+}
 
-  .nav-link {
+.nav-link {
     color: #000;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     transition: all 0.2s;
-  }
+}
 
-  .btn1:hover {
+.btn1:hover {
     background-color: #e87a90;
-  }
+}
 
   .btn2:hover {
     background-color: #b7f3c3;
@@ -104,7 +104,7 @@
   div#Avatar .female {
     border-style: solid;
     border-radius: 75%;
-    color: rgb(255, 21, 232);
+    color: #F71069;
     width: 200px;
     height: 300px;
   }
@@ -112,7 +112,7 @@
   div#Avatar .male {
     border-radius: 75%;
     border-style: solid;
-    color: rgb(0, 47, 255);
+    color: #5977ff;
     width: 200px;
     height: 300px;
     margin-left: 100px !important;
