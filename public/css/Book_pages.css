@@ -75,14 +75,13 @@ body {
     width: 30vh;
     position: relative;
     margin-bottom: 25px;
-    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
 }
 
 .pages .page-wrapper img {
-    width: 100%;
-    max-width: 100%;
+    width: 300px !important;
+    max-width: 300px !important;
     height: auto;
     border-radius: 0.3rem;
     margin-right: 10px;
@@ -142,6 +141,8 @@ body {
   right: 10px;
   width: 40%;
   padding: 0.1rem;
+  z-index: 3 !important;
+  font-family: 'Lato', sans-serif !important;
 }
 
 #names {
@@ -151,18 +152,43 @@ body {
   text-align: right;
   color: #333;
 }
-    /* Estilos para pantallas pequeñas (hasta 600px) */
-    @media screen and (max-width: 600px) {
-        #names{
-            font-size: 2rem;
-        }
-      }
+.page-wrapper {
+    position: relative;
+  }
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .page-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-      /* Estilos para pantallas medianas (entre 600px y 1200px) */
-      @media screen and (min-width: 601px) and (max-width: 1200px) {
+  }
 
-        #names{
-            font-size: 2rem;
-        }
-      }
+  @media only screen and (max-width: 768px) {
+    #names {
+      font-size: 80% !important;
+    }
+  }
 
+  @media (max-width: 768px) {
+    .page-text.large {
+      font-size: 1.5rem;
+      top: 5%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .page-text.large {
+      font-size: 1.2rem;
+      top: 2%;
+    }
+  }
