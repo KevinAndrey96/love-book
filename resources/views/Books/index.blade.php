@@ -49,7 +49,7 @@
                 <div class="home-products">
                   <div class="product">
                     <div class="product-image">
-                      <img src="./Images/product-2-sr.png" alt="Un libro para un aniversario o un cumpleaños">
+                      <img src="./images/product-2-sr.png" alt="Un libro para un aniversario o un cumpleaños">
                     </div>
                     <div class="product-text">
                       <div class="product-title">Un libro para un aniversario o un cumpleaños</div>
@@ -81,19 +81,19 @@
                 <div style="color:#4f6272;" class="title text-center">En pocos clicks da un regalo unico e inolvidable</div>
                    <div class="row">
                      <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-1-removebg-preview.png">
+                            <img class="img-fluid" src="./images/step-1-removebg-preview.png">
                             <div class="title step-title">1. Crea tu personaje</div>
                             <div class="text">Observa, se parece a nosotros!!!</div>
                     </div>
 
             <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-2-sr-removebg-preview.png">
+                            <img class="img-fluid" src="./images/step-2-sr-removebg-preview.png">
                             <div class="title step-title">2. Elige una portada</div>
                             <div class="text">Escribe un titulo y haz que sea unico!</div>
             </div>
 
              <div class="col-4 text-center step-wrap">
-                            <img class="img-fluid" src="./Images/step-3-sr-removebg-preview.png">
+                            <img class="img-fluid" src="./images/step-3-sr-removebg-preview.png">
                             <div class="title step-title">3. Seleccionar paginas</div>
                             <div class="text">Edita las paginas a tu gusto :D</div>
                             </div>
@@ -104,7 +104,7 @@
             <div class="col-12 section-precio d-none d-md-block">
                 <div class="row">
                   <div class="col-6">
-                    <img class="img-fluid" src="./Images/product-2-sr.png"></div>
+                    <img class="img-fluid" src="./images/product-2-sr.png"></div>
                         <div class="col-6 right">
                             <div class="price title">El Precio</div>
                             <div class="subtitle">$20.000 - 25.000$</div>
@@ -118,7 +118,7 @@
             <div class="row section-features">
                 <div class="col-6 col-md-3 feature">
                     <div class="feat-img">
-                        <img src="/Images/box.png">
+                        <img src="/images/box.png">
                     </div>
                     <div class="feature-title">Tamaño</div>
                     <div class="feature-desc">15.2cm x 20.8cm - Aproximadamente</div>
@@ -126,7 +126,7 @@
 
                 <div class="col-6 col-md-3 feature">
                     <div class="feat-img">
-                        <img src="/Images/printer.png">
+                        <img src="/images/printer.png">
                     </div>
                     <div class="feature-title">Impresion</div>
                     <div class="feature-desc">Impresion digital profesional</div>
@@ -134,7 +134,7 @@
 
                 <div class="col-6 col-md-3 feature">
                     <div class="feat-img">
-                        <img src="/Images/love.png">
+                        <img src="/images/love.png">
                     </div>
                     <div class="feature-title">Hermoso</div>
                     <div class="feature-desc">Un regalo unico</div>
@@ -142,7 +142,7 @@
 
                 <div class="col-6 col-md-3 feature">
                     <div class="feat-img">
-                        <img src="/Images/truck.png">
+                        <img src="/images/truck.png">
                     </div>
                     <div class="feature-title">Entrega</div>
                     <div class="feature-desc">4 - 7 dias habiles</div>
@@ -163,11 +163,11 @@
             <div class="title mt-4">SIGANOS</div>
                 <div class="social-icons">
                     <a class="icon fb" href="" target="_blank">
-                        <img src="/Images/fb.png">
+                        <img src="/images/fb.png">
                     </a>
 
                     <a class="icon ig" href="" target="_blank">
-                        <img src="/Images/ins.png">
+                        <img src="/images/ins.png">
                     </a>
                 </div>
             </div>

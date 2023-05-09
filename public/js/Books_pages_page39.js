@@ -7,7 +7,7 @@ var beard = document.getElementById("beardmale39");
 
 // Establecer la ruta de la imagen de las gafas para hombres
 
-var glassesMalePath = "/Images/Books/Page-39/Man/Glasses/glasses.png";
+var glassesMalePath = "/images/books/page39/man/glasses/glasses.png";
 
 // Obtener el color de ojos guardado en el Local Storage para hombres
 
@@ -50,8 +50,8 @@ var beardDisplay = localStorage.getItem("beardDisplay");
   var beardType = beardParts[beardParts.length - 1].split(".")[0];
 
   // Obtener el color y tipo de barba para hombres
-  var eyesMale = "/Images/Books/Page-39/Man/Eyes" + eyesColorSuffixMale;
-  var hairMale = "/Images/Books/Page-39/Man/Hair/" + hairColorMan + "/" + hairTypeMan + ".png";
+  var eyesMale = "/images/books/page39/man/eyes" + eyesColorSuffixMale;
+  var hairMale = "/images/books/page39/man/hair/" + hairColorMan + "/" + hairTypeMan + ".png";
 
   // Mostrar o esconder la imagen de la barba en función del valor almacenado en el Local Storage
 
@@ -63,7 +63,7 @@ var beardDisplay = localStorage.getItem("beardDisplay");
     var beardParts = beardColorMale.split("/");
     var beardColor = beardParts[beardParts.length - 2];
     var beardType = beardParts[beardParts.length - 1].split(".")[0];
-    var beardMale = "/Images/Books/Page-39/Man/Beard/" + beardColor + "/" + beardType + ".png";
+    var beardMale = "/images/books/page39/man/beard/" + beardColor + "/" + beardType + ".png";
     beard.style.display = "block";
     beard.src = beardMale;
   } else {
