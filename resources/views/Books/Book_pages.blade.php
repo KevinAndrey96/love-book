@@ -647,7 +647,7 @@
 
 
                 <div class="page-wrapper">
-                    <img src="/images/books/Page44/extra/no-avatars.jpg" class="page-img"
+                    <img src="/images/books/page44/extra/no-avatars.jpg" class="page-img"
                     <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y la luz de mi vida</font></font></div>
