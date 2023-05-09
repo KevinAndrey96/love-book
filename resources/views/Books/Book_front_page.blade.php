@@ -36,23 +36,22 @@
   <body>
     <div class="pages">
     <div class="page-wrapper">
-        <img src="/Images/FrontPage/Extra/two-avatars.jpg" class="page-img">
+        <img src="/Images/frontpage/extra/two-avatars.jpg" class="page-img">
         <div class="giver-images">
-            <img src="/Images/FrontPage/Woman/giver-woman-base.png" class="extra" style="z-index: 1;">
-            <img id="eyesfemale" src="/Images/FrontPage/Woman/Eyes/brown.png" class="extra" style="z-index: 1;">
-            <img id="hairfemale" src="/Images/FrontPage/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 1;">
-            <img id="glassesfemale" src="/Images/FrontPage/Woman/Glasses/glasses.png" class="extra" style="z-index: 2;">
-
+            <img src="/images/frontpage/woman/giver-woman-base.png" class="extra" style="z-index: 1;">
+            <img id="eyesfemale" src="/images/frontpage/woman/eyes/brown.png" class="extra" style="z-index: 1;">
+            <img id="hairfemale" src="/images/frontpage/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
+            <img id="glassesfemale" src="/images/frontpage/woman/glasses/glasses.png" class="extra" style="z-index: 2;">
         </div>
         <div class="receiver-images">
-            <img src="/Images/FrontPage/Man/receiver-man-base.png" class="extra" style="z-index: 2;">
-            <img id="eyesmale" src="/Images/FrontPage/Man/Eyes/brown.png" class="extra" style="z-index: 2;">
-            <img id="hairmale" src="/Images/FrontPage/Man/Hair/Brown/half1.png" class="extra" style="z-index: 2;">
-            <img id="beard" src="/Images/FrontPage/Man/Beard/Brown/brown1.png" class="extra" style="z-index: 2;">
-            <img id="glassesmale" src="/Images/FrontPage/Man/Glasses/glasses.png" class="extra" style="z-index: 2;">
+            <img src="/images/frontpage/Man/receiver-man-base.png" class="extra" style="z-index: 2;">
+            <img id="eyesmale" src="/images/frontpage/man/Eyes/brown.png" class="extra" style="z-index: 2;">
+            <img id="hairmale" src="/images/frontpage/man/Hair/brown/half1.png" class="extra" style="z-index: 2;">
+            <img id="beard" src="/images/frontpage/Man/beard/brown/brown1.png" class="extra" style="z-index: 2;">
+            <img id="glassesmale" src="/images/frontpage/man/glasses/glasses.png" class="extra" style="z-index: 2;">
         </div>
         <div class="extras">
-            <img src="/Images/FrontPage/Extra/extra-1.png" class="extra" style="z-index: 3;">
+            <img src="/Images/frontpage/extra/extra-1.png" class="extra" style="z-index: 3;">
         </div>
         <div class="title-wrapper">
             <h1 id="names" title="Esta será tu portada">Esta será tu portada</h1>

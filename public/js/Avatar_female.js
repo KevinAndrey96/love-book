@@ -18,10 +18,10 @@ var eyeschangefemale = document.getElementById("eyeschangefemale");
 
 
 // Definir rutas a las imágenes de los ojos de diferentes colores
-var brownEyes = "/Images/Woman/Eyes/brown.png";
-var greenEyes = "/Images/Woman/Eyes/green.png";
-var blueEyes  = "/Images/Woman/Eyes/blue.png";
-var blackEyes = "/Images/Woman/Eyes/black.png";
+var brownEyes = "/images/woman/eyes/brown.png";
+var greenEyes = "/images/woman/eyes/green.png";
+var blueEyes  = "/images/woman/eyes/blue.png";
+var blackEyes = "/images/woman/eyes/black.png";
 
 // Obtener elementos HTML de las imágenes de los lentes de la mujer
 var notGlasses = document.getElementById("glasses-0");
@@ -29,17 +29,17 @@ var glasses    = document.getElementById("glasses-1");
 var glasseschangefemale = document.getElementById("glasseschange");
 
 // Definir ruta a la imagen de los lentes
-var glassess = "/Images/Woman/Glasses/glasses.png";
+var glassess = "/images/woman/glasses/glasses.png";
 
 // Definir rutas a las imágenes de diferentes peinados de color marrón
-var brown1 = "/Images/Woman/Hair/Brown/long1.png";
-var brown2 = "/Images/Woman/Hair/Brown/long2.png";
-var brown3 = "/Images/Woman/Hair/Brown/curly1.png";
-var brown4 = "/Images/Woman/Hair/Brown/short3.png";
-var brown5 = "/Images/Woman/Hair/Brown/pickedup.png";
-var brown6 = "/Images/Woman/Hair/Brown/curly2.png";
-var brown7 = "/Images/Woman/Hair/Brown/short2.png";
-var brown8 = "/Images/Woman/Hair/Brown/short1.png";
+var brown1 = "/images/woman/hair/brown/long1.png";
+var brown2 = "/images/woman/hair/brown/long2.png";
+var brown3 = "/images/woman/hair/brown/curly1.png";
+var brown4 = "/images/woman/hair/brown/short3.png";
+var brown5 = "/images/woman/hair/brown/pickedup.png";
+var brown6 = "/images/woman/hair/brown/curly2.png";
+var brown7 = "/images/woman/hair/brown/short2.png";
+var brown8 = "/images/woman/hair/brown/short1.png";
 
 // Obtener botones y secciones para cambiar la apariencia de la mujer
 const btnHair = document.getElementById('btn-hair');
@@ -123,7 +123,7 @@ function changeHairColor(color) {
 
     let newHair = currentHair.replace(color);
 
-    hairImage.src = "/Images/Woman/Hair/" + color + "/" + newHair;
+    hairImage.src = "/images/woman/hair/" + color + "/" + newHair;
 }
 
 // Ocultar secciones al cargar la página

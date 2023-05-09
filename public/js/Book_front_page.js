@@ -11,8 +11,8 @@ const titleElement = document.getElementById('names');
 
 // Establecer la ruta de la imagen de las gafas para hombres y mujeres
 
-var glassesFemalePath = "/Images/FrontPage/Woman/Glasses/glasses.png";
-var glassesMalePath = "/Images/FrontPage/Man/Glasses/glasses.png";
+var glassesFemalePath = "/images/frontpage/woman/glasses/glasses.png";
+var glassesMalePath = "/images/frontpage/man/glasses/glasses.png";
 
 // Obtener el color de ojos guardado en el Local Storage para hombres y mujeres
 
@@ -74,10 +74,10 @@ if (glassesFemale === "block") {
   var beardType = beardParts[beardParts.length - 1].split(".")[0];
 
   // Obtener el color y tipo de barba para hombres
-  var eyesMale = "/Images/FrontPage/Man/Eyes" + eyesColorSuffixMale;
-  var eyesFemale = "/Images/FrontPage/Woman/Eyes" + eyesColorSuffixFemale;
-  var hairMale = "/Images/FrontPage/Man/Hair/" + hairColorMan + "/" + hairTypeMan + ".png";
-  var hairFemale = "/Images/FrontPage/Woman/Hair/" + hairColorWoman + "/" + hairTypeWoman + ".png";
+  var eyesMale = "/images/frontpage/man/eyes" + eyesColorSuffixMale;
+  var eyesFemale = "/images/frontpage/woman/eyes" + eyesColorSuffixFemale;
+  var hairMale = "/images/frontpage/man/hair/" + hairColorMan + "/" + hairTypeMan + ".png";
+  var hairFemale = "/images/frontpage/woman/hair/" + hairColorWoman + "/" + hairTypeWoman + ".png";
 
   // Mostrar o esconder la imagen de la barba en función del valor almacenado en el Local Storage
 
@@ -89,7 +89,7 @@ if (glassesFemale === "block") {
     var beardParts = beardColorMale.split("/");
     var beardColor = beardParts[beardParts.length - 2];
     var beardType = beardParts[beardParts.length - 1].split(".")[0];
-    var beardMale = "/Images/FrontPage/Man/Beard/" + beardColor + "/" + beardType + ".png";
+    var beardMale = "/images/frontpage/man/beard/" + beardColor + "/" + beardType + ".png";
     beard.style.display = "block";
     beard.src = beardMale;
   } else {

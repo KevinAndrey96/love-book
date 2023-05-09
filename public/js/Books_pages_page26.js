@@ -21,8 +21,8 @@ var hairColorFemale = localStorage.getItem("hairColorFemale");
   var hairColorWoman = hairPartsWoman[hairPartsWoman.length - 2];
   var hairTypeWoman = hairPartsWoman[hairPartsWoman.length - 1].split(".")[0];
 
-  var eyesFemale = "/Images/Books/Page-26/Woman/Eyes" + eyesColorSuffixFemale;
-  var hairFemale = "/Images/Books/Page-26/Woman/Hair/" + hairColorWoman + "/" + hairTypeWoman + ".png";
+  var eyesFemale = "/images/books/page26/woman/eyes" + eyesColorSuffixFemale;
+  var hairFemale = "/images/books/page26/woman/hair/" + hairColorWoman + "/" + hairTypeWoman + ".png";
 
 // Establecer la ruta completa en la imagen correspondiente para los ojos y el cabello
   eyesfemale.src = eyesFemale;
