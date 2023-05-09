@@ -60,18 +60,20 @@
         </div>
         <div class="title-wrapper" contenteditable="true">
             <h1 id="names" title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 1vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
-
         </div>
 
-
             <div class="page-wrapper">
-                <img src="/Images/Books/Page-2/Extra/two-avatars.jpg" class="page-img">
+                <div id="image-selector-container" style="display:none;">
+                </div>
+                <div id="vista"></div>
+                <img src="/Images/Books/Page-2/Extra/two-avatars.jpg" id="page-image" class="page-img" >
+
             <div class="giver-images">
+
                     <img src="/Images/Books/Page-2/Woman/giver-base.png" class="extra" style="z-index: 2;">
                     <img id="eyesfemale2" src="/Images/Books/Page-2/Woman/Eyes/brown.png" class="extra" style="z-index: 2;">
                     <img id="hairfemale2"src="/Images/Books/Page-2/Woman/Hair/Brown/long1.png" class="extra" style="z-index: 2;">
                     <img id="glassesfemale2"src="/Images/Books/Page-2/Woman/Glasses/glasses.png" class="extra" style="z-index: 2;">
-
                 <div class="receiver-images">
                     <img src="/Images/Books/Page-2/Man/receiver-base.png" class="extra" style="z-index: 1;">
                     <img id="eyesmale2" src="/Images/Books/Page-2/Man/Eyes/brown.png" class="extra" style="z-index: 1;">
@@ -80,13 +82,15 @@
                     <img id="glassesmale2" src="/Images/Books/Page-2/Man/Glasses/glasses.png" class="extra" style="z-index: 1;">
                 </div>
                 <div class="extras">
-                    <img src="/Images/Books/Page-2/Extra/extra-1.png" class="extra" style="z-index: 3;">
-                    <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <img src="/Images/Books/Page-2/Extra/extra-1.png" class="extra" style="z-index: 3;" >
+
+                    <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
                         </div></div>
                 </div>
                 </div>
+
             </div>
 
 

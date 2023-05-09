@@ -108,3 +108,13 @@ if (glassesFemale === "block") {
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
 
+
+  function abrirVentana() {
+    // Abrir una nueva ventana con el contenido de la vista
+    var ventana = window.open('/editPages', 'ventana_personalizar', 'width=600,height=400');
+
+
+  }
+
+
+

@@ -73,7 +73,6 @@ if (glassesFemale === "block") {
   var eyesFemale = "/Images/Books/Page-2/Woman/Eyes" + eyesColorSuffixFemale;
   var hairMale = "/Images/Books/Page-2/Man/Hair/" + hairColorMan + "/" + hairTypeMan + ".png";
   var hairFemale = "/Images/Books/Page-2/Woman/Hair/" + hairColorWoman + "/" + hairTypeWoman + ".png";
-
   // Mostrar o esconder la imagen de la barba en función del valor almacenado en el Local Storage
 
   if (beardDisplay === "none") {

@@ -17,4 +17,7 @@ Route::get('/FrontPage', [BookController::class, 'bookFrontPage']);
 
 Route::get('/BookPages', [BookController::class, 'bookPages']);
 
+Route::get('/editPages', [BookController::class, 'bookEdit']);
+
+
 

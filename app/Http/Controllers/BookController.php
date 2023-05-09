@@ -18,4 +18,8 @@ class BookController extends Controller
     public function BookPages(){
         return view('Books.Book_pages');
     }
+
+    public function BookEdit(){
+        return view('Books.edit_pages');
+    }
 }
