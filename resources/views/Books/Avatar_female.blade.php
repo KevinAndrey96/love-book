@@ -43,14 +43,14 @@
 
         <h3 class="text">Elige tu cabello</h3>
         <div class="hair-select">
-            <div> <input id="hair-1" type="image" src="/images/woman/buttons/long1.jpg"></div>
-            <div> <input id="hair-2" type="image" src="/images/woman/buttons/long2.jpg"></div>
-            <div> <input id="hair-3" type="image" src="/images/woman/buttons/curly1.jpg"></div>
-            <div> <input id="hair-4" type="image" src="/images/woman/buttons/short3.jpg"></div>
-            <div> <input id="hair-5" type="image" src="/images/woman/buttons/pickedup.jpg"></div>
-            <div> <input id="hair-6" type="image" src="/images/woman/buttons/curly2.jpg"></div>
-            <div> <input id="hair-7" type="image" src="/images/woman/buttons/short2.jpg"></div>
-            <div> <input id="hair-8" type="image" src="/images/woman/buttons/short1.jpg"></div>
+            <div> <input id="hair-1" type="image" src="/img/woman/buttons/long1.jpg"></div>
+            <div> <input id="hair-2" type="image" src="/img/woman/buttons/long2.jpg"></div>
+            <div> <input id="hair-3" type="image" src="/img/woman/buttons/curly1.jpg"></div>
+            <div> <input id="hair-4" type="image" src="/img/woman/buttons/short3.jpg"></div>
+            <div> <input id="hair-5" type="image" src="/img/woman/buttons/pickedup.jpg"></div>
+            <div> <input id="hair-6" type="image" src="/img/woman/buttons/curly2.jpg"></div>
+            <div> <input id="hair-7" type="image" src="/img/woman/buttons/short2.jpg"></div>
+            <div> <input id="hair-8" type="image" src="/img/woman/buttons/short1.jpg"></div>
     </div>
 
     <div class="color-container">
@@ -73,8 +73,8 @@
             <div class="section" id="glasses-section">
                 <h3 class="text">Elige si usas gafas</h3>
                   <div class="glasses-select">
-                        <div> <input id="glasses-0"  type="image" src="/images/woman/glasses/no-img.png"></div>
-                        <div> <input id="glasses-1"  type="image" src="/images/woman/glasses/glasses1.jpg"></div>
+                        <div> <input id="glasses-0"  type="image" src="/img/woman/glasses/no-img.png"></div>
+                        <div> <input id="glasses-1"  type="image" src="/img/woman/glasses/glasses1.jpg"></div>
                    </div>
                  </div>
 
@@ -90,11 +90,11 @@
              </div>
       </div>
   </div>
-   <div class="images" id="main-image">
-        <img src="/images/woman/base1.jpg">
-        <img src="/images/woman/hair/brown/long1.png" id="hairchangefemale" class="on" >
-        <img src="/images/woman/eyes/brown.png" id="eyeschangefemale" class="on">
-        <img src="/images/woman/glasses/glasses.png" id="glasseschange" class="on">
+   <div class="img" id="main-image">
+        <img src="/img/woman/base1.jpg">
+        <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on" >
+        <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on">
+        <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on">
     </div>
  </div>
 
