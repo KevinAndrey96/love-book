@@ -23,12 +23,12 @@ var beardchange = document.getElementById("beardchange");
 
 // Definir rutas a las imágenes de diferentes barbas de color marrón
 
-var beardBrown1 = "/images/man/beard/brown/brown1.png";
-var beardBrown2 = "/images/man/beard/brown/brown2.png";
-var beardBrown3 = "/images/man/beard/brown/brown3.png";
-var beardBrown4 = "/images/man/beard/brown/brown4.png";
-var beardBrown5 = "/images/man/beard/brown/brown5.png";
-var beardBrown6 = "/images/man/beard/brown/brown6.png";
+var beardBrown1 = "/img/man/beard/brown/brown1.png";
+var beardBrown2 = "/img/man/beard/brown/brown2.png";
+var beardBrown3 = "/img/man/beard/brown/brown3.png";
+var beardBrown4 = "/img/man/beard/brown/brown4.png";
+var beardBrown5 = "/img/man/beard/brown/brown5.png";
+var beardBrown6 = "/img/man/beard/brown/brown6.png";
 
 // Obtener elementos HTML de las imágenes de los ojos del hombre
 var eyes1 = document.getElementById("eyes-1");
@@ -37,28 +37,28 @@ var eyes3 = document.getElementById("eyes-3");
 var eyes4 = document.getElementById("eyes-4");
 
 // Definir rutas a las imágenes de los ojos de diferentes colores
-var brownEyes = "/images/man/eyes/brown.png";
-var blackEyes = "/images/man/eyes/black.png";
-var blueEyes  = "/images/man/eyes/blue.png";
-var greenEyes = "/images/man/eyes/green.png";
+var brownEyes = "/img/man/eyes/brown.png";
+var blackEyes = "/img/man/eyes/black.png";
+var blueEyes  = "/img/man/eyes/blue.png";
+var greenEyes = "/img/man/eyes/green.png";
 var eyeschange = document.getElementById("eyeschange");
 
 // Obtener elementos HTML de las imágenes de los lentes del hombre
 var notGlasses = document.getElementById("glasses-0");
 var glasses    = document.getElementById("glasses-1");
-var glassess = "/images/man/glasses/glasses.png";
+var glassess = "/img/man/glasses/glasses.png";
 var glasseschange = document.getElementById("glasseschange");
 
 // Definir rutas a las imágenes de diferentes peinados de color marrón
-var brown1 = "/images/man/hair/brown/half1.png";
-var brown2 = "/images/man/hair/brown/half2.png";
-var brown3 = "/images/man/hair/brown/half3.png";
-var brown4 = "/images/man/hair/brown/bald1.png";
-var brown5 = "/images/man/hair/brown/bald2.png";
-var brown6 = "/images/man/hair/brown/short1.png";
-var brown7 = "/images/man/hair/brown/short2.png";
-var brown8 = "/images/man/hair/brown/long1.png";
-var brown9 = "/images/man/hair/brown/long2.png";
+var brown1 = "/img/man/hair/brown/half1.png";
+var brown2 = "/img/man/hair/brown/half2.png";
+var brown3 = "/img/man/hair/brown/half3.png";
+var brown4 = "/img/man/hair/brown/bald1.png";
+var brown5 = "/img/man/hair/brown/bald2.png";
+var brown6 = "/img/man/hair/brown/short1.png";
+var brown7 = "/img/man/hair/brown/short2.png";
+var brown8 = "/img/man/hair/brown/long1.png";
+var brown9 = "/img/man/hair/brown/long2.png";
 
 // Obtener botones y secciones para cambiar la apariencia del hombre
 const btnHair = document.getElementById('btn-hair');
@@ -179,7 +179,7 @@ function changeHairColor(color) {
 
     let newHair = currentHair.replace(color);
 
-    hairImage.src = "/images/man/hair/" + color + "/" + newHair;
+    hairImage.src = "/img/man/hair/" + color + "/" + newHair;
 }
 
 /**
@@ -193,7 +193,7 @@ function changeHairColor(color) {
 
     let newBeard = currentBeard.replace(currentBeard.slice(0, -5), color);
 
-    beardImage.src = "/images/man/beard/" + color + "/" + newBeard;
+    beardImage.src = "/img/man/beard/" + color + "/" + newBeard;
 }
 
 // Ocultar secciones al cargar la página

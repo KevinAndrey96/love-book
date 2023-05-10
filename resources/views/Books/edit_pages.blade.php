@@ -33,25 +33,25 @@
 
     <div><h1>Edita la pagina</h1> </div>
         <div class="image-group">
-            <img src="/images/books/page2/extra/blank.jpg">
-            <img src="/images/books/page2/extra/no-avatars (1).jpg">
-            <img src="/images/books/page2/extra/no-avatars (2).jpg">
-            <img src="/images/books/page2/extra/no-avatars.jpg">
+            <img src="/img/books/page2/extra/blank.jpg">
+            <img src="/img/books/page2/extra/no-avatars (1).jpg">
+            <img src="/img/books/page2/extra/no-avatars (2).jpg">
+            <img src="/img/books/page2/extra/no-avatars.jpg">
             <img src="/images/books/page2/extra/no-avatars6.jpg">
         </div>
         <div class="image-group">
-            <img src="/images/books/page2/extra/no-avatars7.jpg">
-            <img src="/images/books/page2/extra/no-avatars8.jpg">
-            <img src="/images/books/page2/extra/no-avatars9.jpg">
-            <img src="/images/books/page2/extra/no-avatars10.jpg">
-            <img src="/images/books/page2/extra/no-avatars11.jpg">
+            <img src="/img/books/page2/extra/no-avatars7.jpg">
+            <img src="/img/books/page2/extra/no-avatars8.jpg">
+            <img src="/img/books/page2/extra/no-avatars9.jpg">
+            <img src="/img/books/page2/extra/no-avatars10.jpg">
+            <img src="/img/books/page2/extra/no-avatars11.jpg">
           </div>
           <div class="image-group">
-            <img src="/images/books/page2/extra/no-avatars12.jpg">
-            <img src="/images/books/page2/extra/no-avatars13.jpg">
-            <img src="/images/books/page2/extra/no-avatars14.jpg">
-            <img src="/images/books/page2/extra/no-avatars15.jpg">
-            <img src="/images/books/page2/extra/no-avatars16.jpg">
+            <img src="/img/books/page2/extra/no-avatars12.jpg">
+            <img src="/img/books/page2/extra/no-avatars13.jpg">
+            <img src="/img/books/page2/extra/no-avatars14.jpg">
+            <img src="/img/books/page2/extra/no-avatars15.jpg">
+            <img src="/img/books/page2/extra/no-avatars16.jpg">
           </div>
 
 

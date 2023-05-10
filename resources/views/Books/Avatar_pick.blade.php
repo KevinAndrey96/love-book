@@ -37,13 +37,13 @@
         <div id="template-container"></div>
         <div class="d-flex">
           <div class="section" id="female-section">
-            <input class="female" type="image" src="./images/female.jpg">
+            <input class="female" type="image" src="./img/female.jpg">
             <div>
               <a href="{{ url('Avatar/Female') }}" class="btn1" id="btn1">Mujer</a>
             </div>
           </div>
           <div class="section" id="male-section">
-            <input class="male" type="image" src="./images/male.jpg">
+            <input class="male" type="image" src="./img/male.jpg">
             <div>
               <a href="{{ url('Avatar/Male') }}" class="btn2" id="btn2">Hombre</a>
             </div>
