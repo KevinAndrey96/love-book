@@ -1,8 +1,15 @@
 * {
     background-color: #b7c3f3;
-  }
+}
 
-  .nav-btn {
+.create-avatar {
+    font-family:Cormorant Garamond,serif;
+    margin-bottom:1rem;
+    text-transform:uppercase;
+    color:#4f6272;
+}
+
+.nav-btn {
     width: 150px;
     display: inline-block;
     padding: 30px;
@@ -15,22 +22,23 @@
     text-align: center;
     margin-left: 18px;
     margin-right: 18px;
-  }
+}
 
-  .nav-btn:hover {
-    background: #dd7596;
-  }
+.nav-btn:hover {
+    color: #ffffff !important;
+    background: #cf1259;
+}
 
-  .line-title {
+.line-title {
     margin-left: 30%;
     margin-right: 30%;
-  }
+}
 
-  .line-main {
+.line-main {
     margin: 0rem 0;
-  }
+}
 
-  .navbar-nav {
+.navbar-nav {
     display: flex;
     flex-direction: column;
 }
@@ -48,44 +56,67 @@
 }
 
 .btn1:hover {
-    background-color: #e87a90;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #cf1259;
+    color: #4f6272
 }
 
-  .btn2:hover {
-    background-color: #b7f3c3;
-  }
+.btn2:hover {
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #5977ff;
+    color: #4f6272
+}
 
-  body.block-scroll {
+body.block-scroll {
     overflow-y: hidden;
-  }
+}
 
-  body .title {
+body .title {
     font-size: 3.0rem;
-  }
+}
 
-  body .subtitle {
+body .subtitle {
     font-size: 1.500rem;
-  }
+}
 
-  .btn1 {
-    background-color: #f3c3b7;
-    border-radius: 50%;
-    font-family: Cormorant Garamond, serif;
+.btn1 {
+    width:150px;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 30px;
+    border-color: #cf1259;
     text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 80px;
-    color: #000;
-  }
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    background-color: #cf1259;
+}
 
-  .btn2 {
-    background-color: #09f5e9;
-    border-radius: 50%;
-    font-family: Cormorant Garamond, serif;
-    color: black;
-    text-transform: uppercase;
+.btn2 {
+    width:150px;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 30px;
+    border-color: #5977ff;
     text-decoration: none;
-    margin-left: 170px;
-  }
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 18px;
+    background-color: #5977ff;
+}
+
 
   h1 {
     text-align: center;
@@ -103,14 +134,14 @@
 
   div#Avatar .female {
     border-style: solid;
-    border-radius: 75%;
+    border-radius: 15%;
     color: #F71069;
     width: 200px;
     height: 300px;
   }
 
   div#Avatar .male {
-    border-radius: 75%;
+    border-radius: 15%;
     border-style: solid;
     color: #5977ff;
     width: 200px;

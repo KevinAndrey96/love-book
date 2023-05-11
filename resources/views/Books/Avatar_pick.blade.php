@@ -28,10 +28,13 @@
                 </div>
             </div>
         </nav>
+    <hr class="line-main">
 
-        <hr class="line-main">
-
-    <div><h1>Crea tu avatar</h1> </div>
+    <div class="title d-md-none"></div>
+    <div class="title d-none d-md-block">
+        <h2 class="create-avatar">CREA TU AVATAR</h2>
+    </div>
+    <hr class="line-title">
 
     <div id="Avatar" class="d-flex flex-column justify-content-center align-items-center">
         <div id="template-container"></div>

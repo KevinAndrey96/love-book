@@ -32,11 +32,9 @@
 
         <hr class="line-main">
 
-
         <button id="btn-hair" type="button" class="btn btn-primary">Cabello</button>
         <button id="btn-glasses" type="button" class="btn btn-primary">Gafas</button>
         <button id="btn-eyes"  type="button" class="btn btn-primary">Ojos</button>
-
 
     <div class="container">
         <div class="section" id="hair-section">
