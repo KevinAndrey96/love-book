@@ -23,36 +23,37 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="<?php echo e(url ('Books')); ?>">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="<?php echo e(url ('')); ?>">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>
         </nav>
-
         <hr class="line-main">
+        <h2 class="create-avatar text-center pt-3">CREA TU AVATAR</h2>
+        <hr class="line-title">
 
-    <div><h1>Crea tu avatar</h1> </div>
-
-    <div id="Avatar" class="d-flex flex-column justify-content-center align-items-center">
-        <div id="template-container"></div>
-        <div class="d-flex">
-          <div class="section" id="female-section">
-            <input class="female" type="image" src="./img/female.jpg">
-            <div>
-              <a href="<?php echo e(url('Avatar/Female')); ?>" class="btn1" id="btn1">Mujer</a>
+        <div id="Avatar" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="template-container"></div>
+            <div class="row">
+              <div class="col-6 col-lg-6">
+                <div class="section" id="female-section">
+                  <input class="female img-fluid" type="image" src="./img/female.jpg">
+                  <div>
+                    <a href="<?php echo e(url('avatar-female')); ?>" class="btn1 btn-lg btn-block text-center mt-3" id="btn1">Mujer</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-6">
+                <div class="section" id="male-section">
+                  <input class="male img-fluid" type="image" src="./img/male.jpg">
+                  <div>
+                    <a href="<?php echo e(url('avatar-male')); ?>" class="btn2 btn-lg btn-block text-center mt-3" id="btn2">Hombre</a>
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
-          <div class="section" id="male-section">
-            <input class="male" type="image" src="./img/male.jpg">
-            <div>
-              <a href="<?php echo e(url('Avatar/Male')); ?>" class="btn2" id="btn2">Hombre</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-
-    </div>
         <script src="<?php echo e(asset('js/Avatar_pick.js')); ?>"></script>
 </body>
 </html>

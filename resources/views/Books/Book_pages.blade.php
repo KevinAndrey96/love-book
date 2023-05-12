@@ -23,7 +23,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>

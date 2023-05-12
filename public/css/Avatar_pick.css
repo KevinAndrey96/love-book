@@ -76,7 +76,7 @@ body.block-scroll {
 }
 
 body .title {
-    font-size: 3.0rem;
+    max-width: 100%;
 }
 
 body .subtitle {
@@ -84,7 +84,7 @@ body .subtitle {
 }
 
 .btn1 {
-    width:150px;
+    width:100%;
     display: inline-block;
     padding: 12px;
     border-radius: 30px;
@@ -95,13 +95,11 @@ body .subtitle {
     font-weight: bold;
     transition: all 0.9s;
     text-align: center;
-    margin-left: 18px;
-    margin-right: 18px;
     background-color: #cf1259;
 }
 
 .btn2 {
-    width:150px;
+    width:100%;
     display: inline-block;
     padding: 12px;
     border-radius: 30px;
@@ -112,8 +110,6 @@ body .subtitle {
     font-weight: bold;
     transition: all 0.9s;
     text-align: center;
-    margin-left: 125px;
-    margin-right: 18px;
     background-color: #5977ff;
 }
 
@@ -137,7 +133,7 @@ body .subtitle {
     border-radius: 15%;
     color: #F71069;
     width: 200px;
-    height: 300px;
+    max-height: 300px;
   }
 
   div#Avatar .male {
@@ -145,8 +141,7 @@ body .subtitle {
     border-style: solid;
     color: #5977ff;
     width: 200px;
-    height: 300px;
-    margin-left: 100px !important;
+    max-height: 300px;
   }
 
   h2 {
@@ -155,24 +150,9 @@ body .subtitle {
     color: #5000b3;
   }
 
-  div.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
-}
 
-@media (max-width: 576px) {
-    #Avatar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
 
-    .female, .male {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
+
+
+
+

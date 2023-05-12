@@ -24,7 +24,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="<?php echo e(url ('Books')); ?>">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="<?php echo e(url ('')); ?>">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>
@@ -32,10 +32,10 @@
 
         <hr class="line-main">
 
-        <button id="btn-hair" type="button" class="btn btn-primary">Cabello</button>
-        <button id="btn-glasses" type="button" class="btn btn-primary">Gafas</button>
-        <button id="btn-eyes"  type="button" class="btn btn-primary">Ojos</button>
-        <button id="btn-beard" type="button" class="btn btn-primary">Barba</button>
+        <button id="btn-hair" type="button" class="btn1 btn-block mt-3">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn1 btn-block mt-3">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn1 btn-block mt-3">Ojos</button>
+        <button id="btn-beard" type="button" class="btn1 btn-block mt-3">Barba</button>
 
 
     <div class="container">
@@ -125,11 +125,16 @@
         <img src="/img/man/glasses/glasses.png" id="glasseschange" class="on">
 
         </div>
-            <label for="nameMale"></label>
-            <input type="text" id="nameMale" name="nombre" placeholder="Name">
-        <div class="btn-container">
-            <button id="btn-continue" type="button" class="btn btn-primary">Continuar</button>
+
+        <div class="form-group">
+            <label for="nombre"></label>
+            <input type="text" class="form-control" id="nameMale" name="nombre" placeholder="Nombre" required>
         </div>
+
+        <div class="btn-container">
+            <button id="btn-continue" type="button" class="btn1 btn-block mt-3">Continuar</button>
+        </div>
+
         <script src="<?php echo e(asset('js/Avatar_male.js')); ?>"></script>
         </body>
 </html>
