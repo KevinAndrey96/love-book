@@ -23,7 +23,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>
@@ -53,12 +53,6 @@
             <img src="/img/books/page2/extra/no-avatars15.jpg">
             <img src="/img/books/page2/extra/no-avatars16.jpg">
           </div>
-
-
-
-
-
-
 </body>
 </html>
 

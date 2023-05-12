@@ -24,7 +24,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>
@@ -32,9 +32,9 @@
 
         <hr class="line-main">
 
-        <button id="btn-hair" type="button" class="btn btn-primary">Cabello</button>
-        <button id="btn-glasses" type="button" class="btn btn-primary">Gafas</button>
-        <button id="btn-eyes"  type="button" class="btn btn-primary">Ojos</button>
+        <button id="btn-hair" type="button" class="btn1 btn-lg btn-block text-center mt-3">Cabello</button>
+        <button id="btn-glasses" type="button" class="btn1 btn-lg btn-block text-center mt-3">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn1 btn-lg btn-block text-center mt-3">Ojos</button>
 
     <div class="container">
         <div class="section" id="hair-section">
@@ -96,12 +96,16 @@
     </div>
  </div>
 
- <label for="nombre"></label>
- <input type="text" id="nameFemale" name="nombre" placeholder="Name" required>
+ <div class="form-group">
+    <label for="nombre"></label>
+    <input type="text" class="form-control" id="nameFemale" name="nombre" placeholder="Nombre" required>
+  </div>
+
 
  <div class="btn-container">
-    <button id="btn-continue" type="button" class="btn btn-primary">Continuar</button>
+    <button id="btn-continue" type="button" class="btn1 btn-lg btn-block text-center mt-3">Continuar</button>
 </div>
+
     <script src="{{ asset('js/Avatar_female.js')}}"></script>
 </body>
 </html>

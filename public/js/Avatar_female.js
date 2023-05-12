@@ -168,9 +168,9 @@ document.getElementById("btn-continue").addEventListener("click", function() {
 
     if (localStorage.getItem("hairColorMale") && localStorage.getItem("hairColorFemale")) {
       // Redirigir a la siguiente página
-      window.location.href = "/FrontPage";
+      window.location.href = "/front-page";
     } else {
-      window.location.href = "/Avatar/Male";
+      window.location.href = "/avatar-male";
     }
   });
 

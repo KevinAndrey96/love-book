@@ -24,7 +24,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('Books')}}">INICIO</a>
+                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
                     <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
                 </div>
             </div>
@@ -59,7 +59,7 @@
         </div>
     </div>
 </div>
-<a href="{{ url('BookPages') }}" class="btn1" id="btn1">Personaliza las paginas de tu libro</a>
+<a href="{{ url('books-pages') }}" class="btn1" id="btn1">Personaliza las paginas de tu libro</a>
 <script src="{{ asset('js/Book_front_page.js')}}"></script>
 </body>
 </html>
