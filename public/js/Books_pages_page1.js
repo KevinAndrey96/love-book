@@ -100,6 +100,34 @@ if (glassesFemale === "block") {
   titleElement.textContent = ` ${nameMale} y ${nameFemale}`;
   }
 
+  $(document).ready(function() {
+    $('.insert-before-btn').click(function() {
+      var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
+      var prevPageWrapper = pageWrapper.prev('.page-wrapper'); // Obtén el contenedor de la imagen anterior
+
+      if (prevPageWrapper.length && !prevPageWrapper.is("#first-page-wrapper")) {
+        // Si hay una imagen anterior y no es la primera página, inserta la imagen actual antes de ella
+        pageWrapper.insertBefore(prevPageWrapper);
+      } else {
+        // Si no hay una imagen anterior o es la primera página, no se hace nada
+        return false;
+      }
+    });
+
+    $('.insert-after-btn').click(function() {
+      var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
+      var nextPageWrapper = pageWrapper.next('.page-wrapper'); // Obtén el contenedor de la imagen siguiente
+
+      if (nextPageWrapper.length) {
+        // Si hay una imagen siguiente, inserta la imagen actual después de ella
+        pageWrapper.insertAfter(nextPageWrapper);
+      } else {
+        // Si no hay una imagen siguiente, inserta la imagen actual al final del contenedor
+        pageWrapper.parent().append(pageWrapper);
+      }
+    });
+  });
+
 
 
 // Establecer la ruta completa en la imagen correspondiente para los ojos y el cabello
