@@ -59,7 +59,20 @@
         </div>
     </div>
 </div>
-<a href="{{ url('books-pages') }}" class="btn1" id="btn1">Personaliza las paginas de tu libro</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <a href="{{ url('books-pages') }}" class="btn1 btn-block" id="btn1">Personaliza las páginas de tu libro</a>
+        </div>
+        <div class="col-md-8">
+            <a href="{{ url('avatar-female') }}" class="btn1 btn-block" id="btn2">Cambia la apariencia de la mujer</a>
+        </div>
+        <div class="col-md-8">
+            <a href="{{ url('avatar-male') }}" class="btn1 btn-block" id="btn3">Cambia la apariencia del hombre</a>
+        </div>
+    </div>
+</div>
+</div>
 <script src="{{ asset('js/Book_front_page.js')}}"></script>
 </body>
 </html>

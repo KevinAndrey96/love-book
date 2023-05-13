@@ -14,7 +14,8 @@
 }
 
 .nav-btn:hover {
-    background: #dd7596;
+    color: #ffffff !important;
+    background: #cf1259;
 }
 
 .line-title {

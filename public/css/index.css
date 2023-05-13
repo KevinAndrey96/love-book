@@ -36,7 +36,7 @@
 }
 
 .nav-btn:hover {
-    background: #F71069;
+    background: #cf1259;
     color: #ffffff !important;
 }
 
@@ -170,8 +170,9 @@ body .subtitle{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 4rem;
     margin-top: 5rem;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
 }
 
 #home .section-steps{

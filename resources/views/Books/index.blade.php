@@ -30,7 +30,6 @@
 
         <hr class="line-main">
 
-
           <div id="home">
             <div class="row">
                 <div class="col-12 home-baner">
@@ -116,10 +115,6 @@
             </div>
 
         </div>
-
-
-
-
 
             <div class="container">
                 <div class="row section-features">

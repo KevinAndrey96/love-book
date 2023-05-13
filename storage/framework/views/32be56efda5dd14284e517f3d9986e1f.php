@@ -41,7 +41,7 @@
             </div>
          <div class="col-12 pages">
             <div class="page-wrapper">
-                <img src="/img/books/page1/extra/two-avatars.jpg" class="page-img clickable" >
+                <img src="/img/books/page1/extra/two-avatars.jpg" class="page-img" id="first-page-wrapper" >
             <div class="giver-img">
                 <img src="/img/books/page1/woman/giver-woman-base.png" class="extra" style="z-index: 1;">
                 <img id="eyesfemale" src="/img/books/page1/woman/eyes/brown.png" class="extra" style="z-index: 1;">
@@ -63,13 +63,8 @@
         </div>
 
             <div class="page-wrapper">
-                <div id="image-selector-container" style="display:none;">
-                </div>
-                <div id="vista"></div>
-                <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img" >
-
+                <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img">
             <div class="giver-img">
-
                     <img src="/img/books/page2/woman/giver-base.png" class="extra" style="z-index: 2;">
                     <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra" style="z-index: 2;">
                     <img id="hairfemale2"src="/img/books/page2/woman/hair/brown/long1.png" class="extra" style="z-index: 2;">
@@ -82,15 +77,15 @@
                     <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra" style="z-index: 1;">
                 </div>
                 <div class="extras">
-                    <img src="/img/books/page2/extra/extra-1.png" class="extra" style="z-index: 3;" >
-
+                    <img src="/img/books/page2/extra/extra-1.png" class="extra" style="z-index: 3;">
                     <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
                         </div></div>
                 </div>
                 </div>
-
+                <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
 
 
@@ -113,6 +108,8 @@
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fue amor a primera vista</font></font></div>
                     </div></div>
+                    <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                    <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
 
 
@@ -135,6 +132,8 @@
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aun recuerdo nuestro primer beso</font></font></div>
                     </div></div>
+                    <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                    <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
 
                 <div class="page-wrapper">
@@ -143,6 +142,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contigo el mundo se ve distinto</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -165,6 +166,8 @@
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo unico que necesito en ese mundo</font></font></div>
                     </div></div>
+                    <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                    <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
 
 
@@ -177,7 +180,8 @@
                             <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona a la que llamo</font></font></div>
                         </div>
                     </div>
-                </div>
+                <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
 
 
@@ -201,6 +205,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podemos hablar por horas...</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -210,6 +216,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contigo siempre sonrio</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -232,6 +240,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me haces muy feliz</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -241,6 +251,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gracias por ayudarme a sostenerme</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -250,6 +262,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu cargas mi bateria</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -259,6 +273,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta cuando te enojas</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -281,6 +297,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aun me amas verdad? :c Claro que si</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -290,6 +308,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta cuando</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -312,6 +332,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos abrazamos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -321,6 +343,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando soñamos juntos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -343,6 +367,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos entendemos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -352,6 +378,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando comemos juntos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -361,6 +389,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me tienes en las nubes</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -371,7 +401,6 @@
                         <img id="eyesfemale21" src="/img/books/page21/woman/eyes/brown.png" class="extra" style="z-index: 1;">
                         <img id="hairfemale21" src="/img/books/page21/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
                         <img id="glassesfemale21" src="/img/books/page21/woman/glasses/glasses.png" class="extra" style="z-index: 1;">
-
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page21/man/receiver-base.png" class="extra" style="z-index: 2;">
@@ -380,12 +409,14 @@
                         <img id="beardmale21" src="/img/books/page21/man/beard/brown/brown1.png" class="extra" style="z-index: 2;">
                         <img id="glassesmale21" src="/img/books/page21/man/glasses/glasses.png" class="extra" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; bottom:50px; left: 10%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3; margin-top: 300px !important;" >
-
+                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:10px; left: 50% !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3; margin-top: 300px !important;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amo dormir contigo</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
+
 
 
                 <div class="page-wrapper">
@@ -394,6 +425,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tener citas...</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -416,6 +449,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cocinar juntos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 <div class="extras">
                     <img src="/img/books/page23/extra/extra-1.png" class="extra" style="z-index: 3;">
                 </div>
@@ -427,6 +462,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para la cena</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -436,6 +473,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar la mañana a nuestra manera</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -450,6 +489,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres tan linda</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -459,6 +500,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me tienes loco</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -468,6 +511,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos somos una pieza</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -477,6 +522,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Te doy mi medio panqueque</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -486,6 +533,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amo nuestros momentos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -495,6 +544,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Construir recuerdos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -518,6 +569,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tomarnos fotos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 <div class="extras">
                     <img src="/img/books/page32/extra/extra-1.png" class="extra" style="z-index: 3;">
                 </div>
@@ -530,6 +583,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encontrar el camino juntos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -539,6 +594,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos hasta el fin del mundo</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -548,6 +605,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para una pelicula</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -557,6 +616,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No ver netflix solos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -579,8 +640,10 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta lo que tenemos</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 <div class="extras">
-                    <img src="/img/books/Page-37/extra/extra-1.png" class="extra" style="z-index: 3;">
+                    <img src="/img/books/page37/extra/extra-1.png" class="extra" style="z-index: 3;">
                 </div>
             </div>
 
@@ -591,6 +654,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para masaje</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -607,6 +672,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Te amo de pies a cabeza</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -616,6 +683,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prometeme que siempre estaremos juntos sin importar lo que pase</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -625,6 +694,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi espacio</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -634,6 +705,8 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quiero envejecer contigo</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
@@ -643,15 +716,19 @@
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso descubrimiento</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
 
                 <div class="page-wrapper">
-                    <img src="/img/books/page44/extra/no-avatars.jpg" class="page-img"
+                    <img src="/img/books/page44/extra/no-avatars.jpg" class="page-img">
                     <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y la luz de mi vida</font></font></div>
                         </div></div>
+                        <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                        <button class="btn btn-primary insert-after-btn">Insertar después</button>
                 </div>
 
                 <div class="page-wrapper">
@@ -676,6 +753,8 @@
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TE AMO</font></font></div>
                     </div></div>
+                    <button class="btn btn-primary insert-before-btn">Insertar antes</button>
+                    <button class="btn btn-primary insert-after-btn">Insertar después</button>
             </div>
              </div>
      </div>
