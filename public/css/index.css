@@ -69,6 +69,8 @@
 body{
     background-color: #c6d1ff;
     color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 body.block-scroll{
@@ -167,12 +169,10 @@ body .subtitle{
     background-color:  #e7e7e7a3;
     color:#cf1259;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
-    margin-left: 0% !important;
-    margin-right: 0% !important;
 }
 
 #home .section-steps{
@@ -216,24 +216,9 @@ body .subtitle{
 }
 
 
-#home .section-opiniones{
-    padding:1rem;
-    background-color:#007fee;
-    color:#fff;
-    text-align:center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    font-family:Cormorant Garamond,serif;
-
-}
-
 #home .section-precio{
     background-color:  #c6d1ff;
     text-align:center;
-    padding:2rem;
     font-family:Cormorant Garamond,serif;
     color:#140d1d;
 }

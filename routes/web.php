@@ -18,7 +18,6 @@ Route::get('/front-page', [BookController::class, 'bookFrontPage']);
 
 Route::get('/books-pages', [BookController::class, 'bookPages']);
 
-Route::get('/edit-pages', [BookController::class, 'bookEdit']);
 
 
 
