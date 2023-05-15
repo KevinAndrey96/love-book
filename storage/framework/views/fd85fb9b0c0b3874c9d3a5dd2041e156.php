@@ -40,7 +40,7 @@
                         <h1>libros</h1>
                     </div>
                     <hr class="line-title">
-                    <h2 class="text">Un regalo que te encantara</h2>
+                    <h2 class="text">Un regalo que te encantará</h2>
                     <a href="#products" class="btn btn-primary btn-lg">Elige un libro</a>
                 </div>
             </div>

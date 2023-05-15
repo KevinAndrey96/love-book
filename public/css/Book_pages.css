@@ -106,7 +106,8 @@ body {
 }
 
 .nav-btn:hover {
-    background: #dd7596;
+    color: #ffffff !important;
+    background: #cf1259;
 }
 
 .line-title {
@@ -165,12 +166,901 @@ body {
     display: block;
     width: 100%;
     height: auto;
+
   }
   .text-wrapper {
     position: absolute;
     top: 0;
     left: 0;
 
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color:  #b7c3f3!important;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .image-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  .image-group img {
+    max-width: 120px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .image-group img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal1 .image-group1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+  }
+
+  #myModal1 .image-group1 img {
+    max-width: 120px !important;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  #myModal1 .image-group1 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal3 .image-group3 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal3 .image-group3 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group3 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal4 .image-group4 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal4 .image-group4 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group4 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal5 .image-group5 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal5 .image-group5 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group5 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal6 .image-group6 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal6 .image-group6 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group6 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal7 .image-group7 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal7 .image-group7 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group7 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal8 .image-group8 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal8 .image-group8 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group8 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal9 .image-group9 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal9 .image-group9 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group9 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal10 .image-group10 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal10 .image-group10 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group10 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal11 .image-group11  {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal11 .image-group11 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group11 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal12 .image-group12 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal12 .image-group12 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group12 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal13 .image-group13 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal13 .image-group13 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  .image-group13 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal14 .image-group14 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal14 .image-group14 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal14 .image-group14 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal15 .image-group15 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal15 .image-group15 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal15 .image-group15 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal16 .image-group16 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal16 .image-group16 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal16 .image-group16 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal17 .image-group17 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal17 .image-group17 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal17 .image-group17 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+ #myModal18 .image-group18 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+ #myModal18 .image-group18 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+ #myModal18 .image-group18 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal19 .image-group19 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal19 .image-group19 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal19 .image-group19 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+  #myModal20 .image-group20 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal20 .image-group20 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal20 .image-group20 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal21 .image-group21 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal21 .image-group21 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal21 .image-group21 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal22 .image-group22 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal22 .image-group22 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal22 .image-group22 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal23 .image-group23 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px;
+  }
+
+  #myModal23 .image-group23 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal23 .image-group23 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal24 .image-group24 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal24 .image-group24 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal24 .image-group24 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal25 .image-group25 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal25 .image-group25 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal25 .image-group25 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal26 .image-group26 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal26 .image-group26 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal26 .image-group26 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal27 .image-group27 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal27 .image-group27 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal27 .image-group27 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal28 .image-group28 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal28 .image-group28 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal28 .image-group28 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal29 .image-group29 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal29 .image-group29 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal29 .image-group29 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal30 .image-group30 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal30 .image-group30 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal30 .image-group30 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal31 .image-group31 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal31 .image-group31 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal31 .image-group31 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal32 .image-group32 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal32 .image-group32 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal32 .image-group32 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal33 .image-group33 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal33 .image-group33 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal33 .image-group33 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal34 .image-group34 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal34 .image-group34 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal34 .image-group34 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal35 .image-group35 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal35 .image-group35 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal35 .image-group35 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal36 .image-group36 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal36 .image-group36 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal36 .image-group36 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal37 .image-group37 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal37 .image-group37 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal37 .image-group37 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+#myModal38  .image-group38 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+#myModal38  .image-group38 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+#myModal38  .image-group38 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal39 .image-group39 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal39 .image-group39 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal39 .image-group39 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal40 .image-group40 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal40 .image-group40 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal40 .image-group40 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal41 .image-group41 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal41 .image-group41 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal41 .image-group41 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal42 .image-group42 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal42 .image-group42 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal42 .image-group42 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+ #myModal43 .image-group43 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+ #myModal43 .image-group43 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+ #myModal43 .image-group43 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal44 .image-group44 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal44 .image-group44 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal44 .image-group44 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+  #myModal45 .image-group45 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+    margin-top: 20px !important;
+  }
+
+  #myModal45 .image-group45 img {
+    max-width: 120px !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+  }
+
+  #myModal45 .image-group45 img:hover{
+    border-color: #ff006a !important;
+    border: solid;
+  }
+
+
+
+  h2{
+    text-align: center;
+    color: #ff006a;
+    font-family: 'Lato', sans-serif !important;
+
+  }
+
+  .close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11, .close12, .close13, .close14, .close15, .close16, .close17, .close18, .close19, .close20, .close21, .close22, .close23, .close24, .close25, .close26, .close27, .close28, .close29, .close30, .close31, .close32, .close33, .close34, .close35, .close36, .close37, .close38, .close39, .close40, .close41, .close42, .close43, .close44, .close45{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff0000;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .custom-alert {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
   }
 
 
@@ -197,29 +1087,11 @@ body {
   }
 
   .insert-before-btn {
-    background-color: #337ab7; /* Color de fondo */
+    background-color: #337ab7;
   }
 
   .insert-after-btn {
-    background-color: #d9534f; /* Color de fondo */
+    background-color: #d9534f;
   }
 
-  @media only screen and (max-width: 768px) {
-    #names {
-      font-size: 80% !important;
-    }
-  }
 
-  @media (max-width: 768px) {
-    .page-text.large {
-      font-size: 1.5rem;
-      top: 5%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .page-text.large {
-      font-size: 1.2rem;
-      top: 2%;
-    }
-  }
