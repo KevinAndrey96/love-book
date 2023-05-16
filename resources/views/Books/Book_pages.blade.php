@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personaliza tu libro</title>
-    <link rel="stylesheet" href ="{{ asset('css/Book_pages.css')}}">
+    <link rel="stylesheet" href ="{{ asset('css/book_pages.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -2180,37 +2180,25 @@
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-
-
      </div>
-     <script src="{{ asset('js/Books_pages_page1.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page2.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page3.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page4.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page6.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page7.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page8.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page10.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page14.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page16.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page18.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page21.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page23.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page26.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page32.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page37.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page39.js')}}"></script>
-     <script src="{{ asset('js/Books_pages_page45.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page1.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page2.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page3.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page4.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page6.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page7.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page8.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page10.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page14.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page16.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page18.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page21.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page23.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page26.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page32.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page37.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page39.js')}}"></script>
+     <script src="{{ asset('js/books_pages_page45.js')}}"></script>
     </body>
 </html>
 

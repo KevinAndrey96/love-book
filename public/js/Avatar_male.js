@@ -69,6 +69,11 @@ const sectionHair = document.getElementById('hair-section');
 const sectionGlasses = document.getElementById('glasses-section');
 const sectionEyes = document.getElementById('eyes-section');
 const sectionBeard = document.getElementById('beard-section');
+const sectionBeardColor = document.getElementById('color-beard-section');
+const sectionColor = document.getElementById('color-section');
+
+
+
 
 // Obtener boton continuar
 const btnContinue = document.getElementById('btn-continue');
@@ -200,6 +205,8 @@ function changeHairColor(color) {
 document.getElementById("eyes-section").style.display = "none";
 document.getElementById("glasses-section").style.display = "none";
 document.getElementById("beard-section").style.display = "none";
+document.getElementById("color-beard-section").style.display = "none";
+
 
 
 // Mostrar la sección de cabello y ocultar las demás al hacer clic en el botón de cabello
@@ -208,6 +215,9 @@ btnHair.addEventListener('click', () => {
     sectionBeard.style.display = 'none';
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'none';
+    sectionBeardColor.style.display = 'none';
+    sectionColor.style.display = 'block';
+
 });
 
 // Mostrar la sección de gafas y ocultar las demás al hacer clic en el botón de gafas
@@ -216,6 +226,8 @@ btnGlasses.addEventListener('click', () => {
     sectionBeard.style.display = 'none';
     sectionGlasses.style.display = 'block';
     sectionEyes.style.display = 'none';
+    sectionBeardColor.style.display = 'none';
+    sectionColor.style.display = 'none';
 });
 
 // Mostrar la sección de ojos y ocultar las demás al hacer clic en el botón de ojos
@@ -224,6 +236,9 @@ btnEyes.addEventListener('click', () => {
     sectionGlasses.style.display = 'none';
     sectionBeard.style.display = 'none';
     sectionEyes.style.display = 'block';
+    sectionBeardColor.style.display = 'none';
+    sectionColor.style.display = 'none';
+
 });
 
 // Mostrar la sección de barba y ocultar las demás al hacer clic en el botón de barba
@@ -232,6 +247,8 @@ btnBeard.addEventListener('click', () => {
     sectionGlasses.style.display = 'none';
     sectionBeard.style.display = 'block';
     sectionEyes.style.display = 'none';
+    sectionBeardColor.style.display = 'block';
+    sectionColor.style.display = 'none';
 });
 
 document.getElementById("btn-continue").addEventListener("click", function() {
@@ -240,7 +257,7 @@ document.getElementById("btn-continue").addEventListener("click", function() {
 
     // Validar que el campo del nombre ha sido llenado
     if (name === "") {
-        alert("Por favor ingrese el nombre");
+        swal('Espera', 'Debes ingresar un nombre', 'error');
         return; // Detener la ejecución de la función si el campo del nombre está vacío
       }
 

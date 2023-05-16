@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-12 section-steps">
-                <div class="title text-center">En pocos clics da un regalo único e inolvidable</div>
+                <div class="title text-center">En pocos clicks da un regalo único e inolvidable</div>
                 <div class="row">
                     <div class="col-12 col-md-4 text-center step-wrap">
                         <img class="img-fluid" src="./img/step-1-removebg-preview.png">
@@ -130,8 +130,8 @@
                         <div class="feat-img">
                             <img class="img-fluid" src="/img/impresora (2).png">
                         </div>
-                        <div class="feature-title">Impresion</div>
-                        <div class="feature-desc">Impresion digital profesional</div>
+                        <div class="feature-title">impresión</div>
+                        <div class="feature-desc">impresión digital profesional</div>
                     </div>
 
                     <div class="col-6 col-md-3 feature">
@@ -139,7 +139,7 @@
                             <img class="img-fluid" src="/img/amor (2).png">
                         </div>
                         <div class="feature-title">Hermoso</div>
-                        <div class="feature-desc">Un regalo unico</div>
+                        <div class="feature-desc">Un regalo único</div>
                     </div>
 
                     <div class="col-6 col-md-3 feature">
@@ -147,7 +147,7 @@
                             <img class="img-fluid" src="/img/camion (2).png">
                         </div>
                         <div class="feature-title">Entrega</div>
-                        <div class="feature-desc">4 - 7 dias habiles</div>
+                        <div class="feature-desc">4 - 7 dias hábiles</div>
                     </div>
                 </div>
             </div>

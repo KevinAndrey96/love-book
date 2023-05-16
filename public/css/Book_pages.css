@@ -143,7 +143,7 @@ body {
   width: 40%;
   padding: 0.1rem;
   z-index: 3 !important;
-  font-family: 'Lato', sans-serif !important;
+  font-family: Cormorant Garamond, serif;
 }
 
 #names {
