@@ -48,6 +48,8 @@ const btnEyes = document.getElementById('btn-eyes');
 const sectionHair = document.getElementById('hair-section');
 const sectionGlasses = document.getElementById('glasses-section');
 const sectionEyes = document.getElementById('eyes-section');
+const sectionColor = document.getElementById('color-section');
+
 
 // Obtener boton continuar
 const btnContinue = document.getElementById('btn-continue');
@@ -133,6 +135,7 @@ document.getElementById("glasses-section").style.display = "none";
 // Mostrar la sección de cabello y ocultar las demás al hacer clic en el botón de cabello
 btnHair.addEventListener('click', () => {
     sectionHair.style.display = 'block';
+    sectionColor.style.display = 'block';
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'none';
 });
@@ -142,6 +145,8 @@ btnGlasses.addEventListener('click', () => {
     sectionHair.style.display = 'none';
     sectionGlasses.style.display = 'block';
     sectionEyes.style.display = 'none';
+    sectionColor.style.display = 'none';
+
 });
 
 // Mostrar la sección de ojos y ocultar las demás al hacer clic en el botón de ojos
@@ -149,6 +154,8 @@ btnEyes.addEventListener('click', () => {
     sectionHair.style.display = 'none';
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'block';
+    sectionColor.style.display = 'none';
+
 });
 
 document.getElementById("btn-continue").addEventListener("click", function() {
@@ -156,8 +163,8 @@ document.getElementById("btn-continue").addEventListener("click", function() {
 
     // Validar que el campo del nombre ha sido llenado
     if (name === "") {
-      alert("Por favor ingrese el nombre");
-      return; // Detener la ejecución de la función si el campo del nombre está vacío
+        swal('Espera', 'Debes ingresar un nombre', 'error');
+    return;
     }
 
     // Guardar cambios en el Local Storage

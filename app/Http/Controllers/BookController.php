@@ -7,10 +7,10 @@ class BookController extends Controller
     /**Return index view */
 
     public function bookFrontPage(){
-        return view('Books.Book_front_page');
+        return view('books.book_front_page');
     }
 
     public function BookPages(){
-        return view('Books.Book_pages');
+        return view('books.book_pages');
     }
 }

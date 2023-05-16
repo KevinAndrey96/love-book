@@ -49,9 +49,6 @@
     background-color: #b7c3f3 !important;
   }
 
-
-
-
   .page-wrapper {
     width: 370px;
     position: relative;
@@ -113,70 +110,9 @@
     color: black;
   }
 
-  /* Estilos para pantallas pequeñas (hasta 600px) */
-  @media screen and (max-width: 600px) {
-    .navbar-nav {
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-    }
 
-    .nav-item {
-      margin-bottom: 0;
-    }
 
-    .page-wrapper {
-      width: 70% !important;
-      margin-left: 5px;
-    }
 
-    .btn1 {
-      font-size: 0.8rem;
-      width: 20% !important;
-      position: relative;
-      margin-top: 10px !important;
-      margin-left: 390px !important;
-      padding: 10px !important;
-      margin-bottom: 10px;
-      padding: 5px !important;
-    }
-
-    #names{
-        font-size: 2rem;
-    }
-  }
-
-  @media screen and (min-width: 576px) and (max-width: 992px) {
-    .navbar-nav {
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-
-    .nav-item {
-      margin-bottom: 0;
-    }
-
-    .page-wrapper {
-      width: 70vh !important;
-      margin-left: 5px;
-    }
-
-    .btn1 {
-      font-size: 0.8rem;
-      width: 20% !important;
-      position: relative;
-      margin-top: 10px !important;
-      margin-left: 360px !important;
-      padding: 10px !important;
-      margin-bottom: 10px;
-      padding: 5px !important;
-    }
-
-    #names{
-        font-size: 2rem;
-    }
-  }
 
 
 
