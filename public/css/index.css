@@ -12,7 +12,7 @@
     text-align: center;
     border-color: #fff;
     margin-top: 50px;
-    font-family: Cormorant Garamond, serif;
+    font-family: Cormorant Garamond, serif !important;
 
 }
 
@@ -73,8 +73,7 @@ body{
     color: #000;
     margin: 0;
     padding: 0;
-    font-family: Cormorant Garamond, serif;
-
+    font-family: Cormorant Garamond, serif !important;
 }
 
 body.block-scroll{
@@ -208,7 +207,7 @@ body .subtitle{
 #home .text{
     color: #4f6272;
     font-size: 23px;
-    font-family:Cormorant Garamond,serif;
+    font-family:Cormorant Garamond,serif !important;
 }
 
 #home .row-section-images,#home .section-images{
@@ -367,11 +366,14 @@ body .subtitle{
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
+        font-family:Cormorant Garamond,serif !important;
       }
 
       .product-description {
         font-size: 14px;
         margin-bottom: 10px;
+        font-family:Cormorant Garamond,serif !important;
+
       }
 
       .product-price {

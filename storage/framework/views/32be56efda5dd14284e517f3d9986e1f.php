@@ -34,6 +34,7 @@
 
     <title>Paginas de tu libro</title>
   <body>
+
     <div id="product-step">
         <div class="row">
             <div class="col-12 text-center">
@@ -41,8 +42,8 @@
             <h6>Puedes editarlas a tu gusto al hacer clic en ellas</h6>
             </div>
          <div class="col-12 pages">
-            <div class="page-wrapper">
-                <img src="/img/books/page1/extra/two-avatars.jpg" class="modal-image" id="first-page-wrapper" >
+            <div class="page-wrapper" id="first-page-wrapper">
+                <img src="/img/books/page1/extra/two-avatars.jpg" class="modal-image">
             <div class="giver-img">
                 <img src="/img/books/page1/woman/giver-woman-base.png" class="extra modal-image" style="z-index: 1;">
                 <img id="eyesfemale" src="/img/books/page1/woman/eyes/brown.png" class="extra modal-image" style="z-index: 1;">
@@ -63,8 +64,6 @@
             <h1 id="names" title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 1vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
         </div>
     </div>
-
-        <button class="btn btn-primary myBtn" data-target="modal-image">Cambia tu imagen</button>
 
             <div class="page-wrapper">
                 <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
@@ -2180,19 +2179,8 @@
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-
-
      </div>
+     <script src="<?php echo e(asset('js/Book_front_page.js')); ?>"></script>
      <script src="<?php echo e(asset('js/Books_pages_page1.js')); ?>"></script>
      <script src="<?php echo e(asset('js/Books_pages_page2.js')); ?>"></script>
      <script src="<?php echo e(asset('js/Books_pages_page3.js')); ?>"></script>
