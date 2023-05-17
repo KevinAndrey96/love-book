@@ -124,7 +124,7 @@
                     </div>
                     <div class="receiver-img">
                       <img src="/img/frontpage/frontpage4/man/receiver-base.png" class="extra" style="z-index: 2;">
-                      <img id="eyesmalee3" src="/img/frontpage/frontpage4/man/eyes/brown.png" onclick="selectContainerContent('frontpage4')" class="extra" style="z-index: 2;">
+                      <img id="eyesmalee3" src="/img/frontpage/frontpage4/man/eyes/brown.png" onclick="selectContainerContent('frontpage4')" class="extra" style="z-index: 3;">
                       <img id="hairmalee3" src="/img/frontpage/frontpage4/man/hair/brown/half1.png" class="extra" style="z-index: 2;">
                       <img id="beardd3" src="/img/frontpage/frontpage4/man/beard/brown/brown1.png" class="extra" style="z-index: 2;" >
                       <img id="glassesmalee3" src="/img/frontpage/frontpage4/man/glasses/glasses.png" class="extra" style="z-index: 2;">
