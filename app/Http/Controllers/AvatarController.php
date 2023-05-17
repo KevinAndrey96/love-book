@@ -14,13 +14,13 @@ class AvatarController extends Controller
 
     public function avatarMale()
     {
-        return view('books.avatar_male');
+        return view('Books.avatar_male');
     }
 
     /**Return avatar female edit*/
 
     public function avatarFemale()
     {
-        return view('books.avatar_female');
+        return view('Books.avatar_female');
     }
 }
