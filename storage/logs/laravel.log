@@ -1634,3 +1634,63 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2023-05-18 16:37:05] local.ERROR: The C:\xampp\htdocs\Love-Book\bootstrap\cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The C:\\xampp\\htdocs\\Love-Book\\bootstrap\\cache directory must be present and writable. at C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php:178)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(137): Illuminate\\Foundation\\PackageManifest->write(Array)
+#1 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(107): Illuminate\\Foundation\\PackageManifest->build()
+#2 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#4 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#6 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#7 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#8 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 {main}
+"} 
+[2023-05-18 16:37:06] local.ERROR: Uncaught Illuminate\Contracts\Container\BindingResolutionException: Target [Illuminate\Contracts\Auth\Access\Gate] is not instantiable. in C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Container\Container.php:1128
+Stack trace:
+#0 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Container\Container.php(923): Illuminate\Container\Container->notInstantiable('Illuminate\\Cont...')
+#1 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Container\Container.php(795): Illuminate\Container\Container->build('Illuminate\\Cont...')
+#2 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(933): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#3 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Container\Container.php(731): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#4 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(918): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#5 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Container\Container.php(1456): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#6 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(236): Illuminate\Container\Container->offsetGet('Illuminate\\Cont...')
+#7 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(207): Illuminate\Support\Facades\Facade::resolveFacadeInstance('Illuminate\\Cont...')
+#8 C:\xampp\htdocs\Love-Book\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(347): Illuminate\Support\Facades\Facade::getFacadeRoot()
+#9 Command line code(1): Illuminate\Support\Facades\Facade::__callStatic('abilities', Array)
+#10 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Illuminate\\Contracts\\Container\\BindingResolutionException: Target [Illuminate\\Contracts\\Auth\\Access\\Gate] is not instantiable. in C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:1128
+Stack trace:
+#0 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(923): Illuminate\\Container\\Container->notInstantiable('Illuminate\\\\Cont...')
+#1 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('Illuminate\\\\Cont...')
+#2 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(933): Illuminate\\Container\\Container->resolve('Illuminate\\\\Cont...', Array, true)
+#3 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('Illuminate\\\\Cont...', Array)
+#4 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(918): Illuminate\\Container\\Container->make('Illuminate\\\\Cont...', Array)
+#5 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1456): Illuminate\\Foundation\\Application->make('Illuminate\\\\Cont...')
+#6 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(236): Illuminate\\Container\\Container->offsetGet('Illuminate\\\\Cont...')
+#7 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(207): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance('Illuminate\\\\Cont...')
+#8 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(347): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#9 Command line code(1): Illuminate\\Support\\Facades\\Facade::__callStatic('abilities', Array)
+#10 {main}
+  thrown at C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php:1128)
+[stacktrace]
+#0 {main}
+"} 
+[2023-05-18 16:56:07] local.ERROR: rename(C:\xampp\htdocs\Love-Book\bootstrap\cache\pac603A.tmp,C:\xampp\htdocs\Love-Book\bootstrap\cache/packages.php): Acceso denegado (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(C:\\xampp\\htdocs\\Love-Book\\bootstrap\\cache\\pac603A.tmp,C:\\xampp\\htdocs\\Love-Book\\bootstrap\\cache/packages.php): Acceso denegado (code: 5) at C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:234)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(C:\\\\xampp...', 'C:\\\\xampp\\\\htdocs...', 234)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'rename(C:\\\\xampp...', 'C:\\\\xampp\\\\htdocs...', 234)
+#2 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(234): rename('C:\\\\xampp\\\\htdocs...', 'C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(182): Illuminate\\Filesystem\\Filesystem->replace('C:\\\\xampp\\\\htdocs...', '<?php return ar...')
+#4 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(137): Illuminate\\Foundation\\PackageManifest->write(Array)
+#5 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(107): Illuminate\\Foundation\\PackageManifest->build()
+#6 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
