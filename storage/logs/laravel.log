@@ -728,3 +728,20 @@ Did you mean one of these?
 #3 C:\\xampp\\htdocs\\Love-Book\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #4 {main}
 "} 
+[2023-05-18 03:32:33] local.ERROR: rename(C:\xampp\htdocs\Love-Book\bootstrap\cache\pacAC03.tmp,C:\xampp\htdocs\Love-Book\bootstrap\cache/packages.php): Acceso denegado (code: 5) {"exception":"[object] (ErrorException(code: 0): rename(C:\\xampp\\htdocs\\Love-Book\\bootstrap\\cache\\pacAC03.tmp,C:\\xampp\\htdocs\\Love-Book\\bootstrap\\cache/packages.php): Acceso denegado (code: 5) at C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:234)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'rename(C:\\\\xampp...', 'C:\\\\xampp\\\\htdocs...', 234)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'rename(C:\\\\xampp...', 'C:\\\\xampp\\\\htdocs...', 234)
+#2 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(234): rename('C:\\\\xampp\\\\htdocs...', 'C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(182): Illuminate\\Filesystem\\Filesystem->replace('C:\\\\xampp\\\\htdocs...', '<?php return ar...')
+#4 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(137): Illuminate\\Foundation\\PackageManifest->write(Array)
+#5 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(107): Illuminate\\Foundation\\PackageManifest->build()
+#6 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(90): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(79): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 C:\\xampp\\htdocs\\Love-Book\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main}
+"} 
