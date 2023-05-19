@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 class BookController extends Controller
 {
@@ -13,4 +15,11 @@ class BookController extends Controller
     public function BookPages(){
         return view('Books.Book_pages');
     }
-}
+
+
+    }
+
+
+
+
+

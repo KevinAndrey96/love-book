@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +8,10 @@
     <link rel="stylesheet" href ="<?php echo e(asset('css/Book_pages.css')); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </head>
 <body>
     <div class="container-fluid">
@@ -65,26 +64,26 @@
         </div>
     </div>
 
-            <div class="page-wrapper">
-                <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
-            <div class="giver-img">
-                    <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
-                    <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-                    <img id="hairfemale2"src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
-                    <img id="glassesfemale2"src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
-                <div class="receiver-img">
-                    <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
-                    <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 1;">
-                    <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
-                    <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1;">
-                    <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
-                </div>
-                <div class="extras">
-                    <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
-                    <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
-                        <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
-                        </div></div>
+            <div class="page-wrapper" id="page1">
+                        <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
+                    <div class="giver-img">
+                            <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
+                            <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
+                            <img id="hairfemale2"src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
+                            <img id="glassesfemale2"src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
+                        <div class="receiver-img">
+                            <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
+                            <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 1;">
+                            <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
+                            <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1;">
+                            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
+                        </div>
+                        <div class="extras">
+                            <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
+                            <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
+                                <div><br></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
+                                </div></div>
                 </div>
                 </div>
                 <button class="btn btn-primary myBtn1" data-target="modal-image">Cambia tu imagen</button>
@@ -817,7 +816,7 @@
 
 
                 <div class="page-wrapper">
-                     <img src="/img/books/page17/Extra/no-avatars.jpg" class="page-img modal-image17">
+                     <img src="/img/books/page17/extra/no-avatars.jpg" class="page-img modal-image17">
                      <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando soñamos juntos</font></font></div>
