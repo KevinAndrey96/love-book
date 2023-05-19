@@ -18,6 +18,12 @@ Route::get('/front-page', [BookController::class, 'bookFrontPage']);
 
 Route::get('/books-pages', [BookController::class, 'bookPages']);
 
+Route::get('/pdf', [BookController::class, 'download']);
+
+
+
+
+
 
 
 
