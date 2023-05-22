@@ -7,11 +7,11 @@
     <title>Personaliza tu libro</title>
     <link rel="stylesheet" href ="<?php echo e(asset('css/Book_pages.css')); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+
 </head>
 <body>
     <div class="container-fluid">
@@ -59,12 +59,12 @@
         <div class="extras">
             <img src="/img/books/page1/extra/extra-1.png" class="extra modal-image" style="z-index: 3;">
         </div>
-        <div class="title-wrapper" contenteditable="true">
-            <h1 id="names" title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 1vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
+        <div class="tittle-wrapper"  contenteditable="true" id="text-page1" >
+            <h1 id="names"  title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 1vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
         </div>
     </div>
 
-            <div class="page-wrapper" id="page1">
+            <div class="page-wrapper" id="page2" data-order="2">
                         <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
                     <div class="giver-img">
                             <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="extras">
                             <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
-                            <div><div contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
+                            <div><div id="text-page2" contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
                                 <div><br></div>
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
                                 </div></div>
@@ -122,7 +122,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page3" data-order="3">
                     <img src="/img/books/page3/extra/two-avatars (1).jpg" class="page-img modal-image3">
                 <div class="giver-img">
                     <img src="/img/books/page3/woman/giver-base.png" class="extra modal-image3" style="z-index: 2;">
@@ -137,7 +137,7 @@
                     <img id="beardmale3" src="/img/books/page3/man/beard/brown/brown1.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="glassesmale3" src="/img/books/page3/man/glasses/glasses.png" class="extra modal-image3" style="z-index: 1;">
                 </div>
-                <div><div contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important; flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                <div><div id="text-page3" contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important; flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fue amor a primera vista</font></font></div>
                     </div></div>
@@ -177,7 +177,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page4" data-order="4">
                     <img src="/img/books/page4/extra/two-avatars.jpg" class="page-img modal-image4">
                 <div class="giver-img">
                     <img src="/img/books/page4/woman/giver-base.png" class="extra modal-image4" style="z-index: 1;">
@@ -192,7 +192,7 @@
                     <img id="beardmale4" src="/img/books/page4/man/beard/brown/brown1.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="glassesmale4" src="/img/books/page4/man/glasses/glasses.png" class="extra modal-image4" style="z-index: 2;">
                 </div>
-                <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                <div><div id="text-page4" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aun recuerdo nuestro primer beso</font></font></div>
                     </div></div>
@@ -232,9 +232,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page5" data-order="5">
                     <img src="/img/books/page5/extra/no-avatars.jpg" class="page-img modal-image5">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page5" contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contigo el mundo se ve distinto</font></font></div>
                         </div></div>
@@ -275,7 +275,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page6" data-order="6">
                     <img src="/img/books/page6/extra/two-avatars.jpg" class="page-img modal-image6">
                 <div class="giver-img">
                     <img src="/img/books/page6/woman/giver-base.png" class="extra modal-image6" style="z-index: 1;">
@@ -290,7 +290,7 @@
                     <img id="beardmale6" src="/img/books/page6/man/beard/brown/brown1.png" class="extra modal-image6" style="z-index: 2;">
                     <img id="glassesmale6" src="/img/books/page6/man/glasses/glasses.png" class="extra modal-image6" style="z-index: 2;">
                 </div>
-                <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                <div><div id="text-page6" contenteditable="true" class="page-text large" style="position:absolute; top:1px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo unico que necesito en ese mundo</font></font></div>
                     </div></div>
@@ -330,10 +330,10 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page7" data-order="7">
                     <img src="/img/books/page7/extra/no-avatars.jpg" class="page-img modal-image7">
                     <div>
-                        <div contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                        <div id="text-page7" contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                             <div><br></div>
                             <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona a la que llamo</font></font></div>
                         </div>
@@ -376,7 +376,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page8" data-order="8">
                     <img src="/img/books/page8/extra/two-avatars.jpg" class="page-img modal-image8">
                     <div class="giver-img">
                         <img src="/img/books/page8/woman/giver-base.png" class="extra modal-image8" style="z-index: 1;">
@@ -391,7 +391,7 @@
                         <img id="beardmale8" src="/img/books/page8/man/beard/brown/brown1.png" class="extra modal-image8" style="z-index: 2;">
                         <img id="glassesmale8" src="/img/books/page8/man/glasses/glasses.png" class="extra modal-image8" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page8" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podemos hablar por horas...</font></font></div>
                         </div></div>
@@ -429,12 +429,9 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page9" data-order="9">
                     <img src="/img/books/page9/extra/no-avatars.jpg" class="page-img modal-image9">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page9" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contigo siempre sonrio</font></font></div>
                         </div></div>
@@ -472,10 +469,7 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page10" data-order="10">
                     <img src="/img/books/page10/extra/two-avatars.jpg" class="page-img modal-image10">
                     <div class="giver-img">
                         <img src="/img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
@@ -490,7 +484,7 @@
                         <img id="beardmale10" src="/img/books/page10/man/beard/brown/brown1.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="glassesmale10" src="/img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page10" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me haces muy feliz</font></font></div>
                         </div></div>
@@ -531,9 +525,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page11" data-order="11">
                     <img src="/img/books/page11/extra/no-avatars.jpg" class="page-img modal-image11">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page11" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gracias por ayudarme a sostenerme</font></font></div>
                         </div></div>
@@ -574,9 +568,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page12" data-order="12">
                     <img src="/img/books/page12/extra/no-avatars (1).jpg" class="page-img modal-image12">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page12" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu cargas mi bateria</font></font></div>
                         </div></div>
@@ -617,9 +611,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page13" data-order="13">
                     <img src="/img/books/page13/extra/no-avatars.jpg" class="page-img modal-image13">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page13" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta cuando te enojas</font></font></div>
                         </div></div>
@@ -660,7 +654,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page14" data-order="14">
                     <img src="/img/books/page14/extra/two-avatars.jpg" class="page-img modal-image14">
                     <div class="giver-img">
                         <img src="/img/books/page14/woman/giver-base.png" class="extra modal-image14" style="z-index: 1;">
@@ -675,7 +669,7 @@
                         <img id="beardmale14" src="/img/books/page14/man/beard/brown/brown1.png" class="extra modal-image14" style="z-index: 2;">
                         <img id="glassesmale14" src="/img/books/page14/man/glasses/glasses.png" class="extra modal-image14" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page14" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aun me amas verdad? :c Claro que si</font></font></div>
                         </div></div>
@@ -716,9 +710,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page15" data-order="15">
                     <img src="/img/books/page15/extra/no-avatars.jpg" class="page-img modal-image15">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:100px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page15" contenteditable="true" class="page-text large" style="position:absolute; top:100px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta cuando</font></font></div>
                         </div></div>
@@ -759,7 +753,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page16" data-order="16">
                     <img src="/img/books/page16/extra/two-avatars.jpg" class="page-img moda-image16">
                     <div class="giver-img">
                         <img src="/img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
@@ -774,7 +768,7 @@
                         <img id="beardmale16" src="/img/books/page16/man/beard/brown/brown1.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="glassesmale16" src="/img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page16" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos abrazamos</font></font></div>
                         </div></div>
@@ -815,9 +809,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page17" data-order="17">
                      <img src="/img/books/page17/extra/no-avatars.jpg" class="page-img modal-image17">
-                     <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                     <div><div id="text-page17" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando soñamos juntos</font></font></div>
                         </div></div>
@@ -858,7 +852,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page18" data-order="18">
                     <img src="/img/books/page18/extra/two-avatars.jpg" class="page-img modal-image18">
                     <div class="giver-img">
                         <img src="/img/books/page18/woman/giver-base.png" class="extra modal-image18" style="z-index: 2;">
@@ -873,7 +867,7 @@
                         <img id="beardmale18" src="/img/books/page18/man/beard/brown/brown1.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="glassesmale18" src="/img/books/page18/man/glasses/glasses.png" class="extra modal-image18" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important;  right: 100px !important; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page18" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important;  right: 100px !important; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos entendemos</font></font></div>
                         </div></div>
@@ -914,9 +908,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page19" data-order="19">
                     <img src="/img/books/page19/extra/no-avatars.jpg" class="page-img modal-image19">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page19" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando comemos juntos</font></font></div>
                         </div></div>
@@ -955,9 +949,9 @@
                 </div>
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page20" data-order="20">
                     <img src="/img/books/page20/extra/no-avatars (1).jpg" class="page-img modal-image20">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page20" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me tienes en las nubes</font></font></div>
                         </div></div>
@@ -997,7 +991,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page21" data-order="21">
                     <img src="/img/books/page21/extra/two-avatars.jpg" class="page-img modal-image21">
                     <div class="giver-img">
                         <img src="/img/books/page21/woman/giver-base.png" class="extra modal-image21" style="z-index: 1;">
@@ -1012,7 +1006,7 @@
                         <img id="beardmale21" src="/img/books/page21/man/beard/brown/brown1.png" class="extra modal-image21" style="z-index: 2;">
                         <img id="glassesmale21" src="/img/books/page21/man/glasses/glasses.png" class="extra modal-image21" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:10px; left: 50% !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3; margin-top: 300px !important;" >
+                    <div><div id="text-page21" contenteditable="true" class="page-text large" style="position:absolute; top:10px; left: 50% !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3; margin-top: 300px !important;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amo dormir contigo</font></font></div>
                         </div></div>
@@ -1052,9 +1046,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page22" data-order="22">
                     <img src="/img/books/page22/extra/no-avatars.jpg" class="page-img modal-image22">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page22" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tener citas...</font></font></div>
                         </div></div>
@@ -1094,7 +1088,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page23" data-order="23">
                     <img src="/img/books/page23/extra/two-avatars.jpg" class="page-img modal-image23">
                     <div class="giver-img">
                         <img src="/img/books/page23/woman/giver-base.png" class="extra modal-image23" style="z-index: 1;">
@@ -1109,7 +1103,7 @@
                         <img id="beardmale23" src="/img/books/page23/man/beard/brown/brown1.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="glassesmale23" src="/img/books/page23/man/glasses/glasses.png" class="extra modal-image23" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page23" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cocinar juntos</font></font></div>
                         </div></div>
@@ -1149,12 +1143,9 @@
                       </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page24" data-order="24">
                     <img src="/img/books/page24/extra/no-avatars.jpg" class="page-img modal-image24">
-                    <div contenteditable="true" class="page-text large" style="position:absolute; top: 50%; left: 70%; transform: translateY(-50%) translateX(-50%); display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div id="text-page24" contenteditable="true" class="page-text large" style="position:absolute; top: 50%; left: 70%; transform: translateY(-50%) translateX(-50%); display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para la cena</font></font></div>
                         </div></div>
@@ -1195,9 +1186,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page25" data-order="25">
                     <img src="/img/books/page25/extra/no-avatars (1).jpg" class="page-img modal-image25">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page25" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar la mañana a nuestra manera</font></font></div>
                         </div></div>
@@ -1238,14 +1229,14 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page26" data-order="26">
                     <img src="/img/books/page26/extra/only-giver.jpg" class="page-img modal-image26">
                     <div class="giver-img">
                         <img src="/img/books/page26/woman/giver-base.png" class="extra modal-image26" style="z-index: 1;">
                         <img id="eyesfemale26" src="/img/books/page26/woman/eyes/brown.png" class="extra modal-image26" style="z-index: 1;">
                         <img id="hairfemale26" src="/img/books/page26/woman/hair/brown/long1.png" class="extra modal-image26" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page26" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres tan linda</font></font></div>
                         </div></div>
@@ -1283,12 +1274,9 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page27" data-order="27">
                     <img src="/img/books/page27/extra/no-avatars.jpg" class="page-img modal-image27">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div  id="text-page27" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me tienes loco</font></font></div>
                         </div></div>
@@ -1328,9 +1316,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page28" data-order="28">
                     <img src="/img/books/page28/extra/no-avatars (1).jpg" class="page-img modal-image28">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page28" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos somos una pieza</font></font></div>
                         </div></div>
@@ -1370,9 +1358,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page29" data-order="29">
                     <img src="/img/books/page29/extra/no-avatars.jpg" class="page-img modal-image29">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page29" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Te doy mi medio panqueque</font></font></div>
                         </div></div>
@@ -1413,9 +1401,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page30" data-order="30">
                     <img src="/img/books/page30/extra/no-avatars (1).jpg" class="page-img modal-image30">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page30" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amo nuestros momentos</font></font></div>
                         </div></div>
@@ -1453,9 +1441,9 @@
                           </div>
                 </div>
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page31" data-order="31">
                     <img src="/img/books/page31/extra/no-avatars.jpg" class="page-img modal-image31">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page31" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Construir recuerdos</font></font></div>
                         </div></div>
@@ -1496,14 +1484,13 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page32" data-order="32">
                     <img src="/img/books/page32/extra/two-avatars.jpg" class="page-img modal-image32">
                     <div class="giver-img">
                         <img src="/img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="eyesfemale32" src="/img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
-
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page32/man/receiver-base.png" class="extra modal-image32" style="z-index: 1;">
@@ -1512,7 +1499,7 @@
                         <img id="beardmale32" src="/img/books/page32/man/beard/brown/brown1.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="glassesmale32" src="/img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page32" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tomarnos fotos</font></font></div>
                         </div></div>
@@ -1556,9 +1543,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page33" data-order="33">
                     <img src="/img/books/page33/extra/no-avatars.jpg" class="page-img modal-image33">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page33" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encontrar el camino juntos</font></font></div>
                         </div></div>
@@ -1599,9 +1586,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page34" data-order="34">
                     <img src="/img/books/page34/extra/no-avatars (1).jpg" class="page-img modal-image34">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page34" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos hasta el fin del mundo</font></font></div>
                         </div></div>
@@ -1642,9 +1629,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page35" data-order="35">
                     <img src="/img/books/page35/extra/no-avatars.jpg" class="page-img modal-image35">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page35" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para una pelicula</font></font></div>
                         </div></div>
@@ -1685,9 +1672,9 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page36" data-order="36">
                     <img src="/img/books/page36/extra/no-avatars (1).jpg" class="page-img modal-image36">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page36" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No ver netflix solos</font></font></div>
                         </div></div>
@@ -1725,10 +1712,7 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page37" data-order="37">
                     <img src="/img/books/page37/extra/two-avatars.jpg" class="page-img modal-image37">
                     <div class="giver-img">
                         <img src="/img/books/page37/woman/giver-base.png" class="extra modal-image37" style="z-index: 2;">
@@ -1743,7 +1727,7 @@
                         <img id="beardmale37" src="/img/books/page37/man/beard/brown/brown1.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="glassesmale37" src="/img/books/page37/man/glasses/glasses.png" class="extra modal-image37" style="z-index: 1;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page37" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta lo que tenemos</font></font></div>
                         </div></div>
@@ -1784,12 +1768,9 @@
                   </div>
             </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page38" data-order="38">
                     <img src="/img/books/page38/extra/no-avatars.jpg" class="page-img modal-image38">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page38" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para masaje</font></font></div>
                         </div></div>
@@ -1827,12 +1808,7 @@
                           </div>
                 </div>
 
-
-
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page39" data-order="39">
                     <img src="/img/books/page39/extra/only-receiver.jpg" class="page-img modal-image39">
                     <div class="giver-img">
                         <img src="/img/books/page39/man/receiver-base.png" class="extra modal-image39" style="z-index: 2;">
@@ -1841,7 +1817,7 @@
                         <img id="beardmale39" src="/img/books/page39/man/beard/brown/brown1.png" class="extra modal-image39" style="z-index: 2;">
                         <img id="glassesmale39" src="/img/books/page39/man/glasses/glasses.png" class="extra modal-image39" style="z-index: 2;">
                     </div>
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page39" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Te amo de pies a cabeza</font></font></div>
                         </div></div>
@@ -1879,12 +1855,9 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page40" data-order="40">
                     <img src="/img/books/page40/extra/no-avatars.jpg" class="page-img modal-image40">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page40" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prometeme que siempre estaremos juntos sin importar lo que pase</font></font></div>
                         </div></div>
@@ -1922,9 +1895,9 @@
                           </div>
                 </div>
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page41" data-order="41">
                     <img src="/img/books/page41/extra/no-avatars (1).jpg" class="page-img modal-image41">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:20px !important; left: 30px !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page41" contenteditable="true" class="page-text large" style="position:absolute; top:20px !important; left: 30px !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi espacio</font></font></div>
                         </div></div>
@@ -1962,12 +1935,9 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page42" data-order="42">
                     <img src="/img/books/page42/extra/no-avatars.jpg" class="page-img modal-image42">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page42" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quiero envejecer contigo</font></font></div>
                         </div></div>
@@ -2006,9 +1976,9 @@
                 </div>
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page43" data-order="43">
                     <img src="/img/books/page43/extra/no-avatars (1).jpg" class="page-img modal-image43">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page43" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso descubrimiento</font></font></div>
                         </div></div>
@@ -2046,12 +2016,9 @@
                           </div>
                 </div>
 
-
-
-
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page44" data-order="44">
                     <img src="/img/books/page44/extra/no-avatars.jpg" class="page-img modal-image44">
-                    <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
+                    <div><div id="text-page44" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y la luz de mi vida</font></font></div>
                         </div></div>
@@ -2091,7 +2058,7 @@
 
 
 
-                <div class="page-wrapper">
+                <div class="page-wrapper" id="page45" data-order="45">
                     <img src="/img/books/page45/extra/two-avatars.jpg" class="page-img modal-image45">
                 <div class="giver-img">
                     <img src="/img/books/page45/woman/giver-woman-base.png" class="extra modal-image45" style="z-index: 1;">
@@ -2109,7 +2076,7 @@
                 <div class="extras">
                     <img src="/img/books/page45/extra/extra-1.png" class="extra modal-image45" style="z-index: 3;">
                 </div>
-                <div><div contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3 !important;" >
+                <div><div id="text-page45" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3 !important;" >
                     <div><br></div>
                     <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TE AMO</font></font></div>
                     </div></div>
@@ -2146,6 +2113,9 @@
                         </div>
                       </div>
             </div>
+
+            <button id="guardarLibroBtn">Guardar libro</button>
+
 
 
              </div>
