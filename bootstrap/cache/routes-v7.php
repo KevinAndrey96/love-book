@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CIvI0wxW6wD8d3Sc',
+            '_route' => 'generated::ThMq4Y0yUkIZC1VT',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::rDnOIHU8yDJmjYrW',
+            '_route' => 'generated::FV27sGsprq4l8UpS',
           ),
           1 => NULL,
           2 => 
@@ -142,7 +142,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::B9Y5rNUS8K0LzG92',
+            '_route' => 'generated::Q1LcwY94DnCMejzv',
           ),
           1 => NULL,
           2 => 
@@ -162,7 +162,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::iyAPNZbo7jE9fWag',
+            '_route' => 'generated::i6H5RJ78Mbun1CfY',
           ),
           1 => NULL,
           2 => 
@@ -182,7 +182,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::FuDAKhrLMKUE8rGF',
+            '_route' => 'generated::1pCjzNuJbDLkz0da',
           ),
           1 => NULL,
           2 => 
@@ -202,7 +202,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::hx9eXxpkqT43C5dA',
+            '_route' => 'generated::rLmhyf7a2CaFyKFp',
           ),
           1 => NULL,
           2 => 
@@ -222,7 +222,27 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::s98IUVvzkmeHEGh4',
+            '_route' => 'generated::4qQA0fCxmRWWcrkN',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/books-pdf' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::RPQsTaMEJrZ5zTXW',
           ),
           1 => NULL,
           2 => 
@@ -242,13 +262,32 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::M8VZQrfVrFzgoblv',
+            '_route' => 'generated::mFgjwVi1kKTCisCu',
           ),
           1 => NULL,
           2 => 
           array (
             'GET' => 0,
             'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/guardar-libro' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::OZ1FTORpWhO6YESd',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -413,7 +452,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::CIvI0wxW6wD8d3Sc' => 
+    'generated::ThMq4Y0yUkIZC1VT' => 
     array (
       'methods' => 
       array (
@@ -436,7 +475,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::CIvI0wxW6wD8d3Sc',
+        'as' => 'generated::ThMq4Y0yUkIZC1VT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -452,7 +491,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::rDnOIHU8yDJmjYrW' => 
+    'generated::FV27sGsprq4l8UpS' => 
     array (
       'methods' => 
       array (
@@ -474,7 +513,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::rDnOIHU8yDJmjYrW',
+        'as' => 'generated::FV27sGsprq4l8UpS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -490,7 +529,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::B9Y5rNUS8K0LzG92' => 
+    'generated::Q1LcwY94DnCMejzv' => 
     array (
       'methods' => 
       array (
@@ -511,7 +550,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::B9Y5rNUS8K0LzG92',
+        'as' => 'generated::Q1LcwY94DnCMejzv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -527,7 +566,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::iyAPNZbo7jE9fWag' => 
+    'generated::i6H5RJ78Mbun1CfY' => 
     array (
       'methods' => 
       array (
@@ -548,7 +587,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::iyAPNZbo7jE9fWag',
+        'as' => 'generated::i6H5RJ78Mbun1CfY',
       ),
       'fallback' => false,
       'defaults' => 
@@ -564,7 +603,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::FuDAKhrLMKUE8rGF' => 
+    'generated::1pCjzNuJbDLkz0da' => 
     array (
       'methods' => 
       array (
@@ -585,7 +624,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::FuDAKhrLMKUE8rGF',
+        'as' => 'generated::1pCjzNuJbDLkz0da',
       ),
       'fallback' => false,
       'defaults' => 
@@ -601,7 +640,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::hx9eXxpkqT43C5dA' => 
+    'generated::rLmhyf7a2CaFyKFp' => 
     array (
       'methods' => 
       array (
@@ -622,7 +661,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::hx9eXxpkqT43C5dA',
+        'as' => 'generated::rLmhyf7a2CaFyKFp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -638,7 +677,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::s98IUVvzkmeHEGh4' => 
+    'generated::4qQA0fCxmRWWcrkN' => 
     array (
       'methods' => 
       array (
@@ -659,7 +698,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::s98IUVvzkmeHEGh4',
+        'as' => 'generated::4qQA0fCxmRWWcrkN',
       ),
       'fallback' => false,
       'defaults' => 
@@ -675,7 +714,44 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::M8VZQrfVrFzgoblv' => 
+    'generated::RPQsTaMEJrZ5zTXW' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'books-pdf',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\BookController@booksPDF',
+        'controller' => 'App\\Http\\Controllers\\BookController@booksPDF',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::RPQsTaMEJrZ5zTXW',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::mFgjwVi1kKTCisCu' => 
     array (
       'methods' => 
       array (
@@ -689,14 +765,50 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\BookController@download',
-        'controller' => 'App\\Http\\Controllers\\BookController@download',
+        'uses' => 'App\\Http\\Controllers\\BookController@generarPDF',
+        'controller' => 'App\\Http\\Controllers\\BookController@generarPDF',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::M8VZQrfVrFzgoblv',
+        'as' => 'generated::mFgjwVi1kKTCisCu',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::OZ1FTORpWhO6YESd' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'guardar-libro',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\BookController@guardarDatos',
+        'controller' => 'App\\Http\\Controllers\\BookController@guardarDatos',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::OZ1FTORpWhO6YESd',
       ),
       'fallback' => false,
       'defaults' => 

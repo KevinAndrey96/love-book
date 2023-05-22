@@ -54,9 +54,6 @@
             </div>
           </div>
 
-          <button class="btn-convert-to-pdf btn btn-primary mt-3">Convertir a PDF</button>
-
-
         <script src="{{ asset('js/Avatar_pick.js')}}"></script>
 </body>
 </html>

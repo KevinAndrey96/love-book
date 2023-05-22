@@ -149,6 +149,7 @@
 
 </div>
 <script src="{{ asset('js/Book_front_page.js')}}"></script>
+<script src="{{ asset('js/Books_pages_page2.js')}}"></script>
 <script src="{{ asset('js/Book_front_page1.js')}}"></script>
 <script src="{{ asset('js/Book_front_page2.js')}}"></script>
 <script src="{{ asset('js/Book_front_page3.js')}}"></script>
