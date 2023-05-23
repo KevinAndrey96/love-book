@@ -45,6 +45,21 @@ class BookController extends Controller
         return $pdf->stream('nombre_del_archivo.pdf');
     }
 
+    public function descargarPDF()
+{
+
+    set_time_limit(0); // Desactiva el límite de tiempo de ejecución
+
+   // Obtener el contenido actual de la vista
+   $content = view('Books_pdf_view')->render();
+
+   // Generar el PDF
+   $pdf = PDF::loadHTML($content);
+
+   // Descargar el PDF
+   return $pdf->download('nombre_del_archivo.pdf');
+}
+
 
 
 
@@ -61,46 +76,46 @@ class BookController extends Controller
         // Crear el directorio principal si no existe
         Storage::makeDirectory($bookDir);
 
-        // Nombre del archivo de contenido
-        $contentFileName = sprintf('%s/%s_%s.txt', $bookDir, $nameFemale, $nameMale);
+        // // Nombre del archivo de contenido
+        // $contentFileName = sprintf('%s/%s_%s.txt', $bookDir, $nameFemale, $nameMale);
 
-        // Obtener el contenido enviado
-        $content = $request->input('mainContent');
+        // // Obtener el contenido enviado
+        // $content = $request->input('mainContent');
 
-        // Buscar todas las etiquetas de imagen en el contenido
-        preg_match_all('/<img[^>]+>/i', $content, $matches);
+        // // Buscar todas las etiquetas de imagen en el contenido
+        // preg_match_all('/<img[^>]+>/i', $content, $matches);
 
-        // Obtener todas las etiquetas de imagen encontradas
-        $images = $matches[0];
+        // // Obtener todas las etiquetas de imagen encontradas
+        // $images = $matches[0];
 
-        // Iterar sobre las etiquetas de imagen y reemplazar las rutas con asset()
-        foreach ($images as $image) {
-            // Obtener la ruta de la imagen dentro de la etiqueta
-            preg_match('/src="([^"]+)"/i', $image, $srcMatches);
-            $src = $srcMatches[1];
+        // // Iterar sobre las etiquetas de imagen y reemplazar las rutas con asset()
+        // foreach ($images as $image) {
+        //     // Obtener la ruta de la imagen dentro de la etiqueta
+        //     preg_match('/src="([^"]+)"/i', $image, $srcMatches);
+        //     $src = $srcMatches[1];
 
-            // Verificar si la ruta de la imagen es relativa
-            if (Str::startsWith($src, '/')) {
-                // Reemplazar la ruta de imagen original con la ruta generada por asset()
-                $fullImagePath = asset($src);
-                $content = str_replace($src, $fullImagePath, $content);
-            }
-        }
+        //     // Verificar si la ruta de la imagen es relativa
+        //     if (Str::startsWith($src, '/')) {
+        //         // Reemplazar la ruta de imagen original con la ruta generada por asset()
+        //         $fullImagePath = asset($src);
+        //         $content = str_replace($src, $fullImagePath, $content);
+        //     }
+        // }
 
         // Guardar el contenido en un archivo
-        Storage::put($contentFileName, $content);
+        // Storage::put($contentFileName, $content);
 
-        // Obtener el contenido actual del div
-        $existingContent = file_get_contents(resource_path('views/Books_pdf_view.blade.php'));
+        // // Obtener el contenido actual del div
+        // $existingContent = file_get_contents(resource_path('views/Books_pdf_view.blade.php'));
 
-        // Limpiar solo la sección del contenido dentro del div "product-step"
-        $newContent = preg_replace('/<div id="product-step">(.|\s)*<\/div>/i', '<div id="product-step"></div>', $existingContent);
+        // // Limpiar solo la sección del contenido dentro del div "product-step"
+        // $newContent = preg_replace('/<div id="product-step">(.|\s)*<\/div>/i', '<div id="product-step"></div>', $existingContent);
 
-        // Agregar el nuevo contenido generado
-        $newContent .= $content;
+        // // Agregar el nuevo contenido generado
+        // $newContent .= $content;
 
-        // Guardar el contenido actualizado en el archivo
-        file_put_contents(resource_path('views/Books_pdf_view.blade.php'), $newContent);
+        // // Guardar el contenido actualizado en el archivo
+        // file_put_contents(resource_path('views/Books_pdf_view.blade.php'), $newContent);
 
         $pdf = PDF::loadView('Books_pdf_view');
 
@@ -117,3 +132,5 @@ class BookController extends Controller
         return response()->json(['success' => true, 'message' => 'El libro se guardó correctamente.']);
     }
 }
+
+
