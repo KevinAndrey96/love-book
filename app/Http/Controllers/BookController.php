@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\PdF;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
+
 
 use Illuminate\Support\Facades\Storage;
 
@@ -44,65 +46,74 @@ class BookController extends Controller
     }
 
 
+
+
     public function guardarDatos(Request $request)
     {
+        set_time_limit(0); // Desactiva el límite de tiempo de ejecución
 
-    set_time_limit(0); // Desactiva el límite de tiempo de ejecución
+        $nameFemale = $request->input('nameFemale');
+        $nameMale = $request->input('nameMale');
 
-    $nameFemale = $request->input('nameFemale');
-    $nameMale = $request->input('nameMale');
+        // Directorio base donde se guardarán los archivos
+        $bookDir = sprintf('public/%s_%s', $nameFemale, $nameMale);
 
-    // Directorio base donde se guardarán los archivos
-    $bookDir = '' . $nameFemale . '_' . $nameMale . '/libro';
+        // Crear el directorio principal si no existe
+        Storage::makeDirectory($bookDir);
 
-    // Crear el directorio principal si no existe
-    Storage::makeDirectory($bookDir);
+        // Nombre del archivo de contenido
+        $contentFileName = sprintf('%s/%s_%s.txt', $bookDir, $nameFemale, $nameMale);
 
-    // Contador para las páginas
-    $pageCounter = 2; // Comenzamos desde la página 2, ya que la página 1 es la portada
+        // Obtener el contenido enviado
+        $content = $request->input('mainContent');
 
-    // Recorrer los archivos enviados y guardarlos en los directorios correspondientes
-    foreach ($request->all() as $key => $file) {
-        if ($key === 'selectedContent') {
-            // Directorio de la carpeta "frontpage"
-            $frontpageDir = $bookDir . '/frontpage';
+        // Buscar todas las etiquetas de imagen en el contenido
+        preg_match_all('/<img[^>]+>/i', $content, $matches);
 
-            // Crear el directorio "frontpage" si no existe
-            Storage::makeDirectory($frontpageDir);
+        // Obtener todas las etiquetas de imagen encontradas
+        $images = $matches[0];
 
-            // Guardar el contenido de selectedContent en un archivo
-            $selectedContent = $file;
-            Storage::put($frontpageDir . '/frontpage.txt', $selectedContent);
-        } elseif (strpos($key, 'page') === 0) {
-            // Obtener el número de página
-            $pageNumber = substr($key, 4);
+        // Iterar sobre las etiquetas de imagen y reemplazar las rutas con asset()
+        foreach ($images as $image) {
+            // Obtener la ruta de la imagen dentro de la etiqueta
+            preg_match('/src="([^"]+)"/i', $image, $srcMatches);
+            $src = $srcMatches[1];
 
-            // Directorio de destino para la página
-            $pageDestinationDir = $bookDir . '/page' . $pageNumber;
-
-            // Crear el directorio de la página si no existe
-            Storage::makeDirectory($pageDestinationDir);
-
-            // Guardar el contenido de la página en un archivo
-            $pageContent = $file;
-            Storage::put($pageDestinationDir . '/page' . $pageNumber . '.txt', $pageContent);
+            // Verificar si la ruta de la imagen es relativa
+            if (Str::startsWith($src, '/')) {
+                // Reemplazar la ruta de imagen original con la ruta generada por asset()
+                $fullImagePath = asset($src);
+                $content = str_replace($src, $fullImagePath, $content);
+            }
         }
+
+        // Guardar el contenido en un archivo
+        Storage::put($contentFileName, $content);
+
+        // Obtener el contenido actual del div
+        $existingContent = file_get_contents(resource_path('views/Books_pdf_view.blade.php'));
+
+        // Limpiar solo la sección del contenido dentro del div "product-step"
+        $newContent = preg_replace('/<div id="product-step">(.|\s)*<\/div>/i', '<div id="product-step"></div>', $existingContent);
+
+        // Agregar el nuevo contenido generado
+        $newContent .= $content;
+
+        // Guardar el contenido actualizado en el archivo
+        file_put_contents(resource_path('views/Books_pdf_view.blade.php'), $newContent);
+
+        $pdf = PDF::loadView('Books_pdf_view');
+
+        // Directorio donde se guardará el archivo PDF
+        $pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
+
+        // Crear el directorio si no existe
+        Storage::disk('local')->makeDirectory($pdfDir);
+
+        // Guardar el PDF en un archivo
+        Storage::disk('local')->put($pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf', $pdf->output());
+
+        // Respuesta de éxito
+        return response()->json(['success' => true, 'message' => 'El libro se guardó correctamente.']);
     }
-
-    $pdf = PDF::loadView('Books_pdf_view');
-
-
-    // Directorio donde se guardará el archivo PDF
-    $pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
-
-    // Crear el directorio si no existe
-    Storage::disk('local')->makeDirectory($pdfDir);
-
-    // Guardar el PDF en un archivo
-    Storage::disk('local')->put($pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf', $pdf->output());
-
-    // Respuesta de éxito
-    return response()->json(['success' => true, 'message' => 'El libro se guardó correctamente.']);
-} }
-
-
+}

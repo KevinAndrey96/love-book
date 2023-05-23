@@ -100,53 +100,59 @@ if (glassesFemale === "block") {
     // Crear un FormData para almacenar los datos
     var formData = new FormData();
 
-    // Definir la cantidad total de páginas
-    var totalPages = 44; // Actualiza esto con la cantidad total de páginas que deseas guardar
-
     // Obtener los nombres del localStorage
     var nameFemale = localStorage.getItem('nameFemale');
     var nameMale = localStorage.getItem('nameMale');
 
-    // Obtener el contenido de localStorage.selectedContent
-    var selectedContent = localStorage.getItem('selectedContent');
-
-    // Agregar los nombres y el contenido seleccionado al FormData
+    // Agregar los nombres al FormData
     formData.append('nameFemale', nameFemale);
     formData.append('nameMale', nameMale);
-    formData.append('selectedContent', selectedContent);
 
-    // Recorrer las páginas y agregar su contenido al FormData
-    for (var i = 1; i <= totalPages; i++) {
-      var pageId = 'page' + i;
-      var pageElement = document.getElementById(pageId);
+    // Obtener el contenedor principal del contenido
+    var mainContentElement = document.getElementById('product-step');
 
-      if (pageElement) {
-        // Clonar el elemento de la página para evitar modificar el original
-        var clonedPageElement = pageElement.cloneNode(true);
 
-        // Eliminar los botones y los modales del clon de la página
-        var buttons = clonedPageElement.querySelectorAll('button');
-        buttons.forEach(function(button) {
-          button.parentNode.removeChild(button);
-        });
+    // Clonar el contenedor principal para evitar modificar el original
+    var clonedMainContentElement = mainContentElement.cloneNode(true);
 
-        var modals = clonedPageElement.querySelectorAll('.modal');
-        modals.forEach(function(modal) {
-          modal.parentNode.removeChild(modal);
-        });
+    var colElement = clonedMainContentElement.querySelector('.col-12.text-center');
+if (colElement) {
+  // Eliminar el elemento div y su contenido del clon del contenido
+  colElement.parentNode.removeChild(colElement);
+}
 
-        // Obtener el contenido HTML del clon de la página
-        var pageContent = clonedPageElement.outerHTML;
+    // Eliminar los botones y los modales del clon del contenido
+    var buttons = clonedMainContentElement.querySelectorAll('button');
+    buttons.forEach(function(button) {
+      button.parentNode.removeChild(button);
+    });
 
-        // Agregar el contenido de la página al FormData
-        formData.append(pageId, pageContent);
+    var modals = clonedMainContentElement.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+      modal.parentNode.removeChild(modal);
+    });
 
-        // Imprimir en la consola el contenido enviado en la página
-        console.log('Contenido enviado en ' + pageId + ':');
-        console.log(pageContent);
-        console.log('-----------------------');
-      }
-    }
+    // Eliminar los estilos de los textos en el clon del contenido
+    var texts = clonedMainContentElement.querySelectorAll('.page-text');
+    texts.forEach(function(text) {
+      text.removeAttribute('style');
+    });
+
+    var scripts = clonedMainContentElement.querySelectorAll('script');
+    scripts.forEach(function(script) {
+      script.parentNode.removeChild(script);
+    });
+
+    // Obtener el contenido HTML del clon del contenedor principal
+    var mainContentHTML = clonedMainContentElement.innerHTML;
+
+    // Agregar el contenido al FormData
+    formData.append('mainContent', mainContentHTML);
+
+    // Imprimir en la consola el contenido enviado
+    console.log('Contenido enviado:');
+    console.log(mainContentHTML);
+    console.log('-----------------------');
 
     // Realizar la solicitud AJAX
     var request = new XMLHttpRequest();
@@ -167,3 +173,4 @@ if (glassesFemale === "block") {
 
     request.send(formData);
   });
+

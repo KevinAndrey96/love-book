@@ -123,7 +123,7 @@
 
 
                 <div class="page-wrapper" id="page3" data-order="3">
-                    <img src="/img/books/page3/extra/two-avatars (1).jpg" class="page-img modal-image3">
+                    <img src="/img/books/page3/extra/two-avatars(1).jpg" class="page-img modal-image3">
                 <div class="giver-img">
                     <img src="/img/books/page3/woman/giver-base.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="eyesfemale3" src="/img/books/page3/woman/eyes/brown.png" class="extra modal-image3" style="z-index: 2;">
@@ -569,7 +569,7 @@
 
 
                 <div class="page-wrapper" id="page12" data-order="12">
-                    <img src="/img/books/page12/extra/no-avatars (1).jpg" class="page-img modal-image12">
+                    <img src="/img/books/page12/extra/no-avatars(1).jpg" class="page-img modal-image12">
                     <div><div id="text-page12" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu cargas mi bateria</font></font></div>
@@ -950,7 +950,7 @@
 
 
                 <div class="page-wrapper" id="page20" data-order="20">
-                    <img src="/img/books/page20/extra/no-avatars (1).jpg" class="page-img modal-image20">
+                    <img src="/img/books/page20/extra/no-avatars(1).jpg" class="page-img modal-image20">
                     <div><div id="text-page20" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me tienes en las nubes</font></font></div>
@@ -1187,7 +1187,7 @@
 
 
                 <div class="page-wrapper" id="page25" data-order="25">
-                    <img src="/img/books/page25/extra/no-avatars (1).jpg" class="page-img modal-image25">
+                    <img src="/img/books/page25/extra/no-avatars(1).jpg" class="page-img modal-image25">
                     <div><div id="text-page25" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar la mañana a nuestra manera</font></font></div>
@@ -1317,7 +1317,7 @@
 
 
                 <div class="page-wrapper" id="page28" data-order="28">
-                    <img src="/img/books/page28/extra/no-avatars (1).jpg" class="page-img modal-image28">
+                    <img src="/img/books/page28/extra/no-avatars(1).jpg" class="page-img modal-image28">
                     <div><div id="text-page28" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos somos una pieza</font></font></div>
@@ -1402,7 +1402,7 @@
 
 
                 <div class="page-wrapper" id="page30" data-order="30">
-                    <img src="/img/books/page30/extra/no-avatars (1).jpg" class="page-img modal-image30">
+                    <img src="/img/books/page30/extra/no-avatars(1).jpg" class="page-img modal-image30">
                     <div><div id="text-page30" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amo nuestros momentos</font></font></div>
@@ -1540,9 +1540,6 @@
                   </div>
             </div>
 
-
-
-
                 <div class="page-wrapper" id="page33" data-order="33">
                     <img src="/img/books/page33/extra/no-avatars.jpg" class="page-img modal-image33">
                     <div><div id="text-page33" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
@@ -1587,7 +1584,7 @@
 
 
                 <div class="page-wrapper" id="page34" data-order="34">
-                    <img src="/img/books/page34/extra/no-avatars (1).jpg" class="page-img modal-image34">
+                    <img src="/img/books/page34/extra/no-avatars(1).jpg" class="page-img modal-image34">
                     <div><div id="text-page34" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unidos hasta el fin del mundo</font></font></div>
@@ -1673,7 +1670,7 @@
 
 
                 <div class="page-wrapper" id="page36" data-order="36">
-                    <img src="/img/books/page36/extra/no-avatars (1).jpg" class="page-img modal-image36">
+                    <img src="/img/books/page36/extra/no-avatars(1).jpg" class="page-img modal-image36">
                     <div><div id="text-page36" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No ver netflix solos</font></font></div>
@@ -1896,7 +1893,7 @@
                 </div>
 
                 <div class="page-wrapper" id="page41" data-order="41">
-                    <img src="/img/books/page41/extra/no-avatars (1).jpg" class="page-img modal-image41">
+                    <img src="/img/books/page41/extra/no-avatars(1).jpg" class="page-img modal-image41">
                     <div><div id="text-page41" contenteditable="true" class="page-text large" style="position:absolute; top:20px !important; left: 30px !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi espacio</font></font></div>
@@ -1977,7 +1974,7 @@
 
 
                 <div class="page-wrapper" id="page43" data-order="43">
-                    <img src="/img/books/page43/extra/no-avatars (1).jpg" class="page-img modal-image43">
+                    <img src="/img/books/page43/extra/no-avatars(1).jpg" class="page-img modal-image43">
                     <div><div id="text-page43" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso descubrimiento</font></font></div>
