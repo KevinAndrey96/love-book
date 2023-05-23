@@ -21,7 +21,7 @@ Route::get('/books-pages', [BookController::class, 'bookPages']);
 Route::get('/books-pdf', [BookController::class, 'booksPDF']);
 
 
-Route::get('/pdf', [BookController::class, 'generarPDF']);
+Route::get('/pdf', [BookController::class, 'descargarPDF']);
 
 
 Route::post('/guardar-libro', [BookController::class, 'guardarDatos']);
