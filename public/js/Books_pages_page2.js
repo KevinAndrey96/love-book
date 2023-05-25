@@ -96,7 +96,7 @@ if (glassesFemale === "block") {
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
 
-  document.getElementById('guardarLibroBtn').addEventListener('click', function() {
+  document.getElementById('guardarDatos').addEventListener('click', function() {
     // Crear un FormData para almacenar los datos
     var formData = new FormData();
 
@@ -107,6 +107,8 @@ if (glassesFemale === "block") {
     // Agregar los nombres al FormData
     formData.append('nameFemale', nameFemale);
     formData.append('nameMale', nameMale);
+
+
 
     // Obtener el contenedor principal del contenido
     var mainContentElement = document.getElementById('product-step');
@@ -143,11 +145,15 @@ if (colElement) {
       script.parentNode.removeChild(script);
     });
 
+
+
     // Obtener el contenido HTML del clon del contenedor principal
     var mainContentHTML = clonedMainContentElement.innerHTML;
 
     // Agregar el contenido al FormData
     formData.append('mainContent', mainContentHTML);
+
+
 
     // Imprimir en la consola el contenido enviado
     console.log('Contenido enviado:');
@@ -173,4 +179,3 @@ if (colElement) {
 
     request.send(formData);
   });
-

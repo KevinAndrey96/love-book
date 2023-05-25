@@ -20,11 +20,12 @@
   }
 
   // Obtener el contenido del LocalStorage
-const selectedContent = localStorage.getItem('selectedContent');
+var selectedContent = localStorage.getItem('selectedContent');
 
 // Mostrar el contenido en el elemento deseado
-const displayContainer = document.getElementById('first-page-wrapper');
+var displayContainer = document.getElementById('first-page-wrapper');
 displayContainer.innerHTML = selectedContent;
+
 
 
 

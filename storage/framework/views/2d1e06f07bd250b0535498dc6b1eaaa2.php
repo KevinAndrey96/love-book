@@ -60,7 +60,7 @@
             <div class="extras">
               <img src="/img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
             </div>
-            <div class="title-wrapper text-center">
+            <div class="tittle-wrapper text-center" style="z-index: 100;">
               <h1 id="names" title="Esta será tu portada">Esta será tu portada</h1>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage2/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage2')" style="z-index: 3;">
                 </div>
-                <div class="title-wrapper text-center">
+                <div class="tittle-wrapper text-center" style="z-index: 100;">
                   <h1 id="names1" title="Esta será tu portada">Esta será tu portada</h1>
                 </div>
               </div>
@@ -108,7 +108,7 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
-                <div class="title-wrapper text-center">
+                <div class="tittle-wrapper text-center" style="z-index: 100;">
                   <h1 id="names2" title="Esta será tu portada">Esta será tu portada</h1>
                 </div>
               </div>
@@ -129,7 +129,7 @@
                       <img id="beardd3" src="/img/frontpage/frontpage4/man/beard/brown/brown1.png" class="extra" style="z-index: 2;" >
                       <img id="glassesmalee3" src="/img/frontpage/frontpage4/man/glasses/glasses.png" class="extra" style="z-index: 2;">
                     </div>
-                    <div class="title-wrapper text-center">
+                    <div class="tittle-wrapper text-center" style="z-index: 100;">
                       <h1 id="names3" title="Esta será tu portada">Esta será tu portada</h1>
                     </div>
                 </div>
