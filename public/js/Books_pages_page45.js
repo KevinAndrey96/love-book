@@ -92,6 +92,8 @@ if (glassesFemale === "block") {
   }
 
 
+
+
 // Establecer la ruta completa en la imagen correspondiente para los ojos y el cabello
   eyesmale.src = eyesMale;
   eyesfemale.src = eyesFemale;

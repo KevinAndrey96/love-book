@@ -63,11 +63,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  display: flex;
-  margin-top: 2px;
-  margin-right: 5px;
-  justify-content: center;
-  font-size: 12px;
 }
 
 .page-wrapper{
@@ -135,7 +130,7 @@ body {
     transition: all 0.2s;
   }
 
-.title-wrapper {
+.tittle-wrapper {
   position: absolute;
   top: 0;
   right: 10px;
@@ -152,27 +147,9 @@ body {
   text-align: right;
   color: #333;
 }
-.page-wrapper {
-    position: relative;
-  }
-  .image-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: auto;
-  }
-  .page-img {
-    display: block;
-    width: 100%;
-    height: auto;
 
-  }
-  .text-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
 
-  }
+
 
 .modal {
     display: none;

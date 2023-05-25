@@ -64,28 +64,33 @@
         </div>
     </div>
 
-            <div class="page-wrapper" id="page2" data-order="2">
-                        <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
-                    <div class="giver-img">
-                            <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
-                            <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-                            <img id="hairfemale2"src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
-                            <img id="glassesfemale2"src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
-                        <div class="receiver-img">
-                            <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
-                            <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 1;">
-                            <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
-                            <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1;">
-                            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
-                        </div>
-                        <div class="extras">
-                            <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
-                            <div><div id="text-page2" contenteditable="true"  class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;" >
-                                <div><br></div>
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
-                                </div></div>
-                </div>
-                </div>
+    <div class="page-wrapper" id="page2" data-order="2">
+        <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
+        <div class="giver-img">
+            <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="hairfemale2" src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="glassesfemale2" src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
+        </div>
+        <div class="receiver-img">
+            <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
+        </div>
+        <div>
+            <div id="text-page2" contenteditable="true" class="page-text large" style="position:absolute; top:10%; left: 5%; right: 5%; display: flex; justify-content: center !important; flex-direction: column; align-items:center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 6;">
+                <div><br></div>
+                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
+            </div>
+        </div>
+        <div class="extras">
+            <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
+        </div>
+
+
+
                 <button class="btn btn-primary myBtn1" data-target="modal-image">Cambia tu imagen</button>
                 <button class="btn btn-primary insert-before-btn">Insertar antes</button>
                 <button class="btn btn-primary insert-after-btn">Insertar después</button>
@@ -97,8 +102,8 @@
                         <div class="image-group1">
                           <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                         </div>
                         <div class="image-group1">
@@ -111,8 +116,8 @@
                         <div class="image-group1">
                           <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                         </div>
                       </div>
@@ -152,8 +157,8 @@
                             <div class="image-group3">
                               <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                             </div>
                             <div class="image-group3">
@@ -166,8 +171,8 @@
                             <div class="image-group3">
                               <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                             </div>
                           </div>
@@ -207,8 +212,8 @@
                             <div class="image-group4">
                               <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                             </div>
                             <div class="image-group4">
@@ -221,8 +226,8 @@
                             <div class="image-group4">
                               <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                             </div>
                           </div>
@@ -249,8 +254,8 @@
                                 <div class="image-group5">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group5">
@@ -263,8 +268,8 @@
                                 <div class="image-group5">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -305,8 +310,8 @@
                             <div class="image-group6">
                               <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                             </div>
                             <div class="image-group6">
@@ -319,8 +324,8 @@
                             <div class="image-group6">
                               <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                             </div>
                           </div>
@@ -349,8 +354,8 @@
                         <div class="image-group7">
                           <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                         </div>
                         <div class="image-group7">
@@ -363,8 +368,8 @@
                         <div class="image-group7">
                           <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                         </div>
                       </div>
@@ -406,8 +411,8 @@
                                 <div class="image-group8">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group8">
@@ -420,8 +425,8 @@
                                 <div class="image-group8">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -446,8 +451,8 @@
                                 <div class="image-group9">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group9">
@@ -460,8 +465,8 @@
                                 <div class="image-group9">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -472,17 +477,17 @@
                 <div class="page-wrapper" id="page10" data-order="10">
                     <img src="/img/books/page10/extra/two-avatars.jpg" class="page-img modal-image10">
                     <div class="giver-img">
-                        <img src="/img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="eyesfemale10" src="/img/books/page10/woman/eyes/brown.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="hairfemale10" src="/img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="glassesfemale10" src="/img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 2;">
-                    </div>
-                    <div class="receiver-img">
                         <img src="/img/books/page10/man/receiver-base.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="eyesmale10" src="/img/books/page10/man/eyes/brown.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="hairmale10" src="/img/books/page10/man/hair/brown/half1.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="beardmale10" src="/img/books/page10/man/beard/brown/brown1.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="glassesmale10" src="/img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 1;">
+                    </div>
+                    <div class="receiver-img">
+                        <img src="/img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="eyesfemale10" src="/img/books/page10/woman/eyes/brown.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="hairfemale10" src="/img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="glassesfemale10" src="/img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 2;">
                     </div>
                     <div><div id="text-page10" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
@@ -499,8 +504,8 @@
                                 <div class="image-group10">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group10">
@@ -513,8 +518,8 @@
                                 <div class="image-group10">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -542,8 +547,8 @@
                                 <div class="image-group11">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group11">
@@ -556,8 +561,8 @@
                                 <div class="image-group11">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -585,8 +590,8 @@
                                 <div class="image-group12">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group12">
@@ -599,8 +604,8 @@
                                 <div class="image-group12">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -628,8 +633,8 @@
                                 <div class="image-group13">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group13">
@@ -642,8 +647,8 @@
                                 <div class="image-group13">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -684,8 +689,8 @@
                                 <div class="image-group14">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group14">
@@ -698,8 +703,8 @@
                                 <div class="image-group14">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -727,8 +732,8 @@
                                 <div class="image-group15">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group15">
@@ -741,8 +746,8 @@
                                 <div class="image-group15">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -756,17 +761,17 @@
                 <div class="page-wrapper" id="page16" data-order="16">
                     <img src="/img/books/page16/extra/two-avatars.jpg" class="page-img moda-image16">
                     <div class="giver-img">
-                        <img src="/img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="eyesfemale16" src="/img/books/page16/woman/eyes/brown.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="hairfemale16" src="/img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="glassesfemale16" src="/img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 2;">
-                    </div>
-                    <div class="receiver-img">
                         <img src="/img/books/page16/man/receiver-base.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="eyesmale16" src="/img/books/page16/man/eyes/brown.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="hairmale16" src="/img/books/page16/man/hair/brown/half1.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="beardmale16" src="/img/books/page16/man/beard/brown/brown1.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="glassesmale16" src="/img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 1;">
+                    </div>
+                    <div class="receiver-img">
+                        <img src="/img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="eyesfemale16" src="/img/books/page16/woman/eyes/brown.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="hairfemale16" src="/img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="glassesfemale16" src="/img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 2;">
                     </div>
                     <div><div id="text-page16" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
@@ -783,8 +788,8 @@
                                 <div class="image-group16">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group16">
@@ -797,8 +802,8 @@
                                 <div class="image-group16">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -826,8 +831,8 @@
                                 <div class="image-group17">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group17">
@@ -840,8 +845,8 @@
                                 <div class="image-group17">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -882,8 +887,8 @@
                                 <div class="image-group18">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group18">
@@ -896,8 +901,8 @@
                                 <div class="image-group18">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -925,8 +930,8 @@
                                 <div class="image-group19">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group19">
@@ -939,8 +944,8 @@
                                 <div class="image-group19">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -966,8 +971,8 @@
                                 <div class="image-group20">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group20">
@@ -980,8 +985,8 @@
                                 <div class="image-group20">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1021,8 +1026,8 @@
                                 <div class="image-group21">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group21">
@@ -1035,8 +1040,8 @@
                                 <div class="image-group21">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1063,8 +1068,8 @@
                                 <div class="image-group22">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group22">
@@ -1077,8 +1082,8 @@
                                 <div class="image-group22">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1120,8 +1125,8 @@
                             <div class="image-group23">
                               <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                             </div>
                             <div class="image-group23">
@@ -1134,8 +1139,8 @@
                             <div class="image-group23">
                               <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                             </div>
                           </div>
@@ -1160,8 +1165,8 @@
                                 <div class="image-group24">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group24">
@@ -1174,8 +1179,8 @@
                                 <div class="image-group24">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1203,8 +1208,8 @@
                                 <div class="image-group25">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group25">
@@ -1217,8 +1222,8 @@
                                 <div class="image-group25">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1251,8 +1256,8 @@
                                 <div class="image-group26">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group26">
@@ -1265,8 +1270,8 @@
                                 <div class="image-group26">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1291,8 +1296,8 @@
                                 <div class="image-group27">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group27">
@@ -1305,8 +1310,8 @@
                                 <div class="image-group27">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1333,8 +1338,8 @@
                                 <div class="image-group28">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group28">
@@ -1347,8 +1352,8 @@
                                 <div class="image-group28">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1375,8 +1380,8 @@
                                 <div class="image-group29">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group29">
@@ -1389,8 +1394,8 @@
                                 <div class="image-group29">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1418,8 +1423,8 @@
                                 <div class="image-group30">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group30">
@@ -1432,8 +1437,8 @@
                                 <div class="image-group30">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1458,8 +1463,8 @@
                                 <div class="image-group31">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group31">
@@ -1472,8 +1477,8 @@
                                 <div class="image-group31">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1487,17 +1492,17 @@
                 <div class="page-wrapper" id="page32" data-order="32">
                     <img src="/img/books/page32/extra/two-avatars.jpg" class="page-img modal-image32">
                     <div class="giver-img">
-                        <img src="/img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="eyesfemale32" src="/img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
-                    </div>
-                    <div class="receiver-img">
                         <img src="/img/books/page32/man/receiver-base.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="eyesmale32" src="/img/books/page32/man/eyes/brown.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="hairmale32" src="/img/books/page32/man/hair/brown/half1.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="beardmale32" src="/img/books/page32/man/beard/brown/brown1.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="glassesmale32" src="/img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 1;">
+                    </div>
+                    <div class="receiver-img">
+                        <img src="/img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="eyesfemale32" src="/img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
                     </div>
                     <div><div id="text-page32" contenteditable="true" class="page-text large" style="position:absolute; top:1px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 90% !important; font-family: 'Lato', sans-serif; z-index: 3;" >
                         <div><br></div>
@@ -1517,8 +1522,8 @@
                         <div class="image-group32">
                           <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                         </div>
                         <div class="image-group32">
@@ -1531,8 +1536,8 @@
                         <div class="image-group32">
                           <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                         </div>
                       </div>
@@ -1557,8 +1562,8 @@
                                 <div class="image-group33">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group33">
@@ -1571,8 +1576,8 @@
                                 <div class="image-group33">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1600,8 +1605,8 @@
                                 <div class="image-group34">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group34">
@@ -1614,8 +1619,8 @@
                                 <div class="image-group34">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1643,8 +1648,8 @@
                                 <div class="image-group35">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group35">
@@ -1657,8 +1662,8 @@
                                 <div class="image-group35">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1686,8 +1691,8 @@
                                 <div class="image-group36">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group36">
@@ -1700,8 +1705,8 @@
                                 <div class="image-group36">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1742,8 +1747,8 @@
                         <div class="image-group37">
                           <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                         </div>
                         <div class="image-group37">
@@ -1756,8 +1761,8 @@
                         <div class="image-group37">
                           <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                          <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                          <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                           <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                         </div>
                       </div>
@@ -1782,8 +1787,8 @@
                                 <div class="image-group38">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group38">
@@ -1796,8 +1801,8 @@
                                 <div class="image-group38">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1829,8 +1834,8 @@
                                 <div class="image-group39">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group39">
@@ -1843,8 +1848,8 @@
                                 <div class="image-group39">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1869,8 +1874,8 @@
                                 <div class="image-group40">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group40">
@@ -1883,8 +1888,8 @@
                                 <div class="image-group40">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1909,8 +1914,8 @@
                                 <div class="image-group41">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group41">
@@ -1923,8 +1928,8 @@
                                 <div class="image-group41">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1949,8 +1954,8 @@
                                 <div class="image-group42">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group42">
@@ -1963,8 +1968,8 @@
                                 <div class="image-group42">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -1990,8 +1995,8 @@
                                 <div class="image-group43">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group43">
@@ -2004,8 +2009,8 @@
                                 <div class="image-group43">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -2030,8 +2035,8 @@
                                 <div class="image-group44">
                                   <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                                 </div>
                                 <div class="image-group44">
@@ -2044,8 +2049,8 @@
                                 <div class="image-group44">
                                   <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                                  <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                                  <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                                   <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                                 </div>
                               </div>
@@ -2088,8 +2093,8 @@
                             <div class="image-group45">
                               <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                             </div>
                             <div class="image-group45">
@@ -2102,8 +2107,8 @@
                             <div class="image-group45">
                               <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                              <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                              <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                               <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                             </div>
                           </div>
@@ -2111,7 +2116,8 @@
                       </div>
             </div>
 
-            <button id="guardarLibroBtn">Guardar libro</button>
+                            <button id="guardarDatos" type="submit" class="btn btn-primary">Guardar</button>
+
 
 
 
@@ -2124,8 +2130,8 @@
                     <div class="image-group">
                       <img src="/img/books/page2/extra/blank.jpg" class="modal-img">
                       <img src="/img/books/page2/extra/no-avatars (1).jpg" class="modal-img">
-                      <img src="/img/books/page2/extra/no-avatars (2).jpg" class="modal-img">
-                      <img src="/img/books/page2/extra/no-avatars.jpg" class="modal-img">
+                      <img src="/img/books/page2/extra/no-avatars1212.jpg" class="modal-img">
+                      <img src="/img/books/page2/extra/no-avatars121212.jpg" class="modal-img">
                       <img src="/img/books/page2/extra/no-avatars6.jpg" class="modal-img">
                     </div>
                     <div class="image-group">
@@ -2138,8 +2144,8 @@
                     <div class="image-group">
                       <img src="/img/books/page2/extra/no-avatars12.jpg" class="modal-img">
                       <img src="/img/books/page2/extra/no-avatars13.jpg" class="modal-img">
-                      <img src="/img/books/page2/extra/no-avatars14.jpg" class="modal-img">
-                      <img src="/img/books/page2/extra/no-avatars15.jpg" class="modal-img">
+                      <img src="/img/books/page2/extra/no-avatars21212.jpg" class="modal-img">
+                      <img src="/img/books/page2/extra/no-avatars3232.jpg" class="modal-img">
                       <img src="/img/books/page2/extra/no-avatars16.jpg" class="modal-img">
                     </div>
                   </div>
