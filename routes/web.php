@@ -29,8 +29,3 @@ Route::get('/form', [BookController::class, 'Form']);
 
 Route::post('/guardar-libro', [BookController::class, 'guardarDatos']);
 
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
