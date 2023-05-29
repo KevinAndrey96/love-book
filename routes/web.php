@@ -5,7 +5,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\AvatarController;
 
 Route::get('/', function () {
-    return view('Books.index');
+    return view('books.index');
 });
 
 
