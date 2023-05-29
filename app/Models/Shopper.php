@@ -16,10 +16,6 @@ class Shopper extends Model
         'email',
     ];
 
-    // Relación uno a muchos con la tabla de libros
-    public function books()
-    {
-        return $this->hasMany(Book::class, 'shopper_id');
-    }
+   
 }
 

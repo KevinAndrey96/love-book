@@ -8,6 +8,8 @@ Route::get('/', function () {
     return view('Books.index');
 });
 
+
+
 Route::get('/avatar', [AvatarController::class, 'avatar']);
 
 Route::get('/avatar-male', [AvatarController::class, 'avatarMale']);
@@ -24,15 +26,11 @@ Route::get('/books-pdf', [BookController::class, 'booksPDF']);
 Route::get('/form', [BookController::class, 'Form']);
 
 
+
 Route::post('/guardar-libro', [BookController::class, 'guardarDatos']);
 
 
 
+Auth::routes();
 
-
-
-
-
-
-
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

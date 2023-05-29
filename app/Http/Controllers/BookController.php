@@ -102,6 +102,8 @@ $pdf = PDF::loadView('Books_pdf_view');
     // Directorio donde se guardará el archivo PDF
     $pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
 
+
+
     // Crear el directorio si no existe
     Storage::disk('local')->makeDirectory($pdfDir);
 
@@ -110,9 +112,16 @@ $pdf = PDF::loadView('Books_pdf_view');
 
     $pdfPath = $pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf';
 
+
+    $book = new Book();
+    $book->name = $nameFemale . ' ' . $nameMale;
+    $book->pdf = $pdfPath;
+    $book->status = 'pendiente';
+    $book->save();
+
+
 // Respuesta de éxito
 return response()->json(['success' => true, 'message' => 'El libro se guardó correctamente.']);
 }
-
 
 }
