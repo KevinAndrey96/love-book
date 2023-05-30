@@ -22,12 +22,12 @@ class BookController extends Controller
 
     public function bookFrontPage()
     {
-        return view('Books.Book_front_page');
+        return view('books.Book_front_page');
     }
 
     public function BookPages()
     {
-        return view('Books.Book_pages');
+        return view('books.Book_pages');
     }
 
     public function Form()

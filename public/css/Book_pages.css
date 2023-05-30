@@ -23,20 +23,53 @@ body {
 
 }
 
-.col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+
+.pages {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+div {
+    display: block;
+}
+
+#product-step {
+    padding: 0.5rem 0;
+}
+
+.pages .page-wrapper {
+    width: 40vw;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  *, :after, :before {
+    box-sizing: border-box;
+}
+  
 .page-text.extra-large {
   position: absolute;
   top: 7%;
-  left: 5%;
-  right: 5%;
+  right: 25;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,11 +79,11 @@ body {
 
 
 .pages .page-wrapper .page-text.extra-large {
-  font-size: 3.15vw;
+  font-size: 1.15vw;
 }
 
 .pages .page-wrapper .page-text {
-  font-size: 2.1vw;
+  font-size: 1.1vw;
 }
 
 #product-step {
@@ -65,27 +98,14 @@ body {
   top: 0;
 }
 
- #page24{
-    left: 0px !important;
-}
-
-.page-wrapper{
-    width: 30vh;
-    position: relative;
-    margin-bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    left: 400px;
-}
 
 
 
 .pages .page-wrapper img {
-    width: 600px !important;
-    max-width: 500px !important;
+    width: 400px !important;
+    max-width: 400px !important;
     height: auto;
     border-radius: 0.3rem;
-    margin-right: 10px;
     margin-bottom: 10px;
 }
 
@@ -140,8 +160,8 @@ body {
 .tittle-wrapper {
   position: absolute;
   top: 0;
-  right: 10px;
-  width: 40%;
+  right: 250px !important;
+  width: 30%;
   padding: 0.1rem;
   z-index: 3 !important;
   font-family: Cormorant Garamond, serif;
@@ -921,6 +941,11 @@ body {
     border: solid;
   }
 
+  #guardarDatos {
+    width:50% !important;
+    justify-content: center;
+    align-items:center;
+  }
 
   #myModal41 .image-group41 {
     display: flex !important;
@@ -1063,6 +1088,8 @@ body {
       font-family: 'Lato', sans-serif !important;
   }
 
+
+
   .btn:hover {
     background-color: #ff0000 !important;
     color: white;
@@ -1090,7 +1117,18 @@ body {
     }
 
     .page-wrapper #text-page21{
-        top:100px !important;
+        top:-200px !important;
+    }
+
+    .tittle-wrapper  {
+        width: 10% !important;
+        left: 10px;
+    }
+
+    
+
+    .page-wrapper font{
+        font-size: 70% !important;
     }
 
 
