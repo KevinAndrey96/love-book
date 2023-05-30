@@ -139,7 +139,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="btn-group btn-group-lg d-flex" role="group">
-                            <a href="#" class="btn btn-primary flex-fill" id="btn1">Personaliza las páginas de tu libró</a>
+                            <a href="#" class="btn btn-primary flex-fill" id="btn1">Personaliza las páginas de tu libro</a>
                             <a href="{{ url('avatar-female') }}" class="btn btn-primary flex-fill" id="btn2">Cambia la apariencia de la mujer</a>
                             <a href="{{ url('avatar-male') }}" class="btn btn-primary flex-fill" id="btn3">Cambia la apariencia del hombre</a>
                         </div>

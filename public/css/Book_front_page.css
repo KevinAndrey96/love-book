@@ -123,8 +123,8 @@ p {
   .tittle-wrapper {
     position: absolute;
     top: 0;
-    right: 10;
-    width: 40%;
+    right: 15%;
+    width: 20% !important;
     padding: 1rem;
   }
 

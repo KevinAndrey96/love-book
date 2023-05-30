@@ -32,13 +32,16 @@
         <hr class="line-main">
 
     <title>Paginas de tu libro</title>
-  <body>
+  <body> 
+    <div id="loading-animation" style="display: none;">
+        <img src="img/reloj2.gif" alt="Loading">
+    </div>
 
     <div id="product-step">
         <div class="row">
             <div class="col-12 text-center">
-                <h3>Las paginas de tu libro</h3>
-            <h6>Puedes editarlas a tu gusto al hacer clic en ellas</h6>
+                <h3>Las páginas de tu libro</h3>
+            <h6>Puedes editarlas a tu gusto al hacer click en ellas</h6>
             </div>
          <div class="col-12 pages">
             <div class="page-wrapper" id="first-page-wrapper">
@@ -60,7 +63,7 @@
             <img src="/img/books/page1/extra/extra-1.png" class="extra modal-image" style="z-index: 3;">
         </div>
         <div class="tittle-wrapper"  contenteditable="true" id="text-page1" >
-            <h1 id="names"  title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 20%; display: flex; justify-content: center; flex-direction: column; font-size: 0.5vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
+            <h1 id="names"  title="Esta será tu portada" style="position: absolute; top: 10px;  right: 20%; display: flex; justify-content: center; flex-direction: column;  font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
         </div>
     </div>
 
@@ -2146,6 +2149,7 @@
                 </div>
               </div>
               <button id="guardarDatos" type="submit" class="btn btn-primary">Guardar</button>
+
 
      </div>
      <script src="{{ asset('js/Book_front_page.js')}}"></script>
