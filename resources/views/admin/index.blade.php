@@ -15,11 +15,11 @@
     <table id="books-table" class="table table-bordered">
             <thead>
                 <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>pdf</th>
-                    <th>status</th>
-                    <th>actions</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>PDF</th>
+                    <th>Status</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
