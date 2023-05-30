@@ -97,6 +97,10 @@ if (glassesFemale === "block") {
   hairfemale.src = hairFemale;
 
   document.getElementById('guardarDatos').addEventListener('click', function() {
+
+    var loadingElement = document.getElementById('loading-animation');
+    loadingElement.style.display = 'flex';
+
     // Crear un FormData para almacenar los datos
     var formData = new FormData();
 
@@ -169,10 +173,11 @@ if (colElement) {
       if (request.readyState === XMLHttpRequest.DONE) {
         if (request.status === 200) {
           // La solicitud fue exitosa
-          alert('El libro se guardó correctamente.');
+          loadingElement.style.display = 'none';
+          swal('Perfecto', 'Tu libro ha sido guardado', 'success');
         } else {
-          // Ocurrió un error en la solicitud
-          alert('Hubo un error al guardar el libro.');
+            loadingElement.style.display = 'none';
+          swal('Error','Tu libro no pudo guardarse', 'error');
         }
       }
     };
