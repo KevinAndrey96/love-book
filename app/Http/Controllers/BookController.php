@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Barryvdh\DomPDF\Facade\PdF;
+use Barryvdh\DomPDF\Facade\PDF;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use App\Models\Book;
