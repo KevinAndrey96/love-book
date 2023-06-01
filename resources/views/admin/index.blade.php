@@ -11,9 +11,9 @@
     <div class="box-header" >
         <h3 class="box-title">Lista de Libros</h3>
     </div>
-    <div class="box-body" style="background-color: #42efff;">
+    <div class="box-body" style="background-color: #e1e7ff;">
     <table id="books-table" class="table table-bordered">
-            <thead>
+            <thead style="background-color: #cf1259; text-align: center; color: white">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -28,9 +28,9 @@
                         <td>{{ $book->id }}</td>
                         <td>{{ $book->name }}</td>
                         <td>{{ $book->pdf }}</td>
-                        <td>{{ $book->status }}</td>
-                        <td>
-                            <a href="{{ route('download.pdf', ['id' => $book->id]) }}" class="btn btn-danger">Download</a>
+                        <td style="text-align: center">{{ $book->status }}</td>
+                        <td style="text-align: center">
+                            <a href="{{ route('download.pdf', ['id' => $book->id]) }}" class="btn btn-success">Download</a>
                         </td>
                     </tr>
                 @endforeach
