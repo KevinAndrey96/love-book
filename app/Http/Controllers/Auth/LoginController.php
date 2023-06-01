@@ -18,7 +18,8 @@ class LoginController extends Controller
      */
     protected function redirectTo()
     {
-        return route('admin.index');
+        return redirect()->route('admin.index');
+
     }
 
     /**

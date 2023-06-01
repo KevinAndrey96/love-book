@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Barryvdh\DomPDF\Facade\PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use App\Models\Book;
@@ -97,7 +97,7 @@ if (preg_match($pattern, $fileContents, $matches)) {
 
 
 
-$pdf = PDF::loadView('Books_pdf_view');
+$pdf = Pdf::loadView('Books_pdf_view');
 
     // Directorio donde se guardará el archivo PDF
     $pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
