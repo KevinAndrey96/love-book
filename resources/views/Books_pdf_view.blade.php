@@ -32,7 +32,7 @@
 
         .tittle-wrapper {
             position: absolute; top: 10px;
-             left: 30% !important;
+             left: 20% !important;
              display: flex;
              justify-content: center !important;
              flex-direction: column;
@@ -44,165 +44,167 @@
 
 
 
+
+
         h1 {
             font-size: 70px !important;
         }
 
         #text-page2{
-            position:absolute; left: 15%;  top: -15px; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; left: 8%;  top: 15px; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page3{
-            position:absolute; top: -25px; left: 15%; right: 5%; display: flex; justify-content: center !important; flex-direction: column; align-items:center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top: 15px; left: 8%; right: 5%; display: flex; justify-content: center !important; flex-direction: column; align-items:center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page4{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page5{
-            position:absolute; top: -20px; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top: 15px; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page6{
-            position:absolute; top:1px; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:-10px; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page7{
-            position:absolute; top: -10px; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top: -10px; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page8{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page9{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page10{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page11{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page12{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page13{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page14{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
 
         #text-page15{
-            position:absolute; top:100px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:120px !important;  left:5px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page16{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page17{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
 
         #text-page18{
-            position:absolute; top:1px !important;   display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
+            position:absolute; text-align:center; top:7px !important;   display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
 
         #text-page19{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
         }
 
         #text-page20{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
+            position:absolute; text-align:center; top:20px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;        }
 
         #text-page21{
-            position:absolute; top: 400px;  right: 200px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3; margin-top: 300px !important;
+            position:absolute; text-align:center; top: 450px;  right: 150px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: '6ato', sans-serif; z-index: 3; margin-top: 300px !important;
         }
 
         #text-page22{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page23{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:10px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page24{
-            position:absolute; top: 45%; left: 35%;  display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top: 40%; left: 18%;  display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page25{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:10px !important; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page26{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page27{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page28{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page29{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page30{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;;
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;;
         }
 
         #text-page31{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page32{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page33{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page34{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page35{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:1px !important; left: 10%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page36{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:1px !important; left: 10%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
 
         #text-page37{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;}
+            position:absolute; text-align:center; top:1px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;}
 
         #text-page38{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:20px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page39{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:-5px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page40{
-            position:absolute; top:200px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:250px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page41{
-            position:absolute; top:20px !important; left: 30px !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:25px !important; left: 180px !important; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page42{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;
         }
 
         #text-page43{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page44{
-            position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
+            position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3;        }
 
         #text-page45{
-                position:absolute; top:1px !important; left: 15%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 30px !important; font-family: 'Lato', sans-serif; z-index: 3 !important;}
+                position:absolute; text-align:center; top:15px !important; left: 8%; right: 5%; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 3 !important;}
 
 
 
@@ -356,7 +358,7 @@
                 </div>
                 <div><div id="text-page6" contenteditable="true" class="page-text large">
                     <div><br></div>
-                    <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo unico que necesito en ese mundo</font></font></div>
+                    <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo unico que necesito en<br> ese mundo</font></font></div>
                     </div></div>
                     
                     
@@ -371,7 +373,7 @@
                     <div>
                         <div id="text-page7" contenteditable="true" class="page-text large">
                             <div><br></div>
-                            <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona a la que llamo</font></font></div>
+                            <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona a la que<br> llamo</font></font></div>
                         </div>
                     </div>
                     
@@ -453,7 +455,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page11/extra/no-avatars.jpg" class="page-img modal-image11">
                     <div><div id="text-page11" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gracias por ayudarme a sostenerme</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gracias por ayudarme a <br>sostenerme</font></font></div>
                         </div></div>
                         
                         
@@ -475,9 +477,6 @@
                         
                         
                 </div>
-
-
-
 
                 <div class="page-wrapper" id="page13" data-order="13">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page13/extra/no-avatars.jpg" class="page-img modal-image13">
@@ -511,7 +510,7 @@
                     </div>
                     <div><div id="text-page14" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aun me amas verdad? :c Claro que si</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aun me amas verdad? <br>Claro que si</font></font></div>
                         </div></div>
                         
                         
@@ -526,7 +525,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page15/extra/no-avatars.jpg" class="page-img modal-image15">
                     <div><div id="text-page15" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta cuando</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta <br>cuando</font></font></div>
                         </div></div>
                         
                         
@@ -597,7 +596,7 @@
                     </div>
                     <div><div id="text-page18" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos entendemos</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos <br>entendemos</font></font></div>
                         </div></div>
                         
                         
@@ -673,7 +672,7 @@
                     
                     
                 </div>
-                
+
 
 
 
@@ -723,7 +722,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page25/extra/no-avatars(1).jpg" class="page-img modal-image25">
                     <div><div id="text-page25" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar la mañana a nuestra manera</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empezar la mañana a nuestra <br>manera</font></font></div>
                         </div></div>
                         
                         
@@ -969,7 +968,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page40/extra/no-avatars.jpg" class="page-img modal-image40">
                     <div><div id="text-page40" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prometeme que siempre estaremos juntos</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prometeme que siempre<br> estaremos juntos</font></font></div>
                         </div></div>
                         
                         
@@ -981,7 +980,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page41/extra/no-avatars(1).jpg" class="page-img modal-image41">
                     <div><div id="text-page41" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi espacio</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi<br>espacio</font></font></div>
                         </div></div>
                         
                         
@@ -1006,7 +1005,7 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page43/extra/no-avatars(1).jpg" class="page-img modal-image43">
                     <div><div id="text-page43" contenteditable="true" class="page-text large">
                         <div><br></div>
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso descubrimiento</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso <br>descubrimiento</font></font></div>
                         </div></div>
                         
                         
