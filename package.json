@@ -1,7 +1,6 @@
 {
     "private": true,
-    "scripts": {
-    },
+    "scripts": [],
     "devDependencies": {
         "@alpinejs/focus": "^3.10.5",
         "@popperjs/core": "^2.11.6",
