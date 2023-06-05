@@ -38,6 +38,7 @@
         </table>
     </div>
 </div>
+{{-- {{ $books->links() }} --}}
 @stop
 
 @section('css')

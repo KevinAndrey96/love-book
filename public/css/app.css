@@ -1,0 +1,19 @@
+body {
+    background-color:  #ecffe8!important;
+}
+
+.navbar-brand{
+    color:#000000;
+    font-family: Cormorant Garamond, serif;
+    font-weight: bold;
+}
+
+.custom-navbar .nav-item .nav-link {
+    color: rgb(66, 1, 180);
+    font-family: Cormorant Garamond, serif;
+    font-weight: bold;
+}
+
+
+
+

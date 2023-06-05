@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Auth;
 // Ruta para descargar un archivo
 Route::get('admin/download/{id}', [HomeController::class, 'downloadPdf'])->name('download.pdf');
 
-// Route::middleware(['auth'])->group(function () {
-    // Rutas protegidas por autenticación
-    Route::get('admin', [HomeController::class, 'index'])->name('admin.index');
-// });
 
-// Auth::routes();
+Route::middleware('auth')->group(function () {
+    Route::get('admin', [HomeController::class, 'index'])->name('admin.index');
+});
+
+Auth::routes();
