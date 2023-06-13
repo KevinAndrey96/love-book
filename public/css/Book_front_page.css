@@ -104,6 +104,10 @@ p {
     flex-wrap: wrap;
 }
 
+.title{
+    margin-top: 55px !important;
+}
+
 .pages .page-wrapper img {
     width: 90% !important;
     max-width: 300px !important;
@@ -117,8 +121,8 @@ p {
   .tittle-wrapper {
     position: absolute;
     top: 0;
-    right: 45%;
-    width: 20% !important;
+    right: 50%;
+    width: 15% !important;
     padding: 1rem;
 
   }

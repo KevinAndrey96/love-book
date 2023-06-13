@@ -133,6 +133,8 @@ if (colElement) {
       button.parentNode.removeChild(button);
     });
 
+
+
     var modals = clonedMainContentElement.querySelectorAll('.modal');
     modals.forEach(function(modal) {
       modal.parentNode.removeChild(modal);

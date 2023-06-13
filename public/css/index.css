@@ -1,5 +1,5 @@
 #home .home-baner {
-    background-image: url(/img/home-baner-mobile.jpg);
+    background-image: url(/img//home-baner-mobile-removebg-preview.png);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 @media (min-width: 768px){
 #home .home-baner {
-    background-image: url(/img/home-baner.jpg);
+    background-image: url(/img/home-baner-removebg-preview.png);
 }}
 
 .btn-primary{
@@ -26,7 +26,30 @@
     border-color: #fff;
     margin-top: 50px;
     font-family: Cormorant Garamond, serif !important;
+}
 
+#footer .title {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #footer ul li {
+    margin-bottom: 5px;
+  }
+
+  #footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.col-12{
+    margin-top: 50px;
 }
 
 

@@ -31,21 +31,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
         <hr class="line-main">
-
+        <div class="container-btn">
         <button id="btn-hair" type="button" class="btn1 btn-block mt-3">Cabello</button>
         <button id="btn-glasses" type="button" class="btn1 btn-block mt-3">Gafas</button>
         <button id="btn-eyes"  type="button" class="btn1 btn-block mt-3">Ojos</button>
         <button id="btn-beard" type="button" class="btn1 btn-block mt-3">Barba</button>
-
+    </div>
 
 
         <div class="container">

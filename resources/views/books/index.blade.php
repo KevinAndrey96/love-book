@@ -8,6 +8,7 @@
     <title> Love Books</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <link rel="stylesheet" href ="{{ asset('css/index.css')}}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -27,9 +28,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
                         </li>
                     </ul>
                 </div>
@@ -149,33 +147,44 @@
                 </div>
             </div>
 
-    <div id="footer" class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-4 text-center contact">
-                <div class="title">CONTACTO</div>
-                <a style="color:white" id="btn-email" class="text" href="">
-                    <i class="far fa-envelope"></i>correoejemplo@gmail.com</a>
+            <footer id="footer" class="container-fluid">
+                <div class="row">
+                  <div class="col text-center">
+                    <h3 class="title">Guía de compra</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Ayuda</a></li>
+                      <li><a href="#">Pago</a></li>
+                      <li><a href="#">Envío</a></li>
+                      <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                  </div>
+                  <div class="col text-center">
+                    <h3 class="title">Empresa</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Conócenos</a></li>
+                      <li><a href="#">Términos y condiciones</a></li>
+                      <li><a href="#">Política de privacidad</a></li>
+                      <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                  </div>
+                  <div class="col text-center">
+                    <h3 class="title">Social</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/people/Libro-de-amor/100087733617470/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                  </div>
+                  <div class="col text-center">
+                    <h3 class="title">Medios de pago</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Mastercard</a></li>
+                      <li><a href="#">Visa</a></li>
+                      <li><a href="#">PayPal</a></li>
+                    </ul>
+                  </div>
                 </div>
+              </footer>
 
-            <div class="col-12 col-md-4 text-center follow-us">
-            <div class="title mt-4">SIGANOS</div>
-                <div class="social-icons">
-                    <a class="icon fb" href="" target="_blank">
-                        <img src="/img/facebook (2).png">
-                    </a>
-
-                    <a class="icon ig" href="" target="_blank">
-                        <img src="/img/instagram (2).png">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 copyright text-center">
-              <div class="mt-4">©2023</div>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
