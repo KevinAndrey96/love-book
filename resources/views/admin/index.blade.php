@@ -12,14 +12,14 @@
         <h3 class="box-title">Lista de Libros</h3>
     </div>
     <div class="box-body" style="background-color: #e1e7ff;">
-    <table id="books-table" class="table table-bordered">
+        <table id="books-table" class="table table-bordered">
             <thead style="background-color: #cf1259; text-align: center; color: white">
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>Nombre</th>
                     <th>PDF</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,7 +30,7 @@
                         <td>{{ $book->pdf }}</td>
                         <td style="text-align: center">{{ $book->status }}</td>
                         <td style="text-align: center">
-                            <a href="{{ route('download.pdf', ['id' => $book->id]) }}" class="btn btn-success">Download</a>
+                            <a href="{{ route('download.pdf', ['id' => $book->id]) }}" class="btn btn-success">Descargar</a>
                         </td>
                     </tr>
                 @endforeach
@@ -38,21 +38,23 @@
         </table>
     </div>
 </div>
-{{-- {{ $books->links() }} --}}
 @stop
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
-@stop
-
-@section('adminlte_css')
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 @stop
 
 @section('js')
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    @yield('adminlte_js')
     <script>
-        console.log('Hi!');
+        $(document).ready(function() {
+            $('#books-table').DataTable({
+                "lengthMenu": [10, 25, 50, 75, 100],
+                "order": [[0, "desc"]],
+            });
+        });
     </script>
 @stop
-
-

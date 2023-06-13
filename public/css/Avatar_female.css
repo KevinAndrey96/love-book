@@ -44,35 +44,35 @@ body{
   }
 
   #brown {
-    background-color: #964B00;
+    background-color: rgb(80, 44, 26);
   }
 
   #light-brown {
-    background-color: #D2B48C;
+    background-color: rgb(139, 76, 54);
   }
 
   #dark-brown {
-    background-color: #654321;
-  }
+    background: linear-gradient(rgb(79, 47, 37) 0%, rgb(180, 125, 98) 80%);
+}
 
   #blond-brown {
-    background-color: #c2a878;
-  }
+    background: linear-gradient(rgb(129, 82, 62) 0%, rgb(236, 195, 169) 100%);
+}
 
   #light {
-    background-color: #f2e7d3;
+    background-color: rgb(221, 177, 155);
   }
 
   #very-light {
-    background-color: #F5F5F5;
+    background-color: rgb(243, 223, 211);
   }
 
   #black {
-    background-color: #000000;
+    background-color: rgb(61, 47, 41);
   }
 
   #red {
-    background-color: #8B0000;
+    background-color: rgb(93, 29, 40);
   }
 
   .eyes-select div {
@@ -95,24 +95,27 @@ body{
     margin-left: 5px;
   }
 
-  .nav-btn {
-    width:150px;
-    display: inline-block;
-    padding: 30px;
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+.nav-link {
     border-radius: 30px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
     font-weight: bold;
-    transition: all 0.9s;
-    text-align: center;
-    margin-left: 18px;
-    margin-right: 18px;
 }
 
-.nav-btn:hover {
-    color: #ffffff !important;
+.nav-link:hover {
     background: #cf1259;
+    color: #ffffff !important;
 }
 
 .line-title {
@@ -133,13 +136,7 @@ body{
     margin-bottom: 10px;
   }
 
-  .nav-link {
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    transition: all 0.2s;
-  }
+
 
   .btn1:hover {
     background-color: transparent;
@@ -191,6 +188,10 @@ body{
     background-color: rgb(196, 2, 255) !important;
   }
 
+  body {
+    overflow-x:hidden;
+}
+
   .btn:active {
     transform: scale(0.9);
   }
@@ -219,7 +220,7 @@ body{
   }
 
   #eyes-2 {
-    background-color: brown;
+    background-color: rgb(80, 44, 26);
   }
 
   #eyes-3 {

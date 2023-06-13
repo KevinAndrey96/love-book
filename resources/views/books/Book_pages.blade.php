@@ -14,24 +14,32 @@
 
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="">LoveBooks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
-                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
         <hr class="line-main">
 
-    <title>Paginas de tu libro</title>
+    <title>Páginas de tu libro</title>
   <body>
     <div id="loading-animation" style="display: none;">
         <img src="img/reloj2.gif" alt="Loading">
@@ -41,7 +49,8 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h3>Las páginas de tu libro</h3>
-            <h6>Puedes editarlas a tu gusto al hacer click en ellas</h6>
+            <h6>Puedes editarlas a tu gusto al hacer click en los textos</h6>
+            <h6>También  puedes cambiar la imagen o la posición de las páginas de tu libro con los botones disponibles</h6>
             </div>
          <div class="col-12 pages">
             <div class="page-wrapper" id="first-page-wrapper">
@@ -2168,6 +2177,8 @@
      <script src="{{ asset('js/Books_pages_page37.js')}}"></script>
      <script src="{{ asset('js/Books_pages_page39.js')}}"></script>
      <script src="{{ asset('js/Books_pages_page45.js')}}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
 

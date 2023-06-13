@@ -1,22 +1,27 @@
 
-.nav-btn {
-    width:150px;
-    display: inline-block;
-    padding: 30px;
+.navbar {
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+.nav-link {
     border-radius: 30px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 15px;
     font-weight: bold;
-    transition: all 0.9s;
-    text-align: center;
-    margin-left: 18px;
-    margin-right: 18px;
 }
 
-.nav-btn:hover {
-    color: #ffffff !important;
+body {
+    overflow-x:hidden;
+}
+
+.nav-link:hover {
     background: #cf1259;
+    color: #ffffff !important;
 }
 
 .line-title {
@@ -37,13 +42,7 @@
     margin-bottom: 10px;
   }
 
-  .nav-link {
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    transition: all 0.2s;
-  }
+
 
   body {
     background-color: #b7c3f3 !important;
@@ -83,10 +82,6 @@ p {
     border-radius: 4px;
 }
 
-  .center {
-    display: flex;
-    justify-content: center;
-}
 
   .pages .page-wrapper .extra,
 .pages .page-wrapper .index {
@@ -96,7 +91,6 @@ p {
   display: flex;
   margin-top: 2px;
   margin-right: 5px;
-  justify-content: center;
   font-size: 12px;
 }
 
@@ -111,7 +105,7 @@ p {
 }
 
 .pages .page-wrapper img {
-    width: 100% !important;
+    width: 90% !important;
     max-width: 300px !important;
     height: auto;
     border-radius: 0.3rem;
@@ -123,33 +117,31 @@ p {
   .tittle-wrapper {
     position: absolute;
     top: 0;
-    right: 15%;
+    right: 45%;
     width: 20% !important;
     padding: 1rem;
+
   }
 
   #names, #names1, #names2, #names3 {
-    margin: 0;
     font-size: 3vh;
-    font-weight: bold;
-    text-align: right;
     color: #333;
+    margin-top: -5px;
   }
 
   .btn-primary {
     background-color: #ff00e1 !important;
     color: #fdfdfd !important;
     border-color: #bb0000 !important;
-    padding: 5px 10px !important;
     font-size: 14px !important;
     font-weight: bold !important;
     border-radius: 5px !important;
-    transition: background-color 0.3s, color 0.3s !important;
     margin: 5px 0px;
     margin-left: 4px !important;
-    display: flex;
-    width: 180px;
 }
+
+
+
 
 .btn-primary:hover {
     background-color: #4cb9f8 !important;
@@ -160,7 +152,17 @@ p {
 
 @media (max-width: 768px) {
     #names, #names1, #names2, #names3 {
-      font-size: 8px;
+      font-size: 7px;
+      margin-top:-15px !important;
+    }
+
+    .pages .page-wrapper img {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto;
+        border-radius: 0.3rem;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
   }

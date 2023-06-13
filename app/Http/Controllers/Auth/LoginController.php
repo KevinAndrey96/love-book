@@ -42,30 +42,24 @@ class LoginController extends Controller
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function login(Request $request)
-    {
-        $email = $request->input('email');
-        $password = $request->input('password');
 
-        // Buscar el usuario por su correo electrónico en la tabla de usuarios
-        $user = User::where('email', $email)->first();
+{
+    $email = $request->input('email');
+    $password = $request->input('password');
 
-        if ($user) {
-            // Verificar si la contraseña coincide
-            if ($password == $user->password) {
-                // La contraseña coincide, iniciar sesión
-                Auth::login($user);
+    // Buscar el usuario por su correo electrónico en la tabla de usuarios
+    $user = User::where('email', $email)->first();
 
-                // Redirigir al usuario a la página deseada después del inicio de sesión
-                return redirect()->route('admin.index');
-            }
+    if ($user) {
+        if (md5($password) == $user->password) {
+            Auth::login($user);
+            return redirect()->route('admin.index');
         }
-
-        // Las credenciales no son correctas
-        return back()->withErrors([
-            'email' => 'Las credenciales proporcionadas no son correctas.',
-        ]);
     }
 
-
-
+    // Las credenciales no son correctas
+    return back()->withErrors([
+        'email' => 'Las credenciales proporcionadas no son correctas.',
+    ]);
+}
 }

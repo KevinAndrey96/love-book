@@ -16,20 +16,28 @@
 
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="">LoveBooks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
-                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
         <hr class="line-main">
 
@@ -60,8 +68,8 @@
             <div class="extras">
               <img src="/img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
             </div>
-            <div class="tittle-wrapper text-center" style="z-index: 100;">
-              <h1 id="names" title="Esta será tu portada">Esta será tu portada</h1>
+            <div class="tittle-wrapper text" style="z-index: 100;">
+              <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
             </div>
         </div>
 
@@ -83,8 +91,8 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage2/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage2')" style="z-index: 3;">
                 </div>
-                <div class="tittle-wrapper text-center" style="z-index: 100;">
-                  <h1 id="names1" title="Esta será tu portada">Esta será tu portada</h1>
+                <div class="tittle-wrapper text" style="z-index: 100;">
+                  <h3 id="names1" title="Esta será tu portada">Esta será tu portada</h3>
                 </div>
               </div>
 
@@ -108,8 +116,8 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
-                <div class="tittle-wrapper text-center" style="z-index: 100;">
-                  <h1 id="names2" title="Esta será tu portada">Esta será tu portada</h1>
+                <div class="tittle-wrapper text" style="z-index: 100;">
+                  <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
                 </div>
               </div>
 
@@ -129,23 +137,24 @@
                       <img id="beardd3" src="/img/frontpage/frontpage4/man/beard/brown/brown1.png" class="extra" style="z-index: 2;" >
                       <img id="glassesmalee3" src="/img/frontpage/frontpage4/man/glasses/glasses.png" class="extra" style="z-index: 2;">
                     </div>
-                    <div class="tittle-wrapper text-center" style="z-index: 100;">
-                      <h1 id="names3" title="Esta será tu portada">Esta será tu portada</h1>
+                    <div class="tittle-wrapper text" style="z-index: 100;">
+                      <h3 id="names3" title="Esta será tu portada">Esta será tu portada</h3>
                     </div>
                 </div>
               </div>
 
               <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="btn-group btn-group-lg d-flex" role="group">
-                            <a href="#" class="btn btn-primary flex-fill" id="btn1">Personaliza las páginas de tu libro</a>
-                            <a href="{{ url('avatar-female') }}" class="btn btn-primary flex-fill" id="btn2">Cambia la apariencia de la mujer</a>
-                            <a href="{{ url('avatar-male') }}" class="btn btn-primary flex-fill" id="btn3">Cambia la apariencia del hombre</a>
-                        </div>
+                  <div class="col-md-12">
+                    <div class="btn-group btn-group-lg d-flex" role="group">
+                      <a href="{{ url('avatar-female') }}" class="btn btn-primary flex-fill btn-sm" id="btn2">Cambia la apariencia de la mujer</a>
+                      <a href="{{ url('avatar-male') }}" class="btn btn-primary flex-fill btn-sm" id="btn3">Cambia la apariencia del hombre</a>
+                      <a href="#" class="btn btn-primary flex-fill btn-sm" id="btn1">Continuar</a>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+
 
 </div>
 <script src="{{ asset('js/Book_front_page.js')}}"></script>
@@ -154,6 +163,7 @@
 <script src="{{ asset('js/Book_front_page2.js')}}"></script>
 <script src="{{ asset('js/Book_front_page3.js')}}"></script>
 <script src="{{ asset('js/Book_front_page4.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
