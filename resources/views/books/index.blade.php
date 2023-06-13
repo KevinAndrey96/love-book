@@ -13,17 +13,25 @@
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
       <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
-                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="">LoveBooks</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -41,7 +49,7 @@
                     </div>
                     <hr class="line-title">
                     <h2 class="text">Un regalo que te encantará</h2>
-                    <a href="#products" class="btn btn-primary btn-lg">Elige un libro</a>
+                    <a href="#products" class="btn btn-primary btn-lg">Personaliza el libro</a>
                 </div>
             </div>
 
@@ -78,24 +86,13 @@
                       <div class="product-title">Un libro para un aniversario o un cumpleaños</div>
                       <div class="product-description">Elige un libro para celebrar una fecha especial y hacer felices a tus seres queridos</div>
                       <div class="product-price">$20.000 COP</div>
+                        <div class="subtitle">$20.000 - $25.000</div>
+                        <div class="env">+ Costo de envío</div>
                       <a href="{{ url ('avatar')}}" class="btn-primary">Personaliza tu libro</a>
                     </div>
                   </div>
                 </div>
             </div>
-
-            <div class="col-12 section-precio">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="./img/product-2-sr.png">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="price title">El Precio</div>
-                        <div class="subtitle">$20.000 - $25.000</div>
-                        <div class="env">+ Costo de envío</div>
-                        <a href="#products" class="btn btn-primary btn-lg btn-action mt-3">Elige un libro</a>
-                    </div>
-                </div>
 
             <div class="row">
             <div class="col-12 section-attention">
@@ -179,5 +176,6 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

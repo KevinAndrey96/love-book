@@ -1,4 +1,17 @@
+#home .home-baner {
+    background-image: url(/img/home-baner-mobile.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
 
+@media (min-width: 768px){
+#home .home-baner {
+    background-image: url(/img/home-baner.jpg);
+}}
 
 .btn-primary{
     color: #fff;
@@ -16,28 +29,31 @@
 
 }
 
+
 .btn-primary:hover{
     color: #fff;
     background-color: #F71069;
     border-color: #fff;
 }
 
-.nav-btn {
-    width:150px;
-    display: inline-block;
-    padding: 30px;
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+.nav-link {
     border-radius: 30px;
     text-decoration: none;
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
-    transition: all 0.9s;
-    text-align: center;
-    margin-left: 18px;
-    margin-right: 18px;
 }
 
-.nav-btn:hover {
+.nav-link:hover {
     background: #cf1259;
     color: #ffffff !important;
 }
@@ -60,13 +76,6 @@
     margin-bottom: 10px;
   }
 
-  .nav-link {
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    transition: all 0.2s;
-  }
 
 body{
     background-color: #c6d1ff;
@@ -76,16 +85,12 @@ body{
     font-family: Cormorant Garamond, serif !important;
 }
 
-body.block-scroll{
-    overflow-y:hidden;
+body {
+    overflow-x:hidden;
 }
 
 body .title{
     font-size: 3.0rem;
-}
-
-body .subtitle{
-    font-size:1.500rem
 }
 
 #home .home-baner{
@@ -105,8 +110,20 @@ body .subtitle{
     margin-bottom:1rem;
 }
 #home .home-baner .title h1{
-    font-size: 8vh !important;
+    font-size: 10vh !important;
 }
+
+@media (max-width: 768px) {
+    #home .home-baner .title h1 {
+      font-size: 4vh !important;
+    }
+
+    #home .text{
+        color: #4f6272;
+        font-size: 2vh !important;
+        font-family:Cormorant Garamond,serif !important;
+    }
+  }
 
 #home .home-baner .line{
     width:50%;
@@ -206,7 +223,7 @@ body .subtitle{
 
 #home .text{
     color: #4f6272;
-    font-size: 23px;
+    font-size: 4vh;
     font-family:Cormorant Garamond,serif !important;
 }
 
