@@ -29,9 +29,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
                 </ul>
             </div>
         </div>

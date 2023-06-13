@@ -17,15 +17,16 @@ body {
 }
 
 .text-center {
-  text-align: center!important;
+  text-align: center !important;
   font-family: Cormorant Garamond, serif;
   text-transform: uppercase;
 
 }
 
+
 .navbar {
     width: 100%;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -71,8 +72,14 @@ body {
 .pages {
     padding: 20px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position:relative;
+    width: 100%;
 }
 
 div {
@@ -81,6 +88,7 @@ div {
 
 #product-step {
     padding: 0.5rem 0;
+    margin-top: 50px !important;
 }
 
 .pages .page-wrapper {
@@ -93,29 +101,13 @@ div {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+
 }
 
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+
 
   *, :after, :before {
     box-sizing: border-box;
-}
-
-
-
-
-
-#product-step {
-  padding: 0.5rem 0;
 }
 
 
@@ -128,36 +120,62 @@ div {
 
 
 
-
 .pages .page-wrapper img {
-    width: 400px !important;
-    max-width: 400px !important;
+    width: 200px !important;
+    max-width: 300px !important;
     height: auto;
     border-radius: 0.3rem;
     margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
-.tittle-wrapper {
+
+#product-step {
+    padding: 20px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+
+
+
+
+.tittle-wrapper h3 {
   position: absolute;
   top: 0;
   color: black !important;
-  right: 290px !important;
-  width: 20% !important;
-  padding: 0.1rem;
   z-index: 3 !important;
+  font-size: 2vh !important;
+  font-weight: bold !important;
+  top:10px;
+  left:20px;
+
+
   font-family: Cormorant Garamond, serif;
 }
 
 h1  {
   margin: 0;
-  font-size: 4vh !important;
   font-weight: bold !important;
 }
 
-h1 .tittle-wrapper {
-    left: 30px !important;
-}
+
 
 
 
@@ -1093,12 +1111,11 @@ h6{
     border: solid;
     border-color: red !important;
     color: white;
-    padding: 10px 20px;
+    padding: 2px 4px !important;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 10px;
+    font-size: 12px !important;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
       font-family: 'Lato', sans-serif !important;
@@ -1149,27 +1166,27 @@ h6{
       }
 
     .page-wrapper #text-page2  {
-        position:absolute; top:-5px !important;  margin-left: -40px !important;
+        position:absolute; top:-5px !important; margin-left: 8px !important;
       }
 
       .page-wrapper #text-page3  {
-        position:absolute; top:-5px !important; margin-left: -30px !important;
+        position:absolute; top:-5px !important;
       }
 
       .page-wrapper #text-page4  {
-        position:absolute; top:-5px !important; margin-left: -5px !important;
+        position:absolute; top:-5px !important;
       }
 
       .page-wrapper #text-page5  {
-        position:absolute; top:-5px !important; margin-left: -15px !important;
+        position:absolute; top:-5px !important; margin-left: 15px !important;
       }
 
       .page-wrapper #text-page6  {
-        position:absolute; top:-5px !important; margin-left: -5px !important;
+        position:absolute; top:-25px !important; margin-left: 12px !important;
       }
 
       .page-wrapper #text-page7  {
-        position:absolute; top:-5px !important; margin-left: -8px !important;
+        position:absolute; top:-15px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page8  {
@@ -1177,27 +1194,27 @@ h6{
       }
 
       .page-wrapper #text-page9  {
-        position:absolute; top:-5px !important; margin-left: -20px !important;
+        position:absolute; top:-10px !important; margin-left: 12px !important;
       }
 
       .page-wrapper #text-page10  {
-        position:absolute; top:-5px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page11 {
-        position:absolute; top:-5px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page12  {
-        position:absolute; top:-5px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page13 {
-        position:absolute; top:-5px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page14  {
-        position:absolute; top:-5px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page15  {
@@ -1205,123 +1222,123 @@ h6{
       }
 
       .page-wrapper #text-page16  {
-        position:absolute; top:-75px !important; margin-left: -75px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page17  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page18  {
-        position:absolute; top:-75px !important; margin-left: -5px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page19  {
-        position:absolute; top:-45px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page20 {
-        position:absolute; top:-45px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page21  {
-        position:absolute; top: 75px !important; margin-left: -35px !important;
+        position:absolute; top: 140px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page22  {
-        position:absolute; top:-80px !important; margin-left: -75px !important;
+        position:absolute; top:-15px !important; margin-left: -8px !important;
       }
 
       .page-wrapper #text-page23 {
-        position:absolute; top:-75px !important; margin-left: -75px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page24  {
-        position:absolute; top:30px !important; margin-left: -55px !important;
+        position:absolute; top:70px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page25  {
-        position:absolute; top:-70px !important; margin-left: -25px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page26  {
-        position:absolute; top:-75px !important; margin-left: -55px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page27  {
-        position:absolute; top:-75px !important; margin-left: -55px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page28  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page29  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page30  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page31 {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page32  {
-        position:absolute; top:-75px !important; margin-left: -5px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page33 {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page34  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page35  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page36  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page37  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page38  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page39  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-14px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page40  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page41  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page42  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page43  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page44  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
       .page-wrapper #text-page45  {
-        position:absolute; top:-75px !important; margin-left: -35px !important;
+        position:absolute; top:-5px !important; margin-left: -5px !important;
       }
 
 

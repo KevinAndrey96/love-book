@@ -31,9 +31,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -41,7 +38,7 @@
 
         <hr class="line-main">
 
-    <title>Portada de tu libro</title>
+    <title class="title">Portada de tu libro</title>
   <body>
     <div class="container">
         <h1 class="text-center mt-5 display-4">Elige la portada que más te guste</h1>
