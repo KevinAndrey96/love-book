@@ -1,5 +1,7 @@
 // Obtener referencias a elementos HTML
 
+
+
 var eyesmale = document.getElementById("eyesmale2");
 var eyesfemale = document.getElementById("eyesfemale2");
 var hairmale = document.getElementById("hairmale2");
@@ -31,6 +33,8 @@ var glassesFemale = localStorage.getItem("glassesFemale");
 
 var beardColorMale = localStorage.getItem("beardColorMale");
 var beardDisplay = localStorage.getItem("beardDisplay");
+
+
 
 
 // Mostrar las gafas en el elemento del DOM correspondiente según lo que está guardado en el Local Storage
@@ -172,17 +176,18 @@ if (colElement) {
     request.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
 
     request.onreadystatechange = function() {
-      if (request.readyState === XMLHttpRequest.DONE) {
-        if (request.status === 200) {
-          // La solicitud fue exitosa
-          loadingElement.style.display = 'none';
-          swal('Perfecto', 'Tu libro ha sido guardado', 'success');
-        } else {
+        if (request.readyState === XMLHttpRequest.DONE) {
+          if (request.status === 200) {
+            // La solicitud fue exitosa
             loadingElement.style.display = 'none';
-          swal('Error','Tu libro no pudo guardarse', 'error');
+            window.location.replace('/form');
+          } else {
+            loadingElement.style.display = 'none';
+            swal('Error', 'Tu libro no pudo guardarse', 'error');
+          }
         }
-      }
-    };
+      };
+
 
     request.send(formData);
   });

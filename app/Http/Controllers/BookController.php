@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Str;
 use App\Models\Book;
+use Illuminate\Support\Facades\Session;
+
 use Illuminate\Support\Facades\Http;
 
 
@@ -124,6 +126,14 @@ $pdf = Pdf::loadView('Books_pdf_view');
 
     $book->save();
 
-  
+
+    $bookId = $book->id;
+    $request->session()->put('bookId', $bookId);
+
 }
+
+// public function bookSuccess()
+// {
+//     return view('books.respuesta_pago');
+// }
 }
