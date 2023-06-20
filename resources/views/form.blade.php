@@ -64,9 +64,12 @@
             <input type="hidden" name="public-key" value="pub_test_FXuP06pwO8kBrtw9quipeLbETCLqsLtu" />
             <input type="hidden" name="currency" value="COP" />
             <input type="hidden" name="amount-in-cents" value="1500000" />
-            <input type="hidden" name="reference" value="{{ time() }}">
+            <input type="hidden" name="reference" value="{{ session('bookId') }}" />
+            <input type="hidden" name="redirect-url" value="URL_REDIRECCION" />
 
             <!-- OPCIONALES -->
+
+
             <input type="text" name="customer-data:email" placeholder="Correo electrónico" />
             <input type="text" name="customer-data:full-name" placeholder="Nombre completo" />
             <input type="text" name="customer-data:phone-number" placeholder="Número de teléfono" />
@@ -88,5 +91,7 @@
 
 
     <script src="{{ asset('js/form.js')}}"></script>
+    <script src="{{ asset('js/Book_id.js')}}"></script>
+
 </body>
 </html>

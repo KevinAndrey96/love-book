@@ -209,7 +209,7 @@
                 </div>
                 <div><div id="text-page4" contenteditable="true" class="page-text large" style="position:absolute; top:10px; left:9px; text-align: center !important; font-size: 2.5vh !important; font-family: 'Lato', sans-serif; z-index: 6;" >
                     <div><br></div>
-                    <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aun recuerdo nuestro primer beso</font></font></div>
+                    <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> recuerdo nuestro primer beso</font></font></div>
                     </div></div>
                     <button class="btn btn-primary myBtn4">Cambia tu imagen</button>
                     <button class="btn btn-primary insert-before-btn">Insertar antes</button>
