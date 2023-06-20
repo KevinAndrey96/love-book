@@ -15,25 +15,26 @@
       <title>Edita tu avatar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 999;">
         <div class="container">
-            <a class="navbar-brand" href="">LoveBooks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="">LoveBooks</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+
         <hr class="line-main">
         <div class="container-btn">
         <button id="btn-hair" type="button" class="btn1 btn-lg btn-block text-center mt-3">Cabello</button>
@@ -43,8 +44,8 @@
 
         <div class="container">
             <div class="row">
-              <div class="col-12">
-                <div class="color-container">
+                <div class="col-lg-6">
+                    <div class="color-container">
                   <div class="section" id="color-section">
                     <h3 class="text">Elige tu color de cabello</h3>
                     <div class="color-select row justify-content-center">
@@ -66,8 +67,8 @@
 
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                <div class="section" id="hair-section">
+                <div class="col-lg-6">
+                    <div class="section" id="hair-section">
                   <h3 class="text">Elige tu cabello</h3>
                   <div class="hair-select d-flex justify-content-center">
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
@@ -99,23 +100,29 @@
               </div>
             </div>
           </div>
+        </div>
 
 
 
-        <div class="container">
-            <div class="section" id="glasses-section">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section" id="glasses-section">
                 <h3 class="text">Elige si usas gafas</h3>
-                <div class="glasses-select">
+                <div class="glasses-select d-flex justify-content-center">
                     <div> <input id="glasses-0"  type="image" src="/img/woman/glasses/no-img.png"></div>
                     <div> <input id="glasses-1"  type="image" src="/img/woman/glasses/glasses1.jpg"></div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="section" id="eyes-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section" id="eyes-section">
                 <h3 class="text">Elige tu color de ojos</h3>
-                <div class="eyes-select">
+                <div class="eyes-select d-flex justify-content-center">
                     <div id="eyes-1" onclick="changeEyesColor('black')"></div>
                     <div id="eyes-2" onclick="changeEyesColor('brown')"></div>
                     <div id="eyes-3" onclick="changeEyesColor('green')"> </div>
@@ -124,30 +131,37 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="img" id="main-image">
-              <img src="/img/woman/base1.jpg" class="img-fluid">
-              <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid">
-              <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
-              <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
-            </div>
-          </div>
-
 
         <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image-preview">
+                  <div class="img" id="main-image">
+                    <img src="/img/woman/base1.jpg" class="img-fluid">
+                    <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid">
+                    <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
+                    <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
                 <div class="form-group">
                   <label for="nameFemale"></label>
                   <input type="text" class="form-control" id="nameFemale" name="nombre" placeholder="Ingrese su nombre" required>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-end">
+                <div class="btn-container">
+                  <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3">Continuar</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="btn-container">
-            <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3">Continuar</button>
-          </div>
+
 
 
     <script src="{{ asset('js/Avatar_female.js')}}"></script>

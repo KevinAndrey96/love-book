@@ -121,7 +121,7 @@ div {
 
 
 .pages .page-wrapper img {
-    width: 200px !important;
+    width: 250px !important;
     max-width: 300px !important;
     height: auto;
     border-radius: 0.3rem;
@@ -1344,7 +1344,7 @@ h6{
 
 
     .page-wrapper font{
-        font-size: 1vh;
+        font-size: 1.8vh;
 
     }
 

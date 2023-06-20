@@ -19,7 +19,9 @@
                     <th>Nombre</th>
                     <th>PDF</th>
                     <th>Estado</th>
+                    <th>ID transaccion</th>
                     <th>Acciones</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -29,6 +31,7 @@
                         <td>{{ $book->name }}</td>
                         <td>{{ $book->pdf }}</td>
                         <td style="text-align: center">{{ $book->status }}</td>
+                        <td>{{ $book->id_transaction }}</td>
                         <td style="text-align: center">
                             <a href="{{ route('download.pdf', ['id' => $book->id]) }}" class="btn btn-success">Descargar</a>
                         </td>

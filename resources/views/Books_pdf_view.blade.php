@@ -221,38 +221,41 @@
          <div class="col-12 pages">
             <div class="grid-container" id="grid">
             <div class="page-wrapper" id="first-page-wrapper">
-                    <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/extra/two-avatars.jpg" class="page-img img-fluid">
-                    <div class="giver-img">
-                      <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/woman/giver-base.png" class="extra" style="z-index: 1;">
-                      <img id="eyesfemalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/woman/eyes/brown.png" class="extra" style="z-index: 1;">
-                      <img id="hairfemalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
-                      <img id="glassesfemalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/woman/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
-                    </div>
-                    <div class="receiver-img">
-                      <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/man/receiver-base.png" class="extra" style="z-index: 2;">
-                      <img id="eyesmalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/man/eyes/blue.png" onclick="selectContainerContent('frontpage4')" class="extra" style="z-index: 3;">
-                      <img id="hairmalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/man/hair/brown/half1.png" class="extra" style="z-index: 2;">
-                      <img id="beardd3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/man/beard/brown/brown1.png" class="extra" style="z-index: 2; display: block;">
-                      <img id="glassesmalee3" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage4/man/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
-                    </div>
-                    <div class="tittle-wrapper text" style="z-index: 100;">
-                      <h3 id="names3" title="Esta será tu portada"> carbe y carne</h3>
-                    </div>
+                <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/extra/two-avatars.jpg" class="page-img img-fluid">
+                <div class="giver-img">
+                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/receiver-base.png" class="extra" style="z-index: 1;">
+                  <img id="eyesfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/eyes/brown.png" class="extra" style="z-index: 1;">
+                  <img id="hairfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
+                  <img id="glassesfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
                 </div>
+                <div class="receiver-img">
+                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/giver-base.png" class="extra" style="z-index: 2;">
+                  <img id="eyesmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/eyes/brown.png" class="extra" style="z-index: 2;">
+                  <img id="hairmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/hair/brown/half1.png" class="extra" style="z-index: 2;">
+                  <img id="beardd2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/beard/brown/brown1.png" class="extra" style="z-index: 2; display: block;">
+                  <img id="glassesmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
+                </div>
+                <div class="extras">
+                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
+                </div>
+                <div class="tittle-wrapper text" style="z-index: 100;">
+                  <h3 id="names2" title="Esta será tu portada"> Sara y Carlos</h3>
+                </div>
+              </div>
 
     <div class="page-wrapper" id="page2" data-order="2">
         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
         <div class="giver-img">
             <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="eyesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="hairfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="eyesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/eyes/green.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="hairfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/hair/brown/short3.png" class="extra modal-image1" style="z-index: 2;">
             <img id="glassesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2; display: none;">
         </div>
         <div class="receiver-img">
             <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
             <img id="eyesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/eyes/blue.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="hairmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="beardmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1; display: block;">
+            <img id="hairmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/hair/light/long1.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="beardmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/beard/light/light5.png" class="extra modal-image1" style="z-index: 1; display: block;">
             <img id="glassesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1; display: none;">
         </div>
         <div>
@@ -277,15 +280,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page3/extra/two-avatars(1).jpg" class="page-img modal-image3">
                 <div class="giver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/giver-base.png" class="extra modal-image3" style="z-index: 2;">
-                    <img id="eyesfemale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/eyes/brown.png" class="extra modal-image3" style="z-index: 2;">
-                    <img id="hairfemale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/hair/brown/long1.png" class="extra modal-image3" style="z-index: 2;">
+                    <img id="eyesfemale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/eyes/green.png" class="extra modal-image3" style="z-index: 2;">
+                    <img id="hairfemale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/hair/brown/short3.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="glassesfemale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/woman/glasses/glasses.png" class="extra modal-image3" style="z-index: 2; display: none;">
                 </div>
                 <div class="receiver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/receiver-base.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="eyesmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/eyes/blue.png" class="extra modal-image3" style="z-index: 1;">
-                    <img id="hairmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/hair/brown/half1.png" class="extra modal-image3" style="z-index: 1;">
-                    <img id="beardmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/beard/brown/brown1.png" class="extra modal-image3" style="z-index: 1; display: block;">
+                    <img id="hairmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/hair/light/long1.png" class="extra modal-image3" style="z-index: 1;">
+                    <img id="beardmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/beard/light/light5.png" class="extra modal-image3" style="z-index: 1; display: block;">
                     <img id="glassesmale3" src="C:\xampp\htdocs\Love-Book\public\img/books/page3/man/glasses/glasses.png" class="extra modal-image3" style="z-index: 1; display: none;">
                 </div>
                 <div><div id="text-page3" contenteditable="true" class="page-text large">
@@ -304,15 +307,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page4/extra/two-avatars.jpg" class="page-img modal-image4">
                 <div class="giver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/giver-base.png" class="extra modal-image4" style="z-index: 1;">
-                    <img id="eyesfemale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/eyes/brown.png" class="extra modal-image4" style="z-index: 1;">
-                    <img id="hairfemale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/hair/brown/long1.png" class="extra modal-image4" style="z-index: 1;">
+                    <img id="eyesfemale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/eyes/green.png" class="extra modal-image4" style="z-index: 1;">
+                    <img id="hairfemale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/hair/brown/short3.png" class="extra modal-image4" style="z-index: 1;">
                     <img id="glassesfemale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/woman/glasses/glasses.png" class="extra modal-image4" style="z-index: 1; display: none;">
                 </div>
                 <div class="receiver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/giver-base.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="eyesmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/eyes/blue.png" class="extra modal-image4" style="z-index: 2;">
-                    <img id="hairmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/hair/brown/half1.png" class="extra modal-image4" style="z-index: 2;">
-                    <img id="beardmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/beard/brown/brown1.png" class="extra modal-image4" style="z-index: 2; display: block;">
+                    <img id="hairmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/hair/light/long1.png" class="extra modal-image4" style="z-index: 2;">
+                    <img id="beardmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/beard/light/light5.png" class="extra modal-image4" style="z-index: 2; display: block;">
                     <img id="glassesmale4" src="C:\xampp\htdocs\Love-Book\public\img/books/page4/man/glasses/glasses.png" class="extra modal-image4" style="z-index: 2; display: none;">
                 </div>
                 <div><div id="text-page4" contenteditable="true" class="page-text large">
@@ -346,15 +349,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page6/extra/two-avatars.jpg" class="page-img modal-image6">
                 <div class="giver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/giver-base.png" class="extra modal-image6" style="z-index: 1;">
-                    <img id="eyesfemale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/eyes/brown.png" class="extra modal-image6" style="z-index: 1;">
-                    <img id="hairfemale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/hair/brown/long1.png" class="extra modal-image6" style="z-index: 1;">
+                    <img id="eyesfemale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/eyes/green.png" class="extra modal-image6" style="z-index: 1;">
+                    <img id="hairfemale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/hair/brown/short3.png" class="extra modal-image6" style="z-index: 1;">
                     <img id="glassesfemale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/woman/glasses/glasses.png" class="extra modal-image6" style="z-index: 1; display: none;">
                 </div>
                 <div class="receiver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/receiver-base.png" class="extra modal-image6" style="z-index: 2;">
                     <img id="eyesmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/eyes/blue.png" class="extra modal-image6" style="z-index: 2;">
-                    <img id="hairmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/hair/brown/half1.png" class="extra modal-image6" style="z-index: 2;">
-                    <img id="beardmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/beard/brown/brown1.png" class="extra modal-image6" style="z-index: 2; display: block;">
+                    <img id="hairmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/hair/light/long1.png" class="extra modal-image6" style="z-index: 2;">
+                    <img id="beardmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/beard/light/light5.png" class="extra modal-image6" style="z-index: 2; display: block;">
                     <img id="glassesmale6" src="C:\xampp\htdocs\Love-Book\public\img/books/page6/man/glasses/glasses.png" class="extra modal-image6" style="z-index: 2; display: none;">
                 </div>
                 <div><div id="text-page6" contenteditable="true" class="page-text large">
@@ -391,15 +394,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page8/extra/two-avatars.jpg" class="page-img modal-image8">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/giver-base.png" class="extra modal-image8" style="z-index: 1;">
-                        <img id="eyesfemale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/eyes/brown.png" class="extra modal-image8" style="z-index: 1;">
-                        <img id="hairfemale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/hair/brown/long1.png" class="extra modal-image8" style="z-index: 1;">
+                        <img id="eyesfemale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/eyes/green.png" class="extra modal-image8" style="z-index: 1;">
+                        <img id="hairfemale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/hair/brown/short3.png" class="extra modal-image8" style="z-index: 1;">
                         <img id="glassesfemale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/woman/glasses/glasses.png" class="extra modal-image8" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/receiver-base.png" class="extra modal-image8" style="z-index: 2;">
                         <img id="eyesmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/eyes/blue.png" class="extra modal-image8" style="z-index: 2;">
-                        <img id="hairmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/hair/brown/half1.png" class="extra modal-image8" style="z-index: 2;">
-                        <img id="beardmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/beard/brown/brown1.png" class="extra modal-image8" style="z-index: 2; display: block;">
+                        <img id="hairmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/hair/light/long1.png" class="extra modal-image8" style="z-index: 2;">
+                        <img id="beardmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/beard/light/light5.png" class="extra modal-image8" style="z-index: 2; display: block;">
                         <img id="glassesmale8" src="C:\xampp\htdocs\Love-Book\public\img/books/page8/man/glasses/glasses.png" class="extra modal-image8" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page8" contenteditable="true" class="page-text large">
@@ -429,14 +432,14 @@
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/receiver-base.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="eyesmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/eyes/blue.png" class="extra modal-image10" style="z-index: 1;">
-                        <img id="hairmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/hair/brown/half1.png" class="extra modal-image10" style="z-index: 1;">
-                        <img id="beardmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/beard/brown/brown1.png" class="extra modal-image10" style="z-index: 1; display: block;">
+                        <img id="hairmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/hair/light/long1.png" class="extra modal-image10" style="z-index: 1;">
+                        <img id="beardmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/beard/light/light5.png" class="extra modal-image10" style="z-index: 1; display: block;">
                         <img id="glassesmale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="eyesfemale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/eyes/brown.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="hairfemale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="eyesfemale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/eyes/green.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="hairfemale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/hair/brown/short3.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="glassesfemale10" src="C:\xampp\htdocs\Love-Book\public\img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page10" contenteditable="true" class="page-text large">
@@ -498,15 +501,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page14/extra/two-avatars.jpg" class="page-img modal-image14">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/giver-base.png" class="extra modal-image14" style="z-index: 1;">
-                        <img id="eyesfemale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/eyes/brown.png" class="extra modal-image14" style="z-index: 1;">
-                        <img id="hairfemale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/hair/brown/long1.png" class="extra modal-image14" style="z-index: 1;">
+                        <img id="eyesfemale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/eyes/green.png" class="extra modal-image14" style="z-index: 1;">
+                        <img id="hairfemale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/hair/brown/short3.png" class="extra modal-image14" style="z-index: 1;">
                         <img id="glassesfemale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/woman/glasses/glasses.png" class="extra modal-image14" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/receiver-base.png" class="extra modal-image14" style="z-index: 2;">
                         <img id="eyesmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/eyes/blue.png" class="extra modal-image14" style="z-index: 2;">
-                        <img id="hairmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/hair/brown/half1.png" class="extra modal-image14" style="z-index: 2;">
-                        <img id="beardmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/beard/brown/brown1.png" class="extra modal-image14" style="z-index: 2; display: block;">
+                        <img id="hairmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/hair/light/long1.png" class="extra modal-image14" style="z-index: 2;">
+                        <img id="beardmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/beard/light/light5.png" class="extra modal-image14" style="z-index: 2; display: block;">
                         <img id="glassesmale14" src="C:\xampp\htdocs\Love-Book\public\img/books/page14/man/glasses/glasses.png" class="extra modal-image14" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page14" contenteditable="true" class="page-text large">
@@ -542,14 +545,14 @@
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/receiver-base.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="eyesmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/eyes/blue.png" class="extra modal-image16" style="z-index: 1;">
-                        <img id="hairmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/hair/brown/half1.png" class="extra modal-image16" style="z-index: 1;">
-                        <img id="beardmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/beard/brown/brown1.png" class="extra modal-image16" style="z-index: 1; display: block;">
+                        <img id="hairmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/hair/light/long1.png" class="extra modal-image16" style="z-index: 1;">
+                        <img id="beardmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/beard/light/light5.png" class="extra modal-image16" style="z-index: 1; display: block;">
                         <img id="glassesmale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="eyesfemale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/eyes/brown.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="hairfemale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="eyesfemale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/eyes/green.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="hairfemale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/hair/brown/short3.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="glassesfemale16" src="C:\xampp\htdocs\Love-Book\public\img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page16" contenteditable="true" class="page-text large">
@@ -584,15 +587,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page18/extra/two-avatars.jpg" class="page-img modal-image18">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/giver-base.png" class="extra modal-image18" style="z-index: 2;">
-                        <img id="eyesfemale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/eyes/brown.png" class="extra modal-image18" style="z-index: 2;">
-                        <img id="hairfemale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/hair/brown/long1.png" class="extra modal-image18" style="z-index: 2;">
+                        <img id="eyesfemale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/eyes/green.png" class="extra modal-image18" style="z-index: 2;">
+                        <img id="hairfemale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/hair/brown/short3.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="glassesfemale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/woman/glasses/glasses.png" class="extra modal-image18" style="z-index: 2; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/receiver-base.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="eyesmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/eyes/blue.png" class="extra modal-image18" style="z-index: 1;">
-                        <img id="hairmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/hair/brown/half1.png" class="extra modal-image18" style="z-index: 1;">
-                        <img id="beardmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/beard/brown/brown1.png" class="extra modal-image18" style="z-index: 1; display: block;">
+                        <img id="hairmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/hair/light/long1.png" class="extra modal-image18" style="z-index: 1;">
+                        <img id="beardmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/beard/light/light5.png" class="extra modal-image18" style="z-index: 1; display: block;">
                         <img id="glassesmale18" src="C:\xampp\htdocs\Love-Book\public\img/books/page18/man/glasses/glasses.png" class="extra modal-image18" style="z-index: 1; display: none;">
                     </div>
                     <div><div id="text-page18" contenteditable="true" class="page-text large">
@@ -639,15 +642,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page21/extra/two-avatars.jpg" class="page-img modal-image21">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/giver-base.png" class="extra modal-image21" style="z-index: 1;">
-                        <img id="eyesfemale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/eyes/brown.png" class="extra modal-image21" style="z-index: 1;">
-                        <img id="hairfemale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/hair/brown/long1.png" class="extra modal-image21" style="z-index: 1;">
+                        <img id="eyesfemale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/eyes/green.png" class="extra modal-image21" style="z-index: 1;">
+                        <img id="hairfemale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/hair/brown/short3.png" class="extra modal-image21" style="z-index: 1;">
                         <img id="glassesfemale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/woman/glasses/glasses.png" class="extra modal-image21" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/receiver-base.png" class="extra modal-image21" style="z-index: 2;">
                         <img id="eyesmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/eyes/blue.png" class="extra modal-image21" style="z-index: 2;">
-                        <img id="hairmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/hair/brown/half1.png" class="extra modal-image21" style="z-index: 2;">
-                        <img id="beardmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/beard/brown/brown1.png" class="extra modal-image21" style="z-index: 2; display: block;">
+                        <img id="hairmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/hair/light/long1.png" class="extra modal-image21" style="z-index: 2;">
+                        <img id="beardmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/beard/light/light5.png" class="extra modal-image21" style="z-index: 2; display: block;">
                         <img id="glassesmale21" src="C:\xampp\htdocs\Love-Book\public\img/books/page21/man/glasses/glasses.png" class="extra modal-image21" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page21" contenteditable="true" class="page-text large">
@@ -701,8 +704,8 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page26/extra/only-giver.jpg" class="page-img modal-image26">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page26/woman/giver-base.png" class="extra modal-image26" style="z-index: 1;">
-                        <img id="eyesfemale26" src="C:\xampp\htdocs\Love-Book\public\img/books/page26/woman/eyes/brown.png" class="extra modal-image26" style="z-index: 1;">
-                        <img id="hairfemale26" src="C:\xampp\htdocs\Love-Book\public\img/books/page26/woman/hair/brown/long1.png" class="extra modal-image26" style="z-index: 1;">
+                        <img id="eyesfemale26" src="C:\xampp\htdocs\Love-Book\public\img/books/page26/woman/eyes/green.png" class="extra modal-image26" style="z-index: 1;">
+                        <img id="hairfemale26" src="C:\xampp\htdocs\Love-Book\public\img/books/page26/woman/hair/brown/short3.png" class="extra modal-image26" style="z-index: 1;">
                     </div>
                     <div><div id="text-page26" contenteditable="true" class="page-text large">
                         <div><br></div>
@@ -792,14 +795,14 @@
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/receiver-base.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="eyesmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/eyes/blue.png" class="extra modal-image32" style="z-index: 1;">
-                        <img id="hairmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/hair/brown/half1.png" class="extra modal-image32" style="z-index: 1;">
-                        <img id="beardmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/beard/brown/brown1.png" class="extra modal-image32" style="z-index: 1; display: block;">
+                        <img id="hairmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/hair/light/long1.png" class="extra modal-image32" style="z-index: 1;">
+                        <img id="beardmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/beard/light/light5.png" class="extra modal-image32" style="z-index: 1; display: block;">
                         <img id="glassesmale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 1; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="eyesfemale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="hairfemale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="eyesfemale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/eyes/green.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="hairfemale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/hair/brown/short3.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="glassesfemale32" src="C:\xampp\htdocs\Love-Book\public\img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page32" contenteditable="true" class="page-text large">
@@ -876,15 +879,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page37/extra/two-avatars.jpg" class="page-img modal-image37">
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page37/woman/giver-base.png" class="extra modal-image37" style="z-index: 2;">
-                        <img id="eyesfemale37" src="img/books/page37/woman/eyes/brown.png" class="extra modal-image37" style="z-index: 2;">
-                        <img id="hairfemale37" src="img/books/page37/woman/hair/brown/long1.png" class="extra modal-image37" style="z-index: 2;">
+                        <img id="eyesfemale37" src="img/books/page37/woman/eyes/green.png" class="extra modal-image37" style="z-index: 2;">
+                        <img id="hairfemale37" src="img/books/page37/woman/hair/brown/short3.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="glassesfemale37" src="C:\xampp\htdocs\Love-Book\public\img/books/page37/woman/glasses/glasses.png" class="extra modal-image37" style="z-index: 2; display: none;">
                     </div>
                     <div class="receiver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page37/man/receiver-base.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="eyesmale37" src="img/books/page37/man/eyes/blue.png" class="extra modal-image37" style="z-index: 1;">
-                        <img id="hairmale37" src="img/books/page37/man/hair/brown/half1.png" class="extra modal-image37" style="z-index: 1;">
-                        <img id="beardmale37" src="img/books/page37/man/beard/brown/brown1.png" class="extra modal-image37" style="z-index: 1; display: block;">
+                        <img id="hairmale37" src="img/books/page37/man/hair/light/long1.png" class="extra modal-image37" style="z-index: 1;">
+                        <img id="beardmale37" src="img/books/page37/man/beard/light/light5.png" class="extra modal-image37" style="z-index: 1; display: block;">
                         <img id="glassesmale37" src="C:\xampp\htdocs\Love-Book\public\img/books/page37/man/glasses/glasses.png" class="extra modal-image37" style="z-index: 1; display: none;">
                     </div>
                     <div><div id="text-page37" contenteditable="true" class="page-text large">
@@ -919,8 +922,8 @@
                     <div class="giver-img">
                         <img src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/receiver-base.png" class="extra modal-image39" style="z-index: 2;">
                         <img id="eyesmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/eyes/blue.png" class="extra modal-image39" style="z-index: 2;">
-                        <img id="hairmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/hair/brown/half1.png" class="extra modal-image39" style="z-index: 2;">
-                        <img id="beardmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/beard/brown/brown1.png" class="extra modal-image39" style="z-index: 2; display: block;">
+                        <img id="hairmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/hair/light/long1.png" class="extra modal-image39" style="z-index: 2;">
+                        <img id="beardmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/beard/light/light5.png" class="extra modal-image39" style="z-index: 2; display: block;">
                         <img id="glassesmale39" src="C:\xampp\htdocs\Love-Book\public\img/books/page39/man/glasses/glasses.png" class="extra modal-image39" style="z-index: 2; display: none;">
                     </div>
                     <div><div id="text-page39" contenteditable="true" class="page-text large">
@@ -1002,15 +1005,15 @@
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page45/extra/two-avatars.jpg" class="page-img modal-image45">
                 <div class="giver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/giver-woman-base.png" class="extra modal-image45" style="z-index: 1;">
-                    <img id="eyesfemale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/eyes/brown.png" class="extra modal-image45" style="z-index: 1;">
-                    <img id="hairfemale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/hair/brown/long1.png" class="extra modal-image45" style="z-index: 1;">
+                    <img id="eyesfemale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/eyes/green.png" class="extra modal-image45" style="z-index: 1;">
+                    <img id="hairfemale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/hair/brown/short3.png" class="extra modal-image45" style="z-index: 1;">
                     <img id="glassesfemale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/woman/glasses/glasses.png" class="extra modal-image45" style="z-index: 1; display: none;">
                 </div>
                 <div class="receiver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/receiver-man-base.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="eyesmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/eyes/blue.png" class="extra modal-image45" style="z-index: 2;">
-                    <img id="hairmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/hair/brown/half1.png" class="extra modal-image45" style="z-index: 2;">
-                    <img id="beardmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/beard/brown/brown1.png" class="extra modal-image45" style="z-index: 2; display: block;">
+                    <img id="hairmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/hair/light/long1.png" class="extra modal-image45" style="z-index: 2;">
+                    <img id="beardmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/beard/light/light5.png" class="extra modal-image45" style="z-index: 2; display: block;">
                     <img id="glassesmale45" src="C:\xampp\htdocs\Love-Book\public\img/books/page45/man/glasses/glasses.png" class="extra modal-image45" style="z-index: 2; display: none;">
                 </div>
                 <div class="extras">
@@ -1030,15 +1033,15 @@
                 <img src="C:\xampp\htdocs\Love-Book\public\img/books/page23/extra/two-avatars.jpg" class="page-img modal-image23">
                 <div class="giver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/giver-base.png" class="extra modal-image23" style="z-index: 1;">
-                    <img id="eyesfemale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/eyes/brown.png" class="extra modal-image23" style="z-index: 1;">
-                    <img id="hairfemale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/hair/brown/long1.png" class="extra modal-image23" style="z-index: 1;">
+                    <img id="eyesfemale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/eyes/green.png" class="extra modal-image23" style="z-index: 1;">
+                    <img id="hairfemale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/hair/brown/short3.png" class="extra modal-image23" style="z-index: 1;">
                     <img id="glassesfemale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/woman/glasses/glasses.png" class="extra modal-image23" style="z-index: 1; display: none;">
                 </div>
                 <div class="receiver-img">
                     <img src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/receiver-base.png" class="extra modal-image23" style="z-index: 2;">
                     <img id="eyesmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/eyes/blue.png" class="extra modal-image23" style="z-index: 2;">
-                    <img id="hairmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/hair/brown/half1.png" class="extra modal-image23" style="z-index: 2;">
-                    <img id="beardmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/beard/brown/brown1.png" class="extra modal-image23" style="z-index: 2; display: block;">
+                    <img id="hairmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/hair/light/long1.png" class="extra modal-image23" style="z-index: 2;">
+                    <img id="beardmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/beard/light/light5.png" class="extra modal-image23" style="z-index: 2; display: block;">
                     <img id="glassesmale23" src="C:\xampp\htdocs\Love-Book\public\img/books/page23/man/glasses/glasses.png" class="extra modal-image23" style="z-index: 2; display: none;">
                 </div>
                 <div><div id="text-page23" contenteditable="true" class="page-text large">

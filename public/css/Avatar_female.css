@@ -11,32 +11,24 @@ body{
     text-transform: uppercase;
   }
 
+
+
   .hair-select,
   .color-select,
   .glasses-select,
   .eyes-select {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
   }
 
-  .hair-select div,
-  .glasses-select div,
-  .eyes-select div {
-      text-align: center;
-  }
+
 
   .hair-select input,
   .glasses-select input {
-      width: 90%;
+      width: 100%;
       height: auto;
+      padding: 2px;
       border-radius: 10px;
-  }
-
-
-
-  .section {
-      margin-bottom: 30px;
   }
 
   .text {
@@ -82,7 +74,6 @@ body{
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 5px;
   }
 
   .color-select div {
@@ -96,8 +87,11 @@ body{
   }
 
 .container-btn{
-    margin-top: 50px;
+    margin-top: 80px;
 }
+
+
+
 
 .navbar {
     width: 100%;
@@ -194,17 +188,25 @@ body{
     overflow-x:hidden;
 }
 
+
+
+
   .btn:active {
     transform: scale(0.9);
   }
+  .img {
+    position: relative;
+    width: 800px !important;
+  }
+
+
+
+
 
 .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     position: relative;
-    width: 100%;
-    max-width: 100%;
+    width: 500px;
   }
 
   .on {
@@ -237,19 +239,9 @@ body{
     text-align: center;
   }
 
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-  }
 
   .form-control {
-    width: 40% !important;
+    width: 60% !important;
     margin: 0 auto !important;
     padding: 8px !important;
     border: 1px solid #ccc !important;
@@ -259,6 +251,8 @@ body{
     background-color: #fff5f5 !important;
     transition: border-color 0.3s ease !important;
   }
+
+
 
   .form-control:focus {
     outline: none;
@@ -272,19 +266,70 @@ body{
     /* Estilos para dispositivos móviles */
     .hair-select div,
     .glasses-select div {
-      width: 30%;
-      margin-bottom: 15px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    /* Estilos para laptops y dispositivos de pantalla más grande */
-    .hair-select div,
-    .glasses-select div {
       width: 18%;
       margin-bottom: 15px;
     }
+
+    .image-preview {
+        display: flex;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: center; /* Ajusta la posición vertical al inicio */
+      }
   }
+
+
+
+  @media (min-width: 1100px) {
+    /* Estilos para laptops y dispositivos de pantalla más grande */
+    .hair-select div,
+    .glasses-select div {
+      width: 25%;
+      margin-bottom: 15px;
+    }
+
+    .image-preview {
+        display: flex;
+        margin-top: 200px;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: flex-start; /* Ajusta la posición vertical al inicio */
+      }
+
+      .image-preview .img {
+        position: absolute;
+        top: 200px;
+        right: 0;
+      }
+
+
+
+      .btn-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background-color: #fdecfd;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        left:0px !important;
+
+      }
+
+
+  .form-control {
+    width: 60% !important;
+    margin: 0 auto !important;
+    padding: 8px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    margin-top: -70px !important;
+    color: #555 !important;
+    background-color: #fff5f5 !important;
+    transition: border-color 0.3s ease !important;
+  }
+
+  }
+
+
 
 
 

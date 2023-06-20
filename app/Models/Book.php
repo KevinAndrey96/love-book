@@ -15,5 +15,8 @@ class Book extends Model
         'status'
     ];
 
-   
+    public function transaction()
+    {
+        return $this->hasOne(Transaction::class);
+    }
 }

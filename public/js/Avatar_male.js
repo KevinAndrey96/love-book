@@ -10,6 +10,9 @@ var hair8 = document.getElementById("hair-8");
 var hair9 = document.getElementById("hair-9");
 var hairchange = document.getElementById("hairchange");
 
+var formContainer = document.querySelector(".form-group");
+
+
 // Obtener elementos HTML de las imágenes de la barba del hombre
 var beard1 = document.getElementById("beard-1");
 var beard2 = document.getElementById("beard-2");
@@ -217,6 +220,9 @@ btnHair.addEventListener('click', () => {
     sectionEyes.style.display = 'none';
     sectionBeardColor.style.display = 'none';
     sectionColor.style.display = 'block';
+    formContainer.style.display = 'block';
+
+
 
 });
 
@@ -228,6 +234,8 @@ btnGlasses.addEventListener('click', () => {
     sectionEyes.style.display = 'none';
     sectionBeardColor.style.display = 'none';
     sectionColor.style.display = 'none';
+    formContainer.style.display = 'none';
+
 });
 
 // Mostrar la sección de ojos y ocultar las demás al hacer clic en el botón de ojos
@@ -238,6 +246,8 @@ btnEyes.addEventListener('click', () => {
     sectionEyes.style.display = 'block';
     sectionBeardColor.style.display = 'none';
     sectionColor.style.display = 'none';
+    formContainer.style.display = 'none';
+
 
 });
 
@@ -249,6 +259,9 @@ btnBeard.addEventListener('click', () => {
     sectionEyes.style.display = 'none';
     sectionBeardColor.style.display = 'block';
     sectionColor.style.display = 'none';
+    formContainer.style.display = 'block';
+
+
 });
 
 document.getElementById("btn-continue").addEventListener("click", function() {

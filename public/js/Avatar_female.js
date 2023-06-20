@@ -54,6 +54,9 @@ const sectionColor = document.getElementById('color-section');
 // Obtener boton continuar
 const btnContinue = document.getElementById('btn-continue');
 
+var formContainer = document.querySelector(".form-group");
+
+
 
 // Asignar funciones de clic a los elementos HTML de las imágenes del cabello
 hair1.onclick = function(){
@@ -138,6 +141,9 @@ btnHair.addEventListener('click', () => {
     sectionColor.style.display = 'block';
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'none';
+    formContainer.style.display = 'block';
+
+
 });
 
 // Mostrar la sección de gafas y ocultar las demás al hacer clic en el botón de gafas
@@ -145,6 +151,7 @@ btnGlasses.addEventListener('click', () => {
     sectionHair.style.display = 'none';
     sectionGlasses.style.display = 'block';
     sectionEyes.style.display = 'none';
+    formContainer.style.display = 'none';
     sectionColor.style.display = 'none';
 
 });
@@ -155,6 +162,9 @@ btnEyes.addEventListener('click', () => {
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'block';
     sectionColor.style.display = 'none';
+    formContainer.style.display = 'none';
+
+
 
 });
 

@@ -11,25 +11,34 @@ body{
     text-transform: uppercase;
   }
 
-
-
-  .hair-select,
-  .color-select,
-  .glasses-select,
-  .eyes-select,
-  .beard-input {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+  .hair-select input,
+  .glasses-select input,
+  .beard-select input {
+      width:100%;
+      padding: 2px;
+      border-radius: 10px;
   }
 
-  .hair-select div,
-  .glasses-select div,
-  .eyes-select div,
-  .beard-select div {
 
-      text-align: center;
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
   }
+
+  .on {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
 
   .eyes-select div {
     position: relative;
@@ -38,27 +47,11 @@ body{
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 5px;
-  }
-
-
-  .hair-select input,
-  .glasses-select input,
-  .beard-select input {
-      width: 90%;
-      height: auto;
-      border-radius: 10px;
   }
 
 
 
-  .section {
-      margin-bottom: 30px;
-  }
 
-  .text {
-      margin-bottom: 10px;
-  }
 
   #brown {
     background-color: rgb(88, 51, 37);
@@ -103,7 +96,7 @@ body{
     font-weight: bold;
 }
 .container-btn{
-    margin-top: 50px !important;
+    margin-top: 80px !important;
 }
 body {
     overflow-x:hidden;
@@ -133,23 +126,7 @@ body {
   }
 
 
-  .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-  }
 
-  .on {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    max-height: 100%;
-  }
 
 .btn1:hover {
     background-color: transparent;
@@ -205,13 +182,8 @@ body {
     transform: scale(0.9);
   }
 
-  .container {
-    text-align: center;
-  }
 
-  .form-group {
-    margin-bottom: 15px;
-  }
+
 
   label {
     display: block;
@@ -221,13 +193,14 @@ body {
   }
 
   .form-control {
-    width: 40% !important;
+    width: 90% !important;
     margin: 0 auto !important;
     padding: 8px !important;
     border: 1px solid #f2edff !important;
     border-radius: 4px !important;
     font-size: 14px !important;
     color: #555 !important;
+
     background-color: #fff5f5 !important;
     transition: border-color 0.3s ease !important;
   }
@@ -285,6 +258,85 @@ body {
       margin-bottom: 15px;
     }
   }
+
+
+
+  @media (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+    .hair-select div,
+    .glasses-select div {
+      width: 30%;
+      margin-bottom: 15px;
+    }
+
+
+
+    .image-preview {
+        display: flex;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: center; /* Ajusta la posición vertical al inicio */
+      }
+
+
+
+  }
+
+  @media (min-width: 1100px) {
+    /* Estilos para laptops y dispositivos de pantalla más grande */
+    .hair-select div,
+    .glasses-select div,
+    .beard-select div
+     {
+      width: 25%;
+      margin-bottom: 15px;
+    }
+
+    .btn-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background-color: #f6ecfd;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        left:0px !important;
+
+      }
+
+
+    .image-preview {
+        display: flex;
+        margin-top: 200px;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: flex-start; /* Ajusta la posición vertical al inicio */
+      }
+
+      .form-control {
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 8px !important;
+        border: 1px solid #f2edff !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        color: #555 !important;
+        margin-left: 650px !important;
+        margin-top:-350px !important;
+        background-color: #fff5f5 !important;
+        transition: border-color 0.3s ease !important;
+      }
+
+      .image-preview .img {
+        position: absolute;
+        top: 200px;
+        right: 150px;
+      }
+  }
+
+
+
+
+
+
+
 
 
 
