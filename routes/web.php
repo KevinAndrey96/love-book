@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\AvatarController;
 
+
 Route::get('/', function () {
     return view('books.index');
 });
@@ -24,6 +25,9 @@ Route::get('/books-pdf', [BookController::class, 'booksPDF']);
 
 
 Route::get('/form', [BookController::class, 'Form']);
+
+
+
 
 
 

@@ -34,31 +34,6 @@
     <div class="container">
         <div class="form-container">
             <h2>Compra tu libro</h2>
-            <form action="/guardar-libro" method="POST">
-                @csrf
-                <div class="form-group">
-                    <label for="names">Nombres:</label>
-                    <input type="text" class="form-control" id="names" name="names" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastnames">Apellidos:</label>
-                    <input type="text" class="form-control" id="lastnames" name="lastnames" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Dirección:</label>
-                    <input type="text" class="form-control" id="address" name="address" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone_number">Teléfono:</label>
-                    <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <button id="guardarDatos" type="submit" class="btn btn-primary">Guardar</button>
-            </form>
-
             <div class="col-12 pages">
                 <div class="page-wrapper" id="first-page-wrapper">
                     <img src="/img/books/page1/extra/two-avatars.jpg" class="modal-image">
@@ -83,6 +58,30 @@
             </div>
         </div>
         </div>
+
+        <form action="https://checkout.wompi.co/p/" method="GET">
+            <!-- OBLIGATORIOS -->
+            <input type="hidden" name="public-key" value="pub_test_FXuP06pwO8kBrtw9quipeLbETCLqsLtu" />
+            <input type="hidden" name="currency" value="COP" />
+            <input type="hidden" name="amount-in-cents" value="1500000" />
+            <input type="hidden" name="reference" value="{{ time() }}">
+
+            <!-- OPCIONALES -->
+            <input type="text" name="customer-data:email" placeholder="Correo electrónico" />
+            <input type="text" name="customer-data:full-name" placeholder="Nombre completo" />
+            <input type="text" name="customer-data:phone-number" placeholder="Número de teléfono" />
+            <input type="text" name="shipping-address:address-line-1" placeholder="Dirección de envío" />
+            <select name="shipping-address:country">
+                <option value="CO">Colombia</option>
+              </select>
+
+            <input type="text" name="shipping-address:phone-number" placeholder="Teléfono de quien recibe" />
+            <input type="text" name="shipping-address:city" placeholder="Ciudad de envío" />
+            <input type="text" name="shipping-address:region" placeholder="Región de envío" />
+
+            <button type="submit">Pagar con Wompi</button>
+          </form>
+
         <p class="mt-4">Para confirmar tu compra llena este formulario.</p>
     <p>Una vez aprobado tu pago, tu pedido llegará de 4 a 7 días hábiles.</p>
     </div>

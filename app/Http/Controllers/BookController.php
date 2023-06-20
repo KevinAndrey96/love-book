@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use App\Models\Book;
+use Illuminate\Support\Facades\Http;
+
 
 
 
@@ -57,6 +58,8 @@ public function guardarDatos(Request $request)
 
 
 
+
+
     // Buscar todas las etiquetas de imagen en el contenido
     preg_match_all('/<img[^>]+>/i', $content, $matches);
 
@@ -97,6 +100,8 @@ if (preg_match($pattern, $fileContents, $matches)) {
 
 
 
+
+
 $pdf = Pdf::loadView('Books_pdf_view');
 
     // Directorio donde se guardará el archivo PDF
@@ -112,16 +117,13 @@ $pdf = Pdf::loadView('Books_pdf_view');
 
     $pdfPath = $pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf';
 
-
     $book = new Book();
     $book->name = $nameFemale . ' ' . $nameMale;
     $book->pdf = $pdfPath;
     $book->status = 'pendiente';
+
     $book->save();
 
-
-// Respuesta de éxito
-return response()->json(['success' => true, 'message' => 'El libro se guardó correctamente.']);
+  
 }
-
 }
