@@ -1,5 +1,5 @@
 #home .home-baner {
-    background-image: url(/img//home-baner-mobile-removebg-preview.png);
+    background-image: url(/img//home-baner-mobile-transformed.png);
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 @media (min-width: 768px){
 #home .home-baner {
-    background-image: url(/img/home-baner-removebg-preview.png);
+    background-image: url(/img/home-baner-transformed.png);
 }}
 
 .btn-primary{
