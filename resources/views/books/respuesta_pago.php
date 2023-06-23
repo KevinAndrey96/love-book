@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pedido exitoso</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-
-    .container {
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    h1 {
-      color: #4caf50;
-    }
-
-    p {
-      color: #888;
-    }
-
-    .thank-you {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .logo {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto;
-      background-color: #4caf50;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 50px;
-      font-weight: bold;
-    }
-  </style>
+  <title>Respuesta de Transacción</title>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      &#10004;
-    </div>
-    <h1>Pedido exitoso</h1>
-    <p class="thank-you">¡Gracias por elegirnos!</p>
-    <p>Tu pedido ha sido procesado con éxito y estamos emocionados de atenderte.</p>
-    <p>Estamos trabajando para enviar tus productos lo antes posible. Si tienes alguna pregunta o requerimiento adicional, no dudes en contactarnos.</p>
-    <p>¡Disfruta de tu compra!</p>
-  </div>
+  <h1>Respuesta de Transacción</h1>
+
+  <script>
+    // Función para obtener el valor de un parámetro en la URL
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Obtener el valor del parámetro 'id' de la URL
+    var transactionId = getParameterByName('id');
+
+    // Consultar el resultado de la transacción mediante el API de Wompi
+    if (transactionId) {
+      var apiUrl = 'https://production.wompi.co/v1/transactions/' + transactionId;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          // Aquí puedes procesar la respuesta de la transacción
+          console.log(data);
+          // Por ejemplo, podrías mostrar el estado de la transacción en la página
+          var status = data.data.status;
+          document.body.innerHTML += '<p>Estado de la transacción: ' + status + '</p>';
+        })
+        .catch(error => {
+          // Manejo de errores
+          console.error(error);
+        });
+    }
+  </script>
 </body>
 </html>
+
