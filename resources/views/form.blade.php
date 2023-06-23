@@ -65,7 +65,7 @@
             <input type="hidden" name="currency" value="COP" />
             <input type="hidden" name="amount-in-cents" value="1500000" />
             <input type="hidden" name="reference" value="{{ session('bookId') }}" />
-            <input type="hidden" name="redirect-url" value="http://librodeamor.co/pago/respuesta" />
+            <input type="hidden" name="redirect-url" value="{{ url('/pago/respuesta') }}" />
 
             <!-- OPCIONALES -->
 

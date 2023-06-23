@@ -132,8 +132,54 @@ $pdf = Pdf::loadView('Books_pdf_view');
 
 }
 
-// public function bookSuccess()
-// {
-//     return view('books.respuesta_pago');
-// }
+
+public function respuesta(Request $request)
+{
+    // Obtener el ID de transacción de la URL
+    $transactionId = $request->query('id');
+
+    // Configurar las credenciales de autenticación de prueba
+    $publicKey = 'pub_test_FXuP06pwO8kBrtw9quipeLbETCLqsLtu';
+    $privateKey = 'prv_test_P50s0fVrGOMyc7GZJwWsdbOqkbqR8jMx';
+    $headers = [
+        'Authorization' => 'Bearer ' . $privateKey,
+    ];
+
+    // Consultar el estado de la transacción utilizando el API de Wompi
+    $response = Http::withHeaders($headers)
+        ->get("https://sandbox.wompi.co/v1/transactions/{$transactionId}");
+
+    // Verificar el estado de la respuesta de la API
+    if ($response->successful()) {
+        $status = $response->json('data.status');
+
+        // Verificar si la transacción fue aprobada
+        if ($status === 'APPROVED') {
+            // Obtener la referencia del libro
+            $bookId = session('bookId');
+
+            // Actualizar el estado y el campo id_transaction del libro correspondiente
+            $book = Book::find($bookId);
+            if ($book) {
+                $book->status = 'pagado';
+                $book->id_transaction = $transactionId;
+                $book->save();
+            }
+        }
+    } else {
+        // Manejar el caso de error en la llamada a la API
+        $errorMessage = $response->json('error.message', 'Error desconocido al consultar la transacción');
+        $status = 'Error: ' . $errorMessage;
+    }
+
+    // Mostrar el estado de la transacción en la vista
+    return view('books.respuesta_pago', ['status' => $status]);
+}
+
+
+
+
+
+
+
 }

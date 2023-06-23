@@ -27,6 +27,7 @@ Route::get('/books-pdf', [BookController::class, 'booksPDF']);
 
 Route::get('/form', [BookController::class, 'Form'])->name('form');
 
+Route::get('/pago/respuesta', [BookController::class, 'respuesta'])->name('respuesta');
 
 
 
