@@ -171,7 +171,7 @@
                     <h3 class="title">Social</h3>
                     <ul class="list-unstyled">
                         <li><a href="https://www.facebook.com/people/Libro-de-amor/100087733617470/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://instagram.com/librodeamor.co?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                   </div>
                   <div class="col text-center">
