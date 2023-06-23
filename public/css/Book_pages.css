@@ -1343,8 +1343,6 @@ h6{
 
 }
 
-
-
 @media screen and (min-width: 281px) and (max-width: 360px) {
     .page-wrapper font {
       font-size: 1vh !important;
@@ -1372,7 +1370,7 @@ h6{
     }
 
       .page-wrapper #text-page21  {
-        position:absolute; top: 50px !important; margin-left: -5px !important;
+        position:absolute; top: 150px !important; margin-left: -5px !important;
       }
 }
 
@@ -1420,9 +1418,15 @@ h6{
       }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .page-wrapper font {
+      font-size: 2.1vh !important;
+    }
+}
+
 
 @media screen and (min-width: 1500px) and (max-width: 3000px) {
     .page-wrapper font {
-      font-size: 3vh !important;
+      font-size: 1vh !important;
     }
 }
