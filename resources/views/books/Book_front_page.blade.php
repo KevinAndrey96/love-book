@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="">LoveBooks</a>
+            <a class="navbar-brand" href="">librodeamor.co</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,9 +65,10 @@
             <div class="extras">
               <img src="/img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
             </div>
-            <div class="tittle-wrapper text" style="z-index: 100;">
-              <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
-            </div>
+            <div class="tittle-wrapper text" style="z-index: 100; display: flex; justify-content: center;">
+                <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
+              </div>
+
         </div>
 
               <div class="page-wrapper" id="frontpage2">

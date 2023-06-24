@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Formulario</title>
+    <title>librodeamor.co</title>
 </head>
 <body>
 
@@ -35,28 +35,7 @@
         <div class="form-container">
             <h2>Compra tu libro</h2>
             <div class="col-12 pages">
-                <div class="page-wrapper" id="first-page-wrapper">
-                    <img src="/img/books/page1/extra/two-avatars.jpg" class="modal-image">
-                <div class="giver-img">
-                    <img src="/img/books/page1/woman/giver-woman-base.png" class="extra modal-image" style="z-index: 1;">
-                    <img id="eyesfemale" src="/img/books/page1/woman/eyes/brown.png" class="extra modal-image" style="z-index: 1;">
-                    <img id="hairfemale" src="/img/books/page1/woman/hair/brown/long1.png" class="extra modal-image" style="z-index: 1;">
-                    <img id="glassesfemale" src="/img/books/page1/woman/glasses/glasses.png" class="extra modal-image" style="z-index: 1;">
-            </div>
-            <div class="receiver-img">
-                <img src="/img/books/page1/man/receiver-man-base.png" class="extra modal-image" style="z-index: 2;">
-                <img id="eyesmale"src="/img/books/page1/man/eyes/brown.png" class="extra modal-image" style="z-index: 2;">
-                <img id="hairmale"src="/img/books/page1/man/hair/brown/half1.png" class="extra modal-image" style="z-index: 2;">
-                <img id="beard" src="/img/books/page1/man/beard/brown/brown1.png" class="extra modal-image" style="z-index: 2;">
-                <img id="glassesmale" src="/img/books/page1/man/glasses/glasses.png" class="extra modal-image" style="z-index: 2;">
-            </div>
-            <div class="extras">
-                <img src="/img/books/page1/extra/extra-1.png" class="extra modal-image" style="z-index: 3;">
-            </div>
-            <div class="tittle-wrapper"  contenteditable="true" id="text-page1" >
-                <h1 id="names"  title="Esta será tu portada" style="position: absolute; top: 10px; left: 5%; right: 5%; display: flex; justify-content: center; flex-direction: column; font-size: 1vw; font-family: 'Lato', sans-serif; text-align: center;">Esta será tu portada</h1>
-            </div>
-        </div>
+               
         </div>
 
         <form action="https://checkout.wompi.co/p/" method="GET">
@@ -70,9 +49,9 @@
             <!-- OPCIONALES -->
 
 
-            <input type="text" name="customer-data:email" placeholder="Correo electrónico" />
+            <input type="email" name="customer-data:email" placeholder="Correo electrónico" />
             <input type="text" name="customer-data:full-name" placeholder="Nombre completo" />
-            <input type="text" name="customer-data:phone-number" placeholder="Número de teléfono" />
+            <input type="tel" name="customer-data:phone-number" placeholder="Número de teléfono" />
             <input type="text" name="shipping-address:address-line-1" placeholder="Dirección de envío" />
             <select name="shipping-address:country">
                 <option value="CO">Colombia</option>
@@ -90,7 +69,6 @@
     </div>
 
 
-    <script src="{{ asset('js/form.js')}}"></script>
     <script src="{{ asset('js/Book_id.js')}}"></script>
 
 </body>

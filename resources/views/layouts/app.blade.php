@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Love Books</title>
+    <title>librodeamor.co</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
     <link href="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 
 
@@ -26,7 +28,7 @@
         <nav class="navbar navbar-expand-md custom-navbar">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Love Books
+                    librodeamor.co
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

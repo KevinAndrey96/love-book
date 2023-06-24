@@ -25,14 +25,12 @@
     background: #cf1259;
 }
 
-.tittle-wrapper {
+.tittle-wrapper h3{
+    font-size: 1rem;
     position: absolute;
     top: 0;
-    right: 260px;
-    width: 30%;
-    padding: 0.1rem;
-    z-index: 3 !important;
-    font-family: Cormorant Garamond, serif;
+    left: 5vw;
+    text-align: center;
   }
 
   h2{
@@ -151,10 +149,11 @@ body{
 }
 
 @media (max-width: 768px) {
-    .tittle-wrapper {
-      right: 0;
-      width: 100%;
-      text-align: center;
-
-  }
+    .tittle-wrapper h3{
+        font-size: 0.6rem;
+        position: absolute;
+        top: 0;
+        left: 8vw;
+        text-align: center;
+      }
 }

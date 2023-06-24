@@ -29,8 +29,7 @@ Route::get('/form', [BookController::class, 'Form'])->name('form');
 
 Route::get('/pago/respuesta', [BookController::class, 'respuesta'])->name('respuesta');
 
-
-
+Route::put('/books/{id}/status', [BookController::class, 'updateStatus'])->name('books.updateStatus');
 
 
 Route::get('/book-success', [BookController::class, 'bookSuccess'])->name('bookSuccess');

@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>LOVE BOOKS',
+    'logo' => '<b>librodeamor.co',
     'logo_img' => 'img/libros-de-amor.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
