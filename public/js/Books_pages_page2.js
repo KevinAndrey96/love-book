@@ -102,8 +102,6 @@ if (glassesFemale === "block") {
 
   document.getElementById('guardarDatos').addEventListener('click', function() {
 
-    var loadingElement = document.getElementById('loading-animation');
-    loadingElement.style.display = 'flex';
 
     // Crear un FormData para almacenar los datos
     var formData = new FormData();
@@ -170,24 +168,39 @@ if (colElement) {
     console.log(mainContentHTML);
     console.log('-----------------------');
 
-    // Realizar la solicitud AJAX
-    var request = new XMLHttpRequest();
-    request.open('POST', '/guardar-libro');
-    request.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
 
-    request.onreadystatechange = function() {
-        if (request.readyState === XMLHttpRequest.DONE) {
-          if (request.status === 200) {
-            // La solicitud fue exitosa
-            loadingElement.style.display = 'none';
-            window.location.replace('/form');
-          } else {
-            loadingElement.style.display = 'none';
-            swal('Error', 'Tu libro no pudo guardarse', 'error');
-          }
-        }
-      };
 
+// Enviar la solicitud del libro
+// Abrir modal
+swal({
+    title: "Generando libro",
+    text: "Por favor, espera mientras se guarda el libro. Antes de terminar tu transacción, espera a que te salga el aviso de que tu libro se guardó correctamente. Gracias por tu paciencia.",
+    icon: "info",
+    button: false,
+    closeOnClickOutside: false,
+    closeOnEsc: false,
+  });
+
+  // Redireccionar al formulario en una nueva ventana
+  window.open("/form", "_blank");
+
+  // Realizar solicitud para guardar el libro
+  var request = new XMLHttpRequest();
+  request.open('POST', '/guardar-libro');
+  request.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
+
+  request.onreadystatechange = function() {
+    if (request.readyState === XMLHttpRequest.DONE) {
+      if (request.status === 200) {
+        // La solicitud fue exitosa
+        swal.close(); // Cerrar el modal
+        swal("Éxito", "Tu libro ha sido guardado correctamente, ya puedes pagarlo", "success");
+      } else {
+        // La solicitud falló
+        swal("Error", "Tu libro no pudo guardarse", "error");
+      }
+    }
+  };
 
     request.send(formData);
   });

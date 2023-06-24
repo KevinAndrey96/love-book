@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background-color:#cf1259; color: white; font-weigth; bold;">{{ __('Inicio de sesion') }}</div>
+                <div class="card-header" style="background-color:#cf1259; color: white; font-weigth; bold;">{{ __('Inicio de sesión') }}</div>
 
                 <div class="card-body" style="background-color: #f8f9fa;">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Direccion de correo electronico') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Dirección de correo electrónico') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus style="background-color: #ffffff; border: 1px solid #ced4da;">
@@ -45,7 +45,7 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember" style="color: #212529;">
-                                        {{ __('Recuerdame') }}
+                                        {{ __('recuérdame') }}
                                     </label>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-success" style="background-color: #28a745; border-color: #28a745;">
-                                    {{ __('Iniciar sesion') }}
+                                    {{ __('Iniciar sesión') }}
                                 </button>
 
                                 @if (Route::has('password.request'))

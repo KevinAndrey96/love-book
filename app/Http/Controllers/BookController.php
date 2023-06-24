@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Str;
 use App\Models\Book;
-use Illuminate\Support\Facades\Session;
 
 use Illuminate\Support\Facades\Http;
 
@@ -41,7 +40,7 @@ class BookController extends Controller
 
 public function guardarDatos(Request $request)
 {
-    set_time_limit(0); // Desactiva el límite de tiempo de ejecución
+    set_time_limit(0); 
 
     $nameFemale = $request->input('nameFemale');
     $nameMale = $request->input('nameMale');
@@ -57,10 +56,6 @@ public function guardarDatos(Request $request)
 
     // Obtener el contenido enviado
     $content = $request->input('mainContent');
-
-
-
-
 
     // Buscar todas las etiquetas de imagen en el contenido
     preg_match_all('/<img[^>]+>/i', $content, $matches);
@@ -99,10 +94,6 @@ if (preg_match($pattern, $fileContents, $matches)) {
     // No se encontró el elemento <body> en el archivo
     // Aquí puedes manejar el caso en el que el elemento no exista
 }
-
-
-
-
 
 $pdf = Pdf::loadView('Books_pdf_view');
 
@@ -163,6 +154,7 @@ public function respuesta(Request $request)
             if ($book) {
                 $book->status = 'pagado';
                 $book->id_transaction = $transactionId;
+                $book->transaction_info = $response->json();
                 $book->save();
             }
         }
@@ -173,8 +165,25 @@ public function respuesta(Request $request)
     }
 
     // Mostrar el estado de la transacción en la vista
-    return view('books.respuesta_pago', ['status' => $status]);
+    return view('books.respuesta_pago', ['status' => $status], );
 }
+
+public function updateStatus(Request $request, $id)
+{
+    $status = $request->input('status');
+
+    // Actualizar el estado en la base de datos
+    $book = Book::find($id);
+    if ($book) {
+        $book->status = $status;
+        $book->save();
+        return response()->json(['message' => 'Estado cambiado con éxito']);
+    }
+
+    return response()->json(['error' => 'No se pudo cambiar el estado'], 400);
+}
+
+
 
 
 
