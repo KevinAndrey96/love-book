@@ -259,7 +259,7 @@ btnBeard.addEventListener('click', () => {
     sectionEyes.style.display = 'none';
     sectionBeardColor.style.display = 'block';
     sectionColor.style.display = 'none';
-    formContainer.style.display = 'block';
+    formContainer.style.display = 'none';
 
 
 });

@@ -100,7 +100,7 @@ if (glassesFemale === "block") {
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
 
-  document.getElementById('guardarDatos').addEventListener('click', function() {
+  document.getElementById('btn-continue').addEventListener('click', function() {
 
 
     // Crear un FormData para almacenar los datos
@@ -173,7 +173,7 @@ if (colElement) {
 // Enviar la solicitud del libro
 // Abrir modal
 swal({
-    title: "Generando libro",
+    title: "Generándo libro",
     text: "Por favor, espera mientras se guarda el libro. Antes de terminar tu transacción, espera a que te salga el aviso de que tu libro se guardó correctamente. Gracias por tu paciencia.",
     icon: "info",
     button: false,

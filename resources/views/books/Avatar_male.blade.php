@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 999;">
         <div class="container">
-          <a class="navbar-brand" href="">librodeamor.co</a>
+          <a class="navbar-brand" href="/">librodeamor.co</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,20 +38,19 @@
 
         <hr class="line-main">
         <div class="container-btn">
-        <button id="btn-hair" type="button" class="btn1 btn-block mt-3">Cabello</button>
-        <button id="btn-glasses" type="button" class="btn1 btn-block mt-3">Gafas</button>
-        <button id="btn-eyes"  type="button" class="btn1 btn-block mt-3">Ojos</button>
-        <button id="btn-beard" type="button" class="btn1 btn-block mt-3">Barba</button>
+        <button id="btn-hair" type="button" class="btn1 btn-lg btn-block text-center mt-3">Cabello</button>
+        <button id="btn-beard" type="button" class="btn1 btn-lg btn-block text-center mt-3">Barba</button>
+        <button id="btn-glasses" type="button" class="btn1 btn-lg btn-block text-center mt-3">Gafas</button>
+        <button id="btn-eyes"  type="button" class="btn1 btn-lg btn-block text-center mt-3">Ojos</button>
     </div>
 
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
             <div class="color-container">
                   <div class="section" id="color-section">
-                    <h3 class="text">Cambia tu color de cabello</h3>
-                    <div class="color-select row justify-content-center">
+                    <div class="color-select row ">
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="brown" onclick="changeHairColor('brown')"></div>
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light-brown" onclick="changeHairColor('light-brown')"></div>
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light" onclick="changeHairColor('light')"></div>
@@ -66,10 +65,9 @@
 
           <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                 <div class="section" id="hair-section">
-              <h3 class="text">Escoge tu cabello</h3>
-              <div class="hair-select row justify-content-center">
+              <div class="hair-select row ">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                   <input id="hair-1" type="image" src="/img/man/buttons/hair/half1.jpg" class="img-fluid">
                 </div>
@@ -103,12 +101,11 @@
 
           <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                 <div class="color-container">
                   <div class="section" id="color-section">
                   <div class="section" id="color-beard-section">
-                    <h3 class="text">Cambia tu color de barba</h3>
-                    <div class="color-select row justify-content-center">
+                    <div class="color-select row ">
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="brown" onclick="changeBeardColor('brown')"></div>
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light-brown" onclick="changeBeardColor('light-brown')"></div>
                       <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light" onclick="changeBeardColor('light')"></div>
@@ -124,10 +121,9 @@
 
           <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="section" id="beard-section">
-              <h3 class="text">Escoge tu barba</h3>
-              <div class="beard-select row justify-content-center">
+              <div class="beard-select row ">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                   <input id="beard-1" type="image" src="/img/man/buttons/beard/beard1.jpg" class="img-fluid">
                 </div>
@@ -157,10 +153,9 @@
           <div class="container">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
             <div class="section" id="eyes-section">
-              <h3 class="text">Elige tu color de ojos</h3>
-              <div class="eyes-select d-flex justify-content-center">
+              <div class="eyes-select d-flex ">
                 <div id="eyes-1" onclick="changeEyesColor('brown')"></div>
                 <div id="eyes-2" onclick="changeEyesColor('black')"></div>
                 <div id="eyes-3" onclick="changeEyesColor('blue')"></div>
@@ -172,10 +167,9 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
             <div class="section" id="glasses-section">
-                <h3 class="text">Elige si usas gafas</h3>
-                <div class="glasses-select d-flex justify-content-center">
+                <div class="glasses-select d-flex ">
                     <div> <input id="glasses-0"  type="image" src="/img/man/glasses/no-img.png"></div>
                     <div> <input id="glasses-1"  type="image" src="/img/man/glasses/glasses.jpg"></div>
                 </div>
@@ -185,7 +179,7 @@
 
         <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-7">
                 <div class="image-preview">
                   <div class="img" id="main-image">
                     <img src="/img/man/base.jpg" >
@@ -195,17 +189,21 @@
                     <img src="/img/man/glasses/glasses.png" id="glasseschange" class="on img-fluid">
                 </div>
               </div>
-              <div class="col-lg-6">
+              </div>
+
+              <div class="col-lg-5">
                 <div class="form-group">
-                    <label for="nameMale"></label>
+                    <label for="nameFemale"></label>
                     <input type="text" class="form-control" id="nameMale" name="nombre" placeholder="Ingrese su nombre" required>
                 </div>
-              </div>
             </div>
+        </div>
+    </div>
+
 
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-end">
-                    <div class="btn-container">
+                <div class="col-lg-12">
+                    <div class="btn-container d-flex justify-content-end align-items-end">
                   <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3">Continuar</button>
                 </div>
               </div>
