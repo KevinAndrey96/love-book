@@ -16,7 +16,7 @@
       <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
-                <a class="navbar-brand" href="">librodeamor.co</a>
+                <a class="navbar-brand" href="/">librodeamor.co</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,6 @@
             </div>
         </nav>
 
-        <hr class="line-main">
 
           <div id="home">
             <div class="row">
@@ -45,9 +44,9 @@
                         <h1>en nuestros</h1>
                         <h1>libros</h1>
                     </div>
-                    <hr class="line-title">
+                    <hr class="line">
                     <h2 class="text">Un regalo que te encantará</h2>
-                    <a href="#products" class="btn btn-primary btn-lg">Personaliza el libro</a>
+                    <a href="#products" class="btn btn-primary btn-sm">Personaliza el libro</a>
                 </div>
             </div>
 
@@ -84,8 +83,6 @@
                       <div class="product-title">Un libro para un aniversario o un cumpleaños</div>
                       <div class="product-description">Elige un libro para celebrar una fecha especial y hacer felices a tus seres queridos</div>
                       <div class="product-price">$20.000 COP</div>
-                        <div class="subtitle">$20.000 - $25.000</div>
-                        <div class="env">+ Costo de envío</div>
                       <a href="{{ url ('avatar')}}" class="btn-primary">Personaliza tu libro</a>
                     </div>
                   </div>
@@ -93,8 +90,102 @@
             </div>
 
             <div class="row">
+                <div class="col-md-6">
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselImages" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/img/gallery-home-1.jpg" alt="Imagen 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/gallery-home-2.jpg" alt="Imagen 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/gallery-home-3.jpg" alt="Imagen 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/gallery-home-4.jpg" alt="Imagen 3">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselImages" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Siguiente</span>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6">
+                  <div id="carouselOpinions" class="carousel carousel-opinions slide" data-ride="carousel2">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"El equipo de librodeamor es increíble. ¡Me ayudaron a encontrar el regalo perfecto para mi pareja!"</p>
+                            <p>- Ana Rodríguez</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"Los productos son de alta calidad y el proceso de personalización es sencillo. Recomiendo librodeamor a todos mis amigos."</p>
+                            <p>- Carlos Martínez</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"Excelente servicio, quedé encantado con mi compra."</p>
+                            <p>Juan Pérez</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"Recomiendo totalmente esta pagina, encontré el regalo perfecto para mi pareja."</p>
+                            <p>-Andres Rodrigues</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"No puedo estar más feliz con mi libro personalizado, es único y especial"</p>
+                            <p>-Laura Cardona</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <p>"Gracias librodeamor por este regalo tan espectacular, muy buena la calidad de sus libros"</p>
+                            <p>-Andrea Sanchez</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselOpinions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselOpinions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Siguiente</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            <div class="row">
             <div class="col-12 section-attention">
-                <h3 style="color: #4f6272" class="subtitle">EXISTEN MUCHAS FORMAS DE DEMOSTRARLE LO QUE SIENTES A TUS SERES QUERIDOS</h3>
+                <h3 style="color: #ffffff" class="subtitle">EXISTEN MUCHAS FORMAS DE DEMOSTRARLE LO QUE SIENTES A TUS SERES QUERIDOS</h3>
                 <div class="title">¿Alguna vez<br>pensaste en un libro?</div>
             </div>
             <div class="row">
@@ -104,12 +195,24 @@
                     <div class="subtitle step-title"></div>
                     <div class="step-desc"></div>
                   </div>
-            <div class="col-6">
-              <img class="img-fluid" src=""></div>
             </div>
+        </div>
             </div>
 
-        </div>
+            <div class="col-12 section-price desktop ">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-fluid" src="/img/book-image-2-sr.jpg">
+                    </div>
+                    <div class="col-6 right text-center">
+                        <div class="price title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precio</font></font></div>
+                        <div class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20.000$ - 30.000$</font></font></div>
+                        <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ precio de entrega</font></font></div>
+
+                        <a href="#products" class="btn btn-primary btn-lg btn-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoge un libro</font></font></a>
+                    </div>
+                </div>
+            </div>
 
             <div class="container">
                 <div class="row section-features">

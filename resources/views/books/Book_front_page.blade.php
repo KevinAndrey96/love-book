@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="">librodeamor.co</a>
+            <a class="navbar-brand" href="/">librodeamor.co</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,8 +41,7 @@
     <title class="title">Portada de tu libro</title>
   <body>
     <div class="container">
-        <h1 class="text-center mt-5 display-4">Elige la portada que más te guste</h1>
-        <p class="small text-center">Haz click en una portada y luego dirígete a la página de edición de las páginas de tu libro.</p>
+        <h1 class="text-center mt-5 display-4">Elige una portada para tu libro</h1>
     </div>
 
 
@@ -114,8 +113,8 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
-                <div class="tittle-wrapper text" style="z-index: 100;">
-                  <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
+                <div class="tittle-wrapper text d-flex" style="z-index: 100;">
+                    <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
                 </div>
               </div>
 
@@ -141,17 +140,19 @@
                 </div>
               </div>
 
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="btn-group btn-group-lg d-flex" role="group">
-                      <a href="{{ url('avatar-female') }}" class="btn btn-primary flex-fill btn-sm" id="btn2">Cambia la apariencia de la mujer</a>
-                      <a href="{{ url('avatar-male') }}" class="btn btn-primary flex-fill btn-sm" id="btn3">Cambia la apariencia del hombre</a>
-                      <a href="#" class="btn btn-primary flex-fill btn-sm" id="btn1">Continuar</a>
-                    </div>
-                  </div>
+
+
+
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="btn-container d-flex justify-content-end align-items-end">
+                  <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3">Continuar</button>
                 </div>
               </div>
+            </div>
+          </div>
+
+
 
 
 </div>

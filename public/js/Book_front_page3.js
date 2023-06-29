@@ -102,7 +102,7 @@ if (glassesFemale === "block") {
     }
 
 
-    document.getElementById('btn1').addEventListener('click', checkContainerSelection);
+    document.getElementById('btn-continue').addEventListener('click', checkContainerSelection);
 
 function checkContainerSelection(event) {
   event.preventDefault(); // Evitar la redirección predeterminada

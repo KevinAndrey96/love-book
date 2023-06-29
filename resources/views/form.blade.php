@@ -14,28 +14,35 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="/">librodeamor.co</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link nav-btn" href="{{ url ('')}}">INICIO</a>
-                    <a class="nav-item nav-link nav-btn" href="#footer">CONTACTO</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
         <hr class="line-main">
+
+
 
     <div class="container">
         <div class="form-container">
             <h2>Compra tu libro</h2>
             <div class="col-12 pages">
-               
+
         </div>
 
         <form action="https://checkout.wompi.co/p/" method="GET">
@@ -43,7 +50,7 @@
             <input type="hidden" name="public-key" value="pub_test_FXuP06pwO8kBrtw9quipeLbETCLqsLtu" />
             <input type="hidden" name="currency" value="COP" />
             <input type="hidden" name="amount-in-cents" value="1500000" />
-            <input type="hidden" name="reference" value="{{ session('bookId') }}" />
+            <input type="hidden" name="reference" value="{{ uniqid() }}">
             <input type="hidden" name="redirect-url" value="{{ url('/pago/respuesta') }}" />
 
             <!-- OPCIONALES -->

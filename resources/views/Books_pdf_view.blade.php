@@ -51,7 +51,7 @@
         }
 
         #text-page2{
-            position:absolute; text-align:center; left: 8%;  top: 15px; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6;
+            position:absolute; text-align:center; left: 8%;  top: 15px; right: 5%; display: flex; justify-content: center !important;  flex-direction: column; align-items:center; font-size: 60px !important; font-family: 'Lato', sans-serif; z-index: 6 !important;
         }
 
         #text-page3{
@@ -221,57 +221,58 @@
          <div class="col-12 pages">
             <div class="grid-container" id="grid">
             <div class="page-wrapper" id="first-page-wrapper">
-                <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/extra/two-avatars.jpg" class="page-img img-fluid">
-                <div class="giver-img">
-                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/receiver-base.png" class="extra" style="z-index: 1;">
-                  <img id="eyesfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/eyes/brown.png" class="extra" style="z-index: 1;">
-                  <img id="hairfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
-                  <img id="glassesfemalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/woman/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
-                </div>
-                <div class="receiver-img">
-                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/giver-base.png" class="extra" style="z-index: 2;">
-                  <img id="eyesmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/eyes/brown.png" class="extra" style="z-index: 2;">
-                  <img id="hairmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/hair/brown/half1.png" class="extra" style="z-index: 2;">
-                  <img id="beardd2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/beard/brown/brown1.png" class="extra" style="z-index: 2; display: block;">
-                  <img id="glassesmalee2" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/man/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
-                </div>
-                <div class="extras">
-                  <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
-                </div>
-                <div class="tittle-wrapper text" style="z-index: 100;">
-                  <h3 id="names2" title="Esta será tu portada"> carlo y carla</h3>
-                </div>
+            <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/extra/two-avatars.jpg" class="page-img img-fluid">
+            <div class="giver-img">
+              <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/woman/giver-woman-base.png" class="extra" style="z-index: 1;">
+              <img id="eyesfemale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/woman/eyes/brown.png" class="extra" style="z-index: 1;">
+              <img id="hairfemale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
+              <img id="glassesfemale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/woman/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
+            </div>
+            <div class="receiver-img">
+              <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/man/receiver-man-base.png" class="extra" style="z-index: 2;">
+              <img id="eyesmale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/man/eyes/brown.png" class="extra" style="z-index: 2;">
+              <img id="hairmale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/man/hair/brown/half1.png" class="extra" style="z-index: 2;">
+              <img id="beard" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/man/beard/brown/brown1.png" class="extra" style="z-index: 2; display: block;">
+              <img id="glassesmale" src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/man/glasses/glasses.png" class="extra" style="z-index: 2; display: none;">
+            </div>
+            <div class="extras">
+              <img src="C:\xampp\htdocs\Love-Book\public\img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
+            </div>
+            <div class="tittle-wrapper text" style="z-index: 100; display: flex; justify-content: center;">
+                <h3 id="names" title="Esta será tu portada"> carlos y carlita</h3>
               </div>
 
+        </div>
+
     <div class="page-wrapper" id="page2" data-order="2">
-        <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
+        <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" id="page-image" class="page-img modal-image1">
         <div class="giver-img">
-            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="eyesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="hairfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="glassesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2; display: none;">
+            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 2;">
+            <img id="eyesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 2;">
+            <img id="hairfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 2;">
+            <img id="glassesfemale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 2; display: none;">
         </div>
         <div class="receiver-img">
-            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="eyesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="hairmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="beardmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1; display: block;">
-            <img id="glassesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1; display: none;">
+            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 1;">
+            <img id="eyesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 1;">
+            <img id="hairmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 1;">
+            <img id="beardmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 1; display: block;">
+            <img id="glassesmale2" src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 1; display: none;">
         </div>
         <div>
             <div id="text-page2" contenteditable="true" class="page-text large">
-                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historia</font></font></div>
-            </div>
-        </div>
+                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es nuestra historiaa</font></font></div>
+            </div></div>
+            
+            
+            
         <div class="extras">
-            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
+            <img src="C:\xampp\htdocs\Love-Book\public\img/books/page2/extra/no-avatars7.jpg" class="extra modal-image1" style="z-index: 3;">
         </div>
 
 
 
-                
-                
-                
+
                 
             </div>
 
@@ -1020,33 +1021,19 @@
 
 
              
-              
 
 
-     </div>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-
-    
+              <div class="row">
+                <div class="col-lg-12">
+                    <div class="btn-container d-flex justify-content-end align-items-end">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-</div></body>
+
+
+     </div></body>
     </html>

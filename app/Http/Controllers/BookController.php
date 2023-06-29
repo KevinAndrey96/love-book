@@ -152,7 +152,7 @@ public function respuesta(Request $request)
             // Actualizar el estado y el campo id_transaction del libro correspondiente
             $book = Book::find($bookId);
             if ($book) {
-                $book->status = 'pagado';
+                $book->status = 'Pagado';
                 $book->id_transaction = $transactionId;
                 $book->transaction_info = $response->json();
                 $book->save();
@@ -182,13 +182,4 @@ public function updateStatus(Request $request, $id)
 
     return response()->json(['error' => 'No se pudo cambiar el estado'], 400);
 }
-
-
-
-
-
-
-
-
-
 }

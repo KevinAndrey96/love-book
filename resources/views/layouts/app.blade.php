@@ -45,7 +45,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesion') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">

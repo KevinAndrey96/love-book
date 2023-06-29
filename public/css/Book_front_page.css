@@ -42,10 +42,30 @@ body {
     margin-bottom: 10px;
   }
 
+  #btn-continue {
+    color: #fff;
+    background-color: #d24565;
+    border-color: #d24565;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: end !important;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+  }
+
+#btn-continue:hover {
+    background-color: #a5364d;
+}
+
+
 
 
   body {
-    background-color: #b7c3f3 !important;
+    background-color: #ddeffd !important;
+
   }
 
   .col-12 {
@@ -75,10 +95,10 @@ p {
 }
 
 .select {
-    border: 2px solid;
+    border: 1px solid;
     border-image: linear-gradient(to right, #ff00ff, #e20404);
     border-image-slice: 1;
-    padding: 8px;
+    padding: 1px;
     border-radius: 4px;
 }
 
@@ -97,7 +117,7 @@ p {
 }
 
 .page-wrapper{
-    width: 120vh;
+    width: 110vh;
     position: relative;
     margin-bottom: 25px;
     margin-left: 15px;
@@ -109,12 +129,12 @@ p {
 
 
 .pages .page-wrapper img {
-    width: 90% !important;
+    width: 100% !important;
     max-width: 300px !important;
     height: auto;
     border-radius: 0.3rem;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px !important;
 }
 
 .tittle-wrapper h3{
@@ -122,30 +142,16 @@ p {
 
   }
 
-
-
-
-
-
-
-
-  .btn-primary {
-    background-color: #ff00e1 !important;
-    color: #fdfdfd !important;
-    border-color: #bb0000 !important;
-    font-size: 14px !important;
-    font-weight: bold !important;
-    border-radius: 5px !important;
-    margin: 5px 0px;
-    margin-left: 4px !important;
+  .tittle-wrapper h3 {
+    max-width: 100%;
 }
 
 
-.btn-primary:hover {
-    background-color: #4cb9f8 !important;
-    border-color: #6003ac !important;
-    color: #fff !important;
-}
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -153,7 +159,7 @@ p {
       font-size: 0.6rem;
       position: absolute;
       top: 0;
-      left: 8vw;
+      left: 5vw;
       text-align: center;
     }
 
@@ -167,6 +173,20 @@ p {
     }
 
   }
+
+  @media (min-width: 1100px) {
+
+    .btn-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.5rem rem;
+        background-color: #f2f8fd;
+        z-index: 5;
+
+      }
+    }
 
 
 
