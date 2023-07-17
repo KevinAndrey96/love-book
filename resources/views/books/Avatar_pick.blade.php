@@ -11,10 +11,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/">librodeamor.co</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,7 +44,7 @@
             <div class="row">
               <div class="col-6 col-lg-6">
                 <div class="section" id="female-section">
-                  <input class="female img-fluid" type="image" src="./img/female.jpg">
+                  <input class="female img-fluid" type="image" src="./img/female.jpg" onclick="window.location.href='{{ url('avatar-female') }}'">
                   <div>
                     <a href="{{ url('avatar-female') }}" class="btn1 btn-lg btn-block text-center mt-3" id="btn1">Mujer</a>
                   </div>
@@ -51,16 +52,42 @@
               </div>
               <div class="col-6 col-lg-6">
                 <div class="section" id="male-section">
-                  <input class="male img-fluid" type="image" src="./img/male.jpg">
+                  <input class="male img-fluid" type="image" src="./img/male.jpg" onclick="window.location.href='{{ url('avatar-male') }}'">
                   <div>
                     <a href="{{ url('avatar-male') }}" class="btn2 btn-lg btn-block text-center mt-3" id="btn2">Hombre</a>
                   </div>
                 </div>
-            </div>
+              </div>
             </div>
           </div>
 
+            <div class="row">
+    <div class="col-lg-12">
+        <div class="d-flex justify-content-center"> <!-- Contenedor centrado -->
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <label for="nameFemale"></label>
+                    <input type="text" class="form-control" id="nameFemale" name="nombre" placeholder="Ingrese el nombre del avatar femenino" required>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <label for="nameMale"></label>
+                    <input type="text" class="form-control" id="nameMale" name="nombre" placeholder="Ingrese el nombre del avatar masculino" required>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
         <script src="{{ asset('js/Avatar_pick.js')}}"></script>
+          
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

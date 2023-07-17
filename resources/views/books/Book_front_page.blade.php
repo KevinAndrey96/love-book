@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/">librodeamor.co</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,7 +41,7 @@
     <title class="title">Portada de tu libro</title>
   <body>
     <div class="container">
-        <h1 class="text-center mt-5 display-4">Elige una portada para tu libro</h1>
+        <h1 class="text-center mt-5 display-4 smaller-text">Elige una portada para tu libro</h1>
     </div>
 
 
@@ -113,8 +113,11 @@
                 <div class="extras">
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
-                <div class="tittle-wrapper text d-flex" style="z-index: 100;">
+                <div class="tittle-wrapper text d-flex flex-column" style="z-index: 100;">
                     <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
+                    <span class="birthday-text">Feliz Cumpleaños</span>
+
+
                 </div>
               </div>
 

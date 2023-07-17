@@ -8,6 +8,13 @@
     text-align: center;
 }
 
+.imagen{
+    width: 450px !important;
+    margin-left: 40px !important;
+}
+
+
+
 
 
 @media (min-width: 768px){
@@ -63,6 +70,16 @@
 
 }
 
+.desc2{
+    color: #d24565;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 55px !important;
+
+}
+
 
 #footer .title {
     font-family: Arial, sans-serif;
@@ -89,6 +106,8 @@
 }
 
 
+
+
 .btn-primary:hover{
     color: #fff;
     background-color: #F71069;
@@ -98,7 +117,6 @@
 
 .navbar {
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -107,15 +125,17 @@
 .nav-link {
     border-radius: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: rgba(54,54,54,.5);
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-link:hover {
-    background: #cf1259;
-    color: #ffffff !important;
+.navbar-brand{
+    color:  #F71069;
+
 }
+
+
 
 @media (min-width: 768px){
 #home .home-baner .line {
@@ -150,7 +170,6 @@ body {
     color: #363636;
     margin: 0 !important;
     padding: 0 !important;
-    font-family: Cormorant Garamond, serif !important;
 }
 
 body {
@@ -158,7 +177,7 @@ body {
 }
 
 body .title{
-    font-size: 3.0rem;
+    font-size: 2.5rem;
 }
 
 #home .home-baner{
@@ -204,6 +223,10 @@ body .text {
     margin-bottom:.5rem;
     border-bottom:1px solid #0f0609;
 }
+
+
+
+
 
 #home .home-baner .line{
     width:24%;
@@ -574,6 +597,17 @@ body .text {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23333" viewBox="0 0 8 8"%3E%3Cpath d="M5.25 0L4 1.25 6.75 4 4 6.75 5.25 8 8 4z"/%3E%3C/svg%3E');
 
   }
+
+
+
+  /* @media (max-width: 768px){
+    .linea {
+    width:100%;
+    color: rgba(54,54,54,.5);
+    top: 60px !important;
+
+
+    }} */
 
 
 

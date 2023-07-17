@@ -83,71 +83,85 @@ const btnContinue = document.getElementById('btn-continue');
 
 
 
+// Variable para almacenar el color seleccionado
+var currentColor = "brown"; // Por defecto, se establece en marrón
+
 // Asignar funciones de clic a los elementos HTML de las imágenes del cabello
-hair1.onclick = function(){
-    hairchange.src = brown1;
+hair1.onclick = function() {
+    changeHairStyle(brown1);
 }
 
-hair2.onclick = function(){
-    hairchange.src = brown2;
+hair2.onclick = function() {
+    changeHairStyle(brown2);
 }
 
-hair3.onclick = function(){
-    hairchange.src = brown3;
+hair3.onclick = function() {
+    changeHairStyle(brown3);
 }
 
-hair4.onclick = function(){
-    hairchange.src = brown4;
+hair4.onclick = function() {
+    changeHairStyle(brown4);
 }
 
-hair5.onclick = function(){
-    hairchange.src = brown5;
+hair5.onclick = function() {
+    changeHairStyle(brown5);
 }
 
-hair6.onclick = function(){
-    hairchange.src = brown6;
+hair6.onclick = function() {
+    changeHairStyle(brown6);
 }
 
-hair7.onclick = function(){
-    hairchange.src = brown7;
+hair7.onclick = function() {
+    changeHairStyle(brown7);
 }
 
-hair8.onclick = function(){
-
-    hairchange.src = brown8;
+hair8.onclick = function() {
+    changeHairStyle(brown8);
 }
 
-hair9.onclick = function(){
-    hairchange.src = brown9;
+hair9.onclick = function() {
+    changeHairStyle(brown9);
 }
 
-// Asignar funciones de clic a los elementos HTML de las imágenes de la barba
-beard1.onclick = function(){
-    beardchange.src = beardBrown1;
+beard1.onclick = function() {
+    changeBeardStyle(beardBrown1);
 }
 
-beard2.onclick = function(){
-    beardchange.src = beardBrown2;
+beard2.onclick = function() {
+    changeBeardStyle(beardBrown2);
 }
 
-beard3.onclick = function(){
-    beardchange.src = beardBrown3;
+beard3.onclick = function() {
+    changeBeardStyle(beardBrown3);
 }
 
-beard4.onclick = function(){
-    beardchange.src = beardBrown4;
+beard4.onclick = function() {
+    changeBeardStyle(beardBrown4);
 }
 
-beard5.onclick = function(){
-    beardchange.src = beardBrown5;
+beard5.onclick = function() {
+    changeBeardStyle(beardBrown5);
 }
 
-beard6.onclick = function(){
-    beardchange.src = beardBrown6;
+beard6.onclick = function() {
+    changeBeardStyle(beardBrown6);
 }
 
-beard7.onclick = function(){
-    beardchange.style.display = "none";
+beard7.onclick = function() {
+    removeBeard();
+}
+
+function changeBeardStyle(newBeard) {
+    let beardImage = document.getElementById("beardchange");
+
+    beardImage.style.display = "block";
+    beardImage.src = newBeard;
+}
+
+function removeBeard() {
+    let beardImage = document.getElementById("beardchange");
+
+    beardImage.style.display = "none";
 }
 
 // Asignar funciones de clic a los elementos HTML de las imágenes de los ojos
@@ -180,29 +194,90 @@ notGlasses.onclick = function(){
  * Cambia el color del cabello de una imagen.
  * @param {string} color - El nombre del color deseado.
  * */
-function changeHairColor(color) {
-
+// Función para cambiar el estilo del cabello
+function changeHairStyle(newHair) {
     let hairImage = document.getElementById("hairchange");
+
+    // Obtener el nombre del archivo actual
     let currentHair = hairImage.src.split("/").pop();
 
-    let newHair = currentHair.replace(color);
+    // Obtener el nombre del archivo del nuevo peinado
+    let newHairFile = newHair.split("/").pop();
 
-    hairImage.src = "/img/man/hair/" + color + "/" + newHair;
+    // Reemplazar el color actual con el nuevo color en el nombre del archivo
+    let newHairColor = newHairFile.replace(currentColor, "");
+
+    // Cambiar la imagen del cabello con el nuevo peinado y color
+    hairImage.src = "/img/man/hair/" + currentColor + "/" + newHairColor;
 }
 
-/**
- * Cambia el color de la barba de una imagen.
- * @param {string} color - El nombre del color deseado.
- * */
-  function changeBeardColor(color) {
+// Función para cambiar el color del cabello
+function changeHairColor(color) {
+    currentColor = color; // Actualizar el color seleccionado
+
+    let hairImage = document.getElementById("hairchange");
+
+    // Obtener el nombre del archivo actual
+    let currentHair = hairImage.src.split("/").pop();
+
+    // Obtener el nombre del archivo sin el color actual
+    let currentHairWithoutColor = currentHair.replace(currentColor, "");
+
+    // Cambiar la imagen del cabello con el mismo peinado pero el nuevo color
+    hairImage.src = "/img/man/hair/" + currentColor + "/" + currentHairWithoutColor;
+
+    const colorBoxes = document.querySelectorAll('.color-select .col-6');
+
+    colorBoxes.forEach((box) => {
+        box.classList.remove('selected');
+    });
+
+    const selectedBox = document.getElementById(color);
+    selectedBox.classList.add('selected');
+}
+
+
+function changeBeardStyle(newBeard) {
+    let beardImage = document.getElementById("beardchange");
+    beardImage.style.display = "block";
+    beardImage.src = newBeard;
+    changeBeardColor(currentBeardColor);
+}
+function changeBeardColor(color) {
+    currentBeardColor = color; // Actualizar el color seleccionado
 
     let beardImage = document.getElementById("beardchange");
     let currentBeard = beardImage.src.split("/").pop();
+    let currentBeardWithoutColor = currentBeard.replace(currentBeard.slice(0, -5), currentBeardColor);
+    beardImage.src = "/img/man/beard/" + currentBeardColor + "/" + currentBeardWithoutColor;
 
-    let newBeard = currentBeard.replace(currentBeard.slice(0, -5), color);
+    var colorBoxes = document.querySelectorAll('.color-beard-select .beard');
+    colorBoxes.forEach((box) => {
+        box.classList.remove('selected');
+    });
 
-    beardImage.src = "/img/man/beard/" + color + "/" + newBeard;
+    const selectedBox = document.getElementById("beard-" + color); // Añadir el prefijo "beard-" al ID
+    selectedBox.classList.add('selected');
 }
+
+
+
+function removeBeard() {
+    let beardImage = document.getElementById("beardchange");
+    beardImage.style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Ocultar secciones al cargar la página
 document.getElementById("eyes-section").style.display = "none";
@@ -266,13 +341,7 @@ btnBeard.addEventListener('click', () => {
 
 document.getElementById("btn-continue").addEventListener("click", function() {
 
-    var name = document.getElementById("nameMale").value;
 
-    // Validar que el campo del nombre ha sido llenado
-    if (name === "") {
-        swal('Espera', 'Debes ingresar un nombre', 'error');
-        return; // Detener la ejecución de la función si el campo del nombre está vacío
-      }
 
     // Guardar cambios en el Local Storage
     localStorage.setItem("hairColorMale", hairchange.src);
@@ -280,7 +349,6 @@ document.getElementById("btn-continue").addEventListener("click", function() {
     localStorage.setItem("beardColorMale", beardchange.src);
     localStorage.setItem("beardDisplay", beardchange.style.display);
     localStorage.setItem("glassesMale", glasseschange.style.display);
-    localStorage.setItem("nameMale", name);
 
     if (localStorage.getItem("hairColorMale") && localStorage.getItem("hairColorFemale")) {
       // Redirigir a la siguiente página
@@ -291,10 +359,70 @@ document.getElementById("btn-continue").addEventListener("click", function() {
   });
 
 
+  const buttons = document.querySelectorAll('.btn1');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+      buttons.forEach((btn) => {
+        btn.classList.remove('selected');
+      });
+      button.classList.add('selected');
+    });
+  });
+
+  const hairInputs = document.querySelectorAll('.hair-select input');
+
+  hairInputs.forEach((input) => {
+    input.addEventListener('click', function () {
+      if (input.classList.contains('selected')) {
+        input.classList.remove('selected');
+      } else {
+        hairInputs.forEach((inp) => {
+          inp.classList.remove('selected');
+        });
+        input.classList.add('selected');
+      }
+    });
+  });
 
 
+  const beardInputs = document.querySelectorAll('.beard-select input');
+
+  beardInputs.forEach((input) => {
+    input.addEventListener('click', function () {
+      if (input.classList.contains('selected')) {
+        input.classList.remove('selected');
+      } else {
+        beardInputs.forEach((inp) => {
+          inp.classList.remove('selected');
+        });
+        input.classList.add('selected');
+      }
+    });
+  });
+
+  const glassesDivs = document.querySelectorAll('.glasses-select input');
+
+  glassesDivs.forEach((div) => {
+    div.addEventListener('click', function () {
+      glassesDivs.forEach((dv) => {
+        dv.classList.remove('selected');
+      });
+      div.classList.add('selected');
+    });
+  });
+
+  const eyesDivs = document.querySelectorAll('.eyes-select div');
 
 
+  eyesDivs.forEach((div) => {
+    div.addEventListener('click', function () {
+      eyesDivs.forEach((dv) => {
+        dv.classList.remove('selected');
+      });
+      div.classList.add('selected');
+    });
+  });
 
 
 

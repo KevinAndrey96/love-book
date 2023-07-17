@@ -26,7 +26,7 @@ body{
       margin-top: 30px !important;
   }
 
-  .eyes-select, .color-select{
+  .eyes-select, .color-select, .color-beard-select{
     margin-left: 10px !important;
     margin-top: 30px !important;
 }
@@ -61,7 +61,10 @@ body{
     cursor: pointer;
   }
 
-
+  .btn1.selected {
+    border: 2px solid #d24565 !important;
+    color:  #d24565;
+  }
 
 
 
@@ -69,22 +72,114 @@ body{
     background-color: rgb(88, 51, 37);
   }
 
+  #brown:hover{
+    border: 1px solid #d24565;
+
+  }
+
+
   #light-brown {
     background-color: rgb(140, 88, 65);
   }
+
+  #light-brown:hover {
+    border: 1px solid #d24565;
+  }
+
 
   #light {
     background-color: rgb(217, 184, 146);
   }
 
+  #light:hover{
+    border: 1px solid #d24565;
+  }
+
   #grey {
     background-color: rgb(162, 143, 134);
+  }
+
+
+
+
+  #grey:hover {
+    border: 1px solid #d24565;
 
   }
+
+  .color-select .col-6.selected {
+    border: 2px solid #d24565;
+  }
+
+  .color-beard-select .col-6.selected {
+    border: 2px solid #d24565;
+  }
+
+
+
+
+  #beard-brown {
+    background-color: rgb(88, 51, 37);
+  }
+
+  #beard-brown:hover{
+    border: 1px solid #d24565;
+
+  }
+
+
+  #beard-light-brown {
+    background-color: rgb(140, 88, 65);
+  }
+
+  #beard-light-brown:hover {
+    border: 1px solid #d24565;
+  }
+
+
+  #beard-light {
+    background-color: rgb(217, 184, 146);
+  }
+
+  #beard-light:hover{
+    border: 1px solid #d24565;
+  }
+
+  #beard-grey {
+    background-color: rgb(162, 143, 134);
+  }
+
+
+
+
+  #beard-grey:hover {
+    border: 1px solid #d24565;
+
+  }
+
+  #beard-black {
+    background-color: rgb(64, 52, 47);
+  }
+
+  #beard-black:hover {
+    border: 1px solid #d24565;
+  }
+
+
 
   #black {
     background-color: rgb(64, 52, 47);
   }
+
+  #black:hover {
+    border: 1px solid #d24565;
+  }
+
+  .btn1:hover{
+     border: 1px solid #d24565;
+     color:  #d24565;
+  }
+
 
   .navbar {
     position: sticky;
@@ -92,32 +187,77 @@ body{
     z-index: 100;
   }
 
-.navbar {
-    width: 100%;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    background-color: #fff;
+  #glasseschange {
+    display: none;
   }
 
-.nav-link {
-    border-radius: 30px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-}
+  .hair-select input.selected {
+    border: 2px solid #d24565;
+  }
+
+
+.hair-select input:hover {
+    border: 1px solid #d24565;
+  }
+
+  .beard-select input.selected {
+    border: 2px solid #d24565;
+  }
+
+
+.beard-select input:hover {
+    border: 1px solid #d24565;
+  }
+
+  .glasses-select input:hover{
+    border: 1px solid #d24565;
+
+  }
+
+
+  .glasses-select input.selected {
+    border: 2px solid #d24565;
+
+
+  }
+
+
+
+
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
 .container-btn{
     margin-top: 80px !important;
+    margin-left: 100px !important;
 }
 body {
     overflow-x:hidden;
 }
 
-.nav-link:hover {
-    background: #cf1259;
-    color: #ffffff !important;
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5) !important;
+    font-size: 15px;
+    font-weight: bold;
 }
+
+
+
+
 
 .line-title {
     margin-left: 30%;
@@ -137,6 +277,16 @@ body {
     margin-bottom: 10px;
   }
 
+  .eyes-select div:hover {
+    border: 1px solid #d24565;
+  }
+
+  .eyes-select div.selected{
+      border: 2px solid #d24565;
+
+
+  }
+
   .btn1:hover {
     background-color: transparent;
     border-style: solid;
@@ -145,6 +295,7 @@ body {
 
   .btn1 {
     width:150px;
+
     display: inline-block;
     padding: 12px;
     text-decoration: none;
@@ -161,6 +312,7 @@ body {
 
   #btn-continue {
     color: #fff;
+    height: 40px;
     background-color: #d24565;
     border-color: #d24565;
     transition: background-color 0.3s ease;
@@ -171,35 +323,26 @@ body {
     border: 1px solid transparent;
     border-radius: 0.25rem;
 
-  }
 
+}
 
 #btn-continue:hover {
     background-color: #a5364d;
 }
 
 
-.form-control {
-    width: 70% !important;
-    margin: 0 auto !important;
-    padding: 8px !important;
-    border: 1px solid #ccc !important;
-    border-radius: 4px !important;
-    font-size: 14px !important;
-    color: #555 !important;
-    background-color: #fff5f5 !important;
-    transition: border-color 0.3s ease !important;
-  }
 
-  .form-control:focus {
-    outline: none;
-    border-color: #3200e9 !important;
-    box-shadow: 0 0 5px rgba(50, 0, 131, 0.5) !important;
-  }
+
+
 
 
   #eyes-1 {
     background-color: rgb(142, 94, 77);
+  }
+
+  #eyes-1:hover{
+    border: 1px solid #d24565;
+
   }
 
   #eyes-2 {
@@ -207,12 +350,25 @@ body {
 
   }
 
+  #eyes-2:hover{
+    border: 1px solid #d24565;
+
+  }
+
   #eyes-3 {
     background-color:  rgb(94, 147, 150);
   }
 
+  #eyes-3:hover {
+    border: 1px solid #d24565;
+  }
+
   #eyes-4 {
     background-color: rgb(60, 99, 53);
+  }
+
+  #eyes-4:hover {
+    border: 1px solid #d24565;
   }
 
 .eyes-select div{
@@ -220,7 +376,19 @@ body {
 }
   .color-select div {
     position: relative;
-    width: 50px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 5px !important;
+  }
+
+  .color-beard-select div {
+    position: relative;
+    width: 40px;
+    height: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
     overflow: hidden;
@@ -290,13 +458,19 @@ body {
         padding: 0.5rem 1rem;
         background-color: #f2f8fd;
         z-index: 5;
+        height: 8%;
 
       }
+
+      .mainimg{
+        width: 400px !important;
+      }
+
 
 
     .image-preview {
         display: flex;
-        margin-top: 200px;
+        margin-top: 220px;
         justify-content: flex-end; /* Alinea la imagen a la derecha */
         align-items: flex-start; /* Ajusta la posición vertical al inicio */
       }
@@ -318,8 +492,8 @@ body {
 
       .image-preview .img {
         position: absolute;
-        top: 200px;
-        right: 150px;
+        top: 220px;
+        left: 800px;
       }
   }
 

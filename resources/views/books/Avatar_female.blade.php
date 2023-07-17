@@ -15,7 +15,7 @@
       <title>Edita tu avatar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 999;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 999;">
         <div class="container">
           <a class="navbar-brand" href="/">librodeamor.co</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -133,7 +133,7 @@
               <div class="col-lg-7">
                 <div class="image-preview">
                   <div class="img" id="main-image">
-                    <img src="/img/woman/base1.jpg" class="img-fluid">
+                    <img src="/img/woman/base1.jpg" class="mainimg img-fluid">
                     <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid">
                     <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
                     <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
@@ -141,14 +141,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-5">
-                <div class="form-group">
-                    <label for="nameFemale"></label>
-                    <input type="text" class="form-control" id="nameFemale" name="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-            </div>
-        </div>
-    </div>
+           
 
 
     <div class="container">

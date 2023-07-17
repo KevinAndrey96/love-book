@@ -8,18 +8,23 @@
 
 .navbar {
     width: 100%;
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    z-index: 9999;
   }
 
 .nav-link {
     border-radius: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: rgba(54,54,54,.5);
     font-size: 15px;
     font-weight: bold;
+}
+
+.navbar-brand{
+    color: #F71069;
+
 }
 
 .create-avatar{
@@ -30,10 +35,6 @@ body {
     overflow-x:hidden;
 }
 
-.nav-link:hover {
-    background: #cf1259;
-    color: #ffffff !important;
-}
 
 .line-title {
     margin-left: 30%;
@@ -65,6 +66,7 @@ body {
     margin-bottom:1rem;
     text-transform:uppercase;
     color:#4f6272;
+    margin-top: 50px !important;
 }
 
 
@@ -150,17 +152,25 @@ body .subtitle {
   }
 
   div#Avatar .female {
-    border-style: solid;
     border-radius: 15%;
-    color: #F71069;
     width: 200px;
     max-height: 300px;
   }
 
+  div#Avatar .female:hover{
+    border-radius: 15%;
+    border: solid #cf1259;
+
+  }
+
+  div#Avatar .male:hover{
+    border-radius: 15%;
+    border: solid  #5977ff;
+
+  }
+
   div#Avatar .male {
     border-radius: 15%;
-    border-style: solid;
-    color: #5977ff;
     width: 200px;
     max-height: 300px;
   }
@@ -174,6 +184,23 @@ body .subtitle {
 
 
 
+  .form-control {
+    width: 50% !important;
+    margin: 0 auto !important;
+    padding: 8px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+    color: #555 !important;
+    background-color: #fff5f5 !important;
+    transition: border-color 0.3s ease !important;
+  }
 
+  .form-control:focus {
+    outline: none;
+    border-color: #3200e9 !important;
+    box-shadow: 0 0 5px rgba(50, 0, 131, 0.5) !important;
+  }
 
 

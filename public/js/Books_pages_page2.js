@@ -135,6 +135,16 @@ if (colElement) {
       button.parentNode.removeChild(button);
     });
 
+     var buttons = clonedMainContentElement.querySelectorAll('button.insert-before-btn, button.insert-after-btn');
+  buttons.forEach(function(button) {
+    button.parentNode.removeChild(button);
+  });
+
+  var pageNumbers = clonedMainContentElement.querySelectorAll('.page-number');
+  pageNumbers.forEach(function(pageNumber) {
+    pageNumber.parentNode.removeChild(pageNumber);
+  });
+
 
 
     var modals = clonedMainContentElement.querySelectorAll('.modal');
@@ -173,8 +183,8 @@ if (colElement) {
 // Enviar la solicitud del libro
 // Abrir modal
 swal({
-    title: "Generándo libro",
-    text: "Por favor, espera mientras se guarda el libro. Antes de terminar tu transacción, espera a que te salga el aviso de que tu libro se guardó correctamente. Gracias por tu paciencia.",
+    title: "Guardando libro",
+    text: "Por favor, no cierres la pagina.",
     icon: "info",
     button: false,
     closeOnClickOutside: false,
@@ -204,3 +214,16 @@ swal({
 
     request.send(formData);
   });
+
+
+  // Obtener el ID de la portada
+var selectedPageId = localStorage.getItem('selectedContent');
+
+// Verificar si el ID de la portada es "frontpage3"
+if (selectedPageId === 'frontpage3') {
+  // Mostrar el texto "Feliz Cumpleaños"
+  document.getElementById('birthdayText').style.display = 'block';
+} else {
+  // Ocultar el texto "Feliz Cumpleaños"
+  document.getElementById('birthdayText').style.display = 'none';
+}

@@ -57,38 +57,75 @@ const btnContinue = document.getElementById('btn-continue');
 var formContainer = document.querySelector(".form-group");
 
 
+const hairInputs = document.querySelectorAll('.hair-select .col-6');
 
-// Asignar funciones de clic a los elementos HTML de las imágenes del cabello
-hair1.onclick = function(){
-    hairchangefemale.src = brown1;
+  hairInputs.forEach((input) => {
+    input.addEventListener('click', function () {
+      if (input.classList.contains('selected')) {
+        input.classList.remove('selected');
+      } else {
+        hairInputs.forEach((inp) => {
+          inp.classList.remove('selected');
+        });
+        input.classList.add('selected');
+      }
+    });
+  });
+
+
+  hair1.onclick = function() {
+    changeHairStyle(brown1);
 }
 
-hair2.onclick = function(){
-    hairchangefemale.src = brown2;
+hair2.onclick = function() {
+    changeHairStyle(brown2);
 }
 
-hair3.onclick = function(){
-    hairchangefemale.src = brown3;
+hair3.onclick = function() {
+    changeHairStyle(brown3);
 }
 
-hair4.onclick = function(){
-    hairchangefemale.src = brown4;
+hair4.onclick = function() {
+    changeHairStyle(brown4);
 }
 
-hair5.onclick = function(){
-    hairchangefemale.src = brown5;
+hair5.onclick = function() {
+    changeHairStyle(brown5);
 }
 
-hair6.onclick = function(){
-    hairchangefemale.src = brown6;
+hair6.onclick = function() {
+    changeHairStyle(brown6);
 }
 
-hair7.onclick = function(){
-    hairchangefemale.src = brown7;
+hair7.onclick = function() {
+    changeHairStyle(brown7);
 }
 
-hair8.onclick = function(){
-    hairchangefemale.src = brown8;
+hair8.onclick = function() {
+    changeHairStyle(brown8);
+}
+
+function changeHairStyle(newHair) {
+    let hairImage = document.getElementById("hairchangefemale");
+    hairImage.src = newHair;
+    changeHairColor(currentColor);
+}
+
+function changeHairColor(color) {
+    currentColor = color; // Actualizar el color seleccionado
+
+    let hairImage = document.getElementById("hairchangefemale");
+    let currentHair = hairImage.src.split("/").pop();
+    let currentHairWithoutColor = currentHair.replace(currentColor, "");
+    hairImage.src = "/img/woman/hair/" + currentColor + "/" + currentHairWithoutColor;
+
+    const colorBoxes = document.querySelectorAll('.color-select .col-6');
+    colorBoxes.forEach((box) => {
+        box.classList.remove('selected');
+    });
+
+    const selectedBox = document.getElementById(color);
+    selectedBox.classList.add('selected');
 }
 
 // Asignar funciones de clic a los elementos HTML de las imágenes de los ojos
@@ -108,6 +145,28 @@ eyes4.onclick = function(){
     eyeschangefemale.src = blueEyes;
 }
 
+const glassesDivs = document.querySelectorAll('.glasses-select > div');
+
+glassesDivs.forEach((div) => {
+  div.addEventListener('click', function () {
+    glassesDivs.forEach((dv) => {
+      dv.classList.remove('selected');
+    });
+    div.classList.add('selected');
+  });
+});
+
+const eyesDivs = document.querySelectorAll('.eyes-select div');
+
+eyesDivs.forEach((div) => {
+  div.addEventListener('click', function () {
+    eyesDivs.forEach((dv) => {
+      dv.classList.remove('selected');
+    });
+    div.classList.add('selected');
+  });
+});
+
 // Asignar funciones de clic a los elementos HTML de las imágenes de las gafas quitar-poner
 glasses.onclick = function(){
     glasseschangefemale.style.display = "block";
@@ -121,15 +180,7 @@ notGlasses.onclick = function(){
  * Cambia el color del cabello de una imagen.
  * @param {string} color - El nombre del color deseado.
  * */
-function changeHairColor(color) {
 
-    let hairImage = document.getElementById("hairchangefemale");
-    let currentHair = hairImage.src.split("/").pop();
-
-    let newHair = currentHair.replace(color);
-
-    hairImage.src = "/img/woman/hair/" + color + "/" + newHair;
-}
 
 // Ocultar secciones al cargar la página
 document.getElementById("eyes-section").style.display = "none";
@@ -169,19 +220,11 @@ btnEyes.addEventListener('click', () => {
 });
 
 document.getElementById("btn-continue").addEventListener("click", function() {
-    var name = document.getElementById("nameFemale").value;
 
-    // Validar que el campo del nombre ha sido llenado
-    if (name === "") {
-        swal('Espera', 'Debes ingresar un nombre', 'error');
-    return;
-    }
 
-    // Guardar cambios en el Local Storage
     localStorage.setItem("hairColorFemale", hairchangefemale.src);
     localStorage.setItem("eyesColorFemale", eyeschangefemale.src);
     localStorage.setItem("glassesFemale", glasseschangefemale.style.display);
-    localStorage.setItem("nameFemale", name);
 
     if (localStorage.getItem("hairColorMale") && localStorage.getItem("hairColorFemale")) {
       // Redirigir a la siguiente página
@@ -192,7 +235,14 @@ document.getElementById("btn-continue").addEventListener("click", function() {
   });
 
 
+  const buttons = document.querySelectorAll('.btn1');
 
-
-
+  buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+      buttons.forEach((btn) => {
+        btn.classList.remove('selected');
+      });
+      button.classList.add('selected');
+    });
+  });
 

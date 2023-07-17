@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Love Books</title>
+    <title> Libro de Amor</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <link rel="stylesheet" href ="{{ asset('css/index.css')}}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -14,7 +14,7 @@
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
       <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="/">librodeamor.co</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,8 +31,11 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
+
+        <hr class="line-main">
 
 
           <div id="home">
@@ -73,21 +76,21 @@
                 </div>
             </div>
 
-            <div id="products">
-                <div class="home-products">
-                  <div class="product">
-                    <div class="product-image">
-                      <img src="./img/product-2-sr.png" alt="Un libro para un aniversario o un cumpleaños">
-                    </div>
-                    <div class="product-text">
-                      <div class="product-title">Un libro para un aniversario o un cumpleaños</div>
-                      <div class="product-description">Elige un libro para celebrar una fecha especial y hacer felices a tus seres queridos</div>
-                      <div class="product-price">$20.000 COP</div>
-                      <a href="{{ url ('avatar')}}" class="btn-primary">Personaliza tu libro</a>
-                    </div>
+            <div class="col-12 section-price desktop" id="products">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-fluid imagen" src="/img/book-image-2-sr.jpg">
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <div class="price title">Precio</div>
+                    <div class="subtitle">20.000$ - 30.000$</div>
+                    <div class="desc">+ precio de entrega</div>
+                        <a href="/avatar" class="btn btn-primary btn-lg btn-action d-block mx-auto">Personalizar un libro</a>
+                        <div class="desc2 text-center">Existen muchas formas de demostrar lo que sientes, ¿Alguna vez pensaste en un libro?</div>
                   </div>
                 </div>
-            </div>
+              </div>
+
 
             <div class="row">
                 <div class="col-md-6">
@@ -199,20 +202,7 @@
         </div>
             </div>
 
-            <div class="col-12 section-price desktop ">
-                <div class="row">
-                    <div class="col-6">
-                        <img class="img-fluid" src="/img/book-image-2-sr.jpg">
-                    </div>
-                    <div class="col-6 right text-center">
-                        <div class="price title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precio</font></font></div>
-                        <div class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20.000$ - 30.000$</font></font></div>
-                        <div class="desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ precio de entrega</font></font></div>
 
-                        <a href="#products" class="btn btn-primary btn-lg btn-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoge un libro</font></font></a>
-                    </div>
-                </div>
-            </div>
 
             <div class="container">
                 <div class="row section-features">
@@ -252,38 +242,32 @@
 
             <footer id="footer" class="container-fluid">
                 <div class="row">
-                  <div class="col text-center">
-                    <h3 class="title">Guía de compra</h3>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Ayuda</a></li>
-                      <li><a href="#">Pago</a></li>
-                      <li><a href="#">Envío</a></li>
-                      <li><a href="#">Devoluciones</a></li>
-                    </ul>
-                  </div>
-                  <div class="col text-center">
-                    <h3 class="title">Empresa</h3>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Conócenos</a></li>
-                      <li><a href="#">Términos y condiciones</a></li>
-                      <li><a href="#">Política de privacidad</a></li>
-                      <li><a href="#">Política de cookies</a></li>
-                    </ul>
-                  </div>
+                <div class="col text-center">
+                    <h3 class="title">Contacto</h3>
+                    <h1 class="title"> Servicioalcliente@librodeamor.com.co</h1>
+                    <h1 class="title"> Ayuda@librodeamor.com.co</h1>
+                </div>
+
+
+
                   <div class="col text-center">
                     <h3 class="title">Social</h3>
                     <ul class="list-unstyled">
-                        <li><a href="https://www.facebook.com/people/Libro-de-amor/100087733617470/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100087783354781&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
                         <li><a href="https://instagram.com/librodeamor.co?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                   </div>
                   <div class="col text-center">
                     <h3 class="title">Medios de pago</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">Mastercard</a></li>
-                      <li><a href="#">Visa</a></li>
-                      <li><a href="#">PayPal</a></li>
-                    </ul>
+                        <li><a href="#"><img src="/img/bancolombia-logo-png-transparente.png" alt="Bancolombia" width="40" height="24"> Bancolombia</a></li>
+                        <li><a href="#"><img src="/img/pngwing.com (1).png" alt="Visa" width="24" height="40"> Visa</a></li>
+                        <li><a href="#"><img src="/img/cb0a415465fcee4abb64ec1e0403a377.png" alt="Nequi" width="34" height="40"> Nequi</a></li>
+                        <li><a href="#"><img src="/img/tarjeta-de-debito.png" alt="Corresponsal Bancario" width="40" height="24"> Corresponsal Bancario</a></li>
+                        <li><a href="#"><img src="/img/PSE_logo.png" alt="PSE" width="24" height="40"> PSE</a></li>
+                      </ul>
+
+
                   </div>
                 </div>
               </footer>
