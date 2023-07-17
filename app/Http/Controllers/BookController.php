@@ -37,49 +37,56 @@ class BookController extends Controller
         return view('form');
     }
 
-
 public function guardarDatos(Request $request)
 {
-    set_time_limit(0); 
+    set_time_limit(0);
 
-    $nameFemale = $request->input('nameFemale');
-    $nameMale = $request->input('nameMale');
+$nameFemale = $request->input('nameFemale');
+$nameMale = $request->input('nameMale');
 
-    // Directorio base donde se guardarán los archivos
-    $bookDir = sprintf('public/%s_%s', $nameFemale, $nameMale);
+// Directorio base donde se guardarán los archivos
+$bookDir = sprintf('public/%s_%s', $nameFemale, $nameMale);
 
-    // Crear el directorio principal si no existe
-    Storage::makeDirectory($bookDir);
+// Crear el directorio principal si no existe
+Storage::makeDirectory($bookDir);
 
-    // Nombre del archivo de contenido
-    $contentFileName = sprintf('%s/%s_%s.txt', $bookDir, $nameFemale, $nameMale);
+// Nombre del archivo de contenido
+$contentFileName = sprintf('%s/%s_%s.txt', $bookDir, $nameFemale, $nameMale);
 
-    // Obtener el contenido enviado
-    $content = $request->input('mainContent');
+// Obtener el contenido enviado
+$content = $request->input('mainContent');
 
-    // Buscar todas las etiquetas de imagen en el contenido
-    preg_match_all('/<img[^>]+>/i', $content, $matches);
+// Buscar todas las etiquetas de imagen en el contenido
+preg_match_all('/<img[^>]+>/i', $content, $matches);
 
-    // Obtener todas las etiquetas de imagen encontradas
-    $images = $matches[0];
+// Obtener todas las etiquetas de imagen encontradas
+$images = $matches[0];
 
-    // Iterar sobre las etiquetas de imagen y reemplazar las rutas con asset()
-    foreach ($images as $image) {
-        // Obtener la ruta de la imagen dentro de la etiqueta
-        preg_match('/src="([^"]+)"/i', $image, $srcMatches);
-        $src = $srcMatches[1];
+// Rutas de imágenes procesadas
+$processedImagePaths = [];
 
-        // Verificar si la ruta de la imagen es relativa
-        if (Str::startsWith($src, '/')) {
-            // Reemplazar la ruta de imagen original con la ruta generada por asset()
-            $fullImagePath = public_path(ltrim($src, '/'));
-            $content = str_replace($src, $fullImagePath, $content);
-        }
+// Iterar sobre las etiquetas de imagen y reemplazar las rutas con url()
+foreach ($images as $image) {
+    // Obtener la ruta de la imagen dentro de la etiqueta
+    preg_match('/src="([^"]+)"/i', $image, $srcMatches);
+    $src = $srcMatches[1];
+
+    // Verificar si la ruta de la imagen es relativa y no se ha procesado antes
+    if (Str::startsWith($src, '/') && !in_array($src, $processedImagePaths)) {
+        // Generar la ruta completa utilizando la función url()
+$fullImagePath = url($src, [], true);
+
+        // Reemplazar la ruta de imagen original con la ruta generada por url()
+        $content = str_replace($src, $fullImagePath, $content);
+
+        // Agregar la ruta de imagen a la lista de procesadas
+        $processedImagePaths[] = $src;
     }
+}
 
-    Storage::put($contentFileName, $content);
+Storage::put($contentFileName, $content);
 
-    $filePath = resource_path('views/Books_pdf_view.blade.php');
+$filePath = resource_path('views/Books_pdf_view.blade.php');
 $newContent = $content;
 
 $fileContents = file_get_contents($filePath);
@@ -97,29 +104,26 @@ if (preg_match($pattern, $fileContents, $matches)) {
 
 $pdf = Pdf::loadView('Books_pdf_view');
 
-    // Directorio donde se guardará el archivo PDF
-    $pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
+// Directorio donde se guardará el archivo PDF
+$pdfDir = 'librosPDF/' . $nameFemale . '_' . $nameMale;
 
+// Crear el directorio si no existe
+Storage::disk('local')->makeDirectory($pdfDir);
 
+// Guardar el PDF en un archivo
+Storage::disk('local')->put($pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf', $pdf->output());
 
-    // Crear el directorio si no existe
-    Storage::disk('local')->makeDirectory($pdfDir);
+$pdfPath = $pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf';
 
-    // Guardar el PDF en un archivo
-    Storage::disk('local')->put($pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf', $pdf->output());
+$book = new Book();
+$book->name = $nameFemale . ' ' . $nameMale;
+$book->pdf = $pdfPath;
+$book->status = 'pendiente';
 
-    $pdfPath = $pdfDir . '/' . $nameFemale . '_' . $nameMale . '.pdf';
+$book->save();
 
-    $book = new Book();
-    $book->name = $nameFemale . ' ' . $nameMale;
-    $book->pdf = $pdfPath;
-    $book->status = 'pendiente';
-
-    $book->save();
-
-
-    $bookId = $book->id;
-    $request->session()->put('bookId', $bookId);
+$bookId = $book->id;
+$request->session()->put('bookId', $bookId);
 
 }
 

@@ -11,13 +11,16 @@ body{
     text-transform: uppercase;
   }
 
-  .btn1:active {
-    border: 2px solid #d24565 !important;
-    color: #d24565 !important;
+ .btn1:hover{
+     border: 1px solid #d24565;
+     color:  #d24565;
+ }
+
+
+ .btn1.selected{
+    border: 1px solid #d24565;
+    color:  #d24565;
 }
-
-
-
 
 
 
@@ -52,33 +55,73 @@ body{
     background-color: rgb(80, 44, 26);
   }
 
+  #brown:hover {
+    border: 2px solid #d24565 !important;
+  }
   #light-brown {
     background-color: rgb(139, 76, 54);
+  }
+
+
+  #light-brown:hover {
+    border: 2px solid #d24565 !important;
   }
 
   #dark-brown {
     background: linear-gradient(rgb(79, 47, 37) 0%, rgb(180, 125, 98) 80%);
 }
 
+
+#dark-brown:hover{
+    border: 2px solid #d24565 !important;
+}
+
   #blond-brown {
     background: linear-gradient(rgb(129, 82, 62) 0%, rgb(236, 195, 169) 100%);
+}
+
+#blond-brown:hover {
+    border: 2px solid #d24565 !important;
 }
 
   #light {
     background-color: rgb(221, 177, 155);
   }
 
+
+  #light:hover {
+    border: 2px solid #d24565 !important;
+  }
+
   #very-light {
     background-color: rgb(243, 223, 211);
   }
+
+  #very-light:hover {
+    border: 2px solid #d24565 !important;
+  }
+
+
+
 
   #black {
     background-color: rgb(61, 47, 41);
   }
 
+  #black:hover{
+    border: 2px solid #d24565 !important;
+  }
+
   #red {
     background-color: rgb(93, 29, 40);
   }
+
+  #red:hover {
+    border: 2px solid #d24565 !important;
+
+  }
+
+
 
   .eyes-select div {
     position: relative;
@@ -92,41 +135,42 @@ body{
 
   .color-select div {
     position: relative;
-    width: 50px;
+    width: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 7px;
   }
 
 .container-btn{
     margin-top: 80px;
+    margin-left: 100px;
 }
+
+
 
 
 
 
 .navbar {
     width: 100%;
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    z-index: 9999;
   }
 
 .nav-link {
     border-radius: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: rgba(54,54,54,.5);
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-link:hover {
-    background: #cf1259;
-    color: #ffffff !important;
-}
+
+
 
 .line-title {
     margin-left: 30%;
@@ -148,11 +192,7 @@ body{
 
 
 
-  .btn1:hover {
-    background-color: transparent;
-    border-style: solid;
-    border-bottom: 1px solid #d24565;
-}
+
 
   .btn1 {
     width:150px;
@@ -164,7 +204,7 @@ body{
     text-align: center;
     background-color: transparent;
     margin-left: 20px;
-    border: 1px solid #c4c4c5 !important;
+    border: 1px solid #c4c4c5;
   }
 
 
@@ -197,6 +237,7 @@ body{
 
   #btn-continue {
     color: #fff;
+    height: 40px;
     background-color: #d24565;
     border-color: #d24565;
     transition: background-color 0.3s ease;
@@ -209,6 +250,55 @@ body{
 
 
 }
+#glasseschange {
+    display: none;
+  }
+
+  .glasses-select > div:hover{
+    border: 1px solid #d24565;
+
+  }
+
+
+  .glasses-select > div.selected {
+    border: 2px solid #d24565;
+
+
+  }
+
+.eyes-select div:hover {
+  border: 1px solid #d24565;
+}
+
+.eyes-select div.selected{
+    border: 2px solid #d24565;
+
+
+}
+
+.color-select .col-6:hover {
+    border-color: 1px solid #d24565;
+  }
+.hair-select .col-6 {
+    cursor: pointer;
+  }
+
+  .hair-select .col-6.selected {
+    border: 2px solid #d24565;
+  }
+
+  .hair-select .col-6:hover {
+    border: 1px solid #d24565;
+  }
+
+
+.color-select .col-6.selected {
+    border: 2px solid #d24565;
+  }
+
+.btn1.selected {
+    border: 2px solid #d24565 !important;
+  }
 
 #btn-continue:hover {
     background-color: #a5364d;
@@ -239,6 +329,7 @@ body{
 
   .form-control {
     width: 70% !important;
+    height: 40% !important;
     margin: 0 auto !important;
     padding: 8px !important;
     border: 1px solid #ccc !important;
@@ -297,6 +388,10 @@ body{
         right: -35px;
       }
 
+      .mainimg {
+        width: 400px !important;
+      }
+
 
 
       .btn-container {
@@ -307,22 +402,11 @@ body{
         padding: 0.5rem 1rem;
         background-color: #f2f8fd;
         z-index: 5;
+        height: 8%;
 
       }
 
 
-  .form-control {
-    width: 68% !important;
-    margin: 0 auto !important;
-    padding: 8px !important;
-    border: 1px solid #ccc !important;
-    border-radius: 4px !important;
-    font-size: 14px !important;
-    color: #555 !important;
-    background-color: #fff5f5 !important;
-    transition: border-color 0.3s ease !important;
-    margin-left: 50px !important;
-  }
 
   }
 

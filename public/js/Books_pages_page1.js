@@ -1,32 +1,49 @@
 
 
-  $(document).ready(function() {
-    $('.insert-before-btn').click(function() {
-      var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
-      var prevPageWrapper = pageWrapper.prev('.page-wrapper'); // Obtén el contenedor de la imagen anterior
+ $(document).ready(function() {
+  $('.insert-before-btn').click(function() {
+    var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
+    var prevPageWrapper = pageWrapper.prev('.page-wrapper'); // Obtén el contenedor de la imagen anterior
 
-      if (prevPageWrapper.length && !prevPageWrapper.is("#first-page-wrapper")) {
-        // Si hay una imagen anterior y no es la primera página, inserta la imagen actual antes de ella
-        prevPageWrapper.before(pageWrapper);
-      } else {
-        // Si no hay una imagen anterior o es la primera página, no se hace nada
-        return false;
-      }
-    });
+    if (prevPageWrapper.length && !prevPageWrapper.is("#first-page-wrapper")) {
+      // Si hay una imagen anterior y no es la primera página, inserta la imagen actual antes de ella
+      prevPageWrapper.before(pageWrapper);
+    } else {
+      // Si no hay una imagen anterior o es la primera página, no se hace nada
+      return false;
+    }
 
-    $('.insert-after-btn').click(function() {
-      var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
-      var nextPageWrapper = pageWrapper.next('.page-wrapper'); // Obtén el contenedor de la imagen siguiente
-
-      if (nextPageWrapper.length) {
-        // Si hay una imagen siguiente, inserta la imagen actual después de ella
-        nextPageWrapper.after(pageWrapper);
-      } else {
-        // Si no hay una imagen siguiente, inserta la imagen actual al final del contenedor
-        pageWrapper.parent().append(pageWrapper);
-      }
-    });
+    // Restaurar el número de página original
+    updatePageNumbers();
   });
+
+  $('.insert-after-btn').click(function() {
+    var pageWrapper = $(this).parent(); // Obtén el contenedor de la imagen
+    var nextPageWrapper = pageWrapper.next('.page-wrapper'); // Obtén el contenedor de la imagen siguiente
+
+    if (nextPageWrapper.length) {
+      // Si hay una imagen siguiente, inserta la imagen actual después de ella
+      nextPageWrapper.after(pageWrapper);
+    } else {
+      // Si no hay una imagen siguiente, inserta la imagen actual al final del contenedor
+      pageWrapper.parent().append(pageWrapper);
+    }
+
+    // Restaurar el número de página original
+    updatePageNumbers();
+  });
+
+  // Función para actualizar los números de página
+  function updatePageNumbers() {
+    var pageWrappers = $('.page-wrapper');
+    pageWrappers.each(function(index) {
+      var pageNumber = index + 1;
+      $(this).find('.page-number').text(pageNumber);
+      $(this).attr('data-order', pageNumber);
+    });
+  }
+});
+
 
 
 

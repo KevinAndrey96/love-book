@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 999;">
+    <nav class="navbar navbar-expand-lg navbar-light " style="z-index: 999;">
         <div class="container">
           <a class="navbar-brand" href="/">librodeamor.co</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -102,21 +102,22 @@
           <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                <div class="color-container">
-                  <div class="section" id="color-section">
-                  <div class="section" id="color-beard-section">
-                    <div class="color-select row ">
-                      <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="brown" onclick="changeBeardColor('brown')"></div>
-                      <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light-brown" onclick="changeBeardColor('light-brown')"></div>
-                      <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="light" onclick="changeBeardColor('light')"></div>
-                      <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="grey" onclick="changeBeardColor('grey')"></div>
-                      <div class="col-6 col-sm-4 col-md-3 col-lg-2" id="black" onclick="changeBeardColor('black')"></div>
+                    <div class="color-container">
+                        <div class="section" id="color-beard-section">
+                            <div class="color-beard-select row">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 beard" id="beard-brown" onclick="changeBeardColor('brown')"></div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 beard" id="beard-light-brown" onclick="changeBeardColor('light-brown')"></div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 beard" id="beard-light" onclick="changeBeardColor('light')"></div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 beard" id="beard-grey" onclick="changeBeardColor('grey')"></div>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 beard" id="beard-black" onclick="changeBeardColor('black')"></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+
 
 
           <div class="container">
@@ -182,7 +183,7 @@
               <div class="col-lg-7">
                 <div class="image-preview">
                   <div class="img" id="main-image">
-                    <img src="/img/man/base.jpg" >
+                    <img src="/img/man/base.jpg" class="mainimg">
                     <img src="/img/man/hair/brown/half1.png" id="hairchange" class="on img-fluid">
                     <img src="/img/man/beard/brown/brown1.png" id="beardchange" class="on img-fluid">
                     <img src="/img/man/eyes/brown.png" id="eyeschange" class="on img-fluid">
@@ -191,14 +192,6 @@
               </div>
               </div>
 
-              <div class="col-lg-5">
-                <div class="form-group">
-                    <label for="nameFemale"></label>
-                    <input type="text" class="form-control" id="nameMale" name="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
             <div class="row">
