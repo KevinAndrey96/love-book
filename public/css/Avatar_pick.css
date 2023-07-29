@@ -26,6 +26,25 @@
 }
 
 
+@media (max-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -25% !important;
+        margin-left: 70% !important;
+       
+      }
+
+
+      .navbar-toggler{
+        margin-top: -13% !important;
+
+      }
+    }
+
   .line-main{
     margin-top: -4% !important;
 }
@@ -113,8 +132,7 @@ body {
 }
 
 .create-avatar {
-    font-family:Cormorant Garamond,serif;
-    margin-bottom:1rem;
+    font-family: 'Montserrat', sans-serif;    margin-bottom:1rem;
     text-transform:uppercase;
     color:#4f6272;
 }
@@ -191,8 +209,7 @@ body .subtitle {
     text-align: center;
     padding-top: 3rem;
     color: #000000;
-    font-family: Cormorant Garamond, serif;
-  }
+    font-family: 'Montserrat', sans-serif;  }
 
   div#Avatar {
     display: flex;
