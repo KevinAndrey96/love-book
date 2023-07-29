@@ -68,8 +68,7 @@ body{
     font-weight: bold;
     text-align: center;
     color: #620000;
-    font-family: Cormorant Garamond, serif;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;    text-transform: uppercase;
   }
 
   .row{
@@ -382,24 +381,28 @@ body {
     background-color: transparent;
     margin-left: 20px;
     border: 1px solid #c4c4c5 !important;
-
+    font-family: 'Montserrat', sans-serif;
 
   }
-  @media (max-width: 768px) {
+
+  @media (max-width: 768px){
 
 
 
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -25% !important;
+        margin-left: 40% !important;
+       
+      }
 
-
-
-
-    .logo-img {
-        margin-top: -30px !important;
-        width: 150px;
-        height: 100px;
+      .navbar-toggler{
+        margin-top: -22% !important;
 
       }
     }
+
 
   #btn-continue {
     color: #fff;
@@ -550,6 +553,7 @@ body {
         background-color: #f2f8fd;
         z-index: 5;
         height: 12%;
+        font-family: 'Montserrat', sans-serif;
 
       }
 

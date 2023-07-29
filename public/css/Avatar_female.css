@@ -41,8 +41,14 @@ body{
     .logo-img{
         width: 200px;
         height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -20%;
+        margin-top: -25% !important;
+        margin-left: 40% !important;
+       
+      }
+
+      .navbar-toggler{
+        margin-top: -22% !important;
+
       }
 
    
@@ -82,8 +88,7 @@ body{
     font-weight: bold;
     text-align: center;
     color: #620000;
-    font-family: Cormorant Garamond, serif;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;    text-transform: uppercase;
   }
 
  .btn1:hover{
@@ -286,35 +291,31 @@ margin-left: 2% !important;
     background-color: transparent;
     margin-left: 20px;
     border: 1px solid #c4c4c5;
+    font-family: 'Montserrat', sans-serif;
   }
 
 
 
-  @media (max-width: 768px) {
-
-
-
-
-
+  @media (min-width: 768px) {
 
 
     .logo-img {
-        margin-top: -30px !important;
-        width: 150px;
-        height: 100px;
-
-      }
-    }
-
-
-
-    .logo-img {
-        margin-top: -30px !important;
+        margin-top: -50px !important;
         width: 200px;
         height: 150px;
         margin-left: -120% !important;
 
       }
+
+
+
+
+ 
+    }
+
+
+
+ 
 
 
   body {
@@ -508,6 +509,7 @@ margin-left: 2% !important;
         background-color: #f2f8fd;
         z-index: 5;
         height: 12%;
+        font-family: 'Montserrat', sans-serif;
 
       }
 

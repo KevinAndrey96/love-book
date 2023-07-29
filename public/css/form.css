@@ -294,6 +294,7 @@
 
 body {
     overflow-x:hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -302,6 +303,25 @@ body {
     margin-right: 30%;
 }
 
+
+@media (max-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -25% !important;
+        margin-left: 40% !important;
+       
+      }
+
+
+      .navbar-toggler{
+        margin-top: -22% !important;
+
+      }
+    }
 .line-main {
     margin: 0rem 0;
 }

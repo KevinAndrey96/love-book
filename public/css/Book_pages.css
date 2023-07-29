@@ -116,8 +116,7 @@
 
 body {
   margin: 0;
-  font-family: Cormorant Garamond, serif;
-  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;  
   line-height: 1.6;
   color: #212529;
   text-align: left;
@@ -126,8 +125,7 @@ body {
 
 .text-center {
   text-align: center !important;
-  font-family: Cormorant Garamond, serif;
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;  text-transform: uppercase;
 
 }
 
@@ -318,7 +316,7 @@ div {
     top:10%;
     left:18%;
 
-     max-height: 28%; font-family: 'Lato', sans-serif;
+     max-height: 28%; font-family: 'Montserrat', sans-serif;
      z-index: 6;
       font-size: 0.7rem !important;
 
@@ -333,7 +331,7 @@ div {
         top:10%;
         left:55%;
 
-         max-height: 28%; font-family: 'Lato', sans-serif;
+         max-height: 28%; font-family: 'Montserrat', sans-serif 0.9rem;
          z-index: 6;
           font-size: 0.7rem !important;
 
@@ -365,14 +363,12 @@ h1  {
 
 
 h4{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #363636;    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 
 h5{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #363636;    font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
 }
 
@@ -1253,8 +1249,7 @@ h5{
   h2{
     text-align: center;
     color: #ff006a;
-    font-family: 'Lato', sans-serif !important;
-
+    font-family: 'Montserrat', sans-serif;
   }
 
   .close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11, .close12, .close13, .close14, .close15, .close16, .close17, .close18, .close19, .close20, .close21, .close22, .close23, .close24, .close25, .close26, .close27, .close28, .close29, .close30, .close31, .close32, .close33, .close34, .close35, .close36, .close37, .close38, .close39, .close40, .close41, .close42, .close43, .close44, .close45{
@@ -1518,3 +1513,21 @@ h5{
       }
     }
 
+    @media (max-width: 768px){
+
+
+
+        .logo-img{
+            width: 200px;
+            height: 150px; /* Ajusta la altura según el tamaño deseado */
+            margin-top: -25% !important;
+            margin-left: 30% !important;
+           
+          }
+    
+    
+          .navbar-toggler{
+            margin-top: -22% !important;
+    
+          }
+        }
