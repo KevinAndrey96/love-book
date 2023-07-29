@@ -6,6 +6,75 @@
     z-index: 9999;
   }
 
+  .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
+  }
+
+  .line-main{
+    margin-top: -4% !important;
+}
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 150px;
+        height: 100px;
+
+      }
+    }
+
+@media (min-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -30%;
+        margin-left: -70%;
+      }
+
+      .nav-item{
+        margin-top: -20%;
+        margin-left: 5px;
+      }
+
+      .nav-link{
+        margin-left: -140%;
+      }
+
+
+
+
+
+    }
+
+
 .nav-link {
     border-radius: 30px;
     text-decoration: none;
@@ -53,6 +122,7 @@ body {
     vertical-align: middle;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    margin-bottom: 1% !important;
 
   }
 
@@ -131,9 +201,12 @@ p {
 .tittle-wrapper {
     position: absolute;
     top: 10%;
-    left: 48%;
+    left: 46%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 3vw !important;
+    color: #363636 !important;
 
 
 
@@ -146,20 +219,78 @@ p {
     line-height: 1;
   }
 
-  .birthday-text {
-margin-bottom: 10px;}
+  .tittle-wrapper .birthday-text {
+    margin-top: 3px;
+
+margin-bottom: 10px;
+font-family: 'Cormorant Garamond', serif !important;
+font-size: 1.5vw;
+color: #363636 !important;
+
+
+
+}
+
+
+.tittle-wrapper .aniversary-text {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 1.5vw;
+    color: #363636 !important;
+
+
+
+    }
+
+
+    @media (max-width: 768px) {
+        .pages .page-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; /* Espacio entre las imágenes */
+          }}
+      
+  
+      
+      
+      
+    @media (max-width: 767px) {
+       
+
+        .pages .page-wrapper img {
+          width: 180px !important;
+          max-width: 300px !important;
+          height: auto;
+          margin-bottom: 30px !important; /* Ajusta el margen inferior según lo desees */
+        }
+
+      }
+
 
 
   @media (max-width: 768px) {
     .tittle-wrapper {
-        font-size: 0.1rem !important;
 
-      transform: translate(-50%, -50%);
+
+      transform: translate(-40%, -40%);
     }
 
     .tittle-wrapper h3 {
+        margin-top: 1px;
+        font-size:1rem !important;
+        line-height: 1;
+      }
+     
+      .aniversary-text {
         margin: 0;
-        font-size:0.3rem !important;
+        font-size:1rem !important;
+        line-height: 1;
+      }
+
+      .birthday-text{
+        margin-top: 1px;
+        font-size:1rem !important;
         line-height: 1;
       }
 
@@ -174,18 +305,7 @@ margin-bottom: 10px;}
 
 
 
-@media (max-width: 768px) {
 
-    .pages .page-wrapper img {
-        width: 100% !important;
-        max-width: 300px !important;
-        height: auto;
-        border-radius: 0.3rem;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
-  }
 
   @media (min-width: 1100px) {
 
@@ -197,6 +317,7 @@ margin-bottom: 10px;}
         padding: 0.5rem rem;
         background-color: #f2f8fd;
         z-index: 5;
+        height: 12% !important;
 
       }
     }

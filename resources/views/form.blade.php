@@ -15,10 +15,12 @@
     <title>librodeamor.co</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/">librodeamor.co</a>
+            <a class="navbar-brand" href="/">
+                <img src="/img/LDALogo.png" alt="Logo" class="logo-img">
+
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,30 +28,41 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                        <a class="nav-link" href="/#products">NUESTRO LIBRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
+                        <a class="nav-link" href="/#footer">CONTACTO</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-        <hr class="line-main">
+    <hr class="line-main">
 
 
 
     <div class="container">
         <div class="form-container">
   <h2>
-    <h2>
-        Información de comprador
-      </h2>
 
             <div class="col-12 pages">
 
         </div>
+        <div class="price-container">
+            <div class="price-header">
+              <h3>De 4 a 7 días hábiles</h3>
+            </div>
+            <div class="price-details">
+                <div class="price-details">
+                    <p>Libro: <span>$ 109.900</span></p>
+                    <p class="line">Envío: <span>$ 5.900</span></p>
+                    <p>Total: <span>$ 115.800</span></p>
+
+            </div>
+            </div>
+          </div>
 
         <form action="https://checkout.wompi.co/p/" method="GET" class="wompi-form">
             <!-- OBLIGATORIOS -->
@@ -60,9 +73,15 @@
             <input type="hidden" name="redirect-url" value="{{ url('/pago/respuesta') }}" />
 
             <!-- OPCIONALES -->
+            <h2>
+                Información del comprador
+              </h2>
             <input type="email" name="customer-data:email" placeholder="Correo electrónico" class="wompi-input" />
             <input type="text" name="customer-data:full-name" placeholder="Nombre completo" class="wompi-input" />
             <input type="tel" name="customer-data:phone-number" placeholder="Número de teléfono" class="wompi-input" />
+            <h2>
+                Direccion del envio
+              </h2>
             <input type="text" name="shipping-address:address-line-1" placeholder="Dirección de envío" class="wompi-input" />
             <select name="shipping-address:country" class="wompi-input">
               <option value="CO">Colombia</option>
@@ -71,17 +90,18 @@
             <input type="text" name="shipping-address:city" placeholder="Ciudad de envío" class="wompi-input" />
             <input type="text" name="shipping-address:region" placeholder="Región de envío" class="wompi-input" />
 
+
+
             <button type="submit" class="wompi-button">
-                Pagar con Wompi
+                Pagar
                 <i class="fas fa-arrow-right"></i>
               </button>
 
 
           </form>
 
-        <p class="mt-4">Para confirmar tu compra llena este formulario.</p>
-    <p>Una vez aprobado tu pago, tu pedido llegará de 4 a 7 días hábiles.</p>
-    </div>
+
+
 
 
     <script src="{{ asset('js/Book_id.js')}}"></script>

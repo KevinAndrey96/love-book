@@ -18,7 +18,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/">librodeamor.co</a>
+            <a class="navbar-brand" href="/">
+                <img src="/img/LDALogo.png" alt="Logo" class="logo-img">
+
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,17 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">NUESTRO LIBRO</a>
+                        <a class="nav-link" href="/#products">NUESTRO LIBRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
+                        <a class="nav-link" href="/#footer">CONTACTO</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-        <hr class="line-main">
+    <hr class="line-main">
+
 
     <title class="title">Portada de tu libro</title>
   <body>
@@ -44,7 +49,7 @@
         <h1 class="text-center mt-5 display-4 smaller-text">Elige una portada para tu libro</h1>
     </div>
 
-
+<div class="row">
       <div class="col-12 pages">
         <div class="page-wrapper" id="frontpage1">
             <img src="/img/frontpage/frontpage1/extra/two-avatars.jpg" class="page-img img-fluid" >
@@ -64,9 +69,11 @@
             <div class="extras">
               <img src="/img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
             </div>
-            <div class="tittle-wrapper text" style="z-index: 100; display: flex; justify-content: center;">
-                <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
-              </div>
+            <div class="tittle-wrapper text d-flex flex-column" style="z-index: 100;">
+                <span class="aniversary-text">HAPPY ANIVERSARY</span>
+
+              <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
+            </div>
 
         </div>
 
@@ -114,8 +121,9 @@
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
                 <div class="tittle-wrapper text d-flex flex-column" style="z-index: 100;">
+                    <span class="birthday-text">HAPPY BIRTHDAY</span>
+
                     <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
-                    <span class="birthday-text">Feliz Cumpleaños</span>
 
 
                 </div>
@@ -138,12 +146,13 @@
                       <img id="glassesmalee3" src="/img/frontpage/frontpage4/man/glasses/glasses.png" class="extra" style="z-index: 2;">
                     </div>
                     <div class="tittle-wrapper text" style="z-index: 100;">
+
                       <h3 id="names3" title="Esta será tu portada">Esta será tu portada</h3>
                     </div>
                 </div>
               </div>
 
-
+            </div>
 
 
               <div class="row">

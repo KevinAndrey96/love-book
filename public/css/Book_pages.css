@@ -4,11 +4,120 @@
   box-sizing: border-box;
 }
 
+/* Estilos para el modal */
+.modal-content {
+    position: relative;
+  }
+
+  /* Estilos para la imagen compuesta y sus capas */
+  .image-composition {
+    position: relative;
+  }
+
+  .image-composition img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
+  }
+
+  .line-main{
+    margin-top: -4% !important;
+}
+
+
+
+@media (min-width: 768px){
+
+  
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -30%;
+        margin-left: -50%;
+      }
+
+      .nav-item{
+        margin-top: -20%;
+        margin-left: 5px;
+      }
+
+      .nav-link{
+        margin-left: -140%;
+      }
+
+
+
+
+
+    }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+}
+
+
+.page-controls {
+  position: absolute;
+  top: -8px;
+  left: -10px !important;
+  z-index: 20;
+}
+
+.edit-icon {
+  font-size: 20px;
+  color: red;
+  /* Agrega otros estilos de icono según tus necesidades */
+}
+@media (max-width: 768px) {
+  .buttons-container {
+    justify-content: center;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: Cormorant Garamond, serif;
   font-size: 0.9rem;
-  font-weight: 400;
   line-height: 1.6;
   color: #212529;
   text-align: left;
@@ -27,19 +136,22 @@ color: #ff006a;
   }
 
 
-#btn-continue {
+  #btn-continue {
     color: #fff;
-
     background-color: #d24565;
     border-color: #d24565;
     transition: background-color 0.3s ease;
-    display: flex;
-    justify-content: end !important;
+    display: block;
     text-align: center;
-    vertical-align: middle;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20000;
   }
+
+ 
 
   #btn-continue:hover {
     background-color: #a5364d;
@@ -160,7 +272,7 @@ div {
 
   .button-wrapper {
     display:flex;
-    margin-left: 9% !important;
+    margin-left: 10% !important;
   }
 
 
@@ -185,10 +297,14 @@ div {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
   }
+  .aniversary-text {
+    position: relative;
+    top: -290px;
+    left:6%;
 
+  }
 
   .birthday-text {
     position: relative;
@@ -228,21 +344,36 @@ div {
 }
 h1  {
   margin: 0;
-  font-weight: bold !important;
 }
 
 
+@media (max-width: 768px) {
 
 
 
-h3{
-    color:#000000;
+
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 150px;
+        height: 100px;
+
+      }
+    }
+
+
+h4{
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
 }
 
-h6{
-    color:#2302c8;
+h5{
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
 }
 
 
@@ -1163,7 +1294,7 @@ h6{
 
     .birthday-text {
         position: relative;
-        top: -230px;
+        top: -220px !important;
         left:25%;
         font-size: 0.7rem;
 
@@ -1175,12 +1306,199 @@ h6{
         max-width: 100% !important;
         margin-right: 0;
     }
+
+ 
+
+  #text-page2{
+      left: 16% !important;
+  }
+
+  #text-page3{
+      left: 16% !important;
+  }
+
+
+  #text-page4{
+      left: 11% !important;
+  }
+
+  #text-page5{
+    left: 11% !important;
+}
+
+#text-page6{
+    left: 16% !important;
+}
+
+#text-page7{
+    left: 10% !important;
+}
+
+
+#text-page8{
+    left: 13% !important;
+}
+
+#text-page9{
+  left: 16% !important;
+}
+
+#text-page10{
+  left: 17% !important;
+}
+
+#text-page11{
+  left: 18% !important;
+}
+
+
+#text-page12{
+  left: 16% !important;
+}
+
+#text-page13{
+  left: 16% !important;
+}
+
+#text-page14{
+  left: 18% !important;
+}
+
+#text-page15{
+  left: 30% !important;
+}
+
+
+#text-page16{
+  left: 25% !important;
+}
+
+
+#text-page17{
+  left: 16% !important;
+}
+
+
+#text-page18{
+  left: 6% !important;
+}
+
+
+
+#text-page19{
+  left: 16% !important;
+}
+
+
+
+#text-page20{
+  left: 16% !important;
+}
+
+
+#text-page22{
+  left: 35% !important;
+}
+
+#text-page23{
+  left: 30% !important;
+}
+
+#text-page25{
+  left: 10% !important;
+}
+
+#text-page26{
+  left: 26% !important;
+}
+
+
+#text-page27{
+  left: 26% !important;
+}
+
+#text-page28{
+  left: 16% !important;
+}
+
+#text-page29{
+  left: 14% !important;
+}
+
+#text-page30{
+  left: 16% !important;
+}
+
+
+#text-page31{
+  left: 16% !important;
+}
+
+#text-page32{
+  left: 18% !important;
+}
+
+#text-page33{
+  left: 15% !important;
+}
+
+#text-page34{
+  left: 16% !important;
+}
+
+#text-page35{
+  left: 16% !important;
+}
+
+
+#text-page36{
+  left: 16% !important;
+}
+
+#text-page37{
+  left: 16% !important;
+}
+
+#text-page38{
+  left: 16% !important;
+}
+
+#text-page39{
+  left: 16% !important;
+}
+
+#text-page40{
+  left: 16% !important;
+}
+
+
+#text-page41{
+  left: 19% !important;
+}
+
+#text-page42{
+  left: 16% !important;
+}
+
+#text-page43{
+  left: 16% !important;
+}
+
+#text-page44{
+  left: 18% !important;
+}
+
+#text-page45{
+  left: 16% !important;
+}
+
+
     #text-page21{
         left: 20% !important;
     }
 
     #text-page24{
-        left: 26% !important;
+        left: 35% !important;
     }
 
     #text-page41{
@@ -1196,7 +1514,6 @@ h6{
     h1  {
         margin: 0;
         font-size: 2vh !important;
-        font-weight: bold !important;
         color: #333;
       }
     }

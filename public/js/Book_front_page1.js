@@ -97,7 +97,7 @@ if (glassesFemale === "block") {
   }
 
   if (nameMale && nameFemale) {
-  titleElement.textContent = ` ${nameMale} y ${nameFemale}`;
+  titleElement.textContent = ` ${nameMale} & ${nameFemale}`;
   }
 
   eyesmale.src = eyesMale;

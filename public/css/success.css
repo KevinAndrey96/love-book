@@ -13,6 +13,82 @@
     color: #333;
 }
 
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 150px;
+        height: 100px;
+
+      }
+    }
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
+  }
+
+  .line-main{
+    margin-top: -4% !important;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+
+
+@media (min-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -30%;
+        margin-left: -70%;
+      }
+
+      .nav-item{
+        margin-top: -20%;
+        margin-left: 5px;
+      }
+
+      .nav-link{
+        margin-left: -140%;
+      }
+
+
+
+
+
+    }
+
 
 body {
     background-color: #ddeffd !important;
