@@ -2,6 +2,81 @@ body{
     background-color: #ddeffd !important;
 }
 
+.container-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
+  }
+
+  .line-main{
+    margin-top: -4% !important;
+}
+
+
+@media (max-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -30%;
+        margin-left: -20%;
+      }
+
+   
+
+    }
+
+
+@media (min-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -50%;
+        margin-left: -70%;
+      }
+
+      .nav-item{
+        margin-top: -20%;
+        margin-left: 5px;
+      }
+
+      .nav-link{
+        margin-left: -140%;
+      }
+
+
+
+
+
+    }
+
+
   h3 {
     font-size: 2em;
     font-weight: bold;
@@ -121,7 +196,13 @@ body{
 
   }
 
+.color-container {
+margin-left: 2% !important;
+}
 
+.eyes-select{
+    margin-left: -1% !important;
+}
 
   .eyes-select div {
     position: relative;
@@ -130,12 +211,12 @@ body{
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 2px;
   }
 
   .color-select div {
     position: relative;
-    width: 40px;
+    width: 50px;
     padding-bottom: 50px;
     border-radius: 50%;
     overflow: hidden;
@@ -144,8 +225,8 @@ body{
   }
 
 .container-btn{
-    margin-top: 80px;
-    margin-left: 100px;
+    margin-top: 50px;
+    margin-left: 7.5%;
 }
 
 
@@ -209,6 +290,31 @@ body{
 
 
 
+  @media (max-width: 768px) {
+
+
+
+
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 150px;
+        height: 100px;
+
+      }
+    }
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 200px;
+        height: 150px;
+        margin-left: -120% !important;
+
+      }
 
 
   body {
@@ -237,7 +343,6 @@ body{
 
   #btn-continue {
     color: #fff;
-    height: 40px;
     background-color: #d24565;
     border-color: #d24565;
     transition: background-color 0.3s ease;
@@ -354,7 +459,7 @@ body{
     /* Estilos para dispositivos móviles */
     .hair-select div,
     .glasses-select div {
-      width: 18%;
+      width: 30%;
       margin-bottom: 15px;
     }
 
@@ -402,7 +507,7 @@ body{
         padding: 0.5rem 1rem;
         background-color: #f2f8fd;
         z-index: 5;
-        height: 8%;
+        height: 12%;
 
       }
 

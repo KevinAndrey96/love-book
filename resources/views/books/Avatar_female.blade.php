@@ -15,27 +15,32 @@
       <title>Edita tu avatar</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 999;">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="/">librodeamor.co</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#products">NUESTRO LIBRO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            <a class="navbar-brand" href="/">
+                <img src="/img/LDALogo.png" alt="Logo" class="logo-img">
 
-        <hr class="line-main">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#products">NUESTRO LIBRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#footer">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <hr class="line-main">
+
         <div class="container-btn">
         <button id="btn-hair" type="button" class="btn1 btn-lg btn-block text-center mt-3">Cabello</button>
         <button id="btn-eyes"  type="button" class="btn1 btn-lg btn-block text-center mt-3">Ojos</button>
@@ -134,21 +139,21 @@
                 <div class="image-preview">
                   <div class="img" id="main-image">
                     <img src="/img/woman/base1.jpg" class="mainimg img-fluid">
-                    <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid">
+                    <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid" style=" z-index: 2;">
                     <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
                     <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
                   </div>
                 </div>
               </div>
 
-           
+
 
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="btn-container d-flex justify-content-end align-items-end">
-                    <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3">Continuar</button>
+                    <button id="btn-continue" type="button" class="btn btn-lg btn-block btn-primary mt-3 text-center">Continuar</button>
                 </div>
             </div>
         </div>

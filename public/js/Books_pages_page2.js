@@ -152,6 +152,17 @@ if (colElement) {
       modal.parentNode.removeChild(modal);
     });
 
+     var pageControls = clonedMainContentElement.querySelectorAll('.page-controls');
+  pageControls.forEach(function(pageControl) {
+    pageControl.parentNode.removeChild(pageControl);
+  });
+
+  var buttonWrapper = clonedMainContentElement.querySelectorAll('.button-wrapper');
+  buttonWrapper.forEach(function(wrapper) {
+    wrapper.parentNode.removeChild(wrapper);
+  });
+
+
     // Eliminar los estilos de los textos en el clon del contenido
     var texts = clonedMainContentElement.querySelectorAll('.page-text');
     texts.forEach(function(text) {

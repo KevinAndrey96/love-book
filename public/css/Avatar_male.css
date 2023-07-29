@@ -3,6 +3,66 @@ body{
     color: #363636;
 }
 
+.container-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+.nav-link {
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgba(54,54,54,.5);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.logo-img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
+  }
+
+  .line-main{
+    margin-top: -4% !important;
+}
+
+
+
+@media (min-width: 768px){
+
+
+
+    .logo-img{
+        width: 200px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -30%;
+        margin-left: -70%;
+      }
+
+      .nav-item{
+        margin-top: -20%;
+        margin-left: 5px;
+      }
+
+      .nav-link{
+        margin-left: -140%;
+      }
+
+
+
+
+
+    }
+
+
   h3 {
     font-size: 2em;
     font-weight: bold;
@@ -230,11 +290,28 @@ body{
     top: 0;
     left: 0;
   }
+  @media (min-width: 992px) {
+    .glasses-select {
+      margin-left: -6%;
+    }
 
-.container-btn{
-    margin-top: 80px !important;
-    margin-left: 100px !important;
-}
+    .eyes-select {
+      margin-left: -10% !important;
+    }
+
+    .color-select {
+      margin-left: -1% !important;
+    }
+
+    .color-beard-select {
+      margin-left: -1% !important;
+    }
+
+    .container-btn {
+      margin-top: 50px !important;
+      margin-left: 7.5% !important;
+    }
+  }
 body {
     overflow-x:hidden;
 }
@@ -308,11 +385,24 @@ body {
 
 
   }
+  @media (max-width: 768px) {
 
+
+
+
+
+
+
+    .logo-img {
+        margin-top: -30px !important;
+        width: 150px;
+        height: 100px;
+
+      }
+    }
 
   #btn-continue {
     color: #fff;
-    height: 40px;
     background-color: #d24565;
     border-color: #d24565;
     transition: background-color 0.3s ease;
@@ -376,7 +466,7 @@ body {
 }
   .color-select div {
     position: relative;
-    width: 40px;
+    width: 50px;
     height: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
@@ -387,7 +477,7 @@ body {
 
   .color-beard-select div {
     position: relative;
-    width: 40px;
+    width: 50px;
     height: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
@@ -411,7 +501,7 @@ body {
     .hair-select div,
     .glasses-select div,
     .beard-select div {
-      width: 18%;
+      width: 50%;
       margin-bottom: 15px;
     }
   }
@@ -421,8 +511,9 @@ body {
   @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */
     .hair-select div,
-    .glasses-select div {
-      width: 30%;
+    .glasses-select div,
+    .beard-select div {
+      width: 30% !important;
       margin-bottom: 15px;
     }
 
@@ -458,7 +549,7 @@ body {
         padding: 0.5rem 1rem;
         background-color: #f2f8fd;
         z-index: 5;
-        height: 8%;
+        height: 12%;
 
       }
 

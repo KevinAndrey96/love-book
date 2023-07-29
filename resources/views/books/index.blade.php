@@ -16,7 +16,10 @@
       <body>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="/">librodeamor.co</a>
+                <a class="navbar-brand" href="/">
+                    <img src="/img/LDALogo.png" alt="Logo" class="logo-img">
+
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,7 +30,7 @@
                             <a class="nav-link" href="#products">NUESTRO LIBRO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTO</a>
+                            <a class="nav-link" href="#footer">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -57,36 +60,35 @@
                 <div class="title text-center">En pocos clicks da un regalo único e inolvidable</div>
                 <div class="row">
                     <div class="col-12 col-md-4 text-center step-wrap">
-                        <img class="img-fluid" src="./img/step-1-removebg-preview.png">
+                        <img id="img1" class="img-fluid" src="./img/step-1-removebg-preview.png">
                         <div class="title step-title">1. Crea tu personaje</div>
                         <div class="text">Observa, ¡se parece a nosotros!</div>
                     </div>
 
                     <div class="col-12 col-md-4 text-center step-wrap">
-                        <img class="img-fluid" src="./img/step-2-sr-removebg-preview.png">
-                        <div class="title step-title">2. Elige una portada</div>
-                        <div class="text">¡Escribe un título y haz que sea único!</div>
+                        <img id="img2" class="img-fluid" src="./img/step-2-sr-removebg-preview.png">
+                        <div id="title1" class="title step-title">2. Elige una portada</div>
+                        <div id="text1" class="text">¡Escribe un título y haz que sea único!</div>
                     </div>
 
                     <div class="col-12 col-md-4 text-center step-wrap">
-                        <img class="img-fluid" src="./img/step-3-sr-removebg-preview.png">
+                        <img id="img3" class="img-fluid" src="./img/step-3-sr-removebg-preview.png">
                         <div class="title step-title">3. Selecciona páginas</div>
-                        <div class="text">Edita las páginas a tu gusto :D</div>
+                        <div class="text">Edita las páginas a tu gusto</div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 section-price desktop" id="products">
                 <div class="row">
-                  <div class="col-md-6">
-                    <img class="img-fluid imagen" src="/img/book-image-2-sr.jpg">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center"> <!-- En dispositivos grandes, la columna ocupa 6 columnas y centra el contenido horizontal y verticalmente -->
+                        <img class="img-fluid imagen" src="/img/book-image-2-sr.jpg">
                   </div>
                   <div class="col-md-6 text-center">
-                    <div class="price title">Precio</div>
-                    <div class="subtitle">20.000$ - 30.000$</div>
+                    <div class="desc2 text-center">Existen muchas formas de demostrar lo que sientes, ¿Alguna vez pensaste en un libro?</div>
+                    <div class="subtitle">109.900$</div>
                     <div class="desc">+ precio de entrega</div>
-                        <a href="/avatar" class="btn btn-primary btn-lg btn-action d-block mx-auto">Personalizar un libro</a>
-                        <div class="desc2 text-center">Existen muchas formas de demostrar lo que sientes, ¿Alguna vez pensaste en un libro?</div>
+                        <a href="/avatar" class="btn btn-primary btn-sm ">Personaliza tu libro</a>
                   </div>
                 </div>
               </div>
@@ -186,11 +188,7 @@
                 </div>
               </div>
 
-            <div class="row">
-            <div class="col-12 section-attention">
-                <h3 style="color: #ffffff" class="subtitle">EXISTEN MUCHAS FORMAS DE DEMOSTRARLE LO QUE SIENTES A TUS SERES QUERIDOS</h3>
-                <div class="title">¿Alguna vez<br>pensaste en un libro?</div>
-            </div>
+
             <div class="row">
               <div class="col-12 d-md">
                 <div class="row step-wrap">
@@ -204,7 +202,7 @@
 
 
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row section-features">
                     <div class="col-6 col-md-3 feature">
                         <div class="feat-img">
@@ -239,37 +237,33 @@
                     </div>
                 </div>
             </div>
-
             <footer id="footer" class="container-fluid">
                 <div class="row">
-                <div class="col text-center">
+                  <div class="col-12 col-md-4 text-center">
                     <h3 class="title">Contacto</h3>
-                    <h1 class="title"> Servicioalcliente@librodeamor.com.co</h1>
-                    <h1 class="title"> Ayuda@librodeamor.com.co</h1>
-                </div>
-
-
-
-                  <div class="col text-center">
+                    <a href="mailto:Ayuda@librodeamor.com.co" class="title" style="text-decoration: none !important; color: white !important;">Ayuda@librodeamor.com.co</a>
+                  </div>
+                  <div class="col-12 col-md-4 text-center">
                     <h3 class="title">Social</h3>
                     <ul class="list-unstyled">
-                        <li><a href="https://www.facebook.com/profile.php?id=100087783354781&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                        <li><a href="https://instagram.com/librodeamor.co?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100087783354781&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                      <li><a href="https://instagram.com/librodeamor.co?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                   </div>
-                  <div class="col text-center">
+                  <div class="col-12 col-md-4 text-center">
                     <h3 class="title">Medios de pago</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#"><img src="/img/bancolombia-logo-png-transparente.png" alt="Bancolombia" width="40" height="24"> Bancolombia</a></li>
-                        <li><a href="#"><img src="/img/pngwing.com (1).png" alt="Visa" width="24" height="40"> Visa</a></li>
-                        <li><a href="#"><img src="/img/cb0a415465fcee4abb64ec1e0403a377.png" alt="Nequi" width="34" height="40"> Nequi</a></li>
-                        <li><a href="#"><img src="/img/tarjeta-de-debito.png" alt="Corresponsal Bancario" width="40" height="24"> Corresponsal Bancario</a></li>
-                        <li><a href="#"><img src="/img/PSE_logo.png" alt="PSE" width="24" height="40"> PSE</a></li>
-                      </ul>
-
-
+                    <ul class="list-unstyled" id="medios-de-pago">
+                      <li><a href="#">Bancolombia</a></li>
+                      <li><a href="#">Visa</a></li>
+                      <li><a href="#">Nequi</a></li>
+                      <li><a href="#">Corresponsal Bancario</a></li>
+                      <li><a href="#">PSE</a></li>
+                    </ul>
                   </div>
                 </div>
+              </footer>
+
+
               </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
