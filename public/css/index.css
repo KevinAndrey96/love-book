@@ -1086,7 +1086,9 @@ body .text {
 
   }
 
-
+.imagen{
+    margin-top: 50px !important;
+}
 
 
   @media (max-width: 768px){

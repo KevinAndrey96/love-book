@@ -313,7 +313,7 @@ body {
         height: 150px; /* Ajusta la altura según el tamaño deseado */
         margin-top: -25% !important;
         margin-left: 40% !important;
-       
+
       }
 
 
@@ -321,6 +321,43 @@ body {
         margin-top: -22% !important;
 
       }
+
+      /* Ajustar margen del formulario en móviles */
+  .wompi-form {
+    margin-top: 0;
+  }
+
+  .libro{
+    margin-top: 55% !important;
+  }
+
+  /* Ajustar tamaño y margen del contenedor de precio */
+  .price-container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  /* Ajustar tamaño del botón */
+  .wompi-button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Ajustar tamaño de los campos de entrada */
+  .wompi-input {
+    width: 100%;
+  }
+
+  /* Ajustar tamaño de los títulos */
+  .price-details h4 {
+    font-size: 18px;
+  }
+
+  /* Ajustar tamaño del texto */
+  .price-details p {
+    font-size: 16px;
+  }
     }
 .line-main {
     margin: 0rem 0;
@@ -335,19 +372,4 @@ body {
     margin-bottom: 10px;
   }
 
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
 
-    .form-container {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .price-container {
-      width: 100%;
-      max-width: 100%;
-    }
-  }

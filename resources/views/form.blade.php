@@ -59,7 +59,7 @@
             </div>
             <div class="price-details">
                 <div class="price-details">
-                    <p>Libro: <span>$ 109.900</span></p>
+                    <p class="libro">Libro: <span>$ 109.900</span></p>
                     <p class="line">Envío: <span>$ 5.900</span></p>
                     <p>Total: <span>$ 115.800</span></p>
 

@@ -53,8 +53,8 @@
     </div>
 
 <div class="row">
-      <div class="col-12 pages">
-        <div class="page-wrapper" id="frontpage1">
+      <div class="col-12 pages grid-container">
+        <div class="page-wrapper " id="frontpage1">
             <img src="/img/frontpage/frontpage1/extra/two-avatars.jpg" class="page-img img-fluid" >
             <div class="giver-img">
               <img src="/img/frontpage/frontpage1/woman/giver-woman-base.png" class="extra" style="z-index: 1;">
