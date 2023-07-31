@@ -297,10 +297,11 @@ div {
     font-size: 16px;
     text-align: center;
   }
+
   .aniversary-text {
     position: relative;
-    top: -250px;
-    left:6%;
+    top: -280px;
+    left:4%;
     font-family: 'Montserrat', sans-serif;
 
   }
@@ -328,10 +329,9 @@ div {
 
 @media (max-width: 768px) {
     .tittle-wrapper h3{
-        position:absolute;
         transform: translate(-50%, -50%);
-        top:10%;
-        left:55%;
+        top:15%;
+        left:60%;
 
          max-height: 28%; font-family: 'Montserrat', sans-serif 0.9rem;
          z-index: 6;
@@ -1290,7 +1290,7 @@ h5{
 
     .birthday-text {
         position: relative;
-        top: -210px !important;
+        top: -55vw !important;
         left:20%;
         font-size: 0.7rem;
 
@@ -1298,8 +1298,8 @@ h5{
 
       .aniversary-text {
         position: relative;
-        top: -210px !important;
-        left:20%;
+        top: -55vw !important;
+        left:15%;
         font-size: 0.7rem;
 
       }

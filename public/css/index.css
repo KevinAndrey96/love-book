@@ -387,7 +387,7 @@ body {
 .carousel-opinions {
   background-color: #d24565;
   padding: 20px;
-  height: 100%;
+  height: 100% !important;
   position: relative;
 }
 
@@ -404,11 +404,14 @@ body {
   height: 90%;
 }
 
+.carousel-img {
+    height: 40% !important;
+}
 
 
 .carousel-item img {
   object-fit: cover;
-  border: solid 1px white;
+  border: solid 3px white;
    box-sizing: border-box;
 }
 
@@ -861,6 +864,8 @@ body .text {
     flex-direction:column;
 }
 
+
+
 #home .section-features .feature .feat-img{
     width:60px;
     height:60px;
@@ -1038,6 +1043,9 @@ body .text {
     font-size: 2rem;
   }
 
+  .imgs {
+    margin-top: 25.5% ! important;
+  }
 
 
 .carousel-item {
@@ -1045,8 +1053,12 @@ body .text {
   }
 
   .carousel-item img {
-    height: 96%;
-    object-fit: cover;
+    margin-top: 13% !important;
+    margin-bottom: 13% !important;
+
+
+    margin-left: 20% !important;
+    width: 60% !important;
   }
 
   .carousel-control-prev,
@@ -1093,7 +1105,9 @@ body .text {
 
   @media (max-width: 768px){
 
-
+   .carrusel{
+        margin-top: 15px !important;
+    }
 
     .logo-img{
         width: 200px;
@@ -1112,3 +1126,6 @@ body .text {
 
       }
     }
+
+
+  

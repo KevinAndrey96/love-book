@@ -98,9 +98,9 @@
 
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 carrusel" style="background-color: #fdebdd;">
                   <!-- Carrusel de Imágenes -->
-                  <div id="carouselImages" class="carousel slide" data-ride="carousel">
+                  <div id="carouselImages" class="carousel slide carousel-img" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="/img/gallery-home-1.jpg" alt="Imagen 1">
@@ -115,11 +115,11 @@
                         <img class="d-block w-100" src="/img/gallery-home-4.jpg" alt="Imagen 3">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselImages" role="button" data-slide="prev">
+                    <a class="carousel-control-prev imgs" href="#carouselImages" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Anterior</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
+                    <a class="carousel-control-next imgs" href="#carouselImages" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Siguiente</span>
                     </a>
@@ -220,7 +220,7 @@
                             <img class="img-fluid" src="/img/impresora (2).png">
                         </div>
                         <div class="feature-title">Impresión</div>
-                        <div class="feature-desc">Impresión digital profesional</div>
+                        <div class="feature-desc">Impresión digital </div>
                     </div>
 
                     <div class="col-6 col-md-3 feature">

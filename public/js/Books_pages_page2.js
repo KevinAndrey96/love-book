@@ -169,10 +169,13 @@ if (colElement) {
       text.removeAttribute('style');
     });
 
-    var scripts = clonedMainContentElement.querySelectorAll('script');
-    scripts.forEach(function(script) {
-      script.parentNode.removeChild(script);
+    var texts = clonedMainContentElement.querySelectorAll('.logo');
+    logo.forEach(function(text) {
+      text.removeAttribute('style');
     });
+
+
+
 
 
 

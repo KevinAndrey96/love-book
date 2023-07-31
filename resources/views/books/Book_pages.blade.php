@@ -65,13 +65,13 @@
             <div class="giver-img">
                 <img src="/img/books/page1/woman/giver-woman-base.png" class="extra modal-image" style="z-index: 1;">
                 <img id="eyesfemale" src="/img/books/page1/woman/eyes/brown.png" class="extra modal-image" style="z-index: 1;">
-                <img id="hairfemale" src="/img/books/page1/woman/hair/brown/long1.png" class="extra modal-image" style="z-index: 1;">
+                <img id="hairfemale" src="/img/books/page1/woman/hair/brown/long1.png" class="extra modal-image" style="z-index: 2;">
                 <img id="glassesfemale" src="/img/books/page1/woman/glasses/glasses.png" class="extra modal-image" style="z-index: 1;">
         </div>
         <div class="receiver-img">
             <img src="/img/books/page1/man/receiver-man-base.png" class="extra modal-image" style="z-index: 2;">
-            <img id="eyesmale"src="/img/books/page1/man/eyes/brown.png" class="extra modal-image" style="z-index: 3;">
-            <img id="hairmale"src="/img/books/page1/man/hair/brown/half1.png" class="extra modal-image" style="z-index: 2;">
+            <img id="eyesmale"src="/img/books/page1/man/eyes/brown.png" class="extra modal-image" style="z-index: 2;">
+            <img id="hairmale"src="/img/books/page1/man/hair/brown/half1.png" class="extra modal-image" style="z-index: 3;">
             <img id="beard" src="/img/books/page1/man/beard/brown/brown1.png" class="extra modal-image" style="z-index: 2;">
             <img id="glassesmale" src="/img/books/page1/man/glasses/glasses.png" class="extra modal-image" style="z-index: 2;">
         </div>
@@ -92,17 +92,18 @@
     </div>
         <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
         <div class="giver-img">
+
             <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="hairfemale2" src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 3;">
             <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="hairfemale2" src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="glassesfemale2" src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="glassesfemale2" src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
         </div>
         <div class="receiver-img">
             <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 3;">
             <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 1;">
-            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 1;">
+            <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 2">
         </div>
         <div class="extras">
             <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
@@ -169,13 +170,13 @@
                 <div class="giver-img">
                     <img src="/img/books/page3/woman/giver-base.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="eyesfemale3" src="/img/books/page3/woman/eyes/brown.png" class="extra modal-image3" style="z-index: 2;">
-                    <img id="hairfemale3" src="/img/books/page3/woman/hair/brown/long1.png" class="extra modal-image3" style="z-index: 2;">
+                    <img id="hairfemale3" src="/img/books/page3/woman/hair/brown/long1.png" class="extra modal-image3" style="z-index: 3;">
                     <img id="glassesfemale3" src="/img/books/page3/woman/glasses/glasses.png" class="extra modal-image3" style="z-index: 2;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page3/man/receiver-base.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="eyesmale3" src="/img/books/page3/man/eyes/brown.png" class="extra modal-image3" style="z-index: 1;">
-                    <img id="hairmale3" src="/img/books/page3/man/hair/brown/half1.png" class="extra modal-image3" style="z-index: 1;">
+                    <img id="hairmale3" src="/img/books/page3/man/hair/brown/half1.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="beardmale3" src="/img/books/page3/man/beard/brown/brown1.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="glassesmale3" src="/img/books/page3/man/glasses/glasses.png" class="extra modal-image3" style="z-index: 1;">
                 </div>
@@ -237,13 +238,13 @@
                 <div class="giver-img">
                     <img src="/img/books/page4/woman/giver-base.png" class="extra modal-image4" style="z-index: 1;">
                     <img id="eyesfemale4" src="/img/books/page4/woman/eyes/brown.png" class="extra modal-image4" style="z-index: 1;">
-                    <img id="hairfemale4" src="/img/books/page4/woman/hair/brown/long1.png" class="extra modal-image4" style="z-index: 1;">
+                    <img id="hairfemale4" src="/img/books/page4/woman/hair/brown/long1.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="glassesfemale4" src="/img/books/page4/woman/glasses/glasses.png" class="extra modal-image4" style="z-index: 1;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page4/man/giver-base.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="eyesmale4" src="/img/books/page4/man/eyes/brown.png" class="extra modal-image4" style="z-index: 2;">
-                    <img id="hairmale4" src="/img/books/page4/man/hair/brown/half1.png" class="extra modal-image4" style="z-index: 2;">
+                    <img id="hairmale4" src="/img/books/page4/man/hair/brown/half1.png" class="extra modal-image4" style="z-index: 3;">
                     <img id="beardmale4" src="/img/books/page4/man/beard/brown/brown1.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="glassesmale4" src="/img/books/page4/man/glasses/glasses.png" class="extra modal-image4" style="z-index: 2;">
                 </div>
@@ -364,7 +365,7 @@
                 <div class="giver-img">
                     <img src="/img/books/page6/woman/giver-base.png" class="extra modal-image6" style="z-index: 1;">
                     <img id="eyesfemale6" src="/img/books/page6/woman/eyes/brown.png" class="extra modal-image6" style="z-index: 1;">
-                    <img id="hairfemale6" src="/img/books/page6/woman/hair/brown/long1.png" class="extra modal-image6" style="z-index: 1;">
+                    <img id="hairfemale6" src="/img/books/page6/woman/hair/brown/long1.png" class="extra modal-image6" style="z-index: 2;">
                     <img id="glassesfemale6" src="/img/books/page6/woman/glasses/glasses.png" class="extra modal-image6" style="z-index: 1;">
                 </div>
                 <div class="receiver-img">
@@ -495,13 +496,13 @@
                     <div class="giver-img">
                         <img src="/img/books/page8/woman/giver-base.png" class="extra modal-image8" style="z-index: 1;">
                         <img id="eyesfemale8" src="/img/books/page8/woman/eyes/brown.png" class="extra modal-image8" style="z-index: 1;">
-                        <img id="hairfemale8" src="/img/books/page8/woman/hair/brown/long1.png" class="extra modal-image8" style="z-index: 1;">
+                        <img id="hairfemale8" src="/img/books/page8/woman/hair/brown/long1.png" class="extra modal-image8" style="z-index: 2;">
                         <img id="glassesfemale8" src="/img/books/page8/woman/glasses/glasses.png" class="extra modal-image8" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page8/man/receiver-base.png" class="extra modal-image8" style="z-index: 2;">
                         <img id="eyesmale8" src="/img/books/page8/man/eyes/brown.png" class="extra modal-image8" style="z-index: 2;">
-                        <img id="hairmale8"src="/img/books/page8/man/hair/brown/half1.png" class="extra modal-image8" style="z-index: 2;">
+                        <img id="hairmale8"src="/img/books/page8/man/hair/brown/half1.png" class="extra modal-image8" style="z-index: 3;">
                         <img id="beardmale8" src="/img/books/page8/man/beard/brown/brown1.png" class="extra modal-image8" style="z-index: 2;">
                         <img id="glassesmale8" src="/img/books/page8/man/glasses/glasses.png" class="extra modal-image8" style="z-index: 2;">
                     </div>
@@ -618,14 +619,14 @@
                     <div class="giver-img">
                         <img src="/img/books/page10/man/receiver-base.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="eyesmale10" src="/img/books/page10/man/eyes/brown.png" class="extra modal-image10" style="z-index: 1;">
-                        <img id="hairmale10" src="/img/books/page10/man/hair/brown/half1.png" class="extra modal-image10" style="z-index: 1;">
+                        <img id="hairmale10" src="/img/books/page10/man/hair/brown/half1.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="beardmale10" src="/img/books/page10/man/beard/brown/brown1.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="glassesmale10" src="/img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="eyesfemale10" src="/img/books/page10/woman/eyes/brown.png" class="extra modal-image10" style="z-index: 2;">
-                        <img id="hairfemale10" src="/img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="hairfemale10" src="/img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 3;">
                         <img id="glassesfemale10" src="/img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 2;">
                     </div>
                     <div><div id="text-page10" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:9%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
@@ -740,7 +741,7 @@
 
                 <div class="page-wrapper" id="page12" data-order="12">
                     <div class="page-controls">
-    <button class="btn myBtn1" style="">
+    <button class="btn myBtn12" style="">
       <i class="mdi mdi-pencil edit-icon"></i>
     </button>
     </div>
@@ -865,13 +866,13 @@
                     <div class="giver-img">
                         <img src="/img/books/page14/woman/giver-base.png" class="extra modal-image14" style="z-index: 1;">
                         <img id="eyesfemale14"src="/img/books/page14/woman/eyes/brown.png" class="extra modal-image14" style="z-index: 1;">
-                        <img id="hairfemale14" src="/img/books/page14/woman/hair/brown/long1.png" class="extra modal-image14" style="z-index: 1;">
+                        <img id="hairfemale14" src="/img/books/page14/woman/hair/brown/long1.png" class="extra modal-image14" style="z-index: 2;">
                         <img id="glassesfemale14" src="/img/books/page14/woman/glasses/glasses.png" class="extra modal-image14" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page14/man/receiver-base.png" class="extra modal-image14" style="z-index: 2;">
                         <img id="eyesmale14" src="/img/books/page14/man/eyes/brown.png" class="extra modal-image14" style="z-index: 2;">
-                        <img id="hairmale14" src="/img/books/page14/man/hair/brown/half1.png" class="extra modal-image14" style="z-index: 2;">
+                        <img id="hairmale14" src="/img/books/page14/man/hair/brown/half1.png" class="extra modal-image14" style="z-index: 3;">
                         <img id="beardmale14" src="/img/books/page14/man/beard/brown/brown1.png" class="extra modal-image14" style="z-index: 2;">
                         <img id="glassesmale14" src="/img/books/page14/man/glasses/glasses.png" class="extra modal-image14" style="z-index: 2;">
                     </div>
@@ -995,14 +996,14 @@
                     <div class="giver-img">
                         <img src="/img/books/page16/man/receiver-base.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="eyesmale16" src="/img/books/page16/man/eyes/brown.png" class="extra modal-image16" style="z-index: 1;">
-                        <img id="hairmale16" src="/img/books/page16/man/hair/brown/half1.png" class="extra modal-image16" style="z-index: 1;">
+                        <img id="hairmale16" src="/img/books/page16/man/hair/brown/half1.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="beardmale16" src="/img/books/page16/man/beard/brown/brown1.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="glassesmale16" src="/img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="eyesfemale16" src="/img/books/page16/woman/eyes/brown.png" class="extra modal-image16" style="z-index: 2;">
-                        <img id="hairfemale16" src="/img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="hairfemale16" src="/img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 3;">
                         <img id="glassesfemale16" src="/img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 2;">
                     </div>
                     <div><div id="text-page16" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
@@ -1124,13 +1125,13 @@
                     <div class="giver-img">
                         <img src="/img/books/page18/woman/giver-base.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="eyesfemale18" src="/img/books/page18/woman/eyes/brown.png" class="extra modal-image18" style="z-index: 2;">
-                        <img id="hairfemale18" src="/img/books/page18/woman/hair/brown/long1.png" class="extra modal-image18" style="z-index: 2;">
+                        <img id="hairfemale18" src="/img/books/page18/woman/hair/brown/long1.png" class="extra modal-image18" style="z-index: 3;">
                         <img id="glassesfemale18" src="/img/books/page18/woman/glasses/glasses.png" class="extra modal-image18" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page18/man/receiver-base.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="eyesmale18" src="/img/books/page18/man/eyes/brown.png" class="extra modal-image18" style="z-index: 1;">
-                        <img id="hairmale18" src="/img/books/page18/man/hair/brown/half1.png" class="extra modal-image18" style="z-index: 1;">
+                        <img id="hairmale18" src="/img/books/page18/man/hair/brown/half1.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="beardmale18" src="/img/books/page18/man/beard/brown/brown1.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="glassesmale18" src="/img/books/page18/man/glasses/glasses.png" class="extra modal-image18" style="z-index: 1;">
                     </div>
@@ -1312,13 +1313,13 @@
                     <div class="giver-img">
                         <img src="/img/books/page21/woman/giver-base.png" class="extra modal-image21" style="z-index: 1;">
                         <img id="eyesfemale21" src="/img/books/page21/woman/eyes/brown.png" class="extra modal-image21" style="z-index: 1;">
-                        <img id="hairfemale21" src="/img/books/page21/woman/hair/brown/long1.png" class="extra modal-image21" style="z-index: 1;">
+                        <img id="hairfemale21" src="/img/books/page21/woman/hair/brown/long1.png" class="extra modal-image21" style="z-index: 2;">
                         <img id="glassesfemale21" src="/img/books/page21/woman/glasses/glasses.png" class="extra modal-image21" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page21/man/receiver-base.png" class="extra modal-image21" style="z-index: 2;">
                         <img id="eyesmale21" src="/img/books/page21/man/eyes/brown.png" class="extra modal-image21" style="z-index: 2;">
-                        <img id="hairmale21" src="/img/books/page21/man/hair/brown/half1.png" class="extra modal-image21" style="z-index: 2;">
+                        <img id="hairmale21" src="/img/books/page21/man/hair/brown/half1.png" class="extra modal-image21" style="z-index: 3;">
                         <img id="beardmale21" src="/img/books/page21/man/beard/brown/brown1.png" class="extra modal-image21" style="z-index: 2;">
                         <img id="glassesmale21" src="/img/books/page21/man/glasses/glasses.png" class="extra modal-image21" style="z-index: 2;">
                     </div>
@@ -1552,7 +1553,7 @@
                     <div class="giver-img">
                         <img src="/img/books/page26/woman/giver-base.png" class="extra modal-image26" style="z-index: 1;">
                         <img id="eyesfemale26" src="/img/books/page26/woman/eyes/brown.png" class="extra modal-image26" style="z-index: 1;">
-                        <img id="hairfemale26" src="/img/books/page26/woman/hair/brown/long1.png" class="extra modal-image26" style="z-index: 1;">
+                        <img id="hairfemale26" src="/img/books/page26/woman/hair/brown/long1.png" class="extra modal-image26" style="z-index: 2;">
                     </div>
                     <div><div id="text-page26" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:12%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres tan linda</font></font></div>
@@ -1909,14 +1910,14 @@
                     <div class="giver-img">
                         <img src="/img/books/page32/man/receiver-base.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="eyesmale32" src="/img/books/page32/man/eyes/brown.png" class="extra modal-image32" style="z-index: 1;">
-                        <img id="hairmale32" src="/img/books/page32/man/hair/brown/half1.png" class="extra modal-image32" style="z-index: 1;">
+                        <img id="hairmale32" src="/img/books/page32/man/hair/brown/half1.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="beardmale32" src="/img/books/page32/man/beard/brown/brown1.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="glassesmale32" src="/img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="eyesfemale32" src="/img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
-                        <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 3;">
                         <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
                     </div>
                     <div><div id="text-page32" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
@@ -2211,21 +2212,22 @@
     <button class="btn myBtn37" style="">
       <i class="mdi mdi-pencil edit-icon"></i>
     </button>
-    </div> <div class="extra">
-                        <img src="/img/books/page37/extra/extra-1.png" class="extra modal-image37" style="z-index: 3;">
-                    </div>
+    </div> 
                     <img src="/img/books/page37/extra/two-avatars.jpg" class="page-img modal-image37">
                     <div class="giver-img">
                         <img src="/img/books/page37/woman/giver-base.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="eyesfemale37" src="/img/books/page37/woman/eyes/brown.png" class="extra modal-image37" style="z-index: 2;">
-                        <img id="hairfemale37" src="/img/books/page37/woman/hair/brown/long1.png" class="extra modal-image37" style="z-index: 2;">
+                        <img id="hairfemale37" src="/img/books/page37/woman/hair/brown/long1.png" class="extra modal-image37" style="z-index: 3;">
                         <img id="glassesfemale37" src="/img/books/page37/woman/glasses/glasses.png" class="extra modal-image37" style="z-index: 2;">
                     </div>
+                    <div class="extra">
+                      <img src="/img/books/page37/extra/extra-1.png" class="extra modal-image37" style="z-index: 2;">
+                  </div>
 
                     <div class="receiver-img">
                         <img src="/img/books/page37/man/receiver-base.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="eyesmale37" src="/img/books/page37/man/eyes/brown.png" class="extra modal-image37" style="z-index: 1;">
-                        <img id="hairmale37" src="/img/books/page37/man/hair/brown/half1.png" class="extra modal-image37" style="z-index: 1;">
+                        <img id="hairmale37" src="/img/books/page37/man/hair/brown/half1.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="beardmale37" src="/img/books/page37/man/beard/brown/brown1.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="glassesmale37" src="/img/books/page37/man/glasses/glasses.png" class="extra modal-image37" style="z-index: 1;">
                     </div>
@@ -2346,7 +2348,7 @@
                     <div class="giver-img">
                         <img src="/img/books/page39/man/receiver-base.png" class="extra modal-image39" style="z-index: 2;">
                         <img id="eyesmale39" src="/img/books/page39/man/eyes/brown.png" class="extra modal-image39" style="z-index: 2;">
-                        <img id="hairmale39" src="/img/books/page39/man/hair/brown/half1.png" class="extra modal-image39" style="z-index: 2;">
+                        <img id="hairmale39" src="/img/books/page39/man/hair/brown/half1.png" class="extra modal-image39" style="z-index: 3;">
                         <img id="beardmale39" src="/img/books/page39/man/beard/brown/brown1.png" class="extra modal-image39" style="z-index: 2;">
                         <img id="glassesmale39" src="/img/books/page39/man/glasses/glasses.png" class="extra modal-image39" style="z-index: 2;">
                     </div>
@@ -2639,13 +2641,13 @@
                     <div class="giver-img">
                         <img src="/img/books/page23/woman/giver-base.png" class="extra modal-image23" style="z-index: 1;">
                         <img id="eyesfemale23" src="/img/books/page23/woman/eyes/brown.png" class="extra modal-image23" style="z-index: 1;">
-                        <img id="hairfemale23" src="/img/books/page23/woman/hair/brown/long1.png" class="extra modal-image23" style="z-index: 1;">
+                        <img id="hairfemale23" src="/img/books/page23/woman/hair/brown/long1.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="glassesfemale23" src="/img/books/page23/woman/glasses/glasses.png" class="extra modal-image23" style="z-index: 1;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page23/man/receiver-base.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="eyesmale23" src="/img/books/page23/man/eyes/brown.png" class="extra modal-image23" style="z-index: 2;">
-                        <img id="hairmale23" src="/img/books/page23/man/hair/brown/half1.png" class="extra modal-image23" style="z-index: 2;">
+                        <img id="hairmale23" src="/img/books/page23/man/hair/brown/half1.png" class="extra modal-image23" style="z-index: 3;">
                         <img id="beardmale23" src="/img/books/page23/man/beard/brown/brown1.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="glassesmale23" src="/img/books/page23/man/glasses/glasses.png" class="extra modal-image23" style="z-index: 2;">
                     </div>
@@ -2767,13 +2769,13 @@
                 <div class="giver-img">
                     <img src="/img/books/page45/woman/giver-woman-base.png" class="extra modal-image45" style="z-index: 1;">
                     <img id="eyesfemale45" src="/img/books/page45/woman/eyes/brown.png" class="extra modal-image45" style="z-index: 1;">
-                    <img id="hairfemale45" src="/img/books/page45/woman/hair/brown/long1.png" class="extra modal-image45" style="z-index: 1;">
+                    <img id="hairfemale45" src="/img/books/page45/woman/hair/brown/long1.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="glassesfemale45" src="/img/books/page45/woman/glasses/glasses.png" class="extra modal-image45" style="z-index: 1;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page45/man/receiver-man-base.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="eyesmale45"src="/img/books/page45/man/eyes/brown.png" class="extra modal-image45" style="z-index: 2;">
-                    <img id="hairmale45"src="/img/books/page45/man/hair/brown/half1.png" class="extra modal-image45" style="z-index: 2;">
+                    <img id="hairmale45"src="/img/books/page45/man/hair/brown/half1.png" class="extra modal-image45" style="z-index: 3;">
                     <img id="beardmale45" src="/img/books/page45/man/beard/brown/brown1.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="glassesmale45" src="/img/books/page45/man/glasses/glasses.png" class="extra modal-image45" style="z-index: 2;">
                 </div>
@@ -2789,9 +2791,14 @@
         <i class="mdi mdi-arrow-left" style="color: red;"></i>
       </button>
       <span class="page-number">44</span>
-      
+
     </div>
+
+
+
   </div>
+
+
 
 
                     <div id="myModal45" class="modal">
@@ -2862,6 +2869,14 @@
                   </div>
                 </div>
               </div>
+
+
+              <div class="page-wrapper logo" style="visibility: hidden;">
+                <div class="Logo-container" id="logo">
+                    <img src="/img/LDALogo.png">
+                </div>
+            </div>
+
 
 
               <div class="row">
