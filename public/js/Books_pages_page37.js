@@ -97,4 +97,3 @@ if (glassesFemale === "block") {
   eyesfemale.src = eyesFemale;
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
-

@@ -192,7 +192,6 @@ btnHair.addEventListener('click', () => {
     sectionColor.style.display = 'block';
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'none';
-    formContainer.style.display = 'block';
 
 
 });
@@ -202,7 +201,6 @@ btnGlasses.addEventListener('click', () => {
     sectionHair.style.display = 'none';
     sectionGlasses.style.display = 'block';
     sectionEyes.style.display = 'none';
-    formContainer.style.display = 'none';
     sectionColor.style.display = 'none';
 
 });
@@ -213,7 +211,6 @@ btnEyes.addEventListener('click', () => {
     sectionGlasses.style.display = 'none';
     sectionEyes.style.display = 'block';
     sectionColor.style.display = 'none';
-    formContainer.style.display = 'none';
 
 
 
@@ -233,6 +230,8 @@ document.getElementById("btn-continue").addEventListener("click", function() {
       window.location.href = "/avatar-male";
     }
   });
+  
+
 
 
   const buttons = document.querySelectorAll('.btn1');
@@ -245,4 +244,3 @@ document.getElementById("btn-continue").addEventListener("click", function() {
       button.classList.add('selected');
     });
   });
-

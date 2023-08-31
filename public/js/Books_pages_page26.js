@@ -27,4 +27,3 @@ var hairColorFemale = localStorage.getItem("hairColorFemale");
 // Establecer la ruta completa en la imagen correspondiente para los ojos y el cabello
   eyesfemale.src = eyesFemale;
   hairfemale.src = hairFemale;
-

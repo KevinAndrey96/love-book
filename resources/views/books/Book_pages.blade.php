@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -21,7 +22,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container" >
             <a class="navbar-brand" href="/">
                 <img src="/img/LDALogo.png" alt="Logo" class="logo-img">
 
@@ -44,9 +45,6 @@
         </div>
     </nav>
 
-    <hr class="line-main">
-
-
     <title>Páginas de tu libro</title>
   <body>
 
@@ -54,8 +52,8 @@
     <div id="product-step">
         <div class="row">
             <div class="col-12 text-center">
-                <h4 style="font-weight: normal !important; font-size: 1.2rem;">Personaliza las páginas de tu libro</h4>
-                <h5 style="font-weight: normal !important; font-size: 1rem;">Cambia las imágenes al hacer clic en el botón de edición, modifica el texto al hacer clic en él y desplaza las páginas utilizando las flechas derecha e izquierda</h5>
+                <h4 style="font-weight: normal !important; font-size: 1.0rem;">Personaliza las páginas de tu libro</h4>
+                <h5 style="font-weight: normal !important; font-size: 0.8rem;">Cambia las imágenes en el botón de edición, modifica el texto al hacer clic en él o desplaza las páginas utilizando las flechas, para hacer un salto de línea  presione la tecla enter.</h5>
             </div>
 
          <div class="col-12 pages">
@@ -93,17 +91,17 @@
         <img src="/img/books/page2/extra/two-avatars.jpg" id="page-image" class="page-img modal-image1">
         <div class="giver-img">
 
-            <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 2;">
+            <img src="/img/books/page2/woman/giver-base.png" class="extra modal-image1" style="z-index: 3;">
             <img id="hairfemale2" src="/img/books/page2/woman/hair/brown/long1.png" class="extra modal-image1" style="z-index: 3;">
-            <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="glassesfemale2" src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="eyesfemale2" src="/img/books/page2/woman/eyes/brown.png" class="extra modal-image1" style="z-index: 3;">
+            <img id="glassesfemale2" src="/img/books/page2/woman/glasses/glasses.png" class="extra modal-image1" style="z-index: 3;">
         </div>
         <div class="receiver-img">
-            <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 2;">
+            <img src="/img/books/page2/man/receiver-base.png" class="extra modal-image1" style="z-index: 3;">
             <img id="eyesmale2" src="/img/books/page2/man/eyes/brown.png" class="extra modal-image1" style="z-index: 3;">
-            <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 2;">
+            <img id="hairmale2" src="/img/books/page2/man/hair/brown/half1.png" class="extra modal-image1" style="z-index: 3;">
             <img id="beardmale2" src="/img/books/page2/man/beard/brown/brown1.png" class="extra modal-image1" style="z-index: 2;">
-            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 2">
+            <img id="glassesmale2" src="/img/books/page2/man/glasses/glasses.png" class="extra modal-image1" style="z-index: 3">
         </div>
         <div class="extras">
             <img src="/img/books/page2/extra/extra-1.png" class="extra modal-image1" style="z-index: 3;">
@@ -171,14 +169,14 @@
                     <img src="/img/books/page3/woman/giver-base.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="eyesfemale3" src="/img/books/page3/woman/eyes/brown.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="hairfemale3" src="/img/books/page3/woman/hair/brown/long1.png" class="extra modal-image3" style="z-index: 3;">
-                    <img id="glassesfemale3" src="/img/books/page3/woman/glasses/glasses.png" class="extra modal-image3" style="z-index: 2;">
+                    <img id="glassesfemale3" src="/img/books/page3/woman/glasses/glasses.png" class="extra modal-image3" style="z-index: 3;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page3/man/receiver-base.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="eyesmale3" src="/img/books/page3/man/eyes/brown.png" class="extra modal-image3" style="z-index: 1;">
                     <img id="hairmale3" src="/img/books/page3/man/hair/brown/half1.png" class="extra modal-image3" style="z-index: 2;">
                     <img id="beardmale3" src="/img/books/page3/man/beard/brown/brown1.png" class="extra modal-image3" style="z-index: 1;">
-                    <img id="glassesmale3" src="/img/books/page3/man/glasses/glasses.png" class="extra modal-image3" style="z-index: 1;">
+                    <img id="glassesmale3" src="/img/books/page3/man/glasses/glasses.png" class="extra modal-image3" style="z-index: 2;">
                 </div>
                 <div><div id="text-page3" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fue amor a primera vista</font></font></div>
@@ -239,14 +237,14 @@
                     <img src="/img/books/page4/woman/giver-base.png" class="extra modal-image4" style="z-index: 1;">
                     <img id="eyesfemale4" src="/img/books/page4/woman/eyes/brown.png" class="extra modal-image4" style="z-index: 1;">
                     <img id="hairfemale4" src="/img/books/page4/woman/hair/brown/long1.png" class="extra modal-image4" style="z-index: 2;">
-                    <img id="glassesfemale4" src="/img/books/page4/woman/glasses/glasses.png" class="extra modal-image4" style="z-index: 1;">
+                    <img id="glassesfemale4" src="/img/books/page4/woman/glasses/glasses.png" class="extra modal-image4" style="z-index: 2;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page4/man/giver-base.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="eyesmale4" src="/img/books/page4/man/eyes/brown.png" class="extra modal-image4" style="z-index: 2;">
                     <img id="hairmale4" src="/img/books/page4/man/hair/brown/half1.png" class="extra modal-image4" style="z-index: 3;">
                     <img id="beardmale4" src="/img/books/page4/man/beard/brown/brown1.png" class="extra modal-image4" style="z-index: 2;">
-                    <img id="glassesmale4" src="/img/books/page4/man/glasses/glasses.png" class="extra modal-image4" style="z-index: 2;">
+                    <img id="glassesmale4" src="/img/books/page4/man/glasses/glasses.png" class="extra modal-image4" style="z-index: 3;">
                 </div>
                 <div><div id="text-page4" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:5%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recuerdo nuestro primer beso</font></font></div>
@@ -366,17 +364,17 @@
                     <img src="/img/books/page6/woman/giver-base.png" class="extra modal-image6" style="z-index: 1;">
                     <img id="eyesfemale6" src="/img/books/page6/woman/eyes/brown.png" class="extra modal-image6" style="z-index: 1;">
                     <img id="hairfemale6" src="/img/books/page6/woman/hair/brown/long1.png" class="extra modal-image6" style="z-index: 2;">
-                    <img id="glassesfemale6" src="/img/books/page6/woman/glasses/glasses.png" class="extra modal-image6" style="z-index: 1;">
+                    <img id="glassesfemale6" src="/img/books/page6/woman/glasses/glasses.png" class="extra modal-image6" style="z-index: 2;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page6/man/receiver-base.png" class="extra modal-image6" style="z-index: 2;">
                     <img id="eyesmale6" src="/img/books/page6/man/eyes/brown.png" class="extra modal-image6" style="z-index: 2;">
-                    <img id="hairmale6" src="/img/books/page6/man/hair/brown/half1.png" class="extra modal-image6" style="z-index: 2;">
+                    <img id="hairmale6" src="/img/books/page6/man/hair/brown/half1.png" class="extra modal-image6" style="z-index: 3;">
                     <img id="beardmale6" src="/img/books/page6/man/beard/brown/brown1.png" class="extra modal-image6" style="z-index: 2;">
-                    <img id="glassesmale6" src="/img/books/page6/man/glasses/glasses.png" class="extra modal-image6" style="z-index: 2;">
+                    <img id="glassesmale6" src="/img/books/page6/man/glasses/glasses.png" class="extra modal-image6" style="z-index: 3;">
                 </div>
                 <div><div id="text-page6" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:6%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo unico que necesito</font></font></div>
+                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y a ti es lo único que necesito</font></font></div>
                     </div></div>
                        <div class="button-wrapper">
     <div class="buttons-container">
@@ -431,8 +429,8 @@
     </div>
                     <img src="/img/books/page7/extra/no-avatars.jpg" class="page-img modal-image7">
                     <div>
-                        <div id="text-page7" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:1%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona a la que llamo</font></font></div>
+                        <div id="text-page7" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
+                                        <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eres la primer persona<br> a la que llamo</font></font></div>
                         </div>
                     </div>
                          <div class="button-wrapper">
@@ -497,7 +495,7 @@
                         <img src="/img/books/page8/woman/giver-base.png" class="extra modal-image8" style="z-index: 1;">
                         <img id="eyesfemale8" src="/img/books/page8/woman/eyes/brown.png" class="extra modal-image8" style="z-index: 1;">
                         <img id="hairfemale8" src="/img/books/page8/woman/hair/brown/long1.png" class="extra modal-image8" style="z-index: 2;">
-                        <img id="glassesfemale8" src="/img/books/page8/woman/glasses/glasses.png" class="extra modal-image8" style="z-index: 1;">
+                        <img id="glassesfemale8" src="/img/books/page8/woman/glasses/glasses.png" class="extra modal-image8" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page8/man/receiver-base.png" class="extra modal-image8" style="z-index: 2;">
@@ -561,7 +559,8 @@
 
                     <img src="/img/books/page9/extra/no-avatars.jpg" class="page-img modal-image9">
                     <div><div id="text-page9" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contigo siempre sonrio</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Contigo siempre sonrío.</font></font></div>
                         </div></div>
                             <div class="button-wrapper">
     <div class="buttons-container">
@@ -621,13 +620,13 @@
                         <img id="eyesmale10" src="/img/books/page10/man/eyes/brown.png" class="extra modal-image10" style="z-index: 1;">
                         <img id="hairmale10" src="/img/books/page10/man/hair/brown/half1.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="beardmale10" src="/img/books/page10/man/beard/brown/brown1.png" class="extra modal-image10" style="z-index: 1;">
-                        <img id="glassesmale10" src="/img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 1;">
+                        <img id="glassesmale10" src="/img/books/page10/man/glasses/glasses.png" class="extra modal-image10" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page10/woman/giver-base.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="eyesfemale10" src="/img/books/page10/woman/eyes/brown.png" class="extra modal-image10" style="z-index: 2;">
                         <img id="hairfemale10" src="/img/books/page10/woman/hair/brown/long1.png" class="extra modal-image10" style="z-index: 3;">
-                        <img id="glassesfemale10" src="/img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 2;">
+                        <img id="glassesfemale10" src="/img/books/page10/woman/glasses/glasses.png" class="extra modal-image10" style="z-index: 3;">
                     </div>
                     <div><div id="text-page10" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:9%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me haces muy feliz</font></font></div>
@@ -747,7 +746,8 @@
     </div>
                     <img src="/img/books/page12/extra/no-avatars(1).jpg" class="page-img modal-image12">
                     <div><div id="text-page12" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:9%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu cargas mi bateria</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Tú cargas mi batería</font></font></div>
                         </div></div>
                            <div class="button-wrapper">
     <div class="buttons-container">
@@ -867,7 +867,7 @@
                         <img src="/img/books/page14/woman/giver-base.png" class="extra modal-image14" style="z-index: 1;">
                         <img id="eyesfemale14"src="/img/books/page14/woman/eyes/brown.png" class="extra modal-image14" style="z-index: 1;">
                         <img id="hairfemale14" src="/img/books/page14/woman/hair/brown/long1.png" class="extra modal-image14" style="z-index: 2;">
-                        <img id="glassesfemale14" src="/img/books/page14/woman/glasses/glasses.png" class="extra modal-image14" style="z-index: 1;">
+                        <img id="glassesfemale14" src="/img/books/page14/woman/glasses/glasses.png" class="extra modal-image14" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page14/man/receiver-base.png" class="extra modal-image14" style="z-index: 2;">
@@ -877,7 +877,7 @@
                         <img id="glassesmale14" src="/img/books/page14/man/glasses/glasses.png" class="extra modal-image14" style="z-index: 2;">
                     </div>
                     <div><div id="text-page14" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aun me amas verdad? <br>Claro que si</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Aún me amas, verdad? <br> Claro que sí.</font></font></div>
                         </div></div>
                             <div class="button-wrapper">
     <div class="buttons-container">
@@ -998,13 +998,13 @@
                         <img id="eyesmale16" src="/img/books/page16/man/eyes/brown.png" class="extra modal-image16" style="z-index: 1;">
                         <img id="hairmale16" src="/img/books/page16/man/hair/brown/half1.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="beardmale16" src="/img/books/page16/man/beard/brown/brown1.png" class="extra modal-image16" style="z-index: 1;">
-                        <img id="glassesmale16" src="/img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 1;">
+                        <img id="glassesmale16" src="/img/books/page16/man/glasses/glasses.png" class="extra modal-image16" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page16/woman/giver-base.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="eyesfemale16" src="/img/books/page16/woman/eyes/brown.png" class="extra modal-image16" style="z-index: 2;">
                         <img id="hairfemale16" src="/img/books/page16/woman/hair/brown/long1.png" class="extra modal-image16" style="z-index: 3;">
-                        <img id="glassesfemale16" src="/img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 2;">
+                        <img id="glassesfemale16" src="/img/books/page16/woman/glasses/glasses.png" class="extra modal-image16" style="z-index: 3;">
                     </div>
                     <div><div id="text-page16" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos abrazamos</font></font></div>
@@ -1126,14 +1126,14 @@
                         <img src="/img/books/page18/woman/giver-base.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="eyesfemale18" src="/img/books/page18/woman/eyes/brown.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="hairfemale18" src="/img/books/page18/woman/hair/brown/long1.png" class="extra modal-image18" style="z-index: 3;">
-                        <img id="glassesfemale18" src="/img/books/page18/woman/glasses/glasses.png" class="extra modal-image18" style="z-index: 2;">
+                        <img id="glassesfemale18" src="/img/books/page18/woman/glasses/glasses.png" class="extra modal-image18" style="z-index: 3;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page18/man/receiver-base.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="eyesmale18" src="/img/books/page18/man/eyes/brown.png" class="extra modal-image18" style="z-index: 1;">
                         <img id="hairmale18" src="/img/books/page18/man/hair/brown/half1.png" class="extra modal-image18" style="z-index: 2;">
                         <img id="beardmale18" src="/img/books/page18/man/beard/brown/brown1.png" class="extra modal-image18" style="z-index: 1;">
-                        <img id="glassesmale18" src="/img/books/page18/man/glasses/glasses.png" class="extra modal-image18" style="z-index: 1;">
+                        <img id="glassesmale18" src="/img/books/page18/man/glasses/glasses.png" class="extra modal-image18" style="z-index: 2;">
                     </div>
                     <div><div id="text-page18" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:5%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nos <br>entendemos</font></font></div>
@@ -1314,7 +1314,7 @@
                         <img src="/img/books/page21/woman/giver-base.png" class="extra modal-image21" style="z-index: 1;">
                         <img id="eyesfemale21" src="/img/books/page21/woman/eyes/brown.png" class="extra modal-image21" style="z-index: 1;">
                         <img id="hairfemale21" src="/img/books/page21/woman/hair/brown/long1.png" class="extra modal-image21" style="z-index: 2;">
-                        <img id="glassesfemale21" src="/img/books/page21/woman/glasses/glasses.png" class="extra modal-image21" style="z-index: 1;">
+                        <img id="glassesfemale21" src="/img/books/page21/woman/glasses/glasses.png" class="extra modal-image21" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page21/man/receiver-base.png" class="extra modal-image21" style="z-index: 2;">
@@ -1436,7 +1436,7 @@
     </div>
                     <img src="/img/books/page24/extra/no-avatars.jpg" class="page-img modal-image24">
                     <div><div  id="text-page24" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:40%; left:13%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon<br>para la cena</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupón<br>para la cena</font></font></div>
                     </div></div>
                       <div class="button-wrapper">
     <div class="buttons-container">
@@ -1912,22 +1912,22 @@
                         <img id="eyesmale32" src="/img/books/page32/man/eyes/brown.png" class="extra modal-image32" style="z-index: 1;">
                         <img id="hairmale32" src="/img/books/page32/man/hair/brown/half1.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="beardmale32" src="/img/books/page32/man/beard/brown/brown1.png" class="extra modal-image32" style="z-index: 1;">
-                        <img id="glassesmale32" src="/img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 1;">
+                        <img id="glassesmale32" src="/img/books/page32/man/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page32/woman/giver-base.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="eyesfemale32" src="/img/books/page32/woman/eyes/brown.png" class="extra modal-image32" style="z-index: 2;">
                         <img id="hairfemale32" src="/img/books/page32/woman/hair/brown/long1.png" class="extra modal-image32" style="z-index: 3;">
-                        <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 2;">
+                        <img id="glassesfemale32" src="/img/books/page32/woman/glasses/glasses.png" class="extra modal-image32" style="z-index: 3;">
                     </div>
-                    <div><div id="text-page32" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tomarnos fotos</font></font></div>
-                        </div></div>
-
 
                 <div class="extras">
                     <img src="/img/books/page32/extra/extra-1.png" class="extra modal-image32" style="z-index: 3;">
                 </div>
+
+                      <div><div id="text-page32" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tomarnos fotos</font></font></div>
+                        </div></div>
 
                       <div class="button-wrapper">
     <div class="buttons-container">
@@ -2098,7 +2098,7 @@
     </div>
                     <img src="/img/books/page35/extra/no-avatars.jpg" class="page-img modal-image35">
                     <div><div id="text-page35" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para una pelicula</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupón para una película</font></font></div>
                         </div></div>
                           <div class="button-wrapper">
     <div class="buttons-container">
@@ -2212,29 +2212,30 @@
     <button class="btn myBtn37" style="">
       <i class="mdi mdi-pencil edit-icon"></i>
     </button>
-    </div> 
+    </div>
                     <img src="/img/books/page37/extra/two-avatars.jpg" class="page-img modal-image37">
+                      <img src="https://librodeamor.co/img/books/page37/extra/extra-1.png" id="remove-img" class="extra modal-image37" style="z-index: 3 !important;">
+
                     <div class="giver-img">
                         <img src="/img/books/page37/woman/giver-base.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="eyesfemale37" src="/img/books/page37/woman/eyes/brown.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="hairfemale37" src="/img/books/page37/woman/hair/brown/long1.png" class="extra modal-image37" style="z-index: 3;">
-                        <img id="glassesfemale37" src="/img/books/page37/woman/glasses/glasses.png" class="extra modal-image37" style="z-index: 2;">
+                        <img id="glassesfemale37" src="/img/books/page37/woman/glasses/glasses.png" class="extra modal-image37" style="z-index: 3;">
                     </div>
-                    <div class="extra">
-                      <img src="/img/books/page37/extra/extra-1.png" class="extra modal-image37" style="z-index: 2;">
-                  </div>
+
+
 
                     <div class="receiver-img">
                         <img src="/img/books/page37/man/receiver-base.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="eyesmale37" src="/img/books/page37/man/eyes/brown.png" class="extra modal-image37" style="z-index: 1;">
                         <img id="hairmale37" src="/img/books/page37/man/hair/brown/half1.png" class="extra modal-image37" style="z-index: 2;">
                         <img id="beardmale37" src="/img/books/page37/man/beard/brown/brown1.png" class="extra modal-image37" style="z-index: 1;">
-                        <img id="glassesmale37" src="/img/books/page37/man/glasses/glasses.png" class="extra modal-image37" style="z-index: 1;">
+                        <img id="glassesmale37" src="/img/books/page37/man/glasses/glasses.png" class="extra modal-image37" style="z-index: 2;">
                     </div>
-                    <div><div id="text-page37" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:6%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
+
+                     <div><div id="text-page37" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:6%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
                                 <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Me encanta lo que tenemos</font></font></div>
                         </div></div>
-
 
                           <div class="button-wrapper">
     <div class="buttons-container">
@@ -2247,6 +2248,9 @@
       </button>
     </div>
   </div>
+
+
+
 
                 <div id="myModal37" class="modal">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -2287,7 +2291,7 @@
     </div>
                     <img src="/img/books/page38/extra/no-avatars.jpg" class="page-img modal-image38">
                     <div><div id="text-page38" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important" >
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupon para masaje</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cupón para masaje</font></font></div>
                         </div></div>
                               <div class="button-wrapper">
     <div class="buttons-container">
@@ -2406,8 +2410,8 @@
     </button>
     </div>
                     <img src="/img/books/page40/extra/no-avatars.jpg" class="page-img modal-image40">
-                    <div><div id="text-page40" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:16%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prometeme que siempre<br> estaremos juntos</font></font></div>
+                    <div><div id="text-page40" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:16%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prométeme  que <br> siempre estaremos <br> juntos</font></font></div>
                         </div></div>
                             <div class="button-wrapper">
     <div class="buttons-container">
@@ -2463,8 +2467,8 @@
     </button>
     </div>
                     <img src="/img/books/page41/extra/no-avatars(1).jpg" class="page-img modal-image41">
-                    <div><div id="text-page41" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:9%; left:10%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi<br>espacio</font></font></div>
+                    <div><div id="text-page41" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:10%; left:12%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tú eres mi<br>espacio</font></font></div>
                         </div></div>
                               <div class="button-wrapper">
     <div class="buttons-container">
@@ -2581,7 +2585,7 @@
     </div>
                     <img src="/img/books/page43/extra/no-avatars(1).jpg" class="page-img modal-image43">
                     <div><div id="text-page43" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:8%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
-                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu eres mi mas hermoso <br>descubrimiento</font></font></div>
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tú eres mi mas hermoso <br>descubrimiento</font></font></div>
                         </div></div>
                            <div class="button-wrapper">
     <div class="buttons-container">
@@ -2642,20 +2646,21 @@
                         <img src="/img/books/page23/woman/giver-base.png" class="extra modal-image23" style="z-index: 1;">
                         <img id="eyesfemale23" src="/img/books/page23/woman/eyes/brown.png" class="extra modal-image23" style="z-index: 1;">
                         <img id="hairfemale23" src="/img/books/page23/woman/hair/brown/long1.png" class="extra modal-image23" style="z-index: 2;">
-                        <img id="glassesfemale23" src="/img/books/page23/woman/glasses/glasses.png" class="extra modal-image23" style="z-index: 1;">
+                        <img id="glassesfemale23" src="/img/books/page23/woman/glasses/glasses.png" class="extra modal-image23" style="z-index: 2;">
                     </div>
                     <div class="receiver-img">
                         <img src="/img/books/page23/man/receiver-base.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="eyesmale23" src="/img/books/page23/man/eyes/brown.png" class="extra modal-image23" style="z-index: 2;">
                         <img id="hairmale23" src="/img/books/page23/man/hair/brown/half1.png" class="extra modal-image23" style="z-index: 3;">
                         <img id="beardmale23" src="/img/books/page23/man/beard/brown/brown1.png" class="extra modal-image23" style="z-index: 2;">
-                        <img id="glassesmale23" src="/img/books/page23/man/glasses/glasses.png" class="extra modal-image23" style="z-index: 2;">
+                        <img id="glassesmale23" src="/img/books/page23/man/glasses/glasses.png" class="extra modal-image23" style="z-index: 3;">
                     </div>
                     <div><div id="text-page23" contenteditable="true" class="page-text large" style="position:absolute; text-align:center; top:6%; left:12%; display:flex; justify-content:center; flex-direction: column; align-items:center; max-height: 28%; font-family: 'Lato', sans-serif; z-index: 6; font-size: 0.7rem !important">
-                            <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cocinemos!!</font></font></div>
+                            <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+¡Cocinemos!</font></font></div>
                         </div></div>
 
-                <div class="extras">
+                <div class="extras" id="div-remove1">
                     <img src="/img/books/page23/extra/extra-1.png" class="extra modal-image23" style="z-index: 3;">
                 </div>
 
@@ -2767,17 +2772,17 @@
     </div>
                     <img src="/img/books/page45/extra/two-avatars.jpg" class="page-img modal-image45">
                 <div class="giver-img">
-                    <img src="/img/books/page45/woman/giver-woman-base.png" class="extra modal-image45" style="z-index: 1;">
-                    <img id="eyesfemale45" src="/img/books/page45/woman/eyes/brown.png" class="extra modal-image45" style="z-index: 1;">
-                    <img id="hairfemale45" src="/img/books/page45/woman/hair/brown/long1.png" class="extra modal-image45" style="z-index: 2;">
-                    <img id="glassesfemale45" src="/img/books/page45/woman/glasses/glasses.png" class="extra modal-image45" style="z-index: 1;">
+                    <img src="/img/books/page45/woman/giver-woman-base.png" class="extra modal-image45" style="z-index: 2;">
+                    <img id="eyesfemale45" src="/img/books/page45/woman/eyes/brown.png" class="extra modal-image45" style="z-index: 2;">
+                    <img id="hairfemale45" src="/img/books/page45/woman/hair/brown/long1.png" class="extra modal-image45" style="z-index: 3;">
+                    <img id="glassesfemale45" src="/img/books/page45/woman/glasses/glasses.png" class="extra modal-image45" style="z-index: 3;">
                 </div>
                 <div class="receiver-img">
                     <img src="/img/books/page45/man/receiver-man-base.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="eyesmale45"src="/img/books/page45/man/eyes/brown.png" class="extra modal-image45" style="z-index: 2;">
                     <img id="hairmale45"src="/img/books/page45/man/hair/brown/half1.png" class="extra modal-image45" style="z-index: 3;">
                     <img id="beardmale45" src="/img/books/page45/man/beard/brown/brown1.png" class="extra modal-image45" style="z-index: 2;">
-                    <img id="glassesmale45" src="/img/books/page45/man/glasses/glasses.png" class="extra modal-image45" style="z-index: 2;">
+                    <img id="glassesmale45" src="/img/books/page45/man/glasses/glasses.png" class="extra modal-image45" style="z-index: 3;">
                 </div>
                 <div class="extras">
                     <img src="/img/books/page45/extra/extra-1.png" class="extra modal-image45" style="z-index: 3;">
@@ -2786,16 +2791,15 @@
                         <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TE AMO</font></font></div>
                     </div></div>
                           <div class="button-wrapper">
-    <div class="buttons-container">
+                               <div class="buttons-container">
       <button class="btn insert-before-btn">
         <i class="mdi mdi-arrow-left" style="color: red;"></i>
       </button>
-      <span class="page-number">44</span>
-
+            <span class="page-number">44</span>
+      <button class="btn insert-after-btn">
+        <i class="mdi mdi-arrow-right" style="color: red;"></i>
+      </button>
     </div>
-
-
-
   </div>
 
 
@@ -2912,7 +2916,6 @@
      <script src="{{ asset('js/Books_pages_page39.js')}}"></script>
      <script src="{{ asset('js/Books_pages_page45.js')}}"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
     </body>
 </html>
 

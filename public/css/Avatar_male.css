@@ -3,20 +3,18 @@ body{
     color: #363636;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 .container-nav {
     display: flex;
     align-items: center;
     padding: 10px 20px;
   }
-  .navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
 
 .nav-link {
-    border-radius: 30px;
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -24,11 +22,7 @@ body{
 }
 
 
-.logo-img {
-    width: 200px;
-    height: 150px;
-    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
-  }
+
 
   .line-main{
     margin-top: -4% !important;
@@ -39,22 +33,83 @@ body{
 @media (min-width: 768px){
 
 
+          .navbar {
+  height: 10% !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+}
 
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -70%;
-      }
 
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
-      }
+ .glasses-select {
+      margin-top: -19%;
+      margin-left: -5% !important;
+    }
 
-      .nav-link{
-        margin-left: -140%;
-      }
+    #hair-section{
+        margin-top: -10% !important;
+
+    }
+
+      #beard-section{
+        margin-top: -10% !important;
+
+    }
+
+    #eyes-section {
+      margin-top: -30% !important;
+            margin-left: -8% !important;
+
+    }
+
+    #color-section {
+      margin-top: -30% !important;
+            margin-left: -3% !important;
+
+    }
+
+    #color-beard-section {
+      margin-top: -30% !important;
+            margin-left: -3% !important;
+
+    }
+
+    .color-select{
+        z-index: 1000;
+    }
+
+    .container-btn {
+      margin-top:  -18% !important;
+      margin-left: -2% !important;
+                  margin-bottom: 5%  !important;
+
+    }
+
+
+.logo-img{
+    width: 160px !important;
+    height: 150px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-left: -55% !important;
+    margin-bottom:-30% !important;
+    margin-top: -35% !important;
+
+  }
+
+  .nav-item{
+          font-family: 'Montserrat', sans-serif;
+
+    margin-left: 15px;
+
+  }
+
+  .nav-link{
+          font-family: 'Montserrat', sans-serif;
+
+      margin-right: -50px !important;
+    margin-left: -140%;
+  }
 
 
 
@@ -82,7 +137,6 @@ body{
       width:100%;
       padding: 2px;
       border-radius: 10px;
-      margin-top: 30px !important;
   }
 
   .eyes-select, .color-select, .color-beard-select{
@@ -116,7 +170,6 @@ body{
     width: 50px;
     padding-bottom: 50px;
     border-radius: 50%;
-    overflow: hidden;
     cursor: pointer;
   }
 
@@ -240,11 +293,7 @@ body{
   }
 
 
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+
 
   #glasseschange {
     display: none;
@@ -280,51 +329,9 @@ body{
 
   }
 
-
-
-
-
-.navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  @media (min-width: 992px) {
-    .glasses-select {
-      margin-left: -6%;
-    }
-
-    .eyes-select {
-      margin-left: -10% !important;
-    }
-
-    .color-select {
-      margin-left: -1% !important;
-    }
-
-    .color-beard-select {
-      margin-left: -1% !important;
-    }
-
-    .container-btn {
-      margin-top: 50px !important;
-      margin-left: 7.5% !important;
-    }
-  }
-body {
-    overflow-x:hidden;
-}
-
-.navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
 .nav-link {
-    border-radius: 30px;
+        font-family: 'Montserrat', sans-serif;
+
     text-decoration: none;
     color: rgba(54,54,54,.5) !important;
     font-size: 15px;
@@ -332,26 +339,10 @@ body {
 }
 
 
-
-
-
-.line-title {
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
 .line-main {
     margin: 0rem 0;
 }
 
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
-  }
 
   .eyes-select div:hover {
     border: 1px solid #d24565;
@@ -388,17 +379,35 @@ body {
   @media (max-width: 768px){
 
 
+          .navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+}
 
-    .logo-img{
-        width: 200px;
+.nav-item{
+      text-align: center;
+
+}
+
+
+      .logo-img{
+        width: 160px;
         height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -25% !important;
-        margin-left: 40% !important;
-       
+        margin-top: -35% !important;
+        margin-bottom: -20% !important;
+        margin-left: 65% !important;
+
       }
 
+
+
+
+
       .navbar-toggler{
-        margin-top: -22% !important;
+        margin-top: -10% !important;
 
       }
     }
@@ -473,7 +482,6 @@ body {
     height: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
-    overflow: hidden;
     cursor: pointer;
     margin-left: 5px !important;
   }
@@ -484,7 +492,6 @@ body {
     height: 40px;
     padding-bottom: 50px;
     border-radius: 50%;
-    overflow: hidden;
     cursor: pointer;
     margin-left: 5px !important;
   }
@@ -505,7 +512,6 @@ body {
     .glasses-select div,
     .beard-select div {
       width: 50%;
-      margin-bottom: 15px;
     }
   }
 
@@ -525,9 +531,11 @@ body {
 
 
     .image-preview {
-        display: flex;
-        justify-content: center; /* Alinea la imagen a la derecha */
-        align-items: center; /* Ajusta la posición vertical al inicio */
+                  margin-top: 10% !important;
+
+        display: flex !important;
+        justify-content: center !important; /* Alinea la imagen a la derecha */
+        align-items: center !important; /* Ajusta la posición vertical al inicio */
       }
 
 
@@ -535,13 +543,26 @@ body {
   }
 
   @media (min-width: 1100px) {
+
+          .image-preview {
+        display: flex;
+        margin-top: 200px;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+        align-items: flex-start; /* Ajusta la posición vertical al inicio */
+      }
+
+      .image-preview .img {
+        position: absolute;
+        top: 180px;
+        right: -25px;
+      }
     /* Estilos para laptops y dispositivos de pantalla más grande */
     .hair-select div,
     .glasses-select div,
     .beard-select div
      {
       width: 25%;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     .btn-container {
@@ -552,7 +573,7 @@ body {
         padding: 0.5rem 1rem;
         background-color: #f2f8fd;
         z-index: 5;
-        height: 12%;
+        height: 10%;
         font-family: 'Montserrat', sans-serif;
 
       }
@@ -563,34 +584,61 @@ body {
 
 
 
-    .image-preview {
-        display: flex;
-        margin-top: 220px;
-        justify-content: flex-end; /* Alinea la imagen a la derecha */
-        align-items: flex-start; /* Ajusta la posición vertical al inicio */
-      }
-
-      .form-control {
-        width: 80% !important;
-        margin: 0 auto !important;
-        padding: 8px !important;
-        border: 1px solid #ccc !important;
-        border-radius: 4px !important;
-        font-size: 14px !important;
-        color: #555 !important;
-        background-color: #fff5f5 !important;
-        transition: border-color 0.3s ease !important;
-        margin-top: -170px !important;
-        margin-left: 20px !important;
-
-      }
-
-      .image-preview .img {
-        position: absolute;
-        top: 220px;
-        left: 800px;
-      }
   }
+
+
+
+@media (min-width: 1400px){
+
+ .glasses-select {
+      margin-top: -10%;
+      margin-left: -5% !important;
+    }
+
+    #hair-section{
+        margin-top: 2% !important;
+
+    }
+
+      #beard-section{
+        margin-top: 2% !important;
+
+    }
+
+    #eyes-section {
+      margin-top: -22% !important;
+            margin-left: -8% !important;
+
+    }
+
+    #color-section {
+      margin-top: -22% !important;
+            margin-left: -3% !important;
+
+    }
+
+    #color-beard-section {
+      margin-top: -22% !important;
+            margin-left: -3% !important;
+
+    }
+
+    .color-select{
+        z-index: 1000;
+}
+    .container-btn {
+      margin-top:  -13% !important;
+      margin-left: -2% !important;
+                  margin-bottom: 5%  !important;
+
+    }
+
+
+
+}
+
+
+
 
 
 

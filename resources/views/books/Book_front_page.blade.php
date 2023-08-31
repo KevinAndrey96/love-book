@@ -43,9 +43,6 @@
         </div>
     </nav>
 
-    <hr class="line-main">
-
-
     <title class="title">Portada de tu libro</title>
   <body>
     <div class="container">
@@ -60,7 +57,7 @@
               <img src="/img/frontpage/frontpage1/woman/giver-woman-base.png" class="extra" style="z-index: 1;">
               <img id="eyesfemale" src="/img/frontpage/frontpage1/woman/eyes/brown.png" class="extra" style="z-index: 1;">
               <img id="hairfemale" src="/img/frontpage/frontpage1/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
-              <img id="glassesfemale" src="/img/frontpage/frontpage1/woman/glasses/glasses.png" class="extra" style="z-index: 2;">
+              <img id="glassesfemale" src="/img/frontpage/frontpage1/woman/glasses/glasses.png" class="extra" style="z-index: 1;">
             </div>
             <div class="receiver-img">
               <img src="/img/frontpage/frontpage1/man/receiver-man-base.png" class="extra" style="z-index: 2;">
@@ -73,7 +70,7 @@
               <img src="/img/frontpage/frontpage1/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage1')" style="z-index: 3;">
             </div>
             <div class="tittle-wrapper text d-flex flex-column" style="z-index: 100;">
-                <span class="aniversary-text">HAPPY ANIVERSARY</span>
+                <span class="aniversary-text">FELIZ ANIVERSARIO</span>
 
               <h3 id="names" title="Esta será tu portada">Esta será tu portada</h3>
             </div>
@@ -110,8 +107,8 @@
                 <div class="giver-img">
                   <img src="/img/frontpage/frontpage3/woman/receiver-base.png" class="extra" style="z-index: 1;">
                   <img id="eyesfemalee2" src="/img/frontpage/frontpage3/woman/eyes/brown.png" class="extra" style="z-index: 1;">
-                  <img id="hairfemalee2" src="/img/frontpage/frontpage3/woman/hair/brown/long1.png" class="extra" style="z-index: 1;">
-                  <img id="glassesfemalee2" src="/img/frontpage/frontpage3/woman/glasses/glasses.png" class="extra" style="z-index: 2;">
+                  <img id="hairfemalee2" src="/img/frontpage/frontpage3/woman/hair/brown/long1.png" class="extra" style="z-index: 2;">
+                  <img id="glassesfemalee2" src="/img/frontpage/frontpage3/woman/glasses/glasses.png" class="extra" style="z-index: 1;">
                 </div>
                 <div class="receiver-img">
                   <img src="/img/frontpage/frontpage3/man/giver-base.png" class="extra" style="z-index: 2;">
@@ -124,7 +121,7 @@
                   <img src="/img/frontpage/frontpage3/extra/extra-1.png" class="extra" onclick="selectContainerContent('frontpage3')" style="z-index: 3;">
                 </div>
                 <div class="tittle-wrapper text d-flex flex-column" style="z-index: 100;">
-                    <span class="birthday-text">HAPPY BIRTHDAY</span>
+                    <span class="birthday-text">FELIZ CUMPLEAÑOS</span>
 
                     <h3 id="names2" title="Esta será tu portada">Esta será tu portada</h3>
 

@@ -1,4 +1,3 @@
-
 /* Estilos generales para el contenedor principal */
 .container {
     display: flex;
@@ -112,25 +111,40 @@
   }
   @media (max-width: 768px) {
 
-
-
-
-
-
-
-    .logo-img {
-        margin-top: -30px !important;
-        width: 150px;
-        height: 100px;
+      .logo-img{
+        width: 160px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -35% !important;
+        margin-bottom: -20% !important;
+        margin-left: 65% !important;
 
       }
+
+      .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #ddeffd !important;
+
+  }
+
+
+
+      .navbar-toggler{
+        margin-top: -10% !important;
+
+      }
+
+
     }
   .wompi-button {
     /* Estilos para el botón de pago */
     background-color: #d24565;
     color: #fff;
     border: none;
-    width: 75% !important;
+
+
 
     padding: 10px 20px;
     font-size: 18px;
@@ -164,15 +178,10 @@
     display: flex;
   }
 
- .navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
 
 .nav-link {
-    border-radius: 30px;
+
+    z-index: 10000000 !important;
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -180,7 +189,8 @@
 }
 
 .wompi-form{
-    margin-top: -30% !important;
+    margin-top: 25%;
+    margin-left: 10% !important;
 }
 
 .price-details {
@@ -192,19 +202,70 @@
     font-size: 18px;
     margin: 8px 0; /* Ajusta el espaciado entre los párrafos */
   }
-.logo-img {
-    width: 200px;
-    height: 150px;
-    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
-  }
 
   .line-main{
     margin-top: -140px !important;
 }
 
+
+  .line-main{
+    margin-top: -5% !important;
+}
+
+
+
+@media (min-width: 768px){
+
+  .navbar {
+      height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #ddeffd !important;
+    margin-bottom: -20% !important;
+    position: fixed !important;
+  }
+
+
+ .logo-img{
+    width: 160px !important;
+    height: 150px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-left: -55%;
+
+  }
+
+  .nav-item{
+    margin-left: 15px;
+
+  }
+
+  .nav-link{
+      margin-right: -50px !important;
+    margin-left: -140%;
+  }
+
+    .wompi-button {
+    display: flex;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    background-color: #d24565;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 75% !important;
+    height: 60% !important;
+    border: 1px solid #d24565;
+  }
+
+
 .price-container {
-    margin-top: 20% !important;
+    margin-top: -85% !important;
     width: 60% !important; /* Cambia el ancho según tus necesidades */
+    height: 90% !important;
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -212,53 +273,32 @@
     margin-left: 90% !important; /* Agrega un margen izquierdo para separar del formulario */
   }
 
-  .line-main{
-    margin-top: -5% !important;
-}
-
-@media (min-width: 768px){
-
-
-
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -70%;
-      }
-
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
-      }
-
-      .nav-link{
-        margin-left: -140%;
-      }
-
-
-
 
 
     }
 
+    @media (min-width: 1400px){
+.price-container{
+    margin-top: -75% !important;
+}
+
+  .navbar {
+      height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: white !important;
+    margin-bottom: -20%;
+    position: fixed !important;
+  }
+
+}
+
 
 
   /* Estilos para el botón */
-  .wompi-button {
-    display: flex;
-    border-radius: 0.3rem;
-    margin-top: 2rem;
-    background-color: #d24565;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    padding: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: 1px solid #d24565;
-  }
+
 
 
 
@@ -275,15 +315,8 @@
 
 
 
-.navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
 .nav-link {
-    border-radius: 30px;
+
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -306,25 +339,51 @@ body {
 
 @media (max-width: 768px){
 
+     .wompi-button i {
+         margin-top: 4px !important;
+    margin-left: 10px;
+  }
+
+
+     .wompi-button {
+    width: 140%;
+    padding: 15px;
+  }
+
+     .wompi-input {
+    width: 140%;
+  }
+
 
 
     .logo-img{
         width: 200px;
         height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -25% !important;
         margin-left: 40% !important;
 
       }
 
 
+.price-container {
+    width: 140% !important; /* Cambia el ancho según tus necesidades */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+.price-details{
+    margin-top: -30% !important;
+}
+
       .navbar-toggler{
-        margin-top: -22% !important;
+        margin-top: -10% !important;
 
       }
 
       /* Ajustar margen del formulario en móviles */
   .wompi-form {
-    margin-top: 0;
+    margin-top: 10% !important;
   }
 
   .libro{
@@ -338,16 +397,14 @@ body {
     padding: 15px;
   }
 
+.nav-item{
+    text-align: center !important;
+}
   /* Ajustar tamaño del botón */
-  .wompi-button {
-    width: 100%;
-    padding: 15px;
-  }
+
 
   /* Ajustar tamaño de los campos de entrada */
-  .wompi-input {
-    width: 100%;
-  }
+
 
   /* Ajustar tamaño de los títulos */
   .price-details h4 {
@@ -363,13 +420,19 @@ body {
     margin: 0rem 0;
 }
 
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
+
 
   .nav-item {
+      z-index: 1000000 !important;
     margin-bottom: 10px;
+
   }
 
 
+  #button-sm{
+      width: 100% !important;
+      height: 30% !important;
+      padding: 0 !important;
+       display: flex; /* Utilizar flexbox */
+    justify-content: center; /
+  }

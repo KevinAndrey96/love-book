@@ -15,6 +15,9 @@ var titleElement = document.getElementById('names2');
 var glassesFemalePath = "/img/frontpage/frontpage3/woman/glasses/glasses.png";
 var glassesMalePath = "/img/frontpage/frontpage3/man/glasses/glasses.png";
 
+var glassesFemalePathShort = "/img/frontpage/frontpage3/woman/glasses/glasses2.png"; // Nueva ruta para gafas2
+
+
 // Obtener el color de ojos guardado en el Local Storage para hombres y mujeres
 
 var eyesColorMale = localStorage.getItem("eyesColorMale");
@@ -39,14 +42,17 @@ var beardDisplay = localStorage.getItem("beardDisplay");
 var nameMale = localStorage.getItem('nameMale');
 var nameFemale = localStorage.getItem('nameFemale');
 
-// Mostrar las gafas en el elemento del DOM correspondiente según lo que está guardado en el Local Storage
-
 if (glassesFemale === "block") {
     glassesfemale.style.display = "block";
-    glassesfemale.src = glassesFemalePath;
-  } else {
+} else {
     glassesfemale.style.display = "none";
-  }
+}
+
+if (hairColorFemale && hairColorFemale.includes("short1")) {
+    glassesfemale.src = glassesFemalePathShort; // Usar la ruta de gafas2
+} else {
+    glassesfemale.src = glassesFemalePath; // Usar la ruta de gafas original
+}
 
   if (glassesMale === "block") {
     glassesmale.style.display = "block";

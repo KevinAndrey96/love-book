@@ -112,4 +112,3 @@ if (colElement) {
 
     request.send(formData);
   });
-
