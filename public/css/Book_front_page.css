@@ -1,72 +1,87 @@
-.navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
-  .navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
 .nav-link {
-    border-radius: 30px;
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
     font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+
 }
 
-
-.logo-img {
-    width: 200px;
-    height: 150px;
-    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
-  }
-
-  .line-main{
-    margin-top: -4% !important;
-}
 
 @media (max-width: 768px) {
-
-
-
-
-
-
-
-    .logo-img {
-        margin-top: -30px !important;
-        width: 150px;
-        height: 100px;
+    .logo-img{
+        width: 160px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -35% !important;
+        margin-bottom: -20% !important;
+        margin-left: 65% !important;
 
       }
+
+      .nav-item{
+            text-align: center;
+
+      }
+      /* Bloquear scroll horizontal en el cuerpo de la página */
+body {
+  overflow-x: hidden !important;
+}
+
+
+             .navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+}
+
+
+
+      .navbar-toggler{
+        margin-top: -10% !important;
+
+      }
+
     }
 
 @media (min-width: 768px){
 
+           .navbar {
+  height: 10% !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+}
 
 
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -70%;
-      }
 
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
-      }
 
-      .nav-link{
-        margin-left: -140%;
-      }
+.logo-img{
+    width: 160px !important;
+    height: 150px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-left: -55%;
+    margin-top: -35% !important;
+    margin-bottom: -30%;
+
+  }
+
+  .nav-item{
+    margin-left: 15px;
+        margin-bottom: -20%;
+
+
+  }
+
+  .nav-link{
+          font-family: 'Montserrat', sans-serif;
+
+      margin-right: -50px !important;
+    margin-left: -140%;
+  }
+
 
 
 
@@ -76,36 +91,16 @@
 
 
 .nav-link {
-    border-radius: 30px;
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
     font-weight: bold;
 }
 
-.navbar-brand{
-    color: #F71069;
-
-}
 
 body {
     overflow-x:hidden;
 }
-
-
-.line-title {
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-.line-main {
-    margin: 0rem 0;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
 
   .nav-item {
     margin-bottom: 10px;
@@ -123,6 +118,8 @@ body {
     border: 1px solid transparent;
     border-radius: 0.25rem;
     margin-bottom: 1% !important;
+    padding: 10px !important;
+      margin-right: 1% !important; /* Ajusta este valor para establecer el espacio entre el botón y su contenedor */
 
   }
 
@@ -199,17 +196,77 @@ p {
 
 .tittle-wrapper {
     position: absolute;
-    top: 10%;
-    left: 46%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 7%;
+    max-height: 18%;
+    left: 5%;
+    right: 5%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;    font-size: 3vw !important;
     color: #363636 !important;
 
+}
+
+@media (min-width: 1350px) {
+.tittle-wrapper {
+    margin-left: -5% !important;
+}}
+
+@media (min-width: 1400px) {
+.tittle-wrapper {
+    margin-left: -15% !important;
+}}
+
+@media (min-width: 1500px) {
+.tittle-wrapper {
+    margin-left: -18% !important;
+}}
+
+@media (min-width: 1600px) {
+.tittle-wrapper {
+    margin-left: -23% !important;
+}}
 
 
-    z-index: 6;
-  }
+@media (min-width: 1700px) {
+.tittle-wrapper {
+    margin-left: -28% !important;
+}}
+
+
+@media (min-width: 1800px) {
+.tittle-wrapper {
+    margin-left: -33% !important;
+}}
+
+
+@media (min-width: 1900px) {
+.tittle-wrapper {
+    margin-left: -38% !important;
+}}
+
+@media (min-width: 2000px) {
+.tittle-wrapper {
+    margin-left: -43% !important;
+}}
+
+@media (min-width: 2100px) {
+.tittle-wrapper {
+    margin-left: -46% !important;
+}}
+
+@media (min-width: 2200px) {
+.tittle-wrapper {
+    margin-left: -51% !important;
+}}
+
+
+
+
+
 
   .tittle-wrapper h3 {
     margin: 0;
@@ -217,8 +274,10 @@ p {
     line-height: 1;
   }
 
-  .tittle-wrapper .birthday-text {
+.birthday-text {
     margin-top: 3px;
+        font-size:1.2rem !important;
+
 
 margin-bottom: 10px;
 font-family: 'Montserrat', sans-serif;font-size: 1.5vw;
@@ -229,7 +288,9 @@ color: #363636 !important;
 }
 
 
-.tittle-wrapper .aniversary-text {
+ .aniversary-text {
+         font-size:1.2rem !important;
+
     margin-top: 3px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;    font-size: 1.5vw;
@@ -243,11 +304,6 @@ color: #363636 !important;
 
 
   @media (max-width: 768px) {
-    .tittle-wrapper {
-
-
-      transform: translate(-40%, -40%);
-    }
 
     .grid-container {
         display: grid !important;
@@ -260,7 +316,7 @@ margin-left: -50% !important;
 }
 
 #names1, #names3 {
-margin-top: -12vw !important;}
+margin-top: -8vw !important;}
 
 .pages .page-wrapper {
 
@@ -279,7 +335,7 @@ margin-top: -12vw !important;}
         font-size:1rem !important;
         line-height: 1;
         top: 12% !important;
-        left: 95% !important;
+        left: 100% !important;
          }
 
   .aniversary-text {
@@ -297,7 +353,7 @@ margin-top: -12vw !important;}
         font-size:1rem !important;
         line-height: 1;
 
-     
+
       }
   }
 
@@ -307,25 +363,6 @@ margin-top: -12vw !important;}
 
 
 
-
-  @media (max-width: 768px){
-
-
-
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -25% !important;
-        margin-left: 40% !important;
-
-      }
-
-
-      .navbar-toggler{
-        margin-top: -22% !important;
-
-      }
-    }
 
 
   @media (min-width: 1100px) {
@@ -342,6 +379,11 @@ margin-top: -12vw !important;}
 
       }
     }
+
+
+
+
+
 
 
 

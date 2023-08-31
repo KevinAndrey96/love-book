@@ -14,6 +14,8 @@ var beard = document.getElementById("beardmale2");
 
 var glassesFemalePath = "/img/books/page2/woman/glasses/glasses.png";
 var glassesMalePath = "/img/books/page2/man/glasses/glasses.png";
+var glassesFemalePathShort = "/img/books/page2/woman/glasses/glasses2.png";
+
 
 // Obtener el color de ojos guardado en el Local Storage para hombres y mujeres
 
@@ -38,14 +40,17 @@ var beardDisplay = localStorage.getItem("beardDisplay");
 
 
 // Mostrar las gafas en el elemento del DOM correspondiente según lo que está guardado en el Local Storage
-
 if (glassesFemale === "block") {
     glassesfemale.style.display = "block";
-    glassesfemale.src = glassesFemalePath;
-  } else {
+} else {
     glassesfemale.style.display = "none";
-  }
+}
 
+if (hairColorFemale && hairColorFemale.includes("short1")) {
+    glassesfemale.src = glassesFemalePathShort; // Usar la ruta de gafas2
+} else {
+    glassesfemale.src = glassesFemalePath; // Usar la ruta de gafas original
+}
   if (glassesMale === "block") {
     glassesmale.style.display = "block";
     glassesmale.src = glassesMalePath;
@@ -145,6 +150,12 @@ if (colElement) {
     pageNumber.parentNode.removeChild(pageNumber);
   });
 
+    // Eliminar elementos con estilo display: none del clon del contenido
+  var hiddenElements = clonedMainContentElement.querySelectorAll('[style*="display: none"]');
+  hiddenElements.forEach(function(element) {
+    element.parentNode.removeChild(element);
+  });
+
 
 
     var modals = clonedMainContentElement.querySelectorAll('.modal');
@@ -169,7 +180,7 @@ if (colElement) {
       text.removeAttribute('style');
     });
 
-    var texts = clonedMainContentElement.querySelectorAll('.logo');
+    var logo = clonedMainContentElement.querySelectorAll('.logo');
     logo.forEach(function(text) {
       text.removeAttribute('style');
     });
@@ -198,7 +209,8 @@ if (colElement) {
 // Abrir modal
 swal({
     title: "Guardando libro",
-    text: "Por favor, no cierres la pagina.",
+    text: "Por favor, no cierre la pagina hasta que el proceso finalice.",
+    text: "Continúe con su pago en la siguiente pestaña. Antes de finalizar su pago, espere a que su libro haya sido guardado.",
     icon: "info",
     button: false,
     closeOnClickOutside: false,

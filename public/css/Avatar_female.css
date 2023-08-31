@@ -7,15 +7,10 @@ body{
     align-items: center;
     padding: 10px 20px;
   }
-  .navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
+
 
 .nav-link {
-    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -23,58 +18,89 @@ body{
 }
 
 
-.logo-img {
-    width: 200px;
-    height: 150px;
-    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
-  }
-
-  .line-main{
-    margin-top: -4% !important;
-}
 
 
 @media (max-width: 768px){
 
+     .navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #ddeffd !important;
+
+  }
 
 
-    .logo-img{
-        width: 200px;
+
+     .logo-img{
+        width: 160px;
         height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -25% !important;
-        margin-left: 40% !important;
-       
+        margin-bottom: -20% !important;
+        margin-top: -35% !important;
+        margin-left: 65% !important;
+
       }
+
+      .desc2{
+              margin-left: 5% !important;
+
+      }
+
 
       .navbar-toggler{
-        margin-top: -22% !important;
+        margin-top: -10% !important;
 
       }
+       .container-btn{
+        margin-left: -5% !important;
 
-   
+    }
+
+
 
     }
 
 
 @media (min-width: 768px){
 
+ .navbar {
+    width: 100%;
+    height: 10%;
+    background-color: #ddeffd !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
 
 
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -50%;
-        margin-left: -70%;
+
+       #hair-section{
+          margin-top: 5% !important;
       }
 
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
+        #glasses-section{
+          margin-top: -10% !important;
       }
 
-      .nav-link{
-        margin-left: -140%;
+        #eyes-section{
+          margin-top: -10% !important;
       }
+
+
+
+
+       .container-btn{
+        margin-top: -8% !important;
+        margin-left: -29% !important;
+
+    }
+
+      #color-section{
+          margin-top: -6% !important;
+      }
+
 
 
 
@@ -235,52 +261,6 @@ margin-left: 2% !important;
 
 }
 
-
-
-
-
-
-.navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
-.nav-link {
-    border-radius: 30px;
-    text-decoration: none;
-    color: rgba(54,54,54,.5);
-    font-size: 15px;
-    font-weight: bold;
-}
-
-
-
-
-.line-title {
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-.line-main {
-    margin: 0rem 0;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
-  }
-
-
-
-
-
   .btn1 {
     width:150px;
     display: inline-block;
@@ -300,23 +280,34 @@ margin-left: 2% !important;
   @media (min-width: 768px) {
 
 
-    .logo-img {
-        margin-top: -50px !important;
-        width: 200px;
-        height: 150px;
-        margin-left: -120% !important;
+.logo-img{
+    width: 150px !important;
+    height: 160px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-left: -55%;
+    margin-top: -10% !important;
+  }
 
-      }
+  .nav-item{
+    margin-left: 25px;
+
+
+  }
+
+  .nav-link{
+      font-family: 'Montserrat', sans-serif;
+      margin-right: -30px !important;
+    margin-left: -140%;
+  }
 
 
 
 
- 
+
     }
 
 
 
- 
+
 
 
   body {
@@ -457,6 +448,8 @@ margin-left: 2% !important;
 
 
 
+
+
   @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */
     .hair-select div,
@@ -465,14 +458,10 @@ margin-left: 2% !important;
       margin-bottom: 15px;
     }
 
-    .container-btn{
-        margin-top: 10px;
-        margin-left: 7.5%;
-        
-    }
-    
+
 
     .image-preview {
+        margin-top: 15% !important;
         display: flex;
         justify-content: flex-end; /* Alinea la imagen a la derecha */
         align-items: center; /* Ajusta la posición vertical al inicio */
@@ -498,7 +487,7 @@ margin-left: 2% !important;
 
       .image-preview .img {
         position: absolute;
-        top: 200px;
+        top: 180px;
         right: -35px;
       }
 
@@ -525,6 +514,57 @@ margin-left: 2% !important;
 
   }
 
+
+
+@media (min-width: 1400px){
+
+    .logo-img{
+    width: 150px !important;
+    height: 160px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-left: -55%;
+    margin-top: -40% !important;
+
+  }
+
+
+
+
+
+       #hair-section{
+          margin-top: -1% !important;
+      }
+
+        #glasses-section{
+          margin-top: -1% !important;
+      }
+
+        #eyes-section{
+          margin-top: -1% !important;
+      }
+
+
+
+
+       .container-btn{
+        margin-top: -6% !important;
+        margin-left: -29% !important;
+
+    }
+
+      #color-section{
+          margin-top: -1% !important;
+      }
+
+    .nav-item{
+                margin-top: -20% !important;
+
+    }
+
+
+
+
+
+    }
 
 
 

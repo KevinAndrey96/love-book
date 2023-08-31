@@ -61,7 +61,39 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <pre>{{ $book->transaction_info }}</pre>
+ @php
+                $transactionInfo = json_decode($book->transaction_info, true);
+            @endphp
+
+            <div style="background-color: #ffffff; color: #1c2a52; font-family: 'Helvetica Neue', Arial, sans-serif; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+                @if (isset($transactionInfo['Informacion de envio']))
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #0084ff;">Información de envío:</div>
+                    <div style="margin-bottom: 5px;">
+                        Número de celular de quién recibe: {{ $transactionInfo['Informacion de envio']['Numero de celular de quien recibe'] ?? '' }}
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        Ciudad: {{ $transactionInfo['Informacion de envio']['Ciudad'] ?? '' }}
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        Departamento: {{ $transactionInfo['Informacion de envio']['Departamento'] ?? '' }}
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        Dirección: {{ $transactionInfo['Informacion de envio']['Direccion'] ?? '' }}
+                    </div>
+                @endif
+
+                @if (isset($transactionInfo['Informacion del cliente']))
+                    <div style="font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #0084ff;">Información del cliente:</div>
+                    <div style="margin-bottom: 5px;">
+                        Correo Electrónico: {{ $transactionInfo['Informacion del cliente']['Correo Electronico'] ?? '' }}
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        Nombre Completo: {{ $transactionInfo['Informacion del cliente']['Nombre Completo'] ?? '' }}
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        Número de celular del cliente: {{ $transactionInfo['Informacion del cliente']['Numero de celular del cliente'] ?? '' }}
+                    </div>
+                @endif
                                         </div>
                                     </div>
                                 </div>

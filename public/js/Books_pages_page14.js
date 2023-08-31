@@ -12,6 +12,7 @@ var beard = document.getElementById("beardmale14");
 
 var glassesFemalePath = "/img/books/page14/woman/glasses/glasses.png";
 var glassesMalePath = "/img/books/page14/man/glasses/glasses.png";
+var glassesFemalePathShort = "/img/books/page14/woman/glasses/glasses2.png"; // Nueva ruta para gafas2
 
 // Obtener el color de ojos guardado en el Local Storage para hombres y mujeres
 
@@ -31,6 +32,27 @@ var glassesFemale = localStorage.getItem("glassesFemale");
 
 var beardColorMale = localStorage.getItem("beardColorMale");
 var beardDisplay = localStorage.getItem("beardDisplay");
+
+if (glassesFemale === "block") {
+    glassesfemale.style.display = "block";
+} else {
+    glassesfemale.style.display = "none";
+}
+
+if (hairColorFemale && hairColorFemale.includes("short1")) {
+    glassesfemale.src = glassesFemalePathShort; // Usar la ruta de gafas2
+} else {
+    glassesfemale.src = glassesFemalePath; // Usar la ruta de gafas original
+}
+
+
+  if (glassesMale === "block") {
+    glassesmale.style.display = "block";
+    glassesmale.src = glassesMalePath;
+  } else {
+    glassesmale.style.display = "none";
+  }
+
 
 
 // Mostrar las gafas en el elemento del DOM correspondiente según lo que está guardado en el Local Storage
@@ -97,4 +119,3 @@ if (glassesFemale === "block") {
   eyesfemale.src = eyesFemale;
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
-

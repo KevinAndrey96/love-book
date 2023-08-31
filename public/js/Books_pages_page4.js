@@ -34,13 +34,17 @@ var beardDisplay = localStorage.getItem("beardDisplay");
 
 
 // Mostrar las gafas en el elemento del DOM correspondiente según lo que está guardado en el Local Storage
-
 if (glassesFemale === "block") {
     glassesfemale.style.display = "block";
-    glassesfemale.src = glassesFemalePath;
-  } else {
+} else {
     glassesfemale.style.display = "none";
-  }
+}
+
+if (hairColorFemale && hairColorFemale.includes("short1")) {
+    glassesfemale.src = glassesFemalePathShort; // Usar la ruta de gafas2
+} else {
+    glassesfemale.src = glassesFemalePath; // Usar la ruta de gafas original
+}
 
   if (glassesMale === "block") {
     glassesmale.style.display = "block";
@@ -97,7 +101,6 @@ if (glassesFemale === "block") {
   eyesfemale.src = eyesFemale;
   hairmale.src = hairMale;
   hairfemale.src = hairFemale;
-
 
 
 

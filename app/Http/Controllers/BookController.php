@@ -137,18 +137,18 @@ public function respuesta(Request $request)
 
     // Configurar las credenciales de autenticación de prueba
     $publicKey = 'pub_test_FXuP06pwO8kBrtw9quipeLbETCLqsLtu';
-    $privateKey = 'prv_test_P50s0fVrGOMyc7GZJwWsdbOqkbqR8jMx';
+    $privateKey = 'prv_prod_8T7z5B8erWHPWVQDqAdLacgDcwEtbLeB';
     $headers = [
         'Authorization' => 'Bearer ' . $privateKey,
     ];
 
     // Consultar el estado de la transacción utilizando el API de Wompi
     $response = Http::withHeaders($headers)
-        ->get("https://sandbox.wompi.co/v1/transactions/{$transactionId}");
+        ->get("https://production.wompi.co/v1/transactions/{$transactionId}");
 
     // Verificar el estado de la respuesta de la API
     if ($response->successful()) {
-        $status = $response->body('data.status');
+        $status = $response->json('data.status');
 
         // Verificar si la transacción fue aprobada
         if ($status === 'APPROVED') {
@@ -160,7 +160,31 @@ public function respuesta(Request $request)
             if ($book) {
                 $book->status = 'Pagado';
                 $book->id_transaction = $transactionId;
-                $book->transaction_info = $response->body(); // Obtener el cuerpo de la respuesta como texto
+                $responseData = json_decode($response, true);
+
+                $shippingPhoneNumber = $responseData['data']['shipping_address']['phone_number'];
+$shippingCity = $responseData['data']['shipping_address']['city'];
+$shippingRegion = $responseData['data']['shipping_address']['region'];
+$shippingAddress = $responseData['data']['shipping_address']['address_line_1'];
+$customerEmail = $responseData['data']['customer_email'];
+$customerFullName = $responseData['data']['customer_data']['full_name'];
+$customerPhoneNumber = $responseData['data']['customer_data']['phone_number'];
+
+$transactionInfo = [
+    'Informacion de envio' => [
+        'Numero de celular de quien recibe' => $shippingPhoneNumber,
+        'Ciudad' => $shippingCity,
+        'Departamento' => $shippingRegion,
+        'Direccion' => $shippingAddress,
+    ],
+    'Informacion del cliente' => [
+        'Correo Electronico' => $customerEmail,
+        'Nombre Completo' => $customerFullName,
+        'Numero de celular del cliente' => $customerPhoneNumber,
+    ],
+];
+                $book->transaction_info = json_encode($transactionInfo);
+
                 $book->save();
             }
         }
@@ -170,8 +194,9 @@ public function respuesta(Request $request)
         $status = 'Error: ' . $errorMessage;
     }
 
-    // Mostrar el estado de la transacción en la vista
-    return view('books.respuesta_pago', ['status' => $status], );
+if ($status === 'APPROVED') {
+        // Transacción aprobada, mostrar "Aprovado" en la vista
+        return view('books.respuesta_pago', ['status' => 'Aprobado']);}
 }
 
 public function updateStatus(Request $request, $id)

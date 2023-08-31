@@ -27,15 +27,11 @@
     align-items: center;
     padding: 10px 20px;
   }
-  .navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
+
 
 .nav-link {
-    border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -43,11 +39,7 @@
 }
 
 
-.logo-img {
-    width: 200px;
-    height: 150px;
-    margin-right: 10px; /* Agrega un margen derecho para separar el logo del texto */
-  }
+
 
   .line-main{
     margin-top: -4% !important;
@@ -57,24 +49,40 @@
 
 @media (min-width: 768px){
 
+    .nav-link{
+      margin-right: -60px !important;
+    margin-left: -130%;
+  }
 
 
 
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -50%;
-      }
+       .navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+  height: 10%;
+}
 
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
-      }
 
-      .nav-link{
-        margin-left: -140%;
-      }
+
+.logo-img{
+    width: 160px !important;
+    height: 150px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-top: -35%;
+    margin-left: -35%;
+    margin-bottom: -20% !important;
+
+  }
+
+  .nav-item{
+    margin-left: 50px !important;
+
+  }
+
+
+
 
 
 
@@ -125,7 +133,7 @@ body {
 
 .text-center {
   text-align: center !important;
-  font-family: 'Montserrat', sans-serif;  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -156,15 +164,11 @@ color: #ff006a;
 }
 
 
-.navbar {
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
+
 
 .nav-link {
-    border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+
     text-decoration: none;
     color: rgba(54,54,54,.5);
     font-size: 15px;
@@ -190,12 +194,11 @@ body {
     margin: 0rem 0;
 }
 
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
+
 
   .nav-item {
+        text-align: center;
+
     margin-bottom: 10px;
   }
 
@@ -301,15 +304,15 @@ div {
   .aniversary-text {
     position: relative;
     top: -280px;
-    left:4%;
+    left:3%;
     font-family: 'Montserrat', sans-serif;
 
   }
 
   .birthday-text {
     position: relative;
-    top: -290px;
-    left:7%;
+    top: -280px;
+    left:4%;
     font-family: 'Montserrat', sans-serif;
 
   }
@@ -331,9 +334,9 @@ div {
     .tittle-wrapper h3{
         transform: translate(-50%, -50%);
         top:15%;
-        left:60%;
+        left:50%;
 
-         max-height: 28%; font-family: 'Montserrat', sans-serif 0.9rem;
+          font-family: 'Montserrat', sans-serif 0.9rem;
          z-index: 6;
           font-size: 0.7rem !important;
 
@@ -350,17 +353,33 @@ h1  {
 @media (max-width: 768px) {
 
 
+       .navbar {
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  z-index: 9999;
+    background-color: #ddeffd !important;
+}
 
 
 
-
-
-    .logo-img {
-        margin-top: -30px !important;
-        width: 150px;
-        height: 100px;
+    .logo-img{
+        width: 160px;
+        height: 150px; /* Ajusta la altura según el tamaño deseado */
+        margin-top: -35% !important;
+        margin-bottom: -20% !important;
+        margin-left: 50% !important;
 
       }
+
+
+
+      .navbar-toggler{
+        margin-top: -10% !important;
+
+      }
+
     }
 
 
@@ -1291,7 +1310,7 @@ h5{
     .birthday-text {
         position: relative;
         top: -55vw !important;
-        left:20%;
+        left:17%;
         font-size: 0.7rem;
 
       }
@@ -1299,7 +1318,7 @@ h5{
       .aniversary-text {
         position: relative;
         top: -55vw !important;
-        left:15%;
+        left:14%;
         font-size: 0.7rem;
 
       }
@@ -1472,12 +1491,12 @@ h5{
 }
 
 #text-page40{
-  left: 16% !important;
+  left: 19% !important;
 }
 
 
 #text-page41{
-  left: 19% !important;
+  left: 22% !important;
 }
 
 #text-page42{
@@ -1489,7 +1508,7 @@ h5{
 }
 
 #text-page44{
-  left: 18% !important;
+  left: 20% !important;
 }
 
 #text-page45{
@@ -1502,7 +1521,7 @@ h5{
     }
 
     #text-page24{
-        left: 35% !important;
+        left: 34% !important;
     }
 
     #text-page41{
@@ -1523,24 +1542,7 @@ h5{
       }
     }
 
-    @media (max-width: 768px){
 
-
-
-        .logo-img{
-            width: 200px;
-            height: 150px; /* Ajusta la altura según el tamaño deseado */
-            margin-top: -25% !important;
-            margin-left: 30% !important;
-
-          }
-
-
-          .navbar-toggler{
-            margin-top: -22% !important;
-
-          }
-        }
 
 
         @media (max-width: 768px) {

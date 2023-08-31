@@ -42,7 +42,6 @@
         </div>
     </nav>
 
-    <hr class="line-main">
 
     <h2 class="create-avatar text-center pt-3">CREA TU AVATAR</h2>
 

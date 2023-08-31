@@ -42,7 +42,7 @@ function selectContainerContent(containerId) {
   var selectedPageId = document.getElementById('first-page-wrapper').getAttribute('id');
 
   // Mostrar u ocultar el texto "Feliz Cumpleaños" según el contenido guardado
-  if (selectedContent.includes('HAPPY BIRTHDAY')) {
+  if (selectedContent.includes('FELIZ CUMPLEAÑOS')) {
     // Mostrar el texto "Feliz Cumpleaños"
     var birthdayText = displayContainer.querySelector('.birthday-text');
     if (birthdayText) {
@@ -56,7 +56,7 @@ function selectContainerContent(containerId) {
     }
   }
 
-  if (selectedContent.includes('HAPPY ANIVERSARY')) {
+  if (selectedContent.includes('FELIZ ANIVERSARIO')) {
     // Mostrar el texto "Feliz Cumpleaños"
     var birthdayText = displayContainer.querySelector('.aniversary-text');
     if (birthdayText) {

@@ -41,7 +41,18 @@
         </div>
     </nav>
 
-    <hr class="line-main">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="image-preview">
+                  <div class="img" id="main-image">
+                    <img src="/img/woman/base1.jpg" class="mainimg img-fluid">
+                    <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid" style=" z-index: 2;">
+                    <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
+                    <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
+                  </div>
+                </div>
+              </div>
 
         <div class="container-btn">
         <button id="btn-hair" type="button" class="btn1 btn-lg btn-block text-center mt-3">Cabello</button>
@@ -135,18 +146,6 @@
         </div>
 
 
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="image-preview">
-                  <div class="img" id="main-image">
-                    <img src="/img/woman/base1.jpg" class="mainimg img-fluid">
-                    <img src="/img/woman/hair/brown/long1.png" id="hairchangefemale" class="on img-fluid" style=" z-index: 2;">
-                    <img src="/img/woman/eyes/brown.png" id="eyeschangefemale" class="on img-fluid">
-                    <img src="/img/woman/glasses/glasses.png" id="glasseschange" class="on img-fluid">
-                  </div>
-                </div>
-              </div>
 
 
 

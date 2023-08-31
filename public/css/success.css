@@ -67,21 +67,24 @@
 
 
 
-    .logo-img{
-        width: 200px;
-        height: 150px; /* Ajusta la altura según el tamaño deseado */
-        margin-top: -30%;
-        margin-left: -70%;
-      }
+.logo-img{
+    width: 160px !important;
+    height: 160px !important; /* Ajusta la altura según el tamaño deseado */
+    margin-top: -30%;
+    margin-left: -55%;
 
-      .nav-item{
-        margin-top: -20%;
-        margin-left: 5px;
-      }
+  }
 
-      .nav-link{
-        margin-left: -140%;
-      }
+  .nav-item{
+    margin-top: -25%;
+    margin-left: 15px;
+
+  }
+
+  .nav-link{
+      margin-right: -50px !important;
+    margin-left: -140%;
+  }
 
 
 

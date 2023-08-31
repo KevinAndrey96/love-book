@@ -41,7 +41,6 @@
             </div>
         </nav>
 
-        <hr class="line-main">
 
 
           <div id="home">
@@ -62,34 +61,37 @@
             <div class="col-12 section-steps">
                 <div class="title text-center">En pocos clicks da un regalo único e inolvidable</div>
                 <div class="row">
-                    <div class="col-12 col-md-4 text-center step-wrap">
+                    <div class="col-12 text-center col-md-4  step-wrap">
                         <img id="img1" class="img-fluid" src="./img/step-1-removebg-preview.png">
                         <div class="title step-title">1. Crea tu personaje</div>
-                        <div class="text">Observa, ¡se parece a nosotros!</div>
+                        <div id="text" class="text">Observa <br> ¡se parece a nosotros!</div>
                     </div>
 
-                    <div class="col-12 col-md-4 text-center step-wrap">
+                    <div class="col-12 text-center col-md-4  step-wrap">
                         <img id="img2" class="img-fluid" src="./img/step-2-sr-removebg-preview.png">
                         <div id="title1" class="title step-title">2. Elige una portada</div>
-                        <div id="text1" class="text">¡Escribe un título y haz que sea único!</div>
+                        <div id="text1" class="text">¡Escribe un título <br> haz que sea único!</div>
                     </div>
 
-                    <div class="col-12 col-md-4 text-center step-wrap">
+                    <div class="col-12 text-center col-md-4  step-wrap">
                         <img id="img3" class="img-fluid" src="./img/step-3-sr-removebg-preview.png">
                         <div class="title step-title">3. Selecciona páginas</div>
-                        <div class="text">Edita las páginas a tu gusto</div>
+                        <div id="text2" class="text">Edita <br> las páginas a tu gusto</div>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 section-price desktop" id="products">
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center align-items-center"> <!-- En dispositivos grandes, la columna ocupa 6 columnas y centra el contenido horizontal y verticalmente -->
-                        <img class="img-fluid imagen" src="/img/book-image-2-sr.jpg">
-                  </div>
+                  <div class="col-md-6 d-flex justify-content-center align-items-center"> <!-- En dispositivos grandes, la columna ocupa 6 columnas y centra el contenido horizontal y verticalmente -->
+    <div class="imagen-container">
+        <img class="img-fluid imagen" src="/img/book-image-2-sr.jpg">
+    </div>
+</div>
+
                   <div class="col-md-6 text-center">
                     <div class="desc2 text-center">Existen muchas formas de demostrar lo que sientes, ¿Alguna vez pensaste en un libro?</div>
-                    <div class="subtitle">109.900$</div>
+                    <div class="subtitle">$109.900</div>
                     <div class="desc">+ precio de entrega</div>
                         <a href="/avatar" class="btn btn-primary btn-sm ">Personaliza tu libro</a>
                   </div>
@@ -244,7 +246,7 @@
                 <div class="row">
                   <div class="col-12 col-md-4 text-center">
                     <h3 class="title">Contacto</h3>
-                    <a href="mailto:Ayuda@librodeamor.com.co" class="title" style="text-decoration: none !important; color: white !important;">Ayuda@librodeamor.com.co</a>
+                    <a href="mailto:Ayuda@librodeamor.co" id="correo" class="title" style="text-decoration: none !important; color: white !important;">Ayuda@librodeamor.co</a>
                   </div>
                   <div class="col-12 col-md-4 text-center">
                     <h3 class="title">Social</h3>

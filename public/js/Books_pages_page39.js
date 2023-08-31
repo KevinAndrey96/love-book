@@ -74,4 +74,3 @@ var beardDisplay = localStorage.getItem("beardDisplay");
 // Establecer la ruta completa en la imagen correspondiente para los ojos y el cabello
   eyesmale.src = eyesMale;
   hairmale.src = hairMale;
-
